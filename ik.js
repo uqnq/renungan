@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Ganti ke false kalau mau matikan iklan
-    const ADS_ENABLED = true;
+    const ADS_ENABLED = false;
 
     if (!ADS_ENABLED) return;
 
