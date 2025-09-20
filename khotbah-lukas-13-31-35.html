@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah Lukas 13:31-35: Teguh Menuju Yerusalem & Ratapan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Khotbah mendalam tentang Lukas 13:31-35. Keteguhan Yesus menghadapi ancaman Herodes, misi ilahi, dan ratapan-Nya atas Yerusalem, serta relevansi bagi iman kita hari ini.">
+    <style>
+        /* Umum */
+        :root {
+            --color-background: hsl(190, 60%, 97%); /* Sangat terang, sejuk */
+            --color-text-dark: hsl(210, 10%, 25%); /* Dark blue-grey */
+            --color-text-light: hsl(210, 10%, 45%);
+            --color-heading: hsl(210, 50%, 40%); /* Medium blue */
+            --color-accent: hsl(170, 60%, 50%); /* Sea green */
+            --color-blockquote-border: hsl(190, 40%, 85%);
+            --color-link: hsl(210, 70%, 55%);
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-serif: 'Georgia', serif;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.7;
+            color: var(--color-text-dark);
+            background-color: var(--color-background);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Container utama untuk konten */
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1.5em;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            flex-grow: 1;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 2.5em 1.5em 1.5em;
+            background-color: var(--color-heading);
+            color: white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            margin-top: 0.8em;
+            opacity: 0.9;
+        }
+
+        /* Tipografi */
+        h1, h2, h3, h4 {
+            color: var(--color-heading);
+            font-weight: 600;
+            line-height: 1.3;
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+        }
+
+        h1 { font-size: 2em; }
+        h2 { font-size: 1.6em; border-bottom: 1px solid var(--color-blockquote-border); padding-bottom: 0.4em;}
+        h3 { font-size: 1.3em; color: var(--color-text-light); }
+        h4 { font-size: 1.1em; color: var(--color-accent); }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        a {
+            color: var(--color-link);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-accent);
+            text-decoration: underline;
+        }
+
+        /* Kutipan */
+        blockquote {
+            background-color: var(--color-background);
+            border-left: 5px solid var(--color-accent);
+            padding: 1em 1.5em;
+            margin: 1.5em 0;
+            font-style: italic;
+            color: var(--color-text-light);
+            border-radius: 6px;
+        }
+
+        blockquote p {
+            margin: 0;
+            text-align: left;
+        }
+
+        /* Daftar */
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 1.5em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        /* Gambar SVG */
+        figure {
+            margin: 2.5em auto;
+            text-align: center;
+            max-width: 100%;
+        }
+
+        figure svg {
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 0 auto 0.8em;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: var(--color-text-light);
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2em 1.5em;
+            margin-top: 3em;
+            background-color: var(--color-heading);
+            color: white;
+            font-size: 0.9em;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .container {
+                margin: 1em auto;
+                padding: 1em;
+                border-radius: 0; /* Tanpa border-radius di mobile penuh */
+                box-shadow: none; /* Tanpa shadow di mobile penuh */
+            }
+
+            header {
+                padding: 2em 1em 1em;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.4em; }
+            h3 { font-size: 1.2em; }
+            p { text-align: left; } /* Lebih baik di mobile */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khotbah: Keteguhan Kristus dan Ratapan-Nya atas Yerusalem</h1>
+        <p>Sebuah Renungan Mendalam dari Lukas 13:31-35</p>
+    </header>
+
+    <main class="container">
+        <article>
+            <p>Dalam lanskap narasi Injil Lukas yang kaya, kita menemukan Yesus Kristus tidak hanya sebagai guru dan penyembuh, tetapi juga sebagai seorang nabi yang menghadapi penolakan dan seorang Mesias yang teguh dalam misi ilahi-Nya. Pasal 13, khususnya ayat 31 hingga 35, menyajikan kepada kita sebuah episode yang penuh ketegangan, determinasi ilahi, dan ratapan yang mengharukan. Ayat-ayat ini bukan sekadar catatan historis; ia adalah cerminan dari hati Allah yang berkarya dalam sejarah manusia, mengungkapkan kasih-Nya yang mendalam sekaligus kesedihan-Nya yang tak terukur atas penolakan umat-Nya.</p>
+
+            <p>Konteks Lukas 13 sendiri telah mempersiapkan kita untuk bagian ini. Yesus baru saja menyembuhkan seorang wanita bungkuk pada hari Sabat, memicu kemarahan para pemimpin agama (ay. 10-17). Ia kemudian mengajarkan perumpamaan tentang biji sesawi dan ragi, menekankan pertumbuhan Kerajaan Allah yang tak terelakkan meskipun kecil di awal (ay. 18-21). Selanjutnya, Ia berbicara tentang pintu sempit dan perjuangan untuk masuk ke Kerajaan Allah, mengindikasikan bahwa tidak semua yang memanggil-Nya Tuhan akan masuk (ay. 22-30). Semua ini mengarah pada sebuah klimaks: konfrontasi dengan ancaman Herodes dan perjalanan-Nya yang tak terelakkan menuju Yerusalem, pusat drama keselamatan.</p>
+
+            <h2>I. Ancaman Herodes dan Keteguhan Yesus (Lukas 13:31-32a)</h2>
+
+            <blockquote>
+                <p><sup>31</sup> Pada waktu itu datanglah beberapa orang Farisi dan berkata kepada Yesus: "Pergilah, tinggalkanlah tempat ini, karena Herodes ingin membunuh Engkau."</p>
+                <p><sup>32</sup> Jawab Yesus kepada mereka: "Pergilah dan katakanlah kepada serigala itu: Aku mengusir setan dan menyembuhkan orang, pada hari ini dan besok, dan pada hari yang ketiga Aku akan selesai."</p>
+            </blockquote>
+
+            <h3>A. Peringatan atau Perangkap dari Orang Farisi?</h3>
+            <p>Ayat 31 membuka dengan kedatangan "beberapa orang Farisi" yang menyampaikan peringatan kepada Yesus: "Pergilah, tinggalkanlah tempat ini, karena Herodes ingin membunuh Engkau." Pertanyaan pertama yang muncul adalah: Apa motivasi sebenarnya di balik peringatan ini? Apakah ini sebuah kepedulian tulus dari orang Farisi, ataukah ada motif tersembunyi?</p>
+
+            <p>Di satu sisi, bisa jadi ada beberapa orang Farisi yang, meskipun tidak setuju dengan Yesus secara teologis, mungkin merasa iba atau khawatir akan keselamatan-Nya. Mereka mungkin memahami bahaya yang ditimbulkan oleh Herodes Antipas, tetrarkh Galilea dan Perea, yang dikenal kejam dan paranoid. Herodes adalah penguasa yang sama yang telah memenggal Yohanes Pembaptis karena ketidaksetujuan Yohanes atas pernikahannya yang tidak sah. Ia adalah sosok yang tidak ragu menggunakan kekerasan untuk mempertahankan kekuasaannya atau menyingkirkan siapa pun yang ia anggap sebagai ancaman.</p>
+
+            <p>Namun, di sisi lain, mengingat hubungan tegang antara Yesus dan mayoritas orang Farisi sepanjang Injil, sangat mungkin ini adalah sebuah tipuan atau setidaknya upaya untuk menyingkirkan Yesus dari wilayah mereka tanpa harus menggunakan tangan mereka sendiri. Orang Farisi seringkali merasa terancam oleh ajaran dan popularitas Yesus. Jika Yesus meninggalkan Galilea karena ancaman Herodes, itu akan menyelesaikan masalah mereka tanpa mereka harus secara langsung berkonfrontasi dengan Yesus atau menghadapi kemarahan rakyat yang mengagumi-Nya. Bisa jadi mereka ingin Yesus pindah ke Yudea, di mana para pemimpin agama di Yerusalem memiliki kekuasaan lebih besar dan bisa lebih mudah menangani-Nya.</p>
+
+            <p>Herodes sendiri mungkin memang melihat Yesus sebagai ancaman potensial, terutama setelah mendengar tentang mukjizat-mukjizat-Nya dan popularitas-Nya yang semakin meningkat. Lukas 9:7-9 mencatat bahwa Herodes bingung mendengar tentang Yesus, bahkan menduga bahwa Yesus adalah Yohanes Pembaptis yang bangkit kembali. Rasa bersalah atas pembunuhan Yohanes mungkin menghantuinya, dan kekhawatiran akan munculnya nabi lain atau pemimpin Mesianis dapat dengan mudah memicu paranoia-nya.</p>
+
+            <p>Apapun motif spesifik di balik peringatan orang Farisi, entah itu tulus atau manipulatif, dampaknya adalah menempatkan Yesus dalam posisi yang tampaknya berbahaya dan mendesak untuk melarikan diri.</p>
+
+            <h3>B. Yesus Menjawab Ancaman: "Pergilah dan Katakanlah kepada Serigala Itu"</h3>
+            <p>Respons Yesus terhadap peringatan ini sangatlah tegas dan penuh otoritas. Ia tidak menunjukkan rasa takut atau panik. Sebaliknya, Ia mengirimkan pesan balik kepada Herodes melalui orang Farisi itu. "Pergilah dan katakanlah kepada serigala itu..." Panggilan "serigala" untuk Herodes adalah sebuah metafora yang sangat tajam. Serigala dikenal sebagai predator yang licik, rakus, dan tanpa belas kasihan, yang mengancam domba-domba. Ini bukan hanya sebuah hinaan pribadi, tetapi juga sebuah pernyataan teologis tentang sifat kekuasaan duniawi yang buas dan destruktif, yang kontras dengan Kerajaan Allah yang dibangun atas kasih dan pengorbanan.</p>
+
+            <p>Dengan menyebut Herodes "serigala," Yesus menunjukkan bahwa Ia memahami sepenuhnya sifat musuh-Nya. Herodes adalah seorang tiran yang, seperti serigala, berusaha memangsa dan menghancurkan kehidupan. Namun, Yesus, Sang Gembala Agung, tidak takut pada serigala. Ia tahu bahwa misi-Nya lebih besar daripada ancaman duniawi mana pun.</p>
+
+            <p>Pesan yang disampaikan Yesus selanjutnya kepada "serigala itu" menegaskan kedaulatan-Nya atas waktu dan misi-Nya: "Aku mengusir setan dan menyembuhkan orang, pada hari ini dan besok, dan pada hari yang ketiga Aku akan selesai." Pernyataan ini kaya akan makna.</p>
+
+            <p>Pertama, Yesus menegaskan kembali sifat pelayanan-Nya: mengusir setan dan menyembuhkan orang. Ini adalah tanda-tanda Kerajaan Allah yang telah datang, pekerjaan yang menunjukkan belas kasihan Allah dan kemenangan-Nya atas kuasa kegelapan dan penyakit. Ini adalah pelayanan yang didorong oleh kasih, bukan kekuasaan atau dominasi politik. Yesus tidak datang untuk menantang Herodes di medan perang fisik, tetapi untuk membebaskan manusia dari penindasan rohani dan fisik.</p>
+
+            <p>Kedua, frasa "pada hari ini dan besok, dan pada hari yang ketiga Aku akan selesai" bukanlah penentuan waktu yang harfiah tiga hari. Ini adalah idiom Ibrani yang berarti "untuk sementara waktu," atau "segera," atau "dalam waktu dekat." Ini adalah cara puitis untuk menyatakan bahwa waktu pelayanan-Nya di Galilea sudah ditentukan, dan itu tidak dapat diganggu gugat oleh ancaman Herodes atau siapa pun. Ia akan menyelesaikan pekerjaan yang telah ditetapkan Bapa bagi-Nya, sesuai jadwal ilahi. Tidak ada penguasa duniawi, betapapun kuatnya, yang dapat mengubah rencana Allah.</p>
+
+            <p>Beberapa penafsir juga melihat dalam frasa "pada hari yang ketiga Aku akan selesai" sebuah antisipasi halus terhadap kematian dan kebangkitan-Nya. Meskipun tidak secara eksplisit merujuk pada kebangkitan-Nya, ada resonansi profetik di dalamnya. Pekerjaan-Nya di bumi akan mencapai puncaknya dalam penderitaan, kematian, dan kebangkitan-Nya yang terjadi pada hari ketiga. Ini menegaskan bahwa Yesus memiliki otoritas atas hidup dan mati-Nya sendiri, dan bahwa misi-Nya bukan hanya tentang pelayanan di Galilea tetapi juga tentang penggenapan rencana keselamatan di Yerusalem.</p>
+
+            <figure>
+                <svg width="250" height="250" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17 11H13V7H11V11H7V13H11V17H13V13H17V11Z" fill="#3D8B7D"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17 11H13V7H11V11H7V13H11V17H13V13H17V11Z" fill-opacity="0.3"/>
+                </svg>
+                <figcaption>Simbol salib yang menunjukan pelayanan dan pengorbanan Yesus.</figcaption>
+            </figure>
+
+            <h2>II. Keniscayaan Perjalanan ke Yerusalem (Lukas 13:33)</h2>
+
+            <blockquote>
+                <p><sup>33</sup> Akan tetapi Aku harus berjalan terus pada hari ini dan besok dan lusa, sebab tidaklah semestinya seorang nabi binasa di luar Yerusalem."</p>
+            </blockquote>
+
+            <h3>A. "Aku Harus Berjalan Terus" — Sebuah Keharusan Ilahi</h3>
+            <p>Ayat 33 melanjutkan penegasan Yesus tentang determinasi-Nya. Frasa "Aku harus berjalan terus" (δεῖ με πορεύεσθαι – <i>dei me poreuesthai</i>) mengungkapkan sebuah keharusan ilahi. Kata <i>dei</i> dalam bahasa Yunani menunjukkan sebuah keniscayaan, sebuah keharusan yang datang dari rencana Allah, bukan dari keputusan manusiawi atau paksaan eksternal. Yesus tidak hanya *memilih* untuk pergi ke Yerusalem; Ia *harus* pergi. Ini adalah bagian integral dari misi-Nya sebagai Mesias dan penggenapan nubuat-nubuat Perjanjian Lama.</p>
+
+            <p>Perjalanan Yesus ke Yerusalem telah menjadi tema berulang dalam Injil Lukas sejak pasal 9:51: "Ketika hampir genap waktu-Nya Ia akan diangkat ke surga, Yesus mengarahkan pandangan-Nya untuk pergi ke Yerusalem." Sejak saat itu, setiap langkah dan pengajaran-Nya secara progresif mengarah ke kota suci itu, tempat di mana takdir-Nya akan digenapi. Ini bukan lagi sekadar perjalanan geografis, melainkan sebuah perjalanan eskatologis, sebuah ziarah yang tak terhindarkan menuju salib dan kebangkitan.</p>
+
+            <p>Keharusan ini menunjukkan kedaulatan Allah atas sejarah dan ketaatan mutlak Yesus terhadap kehendak Bapa. Tidak ada ancaman dari Herodes, tidak ada intimidasi dari Farisi, tidak ada keraguan dari murid-murid-Nya, yang dapat menghalangi Yesus dari tujuan ilahi-Nya. Ia adalah Allah yang berinkarnasi, dan Dia akan menyelesaikan pekerjaan yang telah ditetapkan-Nya sejak semula.</p>
+
+            <p>Frasa "pada hari ini dan besok dan lusa" kembali muncul, menggarisbawahi bahwa misi-Nya akan terus berlanjut hingga waktu yang ditentukan Allah. Ia tidak akan berhenti melakukan pekerjaan-Nya, tidak peduli apa pun yang terjadi di sekitar-Nya. Ini adalah contoh sempurna dari ketekunan, fokus, dan ketaatan yang harus menjadi ciri khas para pengikut-Nya.</p>
+
+            <h3>B. Ironi dan Tragedi Yerusalem: "Tidaklah Semestinya Seorang Nabi Binasa di Luar Yerusalem"</h3>
+            <p>Bagian kedua dari ayat 33 mengungkapkan ironi yang tajam dan tragedi yang mendalam: "Sebab tidaklah semestinya seorang nabi binasa di luar Yerusalem." Pernyataan ini adalah sarkasme yang menyakitkan, sebuah kutipan pahit yang menyoroti sejarah kelam Yerusalem. Secara harfiah, seorang nabi bisa binasa di mana saja. Namun, Yesus menunjukkan sebuah pola yang mengerikan: Yerusalem, kota yang seharusnya menjadi pusat penyembahan dan penerima firman Allah, justru telah menjadi kuburan para nabi.</p>
+
+            <p>Sepanjang sejarah Israel, banyak nabi yang diutus Allah untuk memperingatkan, membimbing, dan memanggil umat-Nya kepada pertobatan, tetapi justru disambut dengan penolakan, penganiayaan, bahkan pembunuhan. Yeremia, Yesaya, Zakharia, dan banyak nabi lainnya telah mengalami penderitaan di tangan umat Allah sendiri, seringkali di Yerusalem. Tradisi Yahudi bahkan mencatat kematian martir bagi beberapa nabi besar.</p>
+
+            <p>Dengan mengatakan "tidaklah semestinya seorang nabi binasa di luar Yerusalem," Yesus menggarisbawahi bahwa adalah bagian dari pola tragis sejarah Yerusalem untuk membunuh nabi-nabi yang diutus Allah kepadanya. Ia tahu bahwa nasib yang sama menanti-Nya. Ia tidak akan mati di tangan Herodes di Galilea; Ia akan menggenapi takdir-Nya sebagai Nabi agung, Mesias yang diurapi, di Yerusalem, di mana para nabi selalu dibunuh.</p>
+
+            <p>Pernyataan ini bukan hanya sebuah nubuat tentang kematian-Nya sendiri, tetapi juga sebuah tuduhan tajam terhadap Yerusalem atas sejarah pemberontakan dan penolakan terhadap utusan-utusan Allah. Kota yang seharusnya menjadi terang bagi bangsa-bangsa, justru menjadi kegelapan bagi para pembawa terang. Ini mempersiapkan panggung untuk ratapan yang akan datang di ayat-ayat selanjutnya.</p>
+
+            <h2>III. Ratapan Yesus atas Yerusalem (Lukas 13:34-35)</h2>
+
+            <blockquote>
+                <p><sup>34</sup> Yerusalem, Yerusalem, engkau yang membunuh nabi-nabi dan merajam orang-orang yang diutus kepadamu! Berkali-kali Aku rindu mengumpulkan anak-anakmu, sama seperti induk ayam mengumpulkan anak-anaknya di bawah sayapnya, tetapi kamu tidak mau.</p>
+                <p><sup>35</sup> Sesungguhnya rumahmu itu akan ditinggalkan Allah bagimu. Akan tetapi Aku berkata kepadamu: Kamu tidak akan melihat Aku lagi sampai kamu berkata: Diberkatilah Dia yang datang dalam nama Tuhan!"</p>
+            </blockquote>
+
+            <h3>A. Tangisan Hati Allah atas Yerusalem (Ayat 34)</h3>
+            <p>Bagian ini adalah salah satu kutipan paling mengharukan dalam seluruh Injil, mengungkapkan kedalaman kasih, belas kasihan, dan kesedihan di hati Yesus. "Yerusalem, Yerusalem," pengulangan nama kota ini menunjukkan intensitas emosi, sebuah panggilan yang mendalam dan menyakitkan, seolah-olah Yesus sedang bergumul dengan kota yang sangat dicintai-Nya.</p>
+
+            <p>Ia menegaskan tuduhan yang telah Ia implikasikan sebelumnya: "engkau yang membunuh nabi-nabi dan merajam orang-orang yang diutus kepadamu!" Ini adalah catatan sejarah yang menyakitkan, pengulangan pola penolakan dan kekerasan terhadap suara kenabian Allah. Dari zaman Musa hingga nabi terakhir, Allah telah berbicara kepada umat-Nya, tetapi seringkali mereka menolak, menganiaya, atau membunuh para utusan-Nya. Yerusalem, sebagai pusat agama dan politik, seringkali menjadi tempat di mana penolakan ini mencapai puncaknya.</p>
+
+            <p>Namun, di tengah tuduhan ini, hati Yesus tidak dipenuhi dengan kemarahan saja, tetapi dengan kerinduan yang mendalam: "Berkali-kali Aku rindu mengumpulkan anak-anakmu, sama seperti induk ayam mengumpulkan anak-anaknya di bawah sayapnya, tetapi kamu tidak mau." Ini adalah gambaran yang sangat kuat tentang kasih Allah yang protektif dan penuh pengorbanan.</p>
+
+            <p><strong>Metafora Induk Ayam:</strong> Induk ayam adalah simbol kelembutan, perlindungan, dan pengorbanan. Ketika bahaya mengancam, induk ayam akan melebarkan sayapnya, mengumpulkan anak-anaknya di bawah perlindungan yang aman. Ia rela mengambil risiko untuk dirinya sendiri, bahkan mati, demi melindungi keturunannya. Ini adalah gambaran yang sempurna dari kasih Allah bagi umat-Nya. Allah ingin melindungi Yerusalem, memelihara mereka, memberi mereka kedamaian dan keamanan rohani, seperti induk ayam menjaga anak-anaknya dari burung pemangsa atau cuaca buruk.</p>
+
+            <p>"Berkali-kali" menunjukkan bahwa ini bukan hanya keinginan sesaat, tetapi kerinduan yang terus-menerus dan berulang-ulang dari Allah sepanjang sejarah. Melalui para nabi, melalui berbagai peristiwa, Allah telah mencoba menarik umat-Nya kembali kepada-Nya, menawarkan perlindungan dan pemulihan. Kini, dalam pribadi Yesus sendiri, Tawaran Kasih Allah mencapai puncaknya.</p>
+
+            <p>Namun, bagian yang paling menyedihkan dari metafora ini adalah: "tetapi kamu tidak mau." Kehendak bebas manusia, kemampuan untuk memilih atau menolak kasih Allah, adalah inti dari tragedi ini. Yerusalem, dan dengan demikian bangsa Israel secara umum, memilih untuk menolak tawaran perlindungan, anugerah, dan damai sejahtera yang diberikan oleh Yesus. Ini bukan karena Allah tidak mau; ini karena umat-Nya yang tidak mau.</p>
+
+            <p>Penolakan ini tidak hanya berarti kehilangan perlindungan fisik, tetapi juga kehilangan perlindungan rohani, pemulihan, dan damai sejahtera yang hanya dapat ditemukan dalam Kristus. Ratapan Yesus adalah ratapan atas pilihan tragis yang dibuat oleh umat-Nya, sebuah pilihan yang akan membawa konsekuensi yang mengerikan.</p>
+
+            <h3>B. Konsekuensi Penolakan dan Harapan Masa Depan (Ayat 35)</h3>
+            <p>Ayat 35 mengungkapkan konsekuensi langsung dari penolakan Yerusalem dan sekaligus memberikan secercah harapan eskatologis.</p>
+
+            <p><strong>Konsekuensi Penolakan: "Sesungguhnya rumahmu itu akan ditinggalkan Allah bagimu."</strong> Frasa ini adalah sebuah nubuat penghakiman yang mengerikan. "Rumahmu itu" merujuk pada Bait Allah, pusat ibadah dan kehadiran Allah di antara umat-Nya, dan secara lebih luas, kota Yerusalem itu sendiri. "Ditinggalkan Allah bagimu" berarti bahwa kehadiran Allah akan ditarik. Kemuliaan Allah akan meninggalkan Bait Suci dan kota itu, dan mereka akan dibiarkan pada nasib mereka sendiri.</p>
+
+            <p>Nubuat ini secara dramatis digenapi pada tahun 70 Masehi, ketika tentara Romawi di bawah Titus menghancurkan Yerusalem dan Bait Allah, meninggalkan kota itu menjadi reruntuhan. Ini adalah klimaks dari serangkaian pemberontakan Yahudi yang memicu respons brutal dari Roma. Penghancuran Bait Allah dan Yerusalem adalah sebuah tragedi nasional dan rohani bagi umat Yahudi, sebuah bukti nyata bahwa Allah telah menarik perlindungan dan berkat-Nya dari kota yang menolak Mesias-Nya. Ini adalah pelajaran keras tentang konsekuensi penolakan ilahi.</p>
+
+            <p><strong>Harapan Masa Depan: "Kamu tidak akan melihat Aku lagi sampai kamu berkata: Diberkatilah Dia yang datang dalam nama Tuhan!"</strong> Meskipun ada penghakiman, Yesus tidak meninggalkan mereka tanpa harapan sama sekali. Frasa ini adalah kutipan dari Mazmur 118:26, yang digunakan secara profetik untuk mengacu pada kedatangan Mesias. Ini adalah bagian dari kidung hosana yang akan diucapkan oleh orang banyak saat Yesus masuk ke Yerusalem pada Minggu Palma (Lukas 19:38).</p>
+
+            <p>Pernyataan Yesus di sini menunjukkan bahwa meskipun Ia akan pergi (melalui kematian, kebangkitan, dan kenaikan-Nya), ada janji akan kedatangan-Nya kembali. Namun, kondisi untuk kedatangan kembali ini adalah bahwa Israel, atau setidaknya bagian dari mereka, harus mengakui dan menyambut-Nya sebagai Mesias dengan berseru, "Diberkatilah Dia yang datang dalam nama Tuhan!" Ini menunjuk pada sebuah pertobatan massal di masa depan yang dijanjikan bagi Israel pada akhir zaman (Roma 11:25-27).</p>
+
+            <p>Jadi, di tengah-tengah ratapan dan nubuat penghakiman, ada juga janji kasih karunia dan pemulihan di masa depan. Allah tidak akan meninggalkan umat-Nya selamanya. Ada harapan akan suatu hari ketika mereka akan berpaling kepada-Nya, mengakui Dia yang mereka tolak, dan menyambut-Nya dengan sukacita.</p>
+
+            <figure>
+                <svg width="250" height="250" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4ZM12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6ZM12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8ZM18.5 16C19.16 16 19.8 16.14 20.4 16.4L18 19.5V17H16V19.5L13.6 16.4C14.2 16.14 14.84 16 15.5 16H18.5Z" fill="#3D8B7D"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 4C16.42 4 20 7.58 20 12C20 16.42 16.42 20 12 20C7.58 20 4 16.42 4 12C4 7.58 7.58 4 12 4ZM12 6C9.79 6 8 7.79 8 10C8 12.21 9.79 14 12 14C14.21 14 16 12.21 16 10C16 7.79 14.21 6 12 6ZM12 8C13.1 8 14 8.9 14 10C14 11.1 13.1 12 12 12C10.9 12 10 11.1 10 10C10 8.9 10.9 8 12 8ZM18.5 16C19.16 16 19.8 16.14 20.4 16.4L18 19.5V17H16V19.5L13.6 16.4C14.2 16.14 14.84 16 15.5 16H18.5Z" fill-opacity="0.3"/>
+                </svg>
+                <figcaption>Simbol hati yang mengambarkan kasih dan kerinduan Yesus.</figcaption>
+            </figure>
+
+            <h2>IV. Aplikasi untuk Kehidupan Kita Hari Ini</h2>
+
+            <h3>A. Keteguhan dalam Misi Ilahi</h3>
+            <p>Kisah ini menegaskan keteguhan Yesus dalam menjalankan misi-Nya, terlepas dari ancaman dan tantangan. Bagi kita, ini adalah panggilan untuk refleksi mendalam mengenai ketekunan iman kita. Yesus tidak gentar oleh Herodes, sang 'serigala', karena Ia tahu bahwa misi-Nya berasal dari Bapa surgawi. Apakah kita memiliki keyakinan yang sama dalam panggilan atau tujuan yang Allah berikan kepada kita? Dalam hidup, kita akan menghadapi "Herodes" kita sendiri—ancaman, godaan, ketakutan, atau perlawanan dari dunia. Ini bisa berupa tantangan di tempat kerja, tekanan sosial untuk berkompromi dengan nilai-nilai Kristiani, atau keraguan internal yang mencoba menggoyahkan iman kita.</p>
+            <p>Keteguhan Yesus mengajarkan kita untuk tidak menyerah pada intimidasi atau kesulitan. Jika misi kita adalah untuk melayani Allah, untuk memberitakan Injil, untuk hidup kudus, maka kita harus maju dengan keberanian yang sama. Kita harus berpegang pada fakta bahwa rencana Allah adalah yang tertinggi, dan tidak ada kekuatan duniawi yang dapat menggagalkannya. Ini bukan berarti kita harus sembrono atau tidak bijaksana, tetapi bahwa ketakutan tidak boleh menjadi pengemudi utama keputusan kita.</p>
+            <p>Kita perlu memahami bahwa ketaatan dan kesetiaan kita seringkali akan diuji. Akan ada saat-saat di mana kita merasa terancam atau ingin "melarikan diri" dari tanggung jawab yang Allah berikan. Namun, seperti Yesus, kita dipanggil untuk mengatakan, "Aku harus berjalan terus." Keharusan ini bukan beban, melainkan kehormatan, karena kita tahu bahwa kita sedang berjalan dalam kehendak Bapa. Mari kita meninjau ulang komitmen kita kepada Kristus. Apakah kita membiarkan ketakutan atau oposisi menghentikan kita dari melakukan apa yang kita tahu benar? Apakah kita berani menyebut "serigala" dan tetap fokus pada pekerjaan Kerajaan yang telah dipercayakan kepada kita?</p>
+
+            <h3>B. Memahami Hati Allah yang Berduka</h3>
+            <p>Ratapan Yesus atas Yerusalem adalah jendela ke dalam hati Allah. Ini mengungkapkan kedalaman kasih, belas kasihan, dan kesedihan Allah ketika umat-Nya menolak Dia. Allah bukanlah dewa yang dingin dan tak berperasaan; Ia adalah Bapa yang berduka ketika anak-anak-Nya berpaling dari-Nya. Metafora induk ayam yang ingin mengumpulkan anak-anaknya menggambarkan kasih protektif dan kerinduan Allah yang tak terbatas untuk umat-Nya.</p>
+            <p>Ini adalah pelajaran penting bagi kita yang seringkali berpikir tentang Allah hanya dalam kerangka penghakiman atau berkat. Lukas 13:34 menunjukkan bahwa di balik setiap penghakiman ada hati yang berduka, hati yang merindukan rekonsiliasi. Allah tidak bersukacita atas kebinasaan orang fasik, tetapi Ia merindukan pertobatan mereka. Sebagaimana Yerusalem menolak perlindungan dan kasih Yesus, kita pun seringkali menolak tawaran kasih dan bimbingan Allah dalam hidup kita. Kita memilih jalan kita sendiri, mengabaikan suara-Nya, dan pada akhirnya menuai konsekuensi dari pilihan kita.</p>
+            <p>Pengajaran ini memanggil kita untuk bersikap peka terhadap hati Allah. Apakah kita mendengar ratapan-Nya atas dunia yang terhilang? Apakah kita merasakan kesedihan-Nya atas gereja yang terpecah, atas umat yang kompromi, atau atas individu yang tersesat? Hati yang menyerupai Kristus akan merasakan kerinduan dan kepedihan yang sama. Ini juga memotivasi kita untuk tidak hanya menginjili dengan keberanian, tetapi juga dengan belas kasihan, mengetahui bahwa setiap orang yang kita ajak adalah jiwa yang dirindukan Allah untuk "dikumpulkan di bawah sayap-Nya."</p>
+            <p>Kita harus bertanya pada diri sendiri: Apakah ada area dalam hidup kita di mana kita "tidak mau" di bawah perlindungan dan arahan Allah? Apakah ada dosa atau kebiasaan yang kita pegang teguh, menolak tawaran pembebasan-Nya? Jika demikian, ratapan Yesus harus menjadi panggilan yang menyadarkan untuk kembali kepada-Nya.</p>
+
+            <h3>C. Konsekuensi Penolakan dan Harapan Pertobatan</h3>
+            <p>Peringatan tentang "rumahmu itu akan ditinggalkan Allah bagimu" adalah pengingat yang tajam tentang konsekuensi penolakan yang gigih. Penolakan terhadap kasih dan kebenaran Allah tidak akan tanpa akibat. Sejarah Yerusalem menjadi saksi bisu dari kebenaran ini. Ketika manusia secara terus-menerus menolak kehadiran dan otoritas Allah, pada akhirnya Ia akan menarik diri, meninggalkan mereka pada konsekuensi dari pilihan mereka.</p>
+            <p>Ini bukan berarti Allah meninggalkan kita begitu saja setelah satu kesalahan, tetapi tentang penolakan yang terus-menerus terhadap tawaran anugerah-Nya. Bagi kita, ini adalah peringatan serius untuk tidak mengeraskan hati terhadap suara Roh Kudus. Jika kita terus-menerus mengabaikan dorongan-Nya untuk bertobat, untuk melayani, atau untuk taat, kita berisiko mengalami kekosongan rohani dan kehilangan kehadiran-Nya yang nyata dalam hidup kita.</p>
+            <p>Namun, di tengah peringatan ini, ada secercah harapan yang besar: "Kamu tidak akan melihat Aku lagi sampai kamu berkata: Diberkatilah Dia yang datang dalam nama Tuhan!" Ini adalah janji bahwa Allah tidak pernah menyerah sepenuhnya pada umat-Nya. Ada harapan akan penebusan dan pengakuan di masa depan. Bahkan bagi Yerusalem yang keras hati, ada janji akan pertobatan dan penyambutan Mesias di kemudian hari.</p>
+            <p>Bagi kita, ini berarti tidak pernah ada kata terlambat untuk bertobat dan berbalik kepada Tuhan. Selama kita masih hidup, pintu anugerah terbuka. Allah menunggu kita untuk berseru, "Diberkatilah Dia yang datang dalam nama Tuhan!"—untuk mengakui Yesus sebagai Tuhan dan Juruselamat kita. Ini adalah seruan pertobatan yang mendalam, bukan hanya di bibir, tetapi dari hati yang percaya.</p>
+            <p>Aplikasi praktis dari poin ini adalah pentingnya evangelisasi dan misi. Kita adalah alat yang Allah gunakan untuk memanggil orang lain untuk berkata, "Diberkatilah Dia yang datang dalam nama Tuhan!" Kita memiliki tanggung jawab untuk menyampaikan kabar baik, agar lebih banyak orang dapat bertobat dan menyambut Raja yang akan datang. Kita harus hidup dengan kesadaran akan kedatangan Yesus yang kedua, dan dengan kerinduan agar sebanyak mungkin orang siap untuk menyambut-Nya.</p>
+
+            <h3>D. Prioritas Kerajaan Allah di Tengah Ancaman Duniawi</h3>
+            <p>Yesus dengan jelas menyatakan prioritas-Nya: mengusir setan dan menyembuhkan orang, serta menyelesaikan pekerjaan-Nya sesuai jadwal ilahi. Ancaman Herodes hanyalah gangguan kecil dalam skema besar rencana Allah. Ini mengajarkan kita untuk menetapkan prioritas yang benar dalam hidup kita. Dunia seringkali mencoba menarik kita dengan kekhawatiran, ketakutan, dan godaan-godaan yang mengalihkan perhatian dari Kerajaan Allah.</p>
+            <p>Apakah kita terlalu fokus pada kekuasaan duniawi, harta benda, atau pengakuan manusia? Atau apakah kita seperti Yesus, yang dengan teguh berfokus pada pekerjaan Kerajaan Allah—pelayanan, keadilan, kasih, dan penyebaran Injil? Keteguhan Yesus menunjukkan bahwa apa yang benar-benar penting adalah menjalankan kehendak Allah, bukan menyenangkan manusia atau menghindari kesulitan.</p>
+            <p>Ketika kita mengutamakan Kerajaan Allah dan kebenaran-Nya, semua hal lain akan ditambahkan kepada kita. Ini bukan jaminan hidup tanpa masalah, tetapi jaminan kehadiran dan kuasa Allah untuk menolong kita melaluinya. Prioritas Yesus adalah menggenapi tujuan Bapa, dan itulah yang harus menjadi prioritas utama kita juga.</p>
+
+            <figure>
+                <svg width="250" height="250" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16L6 12L7.41 10.59L10 13.17L16.59 6.58L18 8L10 16Z" fill="#3D8B7D"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16L6 12L7.41 10.59L10 13.17L16.59 6.58L18 8L10 16Z" fill-opacity="0.3"/>
+                </svg>
+                <figcaption>Simbol ceklis yang menandakan misi yang telah digenapi dan tujuan yang tercapai.</figcaption>
+            </figure>
+
+            <h2>V. Refleksi Tambahan: Kedalaman Nubuatan dan Emosi</h2>
+
+            <h3>A. Kedalaman Makna "Hari Ketiga"</h3>
+            <p>Frasa "pada hari yang ketiga Aku akan selesai" dalam konteks respons Yesus kepada Herodes, dan "Aku harus berjalan terus pada hari ini dan besok dan lusa" sebelum ratapan-Nya, memiliki resonansi profetik yang mendalam. Meskipun secara harfiah merujuk pada "dalam waktu dekat," frasa "hari ketiga" secara khusus beresonansi dengan kebangkitan Yesus. Ini bukan kebetulan semata. Dalam pemahaman Injil Lukas, kematian dan kebangkitan Yesus adalah puncak dari misi-Nya. Setiap langkah menuju Yerusalem adalah langkah menuju Golgota dan kubur kosong.</p>
+            <p>Maka, ketika Yesus mengatakan bahwa Ia akan "selesai" pada hari ketiga, Ia tidak hanya merujuk pada akhir pelayanan-Nya di Galilea atau bahkan di bumi, tetapi pada penggenapan terbesar dari misi keselamatan-Nya melalui penderitaan, kematian, dan kebangkitan-Nya. Ini adalah jaminan bahwa meskipun Ia menghadapi ancaman maut, kematian bukanlah akhir bagi-Nya, melainkan sebuah jembatan menuju kemenangan ilahi. Bagi orang percaya, ini adalah sumber penghiburan dan harapan: bahkan di hadapan ancaman terbesar, ada janji kemenangan yang sudah ditentukan oleh Allah.</p>
+            <p>Ini juga mengajarkan kita bahwa penggenapan rencana Allah seringkali tidak instan. Ada proses, ada "hari ini, besok, dan lusa" sebelum "hari ketiga" tiba. Dalam kehidupan iman kita, kita seringkali berharap akan hasil yang cepat, namun Allah seringkali bekerja dalam waktu-Nya sendiri, membangun, menguji, dan membentuk kita melalui proses yang panjang. Ketekunan Yesus dalam proses ini menjadi teladan bagi kita untuk tetap setia menunggu dan bekerja hingga "hari ketiga" kita sendiri tiba—hari di mana Allah menyatakan penggenapan janji-Nya dalam hidup kita.</p>
+
+            <h3>B. Ratapan Yesus sebagai Ekspresi Kasih Ilahi yang Tanpa Batas</h3>
+            <p>Ratapan Yesus atas Yerusalem (Lukas 13:34) adalah salah satu bagian yang paling mengharukan dan mengungkapkan kedalaman kasih Allah. Bayangkan Sang Pencipta, yang di dalam diri-Nya segala sesuatu dijadikan, menangisi ciptaan-Nya yang memberontak. Ini bukan sekadar kesedihan manusiawi; ini adalah kesedihan ilahi. Pengulangan "Yerusalem, Yerusalem" bukan hanya ekspresi kekecewaan, tetapi juga kerinduan yang mendalam. Kata-kata ini keluar dari hati yang penuh dengan kasih tak bersyarat, yang merindukan pemulihan.</p>
+            <p>Metafora induk ayam dan anak-anaknya adalah gambaran yang sangat intim dan pribadi. Induk ayam melindungi anak-anaknya dengan mengorbankan diri sendiri. Ini adalah gambaran dari Inkarnasi itu sendiri: Allah datang dalam rupa manusia untuk menawarkan perlindungan ilahi. Ia ingin mengumpulkan mereka, bukan untuk menghakimi, tetapi untuk melestarikan dan memberi kehidupan. Frasa "tetapi kamu tidak mau" adalah bagian yang paling tragis. Ini menunjukkan bahwa meskipun kasih Allah tanpa batas dan tawaran-Nya tulus, kehendak bebas manusia memegang peranan krusial dalam penerimaan atau penolakan kasih itu.</p>
+            <p>Refleksi ini seharusnya mendorong kita untuk merenungkan kedalaman kasih Allah dalam hidup kita sendiri. Apakah kita meremehkan kasih-Nya? Apakah kita, seperti Yerusalem, seringkali menolak tawaran perlindungan dan bimbingan-Nya karena kebanggaan, ketakutan, atau keinginan kita sendiri? Jika kita memahami betapa dalamnya hati Allah merindukan kita, itu seharusnya mendorong kita untuk merespons dengan pertobatan dan ketaatan yang tulus.</p>
+            <p>Selain itu, ini menantang kita untuk mengembangkan hati yang berbelas kasihan seperti hati Yesus. Jika Yesus menangisi Yerusalem yang menolak-Nya, bagaimana seharusnya kita menangisi dunia di sekitar kita yang masih terhilang? Apakah kita merasakan beban untuk jiwa-jiwa? Apakah kita berdoa dan bekerja untuk membawa orang lain kepada perlindungan-Nya? Ratapan Yesus adalah panggilan bagi gereja untuk tidak hanya berkhotbah tentang penghakiman, tetapi juga tentang kasih yang tak terhingga yang merindukan setiap anak untuk kembali ke rumah.</p>
+
+            <h3>C. Nubuat dan Penggenapannya</h3>
+            <p>Nubuat Yesus tentang Yerusalem yang "akan ditinggalkan Allah bagimu" (Lukas 13:35) dan penggenapannya yang dramatis pada tahun 70 Masehi oleh tentara Romawi berfungsi sebagai pengingat kuat akan keandalan firman profetik Yesus. Ini menegaskan otoritas-Nya sebagai nabi, Mesias, dan Tuhan. Sejarah menjadi saksi dari kebenaran pernyataan-Nya.</p>
+            <p>Penggenapan nubuat ini juga menggarisbawahi gravitasi penolakan ilahi. Ketika bangsa Israel menolak utusan terakhir dan teragung dari Allah, konsekuensi yang menyertainya adalah tragis dan historis. Ini adalah peringatan bagi kita bahwa ada titik balik dalam penolakan, di mana rahmat dapat digantikan dengan penghakiman. Namun, ini bukan karena Allah kejam, melainkan karena Ia adil dan kudus, dan Ia menghormati kehendak bebas manusia untuk memilih jalan mereka sendiri.</p>
+            <p>Pada saat yang sama, frasa "sampai kamu berkata: Diberkatilah Dia yang datang dalam nama Tuhan!" mempertahankan harapan Mesianis dan eskatologis. Ini menunjukkan bahwa penghakiman bukanlah kata terakhir dalam kisah Allah dengan umat-Nya. Ada janji pemulihan di masa depan, ketika Israel (dan seluruh umat manusia yang percaya) akan mengakui Yesus sebagai Mesias. Ini adalah pengingat bahwa rencana Allah bersifat menyeluruh, mencakup baik penghakiman maupun penebusan, dan pada akhirnya, kemenangan Kristus akan diakui oleh semua.</p>
+            <p>Bagi orang percaya, ini adalah sumber dorongan. Kita hidup di antara "sekarang dan belum." Kita melihat penderitaan dan penolakan, tetapi kita juga memiliki kepastian akan janji-janji Allah yang akan digenapi sepenuhnya di masa depan. Kita dipanggil untuk hidup dengan pengharapan itu, dan untuk menjadi saksi-saksi dari kebenaran firman Allah, baik dalam peringatan maupun dalam janji-janji-Nya.</p>
+
+            <h2>Kesimpulan</h2>
+            <p>Lukas 13:31-35 adalah perikop yang sarat makna, mengungkapkan banyak kebenaran tentang karakter Yesus, sifat misi ilahi, dan kedalaman hati Allah. Kita melihat keteguhan Yesus dalam menghadapi ancaman, ketaatan-Nya yang mutlak terhadap kehendak Bapa, dan kesedihan-Nya yang mendalam atas penolakan umat-Nya. Ini adalah kisah tentang kasih yang tak terbatas yang ditolak, tetapi juga tentang pengharapan yang tak padam akan pertobatan dan penerimaan di masa depan.</p>
+            <p>Sebagai pengikut Kristus, kita dipanggil untuk meneladani keteguhan-Nya dalam menjalankan misi kita, tidak gentar oleh "serigala" dunia ini. Kita dipanggil untuk memahami hati Allah yang berduka atas dunia yang terhilang dan merespons dengan belas kasihan dan evangelisasi. Kita juga harus memahami konsekuensi penolakan yang gigih, tetapi tidak pernah kehilangan harapan akan anugerah Allah yang selalu terbuka bagi mereka yang mau bertobat dan berseru, "Diberkatilah Dia yang datang dalam nama Tuhan!"</p>
+            <p>Biarlah firman ini menginspirasi kita untuk hidup dengan keberanian Kristus, dengan belas kasihan-Nya yang mendalam, dan dengan pengharapan yang teguh akan kedatangan-Nya kembali. Marilah kita terus berjalan di jalan yang telah Allah tetapkan bagi kita, sampai pekerjaan kita selesai, dan kita dapat menyambut Dia dengan sukacita.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Artikel Khotbah Mendalam. Semua hak dilindungi.</p>
+        <p>Semoga renungan ini memberkati Anda.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/kumpulan-khotbah-pemuda-kristen">Kumpulan Khotbah Pemuda Kristen</a></li>
+<li><a href="/renungan-6-november-2022">Renungan 6 November 2022</a></li>
+<li><a href="/renungan-pagi-singkat">Renungan Pagi Singkat</a></li>
+<li><a href="/khotbah-matius-28-16-20">Khotbah Matius 28 16 20</a></li>
+<li><a href="/khotbah-amsal-31-10-31">Khotbah Amsal 31 10 31</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

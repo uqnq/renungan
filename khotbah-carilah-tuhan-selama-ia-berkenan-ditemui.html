@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah: Carilah Tuhan Selama Ia Berkenan Ditemui</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Sebuah khotbah mendalam tentang urgensi mencari Tuhan dan pentingnya memanfaatkan waktu yang diberikan.">
+    <style>
+        /* Variabel Warna Sejuk Cerah */
+        :root {
+            --body-bg: hsl(210, 60%, 98%); /* Sangat terang, biru keabu-abuan */
+            --header-footer-bg: hsl(210, 30%, 95%); /* Sedikit lebih gelap dari body */
+            --main-bg: hsl(0, 0%, 100%); /* Putih bersih */
+            --text-color: hsl(210, 30%, 20%); /* Biru gelap untuk teks utama */
+            --heading-color: hsl(210, 40%, 25%); /* Sedikit lebih gelap dari teks utama untuk judul */
+            --accent-color: hsl(190, 70%, 55%); /* Biru-cyan cerah sebagai aksen */
+            --accent-light: hsl(190, 70%, 85%); /* Aksen lebih terang */
+            --text-light: hsl(210, 20%, 40%); /* Teks agak terang untuk kutipan/catatan kaki */
+            --border-color: hsl(210, 20%, 90%); /* Warna border halus */
+        }
+
+        /* Reset CSS Sederhana */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--body-bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--header-footer-bg);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+
+        header h1 {
+            color: var(--heading-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Content Area */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--main-bg);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        h2, h3, h4 {
+            color: var(--heading-color);
+            margin-top: 2em;
+            margin-bottom: 1em;
+            line-height: 1.3;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 0.5em;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--accent-color);
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul, ol {
+            margin-bottom: 1em;
+            margin-left: 2em;
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        blockquote {
+            background-color: var(--body-bg);
+            border-left: 5px solid var(--accent-color);
+            margin: 2em 0;
+            padding: 1.5em;
+            font-style: italic;
+            color: var(--text-light);
+            border-radius: 4px;
+        }
+
+        blockquote p {
+            margin-bottom: 0.5em;
+        }
+
+        blockquote cite {
+            display: block;
+            text-align: right;
+            margin-top: 1em;
+            font-size: 0.9em;
+            color: var(--text-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2em auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            background-color: var(--main-bg); /* Untuk padding internal SVG */
+            padding: 10px; /* Padding di sekitar SVG */
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--header-footer-bg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-light);
+            font-size: 0.9em;
+            border-top: 1px solid var(--border-color);
+            box-shadow: 0 -2px 4px rgba(0,0,0,0.03);
+        }
+
+        /* Responsiveness for Smaller Screens */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            main {
+                margin: 1rem auto;
+                padding: 1.5rem;
+                border-radius: 0; /* Tanpa border-radius di mobile penuh */
+                box-shadow: none; /* Tanpa shadow di mobile penuh */
+            }
+            h2 {
+                font-size: 1.7rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            h4 {
+                font-size: 1.1rem;
+            }
+            ul, ol {
+                margin-left: 1.5em;
+            }
+            blockquote {
+                padding: 1em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 1.5rem 1rem;
+            }
+            header h1 {
+                font-size: 1.7rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            main {
+                padding: 1rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+            p {
+                font-size: 0.95rem;
+            }
+            ul, ol {
+                margin-left: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Khotbah: Carilah Tuhan Selama Ia Berkenan Ditemui</h1>
+        <p>Sebuah panggilan mendalam untuk merenungkan urgensi dan anugerah dalam mencari hadirat-Nya.</p>
+    </header>
+
+    <main>
+        <section id="pengantar">
+            <h2>Pengantar: Panggilan yang Mendesak</h2>
+            <p>Saudara-saudari yang terkasih dalam Kristus, hari ini kita akan merenungkan sebuah kebenaran yang sangat mendasar dan mendesak dalam perjalanan iman kita. Sebuah seruan yang menggema dari kedalaman hikmat ilahi dan relevan bagi setiap generasi: "Carilah Tuhan selama Ia berkenan ditemui; berserulah kepada-Nya selama Ia dekat!" (Yesaya 55:6). Ayat ini bukan sekadar nasihat biasa; ini adalah sebuah undangan yang penuh kasih namun juga peringatan yang serius. Ini adalah sebuah panggilan untuk bertindak, untuk tidak menunda, dan untuk memahami bahwa ada jendela anugerah yang terbuka, dan ada waktu-waktu di mana pintu itu terbuka lebih lebar dari yang lain.</p>
+            <p>Dalam dunia yang serba cepat, penuh dengan kebisingan dan distraksi, kata "mencari" seringkali dikaitkan dengan pencarian materi, kesuksesan duniawi, atau pemuasan keinginan pribadi. Namun, ketika Alkitab berbicara tentang mencari Tuhan, ia merujuk pada sebuah kerinduan yang jauh lebih dalam, sebuah pengejaran yang melampaui segala sesuatu yang fana. Ini adalah pencarian akan makna, tujuan, kedamaian sejati, dan hubungan yang mendalam dengan Pencipta kita. Ini adalah inti dari keberadaan spiritual kita.</p>
+            <p>Pertanyaan yang muncul adalah: Mengapa kita harus mencari Tuhan? Dan yang lebih krusial lagi: Mengapa ada batasan waktu "selama Ia berkenan ditemui"? Bukankah Tuhan itu Mahahadir, Mahakasih, dan selalu siap sedia menyambut kita? Jawaban atas pertanyaan-pertanyaan ini akan membawa kita pada pemahaman yang lebih dalam tentang karakter Tuhan, kondisi hati manusia, dan dinamika anugerah ilahi.</p>
+            <p>Mari kita buka hati kita untuk kebenaran Firman Tuhan hari ini, agar kita tidak hanya mendengarnya dengan telinga, tetapi juga meresponsnya dengan segenap keberadaan kita. Semoga khotbah ini menjadi pendorong bagi kita semua untuk sungguh-sungguh mencari Tuhan dan hidup dalam kedekatan-Nya, sebelum waktu anugerah itu berlalu.</p>
+
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQwIDI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjQTdFRTFFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0NCN0ZENSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDIiIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRDBFN0ZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjI0MCIgaGVpZ2h0PSIyNDAiIGZpbGw9InVybCgjZ3JhZDIpIiByeD0iOCIgcnk9IjgiLz4KICA8cGF0aCBkPSJNMzAgMjEwIEwyMTAgMzAgTTMzIDMzbDc4IDc4TTIwNyAyMDdsLTc4IC03OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ1cmwoI2dyYWQxKSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTEyMCAzMCBDMTgwIDMwLCAyMTAgNjAsIDIxMCAxMjAgQzIxMCAxODAsIDE4MCAyMTAsIDEyMCAyMTAgQzYwIDIxMCwzMCAxODAsMzAgMTIwIEMzMCA2MCw2MCAzMCwxMjAgMzBaIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjZ3JhZDEpIiBzdHJva2Utd2lkdGg9IjEwIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8Y2lyY2xlIGN4PSIxMjAiIGN5PSIxMjAiIHI9IjQwIiBmaWxsPSJ1cmwoI2dyYWQxKSIvPgo8L3N2Zz4K" alt="Ilustrasi cahaya ilahi dan jalan spiritual yang terbuka" title="Cahaya Ilahi dan Jalan Spiritual">
+        </section>
+
+        <section id="inti-pesan">
+            <h2>Inti Pesan: Yesaya 55:6-7</h2>
+            <p>Mari kita kembali kepada inti pesan kita, yang terambil dari Kitab Yesaya pasal 55, ayat 6 dan 7:</p>
+            <blockquote>
+                <p><sup>6</sup> Carilah TUHAN selama Ia berkenan ditemui; berserulah kepada-Nya selama Ia dekat!</p>
+                <p><sup>7</sup> Baiklah orang fasik meninggalkan jalannya, dan orang jahat meninggalkan rancangannya; baiklah ia kembali kepada TUHAN, maka Ia akan mengasihaninya, dan kepada Allah kita, sebab Ia memberi pengampunan dengan limpah.</p>
+                <cite>Yesaya 55:6-7</cite>
+            </blockquote>
+            <h3>Kontekstualisasi Ayat</h3>
+            <p>Kitab Yesaya pasal 55 adalah bagian dari nubuat yang penuh pengharapan, yang sering disebut "Injil Kecil" dalam Perjanjian Lama. Setelah serangkaian nubuat tentang penghakiman dan pembuangan, Allah melalui Yesaya menyampaikan janji pemulihan, pengampunan, dan undangan kepada semua orang yang haus dan lapar akan kebenaran. Ini adalah undangan universal yang tidak memandang latar belakang, status sosial, atau dosa masa lalu. Allah rindu untuk bersekutu dengan umat-Nya, dan Dia menawarkan perjanjian damai sejahtera yang kekal.</p>
+            <p>Ayat 6 dan 7 ini berfungsi sebagai puncak dari undangan tersebut. Ini adalah sebuah <em>kairos</em>, sebuah momen yang tepat yang harus direbut. Frasa "selama Ia berkenan ditemui" dan "selama Ia dekat" mengimplikasikan adanya periode waktu di mana akses kepada Tuhan mungkin lebih mudah, atau di mana hati manusia lebih peka terhadap panggilan-Nya. Ini bukan berarti Tuhan berubah-ubah atau tidak lagi Maha Hadir, melainkan bahwa ada momen-momen istimewa di mana intervensi ilahi dan respons manusia bersatu dalam keselarasan yang sempurna.</p>
+
+            <h3>1. Mengapa "Carilah Tuhan"?</h3>
+            <p>Mencari Tuhan berarti lebih dari sekadar mengetahui tentang-Nya atau percaya bahwa Dia ada. Ini adalah sebuah tindakan aktif, sebuah proses yang melibatkan hati, pikiran, dan kehendak. Sama seperti seseorang yang mencari harta terpendam, kita harus mencarinya dengan kesungguhan, fokus, dan tekad.</p>
+            <h4>a. Kebutuhan Fundamental Manusia</h4>
+            <p>Sejak kejatuhan manusia, ada kekosongan rohani dalam diri setiap insan. Kekosongan ini seringkali diisi dengan pengejaran harta, kekuasaan, kesenangan, atau pengakuan duniawi. Namun, semua itu pada akhirnya gagal memuaskan dahaga jiwa yang terdalam. Hanya Tuhan, sang Pencipta, yang dapat mengisi kekosongan itu dan memberikan makna serta tujuan sejati dalam hidup.</p>
+            <p>Kitab Mazmur menegaskan hal ini: "Seperti rusa merindukan sungai yang berair, demikianlah jiwaku merindukan Engkau, ya Allah." (Mazmur 42:1). Kerinduan ini adalah bukti bahwa kita diciptakan untuk memiliki hubungan dengan Dia. Tanpa-Nya, hidup kita akan selalu terasa kurang, seperti teka-teki yang kehilangan potongan paling pentingnya.</p>
+            <h4>b. Tuhan adalah Sumber Kehidupan dan Kebijaksanaan</h4>
+            <p>Dalam Dia kita hidup, bergerak, dan ada (Kisah Para Rasul 17:28). Segala sesuatu yang baik berasal dari-Nya. Ketika kita mencari Tuhan, kita mencari sumber kehidupan, kebenaran, keadilan, damai sejahtera, dan sukacita yang tak terbatas. Dia adalah hikmat itu sendiri. Amsal 2:6 mengatakan, "Karena TUHANlah yang memberikan hikmat, dari mulut-Nya datang pengetahuan dan kepandaian." Dalam mencari-Nya, kita menemukan petunjuk untuk jalan kita, kekuatan untuk menghadapi tantangan, dan penghiburan di tengah kesesakan.</p>
+            <h4>c. Tuhan Mengundang Kita untuk Bersekutu</h4>
+            <p>Undangan untuk mencari Tuhan adalah manifestasi dari kasih dan anugerah-Nya. Dia tidak menjauh dari kita; justru, Dialah yang proaktif dalam mendekat dan memanggil kita. Dia rindu untuk memiliki hubungan yang intim dengan kita, seperti seorang ayah dengan anak-anaknya. Yohanes 14:23 berkata, "Jikalau seorang mengasihi Aku, ia akan menuruti firman-Ku dan Bapa-Ku akan mengasihi dia dan Kami akan datang kepadanya dan diam bersama-sama dengan dia." Mencari Tuhan adalah merespons undangan ilahi ini untuk persekutuan yang kekal.</p>
+            <p>Ketika kita mencari-Nya, kita tidak sedang mencoba membujuk Tuhan untuk mengasihi kita atau menerima kita; Dia sudah melakukannya. Sebaliknya, kita sedang membuka diri untuk mengalami kasih dan hadirat-Nya secara lebih penuh, untuk membiarkan kebenaran-Nya mengubah hati dan hidup kita.</p>
+
+            <h3>2. Makna "Selama Ia Berkenan Ditemui; Berserulah Kepada-Nya Selama Ia Dekat"</h3>
+            <p>Bagian kedua dari ayat ini adalah yang seringkali menimbulkan pertanyaan dan kekhawatiran. Apakah ini berarti ada waktu di mana Tuhan tidak berkenan ditemui? Atau tidak dekat? Jawabannya terletak pada pemahaman tentang cara Tuhan bekerja dan kondisi hati manusia.</p>
+            <h4>a. Jendela Anugerah dan Peluang Ilahi</h4>
+            <p>Frasa ini tidak berarti Tuhan itu berubah-ubah dalam kasih atau kehadiran-Nya. Tuhan adalah sama, kemarin, hari ini, dan sampai selama-lamanya (Ibrani 13:8). Dia selalu dekat dalam arti kehadiran-Nya yang mahahadir. Namun, frasa ini berbicara tentang "pintu" anugerah yang terbuka secara istimewa, sebuah periode di mana hati manusia lebih peka, dan Roh Kudus bekerja dengan kekuatan yang lebih besar untuk menarik jiwa-jiwa kepada Tuhan.</p>
+            <p>Ini adalah waktu <em>kairos</em>—waktu yang tepat, waktu yang ditentukan oleh Allah. Mungkin ini adalah masa ketika kita menghadapi krisis dalam hidup yang membuat kita menyadari kerapuhan diri dan kebutuhan akan Tuhan. Mungkin ini adalah saat kita mendengar Firman Tuhan dengan jelas dan merasakan dorongan Roh Kudus yang kuat. Mungkin ini adalah periode kebangunan rohani di suatu tempat atau waktu.</p>
+            <p>Rasul Paulus menggemakan ide ini dalam 2 Korintus 6:2: "Sebab Allah berfirman: 'Pada waktu Aku berkenan, Aku akan mendengarkan engkau, dan pada hari penyelamatan Aku akan menolong engkau.' Sesungguhnya, waktu ini adalah waktu perkenanan itu; sesungguhnya, hari ini adalah hari penyelamatan itu." Ini menunjukkan urgensi yang sama: ada waktu khusus di mana undangan Allah kepada keselamatan dan kedekatan begitu jelas dan kuat, dan inilah saatnya untuk merespons.</p>
+            <h4>b. Bahaya Penundaan</h4>
+            <p>Peringatan "selama Ia berkenan ditemui" mengandung implikasi bahwa ada konsekuensi jika kita menunda-nunda. Apa yang terjadi jika kita tidak mencari Tuhan saat Dia dekat dan berkenan ditemui?</p>
+            <ol>
+                <li><strong>Hati yang Mengeraskan Diri:</strong> Jika kita terus-menerus menolak undangan Roh Kudus, hati kita bisa menjadi keras dan tidak peka. Ibrani 3:7-8 memperingatkan, "Pada hari ini, jika kamu mendengar suara-Nya, janganlah keraskan hatimu seperti dalam kegeraman." Penolakan berulang kali dapat membuat kita semakin sulit untuk mendengar suara Tuhan di kemudian hari.</li>
+                <li><strong>Hilangnya Kesempatan:</strong> Meskipun Tuhan Mahakasih, Alkitab juga berbicara tentang penghakiman dan akibat dari penolakan terus-menerus. Ada batas bagi kesabaran ilahi. Matius 25:1-13, perumpamaan tentang sepuluh gadis, menunjukkan bahwa ada waktu di mana pintu ditutup dan kesempatan berlalu.</li>
+                <li><strong>Dikuasai oleh Kegelapan:</strong> Semakin lama seseorang menolak cahaya Tuhan, semakin dalam ia tenggelam dalam kegelapan dosa dan kesesatan. Kehilangan arah dan tujuan, hidup menjadi hampa dan tanpa harapan.</li>
+            </ol>
+            <p>Ini bukan ancaman, melainkan peringatan dari kasih Tuhan. Dia tidak ingin kita kehilangan kesempatan emas ini untuk bersekutu dengan-Nya. Dia ingin kita merespons kasih-Nya sekarang.</p>
+
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQwIDI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIyeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjQTdFRTFFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0NCN0ZENSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDIiIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRDBFN0ZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIvPgogICAgPC9saW5lcz4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIgZmlsbD0idXJsKCNncmFkMikiIHJ4PSI4IiByeT0iOCIvPgogIDxwYXRoIGQ9Ik0xMjAgMjIwQzY1IDIyMCw0MCAxNzgsNDAgMTIwUzY1IDIwLDEyMCAyMHM4MCA5OCw4MCAxMDBzLTU1IDgwLTEwMCA4MFoiIGZpbGw9InVybCgjZ3JhZDEpIi8+CiAgPHBhdGggZD0iTTEyMCAzNSBjLTQ0IDAgLTY4IDMzIC02OCA4NSBjMCAyNSAzNSAzNSAzNSAzNSBjLTQwIC00MCAtNDAgLTgyIC00MCAtODIgQzcwIDU1IDgxIDQ5IDEyMCA1MFoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC43KSIgLz4KICA8cGF0aCBkPSJNNzAgMTQ1IFEgMTA1IDk1LCAxMzUgMTQ1IFEgMTcwIDE3NSwgMTIwIDIwMCBRIDcwIDE3NSwgNzAgMTQ1WiIgZmlsbD0id2hpdGUiIHN0cm9rZT0idXJsKCNncmFkMSkiIHN0cm9rZS13aWR0aD0iMyIvPgogIDxjaXJjbGUgY3g9IjE0MCIgY3k9IjExNSIgcj0iMTgiIGZpbGw9InVybCgjZ3JhZDEpIi8+CiAgPHBhdGggZD0iTTE3MCAxOTAgQyAxODAgMTcwLCAyMDAgMTUwLCAyMDAgMTIwIFEgMTk1IDY1LCAxMzAgNjUgIiBmaWxsPSJub25lIiBzdHJva2U9InVybCgjZ3JhZDEpIiBzdHJva2Utd2lkdGg9IjgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K" alt="Ilustrasi seseorang merenung atau berdoa dalam pencarian spiritual" title="Pencarian Spiritual">
+        </section>
+
+        <section id="panggilan-pertobatan">
+            <h2>Panggilan untuk Pertobatan: Meninggalkan Jalan Lama</h2>
+            <p>Yesaya 55:7 secara eksplisit menghubungkan pencarian Tuhan dengan pertobatan:</p>
+            <blockquote>
+                <p>Baiklah orang fasik meninggalkan jalannya, dan orang jahat meninggalkan rancangannya; baiklah ia kembali kepada TUHAN, maka Ia akan mengasihaninya, dan kepada Allah kita, sebab Ia memberi pengampunan dengan limpah.</p>
+                <cite>Yesaya 55:7</cite>
+            </blockquote>
+            <p>Pencarian Tuhan bukanlah sekadar latihan intelektual atau spiritual yang pasif. Ini menuntut perubahan yang radikal dalam hidup kita. Jika kita ingin mencari Tuhan dan ditemukan oleh-Nya, kita harus bersedia untuk meninggalkan dosa-dosa kita dan berbalik kepada-Nya. Ini adalah esensi dari pertobatan.</p>
+            <h3>a. Meninggalkan Jalan yang Fasik dan Rancangan yang Jahat</h3>
+            <p>Ayat ini menyebutkan dua hal yang harus ditinggalkan: "jalan orang fasik" dan "rancangan orang jahat".</p>
+            <ol>
+                <li><strong>Jalan orang fasik:</strong> Ini mengacu pada cara hidup, kebiasaan, dan pola perilaku yang bertentangan dengan kehendak Tuhan. Ini bisa berupa ketidakjujuran, keserakahan, pergaulan yang merusak, atau apapun yang menjauhkan kita dari kekudusan. Meninggalkan jalan ini berarti dengan sengaja memutus hubungan dengan gaya hidup yang tidak berkenan kepada Tuhan.</li>
+                <li><strong>Rancangan orang jahat:</strong> Ini berbicara tentang motif, pikiran, dan rencana yang tidak kudus yang ada di dalam hati kita. Dosa seringkali dimulai dari pikiran dan rancangan sebelum terwujud dalam tindakan. Meninggalkan rancangan ini berarti meminta Tuhan untuk membersihkan hati dan pikiran kita, mengganti niat-niat jahat dengan kebenaran-Nya.</li>
+            </ol>
+            <p>Pertobatan sejati melibatkan baik tindakan (meninggalkan jalan) maupun motivasi hati (meninggalkan rancangan). Keduanya harus berjalan bersamaan. Tidak cukup hanya berhenti melakukan dosa jika hati masih merindukannya; dan tidak cukup hanya memiliki niat baik jika tindakan kita masih bertentangan dengan kehendak Tuhan.</p>
+
+            <h3>b. Kembali kepada Tuhan</h3>
+            <p>Setelah meninggalkan dosa, langkah selanjutnya adalah "kembali kepada Tuhan". Ini adalah tindakan aktif untuk mengarahkan kembali seluruh hidup kita kepada-Nya. Ini berarti mengakui otoritas-Nya, mencari kehendak-Nya, dan menyerahkan diri kepada bimbingan-Nya. Kembali kepada Tuhan berarti masuk kembali ke dalam hubungan yang benar dengan-Nya, melalui Yesus Kristus.</p>
+            <p>Dalam Yesus Kristus, kita memiliki jalan untuk kembali kepada Bapa. Dia adalah jembatan yang menghubungkan kita kembali kepada Allah yang kudus. "Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal." (Yohanes 3:16).</p>
+
+            <h3>c. Pengampunan yang Berlimpah</h3>
+            <p>Janji yang mengikuti pertobatan adalah luar biasa: "maka Ia akan mengasihaninya, dan kepada Allah kita, sebab Ia memberi pengampunan dengan limpah." Kata "limpah" di sini sangat penting. Ini bukan pengampunan yang setengah-setengah, atau pengampunan yang bersyarat. Ini adalah pengampunan yang sepenuhnya, yang menghapus dosa kita sejauh timur dari barat, yang membuang pelanggaran kita ke dalam laut yang terdalam.</p>
+            <p>Tuhan tidak mengingat-ingat kesalahan kita lagi setelah kita bertobat. Dia tidak menyimpan daftar dosa kita untuk dipakai melawan kita di kemudian hari. Kasih dan pengampunan-Nya melampaui segala kesalahan kita, sebesar apa pun itu. Ini adalah pengharapan bagi setiap orang yang merasa tidak layak atau terlalu berdosa untuk diampuni.</p>
+            <p>Mazmur 103:12 mengatakan, "sejauh timur dari barat, demikian dijauhkan-Nya dari pada kita pelanggaran-pelanggaran kita." Inilah kedalaman pengampunan ilahi. Itu berarti sebuah awal yang baru, sebuah lembaran yang bersih, dan kesempatan untuk hidup yang dipulihkan sepenuhnya oleh anugerah-Nya.</p>
+
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjQwIDI0MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDEiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMTAwJSIyeTI9IjEwMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjQTdFRTFFIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0NCN0ZENSIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZDIiIHgxPSIwJSIgeTE9IjEwMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjRDBFN0ZGIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI0ZGRkZGRiIvPgogICAgPC9saW5lYXJncmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMjQwIiBoZWlnaHQ9IjI0MCIgZmlsbD0idXJsKCNncmFkMikiIHJ4PSI4IiByeT0iOCIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1LDMwKSIgc3Ryb2tlPSJ1cmwoI2dyYWQxKSIgc3Ryb2tlLXdpZHRoPSIxMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBmaWxsPSJub25lIj4KICAgIDxwYXRoIGQ9Ik0xMDAgMTIwIGMwIC01MCAtNjAtMzAgLTYwIC0xMDIgYzAgNzIgNjAgNTIgNjAgMTM0IHoiLz4KICAgIDxwYXRoIGQ9Ik02MCA3NSBDNjAgMTUgMTcwIC01LCAxNzAgOTUgQzE3MCAxNjUgMTAwIDE3MCw2MCA3NSIgZmlsbD0iI2ZmZmYiLz4KICAgIDxwYXRoIGQ9Ik02MCA3NSBDOTAgMzUgMTQwIDM1LDE1NSAxMDUgQzE3MCAxNzUgMTAwIDE4MCw2MCA3NSIgZmlsbD0id2hpdGUiIHN0cm9rZT0idXJsKCNncmFkMSkiIHN0cm9rZS13aWR0aD0iMyIvPgogICAgPHBhdXRoIGQ9Ik04NSAxMDcgQzk1IDc3IDE0NSAzNyAxNTAgMTA3IiBpbGw9Im5vbmUiIHN0cm9rZT0idXJsKCNncmFkMSkiIHN0cm9rZS13aWR0aD0iNCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPC9nPgogIDxjaXJjbGUgY3g9IjE0MCIgY3k9IjgwIiByPSIxOCIgZmlsbD0idXJsKCNncmFkMSkiLz4KPC9zdmc+" alt="Ilustrasi Alkitab terbuka memancarkan cahaya sebagai sumber kebenaran" title="Alkitab Terbuka">
+        </section>
+
+        <section id="hambatan-mencari-tuhan">
+            <h2>Hambatan dalam Mencari Tuhan</h2>
+            <p>Meskipun undangan untuk mencari Tuhan begitu jelas dan janji-Nya begitu besar, banyak dari kita masih bergumul untuk menanggapi panggilan ini. Ada berbagai hambatan yang seringkali menghalangi kita untuk sungguh-sungguh mencari Tuhan selama Ia berkenan ditemui.</p>
+            <h3>1. Penundaan (Prokrastinasi)</h3>
+            <p>Ini mungkin hambatan terbesar. Kita sering berpikir, "Nanti saja," atau "Besok saja ada waktu." Kita menunda untuk bertobat, menunda untuk berdoa, menunda untuk membaca Firman. Kita mengira waktu kita tidak terbatas, padahal hidup ini singkat dan tidak pasti. Setiap detik yang berlalu adalah kesempatan yang tidak akan pernah kembali. Penundaan adalah pencuri waktu dan kesempatan kita untuk bersekutu dengan Tuhan.</p>
+            <h3>2. Kesibukan dan Distraksi Duniawi</h3>
+            <p>Dunia modern dipenuhi dengan kesibukan yang tiada henti dan distraksi yang tak terhitung jumlahnya—pekerjaan, media sosial, hiburan, hobi, dan banyak lagi. Kita seringkali merasa tidak punya waktu untuk Tuhan karena jadwal kita yang padat. Namun, seringkali ini bukan masalah kekurangan waktu, melainkan masalah prioritas. Jika mencari Tuhan adalah prioritas utama kita, kita akan menemukan waktu untuk itu.</p>
+            <p>Lukas 10:41-42 mengisahkan Martha yang sibuk dengan banyak pelayanan, sementara Maria memilih bagian yang terbaik—duduk di kaki Yesus dan mendengarkan-Nya. Yesus menegur Martha dengan lembut, "Martha, Martha, engkau kuatir dan menyusahkan diri dengan banyak perkara, tetapi satu saja yang perlu: Maria telah memilih bagian yang terbaik, yang tidak akan diambil dari padanya." Kesibukan yang salah arah dapat merampas kesempatan kita untuk dekat dengan Tuhan.</p>
+            <h3>3. Kesombongan dan Harga Diri</h3>
+            <p>Ada saatnya kita merasa cukup baik, tidak membutuhkan Tuhan. Kita mengandalkan kekuatan, kecerdasan, atau sumber daya kita sendiri. Kesombongan menghalangi kita untuk mengakui keterbatasan dan dosa kita, sehingga kita tidak merasa perlu untuk mencari pengampunan atau bimbingan dari Tuhan. Yesus berkata, "Bukan orang sehat yang memerlukan tabib, tetapi orang sakit." (Markus 2:17). Hanya mereka yang mengakui kebutuhan mereka akan Tuhan yang akan mencari dan menemukan-Nya.</p>
+            <h3>4. Keraguan dan Ketidakpercayaan</h3>
+            <p>Beberapa orang mungkin meragukan keberadaan Tuhan, atau meragukan bahwa Dia peduli, atau meragukan bahwa Dia bisa mengampuni dosa-dosa mereka. Keraguan ini bisa menjadi tembok tebal yang menghalangi mereka untuk melangkah maju dalam iman. Namun, Alkitab berulang kali menekankan kesetiaan Tuhan dan kesediaan-Nya untuk menyambut semua yang datang kepada-Nya dengan hati yang tulus.</p>
+            <h3>5. Dosa yang Disayangi</h3>
+            <p>Kadang-kadang, kita tidak mencari Tuhan karena kita tidak ingin meninggalkan dosa tertentu yang kita "sayangi". Kita tahu bahwa jika kita sungguh-sungguh mendekat kepada Tuhan, kita harus melepaskan kebiasaan buruk, hubungan yang tidak sehat, atau keinginan-keinginan yang bertentangan dengan kehendak-Nya. Ketidakmauan untuk berkorban ini menjadi penghalang yang besar.</p>
+            <p>Yesus berkata, "Setiap orang yang berbuat dosa, adalah hamba dosa." (Yohanes 8:34). Dosa dapat memperbudak kita dan menghalangi kita untuk mengalami kebebasan sejati dalam Kristus. Untuk mencari Tuhan dengan sungguh-sungguh, kita harus bersedia untuk melepaskan belenggu dosa.</p>
+            <h3>6. Kurangnya Pemahaman tentang Karakter Tuhan</h3>
+            <p>Beberapa orang mungkin melihat Tuhan sebagai hakim yang kejam atau pribadi yang jauh, bukan sebagai Bapa yang penuh kasih dan rindu akan hubungan. Ketakutan atau kesalahpahaman tentang karakter-Nya dapat mencegah mereka untuk mendekat. Namun, Firman Tuhan berulang kali mengungkapkan Dia sebagai Allah yang pengasih, penyayang, panjang sabar, dan berlimpah kasih setia (Mazmur 103:8).</p>
+        </section>
+
+        <section id="langkah-praktis">
+            <h2>Langkah-langkah Praktis dalam Mencari Tuhan</h2>
+            <p>Setelah memahami urgensi dan pentingnya mencari Tuhan, serta hambatan-hambatan yang mungkin muncul, pertanyaan selanjutnya adalah: Bagaimana kita secara praktis mencari Tuhan dalam kehidupan sehari-hari?</p>
+            <h3>1. Prioritaskan Waktu Pribadi dengan Tuhan (Doa dan Firman)</h3>
+            <p>Ini adalah fondasi dari setiap pencarian spiritual yang sehat. Seperti hubungan manusiawi yang membutuhkan komunikasi, hubungan kita dengan Tuhan juga membutuhkan waktu yang berkualitas. Sisihkan waktu setiap hari—bahkan jika hanya 15-30 menit—untuk membaca Alkitab dan berdoa.</p>
+            <ul>
+                <li><strong>Membaca Firman:</strong> Firman Tuhan adalah pelita bagi kaki kita dan terang bagi jalan kita (Mazmur 119:105). Melalui Firman-Nya, Tuhan berbicara kepada kita, menyatakan kehendak-Nya, dan memberikan hikmat. Jangan hanya membaca, tetapi merenungkan apa yang Anda baca, biarkan Roh Kudus berbicara kepada hati Anda.</li>
+                <li><strong>Doa yang Konsisten:</strong> Doa adalah komunikasi dua arah dengan Tuhan. Ini bukan hanya daftar permintaan, tetapi juga waktu untuk menyembah, bersyukur, mengakui dosa, dan mendengarkan. Jadikan doa sebagai kebiasaan yang tidak terpisahkan dari hidup Anda, berbicara kepada Tuhan tentang segala sesuatu, baik yang besar maupun yang kecil.</li>
+            </ul>
+            <p>Matius 6:33 mengingatkan kita, "Carilah dahulu Kerajaan Allah dan kebenaran-Nya, maka semuanya itu akan ditambahkan kepadamu." Ketika kita memprioritaskan Tuhan, Dia akan menata ulang sisa hidup kita.</p>
+            <h3>2. Hidup dalam Pertobatan yang Berkelanjutan</h3>
+            <p>Mencari Tuhan berarti terus-menerus membiarkan Roh Kudus menguji hati kita dan menunjukkan area mana yang perlu diselaraskan dengan kehendak-Nya. Pertobatan bukanlah peristiwa satu kali, melainkan proses seumur hidup. Setiap kali kita menyadari dosa atau kekurangan, kita harus segera mengakuinya dan berbalik dari jalan itu. 1 Yohanes 1:9 menegaskan, "Jika kita mengaku dosa kita, maka Ia adalah setia dan adil, sehingga Ia akan mengampuni segala dosa kita dan menyucikan kita dari segala kejahatan."</p>
+            <h3>3. Bergabung dalam Komunitas Iman</h3>
+            <p>Kita tidak dirancang untuk berjalan dalam perjalanan iman sendirian. Bergabung dalam persekutuan orang percaya, seperti gereja atau kelompok sel, sangat penting. Dalam komunitas, kita menerima dukungan, dorongan, teguran kasih, dan pembelajaran bersama. Ibrani 10:24-25 mendorong kita untuk "saling memperhatikan supaya kita saling mendorong dalam kasih dan dalam pekerjaan baik. Janganlah kita menjauhkan diri dari pertemuan-pertemuan ibadah kita, seperti dibiasakan oleh beberapa orang, tetapi marilah kita saling menasihati, dan semakin giat melakukannya menjelang hari Tuhan tiba."</p>
+            <h3>4. Menerapkan Firman dalam Kehidupan Sehari-hari</h3>
+            <p>Mencari Tuhan tidak hanya terjadi di ruang doa atau gereja, tetapi dalam setiap aspek kehidupan kita. Bagaimana kita memperlakukan keluarga, teman, rekan kerja? Bagaimana kita menjalankan pekerjaan kita? Bagaimana kita mengelola keuangan kita? Yakobus 1:22 berkata, "Tetapi hendaklah kamu menjadi pelaku firman dan bukan hanya pendengar saja; sebab jika tidak demikian kamu menipu diri sendiri." Ketika kita mempraktikkan ajaran-Nya, kita menunjukkan bahwa kita benar-benar mencari dan mengasihi Dia.</p>
+            <h3>5. Melayani Orang Lain</h3>
+            <p>Melayani sesama adalah salah satu cara paling nyata untuk mencari Tuhan. Yesus sendiri mengajarkan bahwa apa yang kita lakukan kepada salah satu saudara kita yang paling hina, kita lakukan untuk Dia (Matius 25:40). Ketika kita melayani dengan kasih dan kerendahan hati, kita meniru karakter Kristus dan mengalami hadirat-Nya dalam tindakan kita.</p>
+            <h3>6. Berserah dan Percaya Sepenuhnya</h3>
+            <p>Pencarian Tuhan yang sejati melibatkan penyerahan diri total dan kepercayaan penuh pada kedaulatan dan kebaikan-Nya. Ini berarti melepaskan kendali dan membiarkan Dia memimpin hidup kita, bahkan ketika jalan di depan tidak jelas. Percayalah bahwa Dia memiliki rencana terbaik untuk Anda dan Dia akan setia untuk menyelesaikannya.</p>
+            <p>Yeremia 29:13 adalah janji yang indah: "Apabila kamu mencari Aku, kamu akan menemukan Aku; apabila kamu menanyakan Aku dengan segenap hatimu." Janji ini tidak datang dengan syarat yang rumit, hanya dengan hati yang tulus dan segenap keberadaan kita. Tuhan rindu untuk ditemukan oleh kita lebih dari kita rindu untuk menemukan-Nya.</p>
+        </section>
+
+        <section id="manfaat-mencari-tuhan">
+            <h2>Manfaat Luar Biasa dari Mencari Tuhan</h2>
+            <p>Mencari Tuhan bukan hanya sebuah kewajiban, melainkan sebuah investasi yang paling menguntungkan dalam hidup kita. Ada begitu banyak berkat dan manfaat yang menanti mereka yang sungguh-sungguh mencari Dia:</p>
+            <h3>1. Kedamaian dan Keamanan Sejati</h3>
+            <p>Dalam dunia yang penuh kekacauan dan ketidakpastian, banyak orang mencari kedamaian dalam hal-hal fana yang cepat berlalu. Namun, damai sejahtera sejati hanya ditemukan dalam Tuhan. Filipi 4:6-7 mengatakan, "Janganlah hendaknya kamu kuatir tentang apa pun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus." Kedamaian ini adalah anugerah yang mengikat hati dan pikiran kita di tengah badai kehidupan.</p>
+            <h3>2. Kebijaksanaan dan Petunjuk Ilahi</h3>
+            <p>Ketika kita mencari Tuhan, kita mencari sumber hikmat yang tak terbatas. Dia adalah Penasihat Agung kita. Yakobus 1:5 menjanjikan, "Apabila di antara kamu ada yang kekurangan hikmat, hendaklah ia memintakannya kepada Allah, yang memberikan kepada semua orang dengan murah hati dan dengan tidak membangkit-bangkit, maka hal itu akan diberikan kepadanya." Dalam pencarian-Nya, kita menemukan arah yang jelas untuk hidup kita, solusi untuk masalah kita, dan pengertian yang mendalam tentang kebenaran.</p>
+            <h3>3. Sukacita yang Kekal</h3>
+            <p>Sukacita duniawi bersifat sementara dan bergantung pada keadaan. Namun, sukacita yang berasal dari Tuhan adalah sukacita yang melampaui keadaan, yang tetap ada bahkan di tengah penderitaan. Mazmur 16:11 menyatakan, "Engkau memberitahukan kepadaku jalan kehidupan; di hadapan-Mu ada sukacita berlimpah-limpah, di tangan kanan-Mu ada nikmat senantiasa." Mencari Tuhan adalah menemukan sumber sukacita abadi yang tidak dapat diambil oleh siapa pun.</p>
+            <h3>4. Pemulihan dan Kebebasan dari Dosa</h3>
+            <p>Seperti yang kita bahas sebelumnya, Tuhan adalah pemberi pengampunan yang limpah. Bagi mereka yang mencari-Nya dengan hati yang bertobat, Dia menawarkan pemulihan total dari dosa dan rasa bersalah. Dia membebaskan kita dari belenggu dosa dan memberikan kita hidup yang baru dalam Kristus. Roma 6:23 mengingatkan kita, "Sebab upah dosa ialah maut; tetapi karunia Allah ialah hidup yang kekal dalam Kristus Yesus, Tuhan kita." Dalam mencari-Nya, kita menemukan kebebasan sejati.</p>
+            <h3>5. Tujuan dan Makna Hidup</h3>
+            <p>Banyak orang merasa hampa dan tidak memiliki tujuan dalam hidup. Mereka mencari makna dalam kekayaan, ketenaran, atau kekuasaan, tetapi tetap merasa kosong. Hanya dalam Tuhan kita menemukan tujuan sejati keberadaan kita. Dia menciptakan kita dengan suatu maksud, dan dalam mencari-Nya, kita menemukan panggilan ilahi kita. "Kita adalah buatan Allah, diciptakan dalam Kristus Yesus untuk melakukan pekerjaan baik, yang dipersiapkan Allah sebelumnya. Ia mau, supaya kita hidup di dalamnya." (Efesus 2:10).</p>
+            <h3>6. Hubungan yang Intim dengan Pencipta</h3>
+            <p>Pada akhirnya, manfaat terbesar dari mencari Tuhan adalah hubungan yang intim dan pribadi dengan-Nya. Ini adalah puncak dari segalanya. Lebih dari sekadar berkat materi atau solusi masalah, adalah kehormatan untuk mengenal Tuhan secara pribadi, untuk bersekutu dengan-Nya setiap hari, dan untuk mengalami kasih-Nya yang tak bersyarat. Yesus sendiri berdoa agar kita mengenal Bapa dan Anak (Yohanes 17:3). Ini adalah inti dari hidup yang kekal.</p>
+            <p>Dalam mencari Tuhan, kita tidak hanya menemukan apa yang kita butuhkan, tetapi kita menemukan Diri-Nya sendiri—yang jauh lebih berharga dari segalanya.</p>
+        </section>
+
+        <section id="panggilan-akhir">
+            <h2>Panggilan Terakhir: Jangan Tunda Lagi!</h2>
+            <p>Saudara-saudari yang kekasih, pesan Yesaya 55:6-7 adalah panggilan yang jelas dan mendesak bagi kita semua, baik yang sudah lama mengenal Tuhan maupun yang baru pertama kali mendengar tentang Dia. Ini adalah waktu <em>kairos</em>, momen yang penuh anugerah, yang tidak boleh kita sia-siakan.</p>
+            <h3>1. Bagi yang Belum Mengenal Kristus</h3>
+            <p>Jika Anda belum pernah secara pribadi menerima Yesus Kristus sebagai Tuhan dan Juruselamat Anda, inilah waktunya. Jangan tunda lagi. Roh Kudus mungkin sedang berbicara kepada hati Anda saat ini, menarik Anda kepada kebenaran. Ini adalah "waktu perkenanan" bagi Anda. Datanglah kepada-Nya dengan hati yang bertobat, akui dosa-dosa Anda, dan terimalah pengampunan dan hidup baru yang Dia tawarkan melalui Yesus. Dia akan mengampuni Anda dengan limpah dan menyambut Anda ke dalam keluarga-Nya.</p>
+            <h3>2. Bagi yang Telah Percaya</h3>
+            <p>Jika Anda adalah orang percaya, khotbah ini adalah pengingat untuk memperdalam pencarian Anda akan Tuhan. Apakah Anda mencari-Nya dengan segenap hati, ataukah pencarian Anda telah mendingin? Apakah Anda telah membiarkan kesibukan duniawi atau dosa menyelinap masuk dan menghalangi Anda dari kedekatan dengan Dia? Mari kita bangkit kembali, tinggalkan "jalan" dan "rancangan" yang tidak berkenan kepada-Nya, dan kembali kepada Dia dengan semangat yang baru.</p>
+            <p>Jangan biarkan waktu berlalu tanpa Anda sungguh-sungguh mencari wajah Tuhan. Jangan biarkan hati Anda menjadi keras karena penundaan atau penolakan. Waktu adalah anugerah yang terbatas, dan setiap hari adalah kesempatan baru untuk dekat dengan Tuhan.</p>
+            <h3>3. Hidup dalam Urgensi Injil</h3>
+            <p>Pesan ini juga memanggil kita untuk hidup dengan urgensi Injil. Bukan hanya kita yang perlu mencari Tuhan, tetapi juga orang-orang di sekitar kita. Maukah kita menjadi alat di tangan Tuhan untuk memberitakan kabar baik ini, agar orang lain juga dapat mencari Tuhan "selama Ia berkenan ditemui"? Bagikan harapan ini kepada mereka yang belum mendengar, doronglah mereka untuk tidak menunda lagi.</p>
+            <p>Marilah kita renungkan Mazmur 27:8: "Hatiku berkata kepadamu: 'Carilah wajah-Ku!'; maka wajah-Mu, ya TUHAN, kucari." Biarlah ini menjadi doa dan seruan hati kita setiap hari. Semoga kita semua ditemukan setia dalam pencarian kita akan Dia, hidup dalam kedekatan-Nya, dan bersaksi tentang kasih dan anugerah-Nya yang tak terbatas.</p>
+            <p>Ingatlah, Tuhan rindu untuk ditemui. Dia rindu untuk mendekat. Pertanyaannya adalah, apakah kita rindu untuk mencari-Nya dan merespons panggilan-Nya sekarang?</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Artikel Khotbah: Carilah Tuhan Selama Ia Berkenan Ditemui</p>
+        <p>Segala kemuliaan bagi Tuhan yang Maha Esa.</p>
+    </footer>
+
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/khotbah-tentang-melayani">Khotbah Tentang Melayani</a></li>
+<li><a href="/renungan-pagi-singkat">Renungan Pagi Singkat</a></li>
+<li><a href="/khotbah-penghiburan-di-rumah-duka">Khotbah Penghiburan Di Rumah Duka</a></li>
+<li><a href="/contoh-khotbah-ekspositori">Contoh Khotbah Ekspositori</a></li>
+<li><a href="/khotbah-yesaya-43-1-7">Khotbah Yesaya 43 1 7</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

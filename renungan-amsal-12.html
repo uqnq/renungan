@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renungan Amsal 12: Hikmat untuk Kehidupan yang Bermakna</title>
+    <meta name="description" content="Eksplorasi mendalam Amsal 12, panduan hikmat untuk integritas, kebenaran, dan kesejahteraan hidup.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Palet Warna Sejuk Cerah */
+        :root {
+            --bg-body: hsl(200, 100%, 98%); /* Sangat terang, biru muda */
+            --text-primary: hsl(210, 10%, 20%); /* Abu-abu gelap kebiruan */
+            --text-secondary: hsl(210, 5%, 40%); /* Abu-abu sedang */
+            --heading-color: hsl(210, 30%, 30%); /* Lebih gelap dari primary, menonjol */
+            --accent-color: hsl(200, 70%, 50%); /* Biru sedang, cerah */
+            --accent-light: hsl(200, 70%, 85%); /* Biru sangat muda */
+            --border-color: hsl(200, 30%, 90%); /* Garis pemisah yang lembut */
+            --card-bg: #ffffff; /* Putih bersih untuk elemen utama */
+            --blockquote-border: hsl(200, 50%, 85%); /* Biru muda untuk kutipan */
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', 'Open Sans', 'Lato', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            line-height: 1.7;
+            color: var(--text-primary);
+            background-color: var(--bg-body);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex-grow: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        @media (min-width: 768px) {
+            main {
+                padding: 3rem;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--heading-color);
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--accent-color);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2.5rem;
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1.8rem;
+            color: var(--accent-color);
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--heading-color);
+        }
+
+        blockquote {
+            background-color: var(--bg-body);
+            border-left: 5px solid var(--blockquote-border);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: var(--text-secondary);
+            border-radius: 0 8px 8px 0;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding: 1.5rem;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .svg-icon {
+            display: block;
+            margin: 2rem auto;
+            max-width: 150px;
+            height: auto;
+            color: var(--accent-color); /* Untuk mengisi warna SVG */
+        }
+
+        .svg-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+        .svg-icon path, .svg-icon circle, .svg-icon rect {
+            fill: currentColor;
+        }
+        .svg-icon.outline path, .svg-icon.outline circle, .svg-icon.outline rect {
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Untuk membuat daftar isi (optional, tapi membantu navigasi) */
+        .table-of-contents {
+            background-color: var(--bg-body);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .table-of-contents h2 {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-size: 1.5rem;
+        }
+
+        .table-of-contents ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .table-of-contents li {
+            margin-bottom: 0.5rem;
+        }
+
+        .table-of-contents a {
+            color: var(--text-primary);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .table-of-contents a:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Renungan Amsal 12: Hikmat untuk Kehidupan yang Bermakna</h1>
+            <p style="text-align: center; font-style: italic; color: var(--text-secondary); margin-bottom: 2.5rem;">"Jalan orang fasik menyesatkan mereka sendiri, tetapi jalan orang benar adalah kehidupan." (Amsal 12:28)</p>
+        </header>
+
+        <section class="table-of-contents">
+            <h2>Daftar Isi</h2>
+            <ul>
+                <li><a href="#pendahuluan">Pendahuluan: Membuka Gerbang Hikmat Amsal 12</a></li>
+                <li><a href="#kedisiplinan-dan-pengetahuan">Amsal 12:1 - Kedisiplinan dan Pengetahuan</a></li>
+                <li><a href="#kebenaran-kejahatan-dan-stabilitas">Amsal 12:2-3 - Kebenaran, Kejahatan, dan Stabilitas</a></li>
+                <li><a href="#peran-seorang-istri-dalam-rumah-tangga">Amsal 12:4 - Peran Seorang Istri dalam Rumah Tangga</a></li>
+                <li><a href="#niat-dan-perencanaan">Amsal 12:5-7 - Niat dan Perencanaan</a></li>
+                <li><a href="#pengakuan-dan-penghinaan">Amsal 12:8 - Pengakuan dan Penghinaan</a></li>
+                <li><a href="#kerendahan-hati-vs-kesombongan">Amsal 12:9 - Kerendahan Hati vs. Kesombongan</a></li>
+                <li><a href="#keadilan-terhadap-binatang">Amsal 12:10 - Keadilan Terhadap Binatang</a></li>
+                <li><a href="#kerja-keras-vs-kesia-siaan">Amsal 12:11 - Kerja Keras vs. Kesia-siaan</a></li>
+                <li><a href="#akar-kebaikan-dan-godaan-orang-jahat">Amsal 12:12 - Akar Kebaikan dan Godaan Orang Jahat</a></li>
+                <li><a href="#kuasa-lidah-dan-buah-perbuatan">Amsal 12:13-14 - Kuasa Lidah dan Buah Perbuatan</a></li>
+                <li><a href="#kebijaksanaan-dan-kebodohan">Amsal 12:15 - Kebijaksanaan dan Kebodohan</a></li>
+                <li><a href="#kemarahan-dan-kearifan">Amsal 12:16 - Kemarahan dan Kearifan</a></li>
+                <li><a href="#kesaksian-dan-kebohongan">Amsal 12:17-19 - Kesaksian dan Kebohongan</a></li>
+                <li><a href="#peran-kejujuran-dalam-kedamaian">Amsal 12:20 - Peran Kejujuran dalam Kedamaian</a></li>
+                <li><a href="#keamanan-orang-benar-dan-kebencian-tuhan">Amsal 12:21-22 - Keamanan Orang Benar dan Kebencian Tuhan</a></li>
+                <li><a href="#hikmat-dalam-menyimpan-pengetahuan">Amsal 12:23 - Hikmat dalam Menyimpan Pengetahuan</a></li>
+                <li><a href="#ketekunan-dan-kemalasan">Amsal 12:24 - Ketekunan dan Kemalasan</a></li>
+                <li><a href="#kekhawatiran-dan-kata-kata-penghiburan">Amsal 12:25 - Kekhawatiran dan Kata-kata Penghiburan</a></li>
+                <li><a href="#pembimbing-dan-penyesat">Amsal 12:26 - Pembimbing dan Penyesat</a></li>
+                <li><a href="#buah-kemalasan">Amsal 12:27 - Buah Kemalasan</a></li>
+                <li><a href="#jalan-kebenaran-adalah-kehidupan">Amsal 12:28 - Jalan Kebenaran Adalah Kehidupan</a></li>
+                <li><a href="#kesimpulan">Kesimpulan: Mengintegrasikan Hikmat Amsal 12</a></li>
+            </ul>
+        </section>
+
+        <article>
+            <section id="pendahuluan">
+                <h2>Pendahuluan: Membuka Gerbang Hikmat Amsal 12</h2>
+                <p>Kitab Amsal adalah kumpulan kebijaksanaan kuno yang tetap relevan hingga saat ini, menawarkan panduan praktis untuk menjalani kehidupan yang benar, bermakna, dan penuh sukacita. Di antara banyak pasal yang kaya akan pelajaran, Amsal pasal 12 menonjol sebagai mosaik nasihat yang mencakup berbagai aspek kehidupan manusia: dari integritas pribadi, hubungan interpersonal, etos kerja, hingga dampak perkataan. Pasal ini secara tajam membandingkan karakteristik dan konsekuensi dari kehidupan yang bijaksana versus kehidupan yang bodoh, kebenaran versus kebohongan, ketekunan versus kemalasan, serta kasih sayang versus kekejaman.</p>
+                <p>Dalam setiap ayatnya, Amsal 12 seperti cermin yang memantulkan keadaan hati dan motivasi kita. Ia tidak hanya mendefinisikan apa itu hikmat, tetapi juga menunjukkan bagaimana hikmat itu bermanifestasi dalam tindakan dan perkataan sehari-hari. Renungan atas pasal ini mengundang kita untuk melakukan introspeksi mendalam, menanyakan pada diri sendiri, "Apakah jalan yang saya tempuh adalah jalan orang benar yang membawa kehidupan, atau jalan orang fasik yang menyesatkan?"</p>
+                <p>Kita hidup di era di mana nilai-nilai sering kali kabur, di mana kebenaran relatif, dan integritas diuji oleh berbagai godaan. Oleh karena itu, kembali kepada sumber hikmat abadi seperti Amsal 12 menjadi sangat krusial. Pasal ini menawarkan kompas moral yang tak tergoyahkan, peta jalan menuju kesejahteraan sejati, yang tidak hanya berlaku di tingkat individu tetapi juga dalam membangun masyarakat yang lebih adil dan harmonis. Mari kita selami setiap ayatnya, menggali mutiara hikmat yang terkandung di dalamnya, dan membiarkan Firman ini membentuk karakter serta membimbing langkah-langkah kita.</p>
+                <div class="svg-icon">
+                    <svg role="img" aria-labelledby="title-hikmat desc-hikmat" viewBox="0 0 24 24">
+                        <title id="title-hikmat">Simbol Hikmat dan Pengetahuan</title>
+                        <desc id="desc-hikmat">Sebuah kepala orang dengan ikon roda gigi atau bola lampu di dalamnya, melambangkan pemikiran dan ide.</desc>
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                        <circle cx="12" cy="12" r="3" fill="var(--accent-color)"/>
+                        <path d="M12.5 7.5a.5.5 0 0 1-1 0V7a.5.5 0 0 1 1 0v.5zm0 9a.5.5 0 0 1-1 0v-.5a.5.5 0 0 1 1 0v.5zm4.5-4.5a.5.5 0 0 1 0 1h-.5a.5.5 0 0 1 0-1h.5zm-9 0a.5.5 0 0 1 0 1h-.5a.5.5 0 0 1 0-1h.5z"/>
+                        <path class="outline" d="M12 1L12 2M12 22L12 23M1 12L2 12M22 12L23 12M5 5L4 4M19 5L20 4M5 19L4 20M19 19L20 20" stroke="var(--accent-color)"/>
+                    </svg>
+                </div>
+            </section>
+
+            <section id="kedisiplinan-dan-pengetahuan">
+                <h2>Amsal 12:1 - Kedisiplinan dan Pengetahuan</h2>
+                <blockquote>
+                    <p>Siapa mencintai didikan, mencintai pengetahuan; tetapi siapa membenci teguran, adalah dungu.</p>
+                </blockquote>
+                <p>Ayat pertama ini langsung menyajikan sebuah kebenaran fundamental: hubungan erat antara didikan, pengetahuan, dan karakter seseorang. Mencintai didikan bukan berarti semata-mata menyukai proses belajar di sekolah atau institusi formal. Lebih dari itu, ia merujuk pada kesediaan untuk menerima koreksi, teguran, dan bimbingan, bahkan ketika itu terasa tidak nyaman atau menyakitkan. Orang yang mencintai didikan adalah orang yang memiliki hati yang rendah hati dan terbuka untuk perbaikan, menyadari bahwa pertumbuhan datang dari pengakuan akan kekurangan dan kemauan untuk berubah.</p>
+                <p>Orang yang demikian, pada gilirannya, akan mencintai pengetahuan. Pengetahuan di sini tidak hanya tentang fakta dan angka, tetapi juga pemahaman yang mendalam tentang prinsip-prinsip kehidupan, moralitas, dan hikmat ilahi. Cinta akan didikan memicu rasa haus akan kebenaran dan pemahaman, mendorong seseorang untuk terus belajar dan bertumbuh. Mereka melihat setiap teguran bukan sebagai serangan pribadi, melainkan sebagai kesempatan berharga untuk mengasah diri, memperbaiki kesalahan, dan memperluas cakrawala pemahaman mereka.</p>
+                <p>Sebaliknya, Amsal dengan tegas menyatakan bahwa siapa yang membenci teguran adalah dungu. Kata "dungu" (kadang diterjemahkan sebagai "bodoh") dalam Amsal tidak hanya berarti kurang cerdas secara intelektual, tetapi lebih kepada kebodohan moral dan spiritual. Orang dungu adalah mereka yang sombong, keras kepala, dan menolak untuk diajari. Mereka cenderung mengulang kesalahan yang sama karena penolakan mereka untuk mendengar kritik atau menerima bimbingan. Kebencian terhadap teguran adalah penghalang utama bagi pertumbuhan pribadi dan kolektif, karena ia menutup pintu menuju kebijaksanaan dan kematangan.</p>
+                <p>Dalam kehidupan modern, prinsip ini sangat relevan. Di tempat kerja, mereka yang mau menerima umpan balik konstruktif cenderung lebih cepat berkembang dan dipromosikan. Dalam hubungan pribadi, kemampuan untuk mengakui kesalahan dan belajar dari konflik adalah kunci untuk kedekatan yang lebih dalam. Bahkan dalam perjalanan spiritual, kerendahan hati untuk menerima ajaran dan teguran dari Firman Tuhan atau sesama orang percaya adalah esensial untuk pertumbuhan iman. Teguran, meskipun seringkali pahit di awal, adalah obat yang menyembuhkan jiwa dan mempertajam pikiran. Oleh karena itu, Amsal 12:1 mengajak kita untuk menumbuhkan sikap hati yang mencintai didikan, karena di sanalah terletak kunci menuju pengetahuan sejati dan kehidupan yang bijaksana.</p>
+            </section>
+
+            <section id="kebenaran-kejahatan-dan-stabilitas">
+                <h2>Amsal 12:2-3 - Kebenaran, Kejahatan, dan Stabilitas</h2>
+                <blockquote>
+                    <p>Orang baik memperoleh kemurahan TUHAN, tetapi orang licik dihukum-Nya.</p>
+                    <p>Orang tidak akan teguh karena kefasikan, tetapi akar orang benar tidak akan goyang.</p>
+                </blockquote>
+                <p>Dua ayat ini membahas kontras mendasar antara orang baik dan orang licik, serta antara kefasikan dan kebenaran, menyoroti konsekuensi ilahi dan stabilitas yang dihasilkan. Amsal 12:2 menyatakan bahwa orang baik akan memperoleh kemurahan Tuhan, sementara orang licik akan dihukum. Kata "baik" di sini bukan sekadar memiliki niat baik, tetapi secara aktif hidup dalam kebenaran, keadilan, dan integritas. Orang yang demikian hidup selaras dengan prinsip-prinsip Tuhan, dan karenanya, mereka menerima anugerah dan kebaikan dari-Nya. Kemurahan Tuhan bisa berarti perlindungan, berkat, atau bahkan pengampunan.</p>
+                <p>Sebaliknya, "orang licik" adalah mereka yang menggunakan tipu daya, kecurangan, dan kebohongan untuk mencapai tujuan mereka. Mereka mungkin terlihat sukses di permukaan, namun Amsal menegaskan bahwa mereka tidak akan luput dari hukuman Tuhan. Hukuman ini bisa datang dalam berbagai bentuk: kegagalan rencana mereka, reputasi yang rusak, atau konsekuensi moral dan spiritual yang lebih dalam. Pesan intinya adalah bahwa Tuhan melihat hati dan tindakan, dan keadilan-Nya pada akhirnya akan ditegakkan.</p>
+                <p>Amsal 12:3 melanjutkan tema ini dengan metafora yang kuat: "Orang tidak akan teguh karena kefasikan, tetapi akar orang benar tidak akan goyang." Kefasikan, atau kejahatan, digambarkan sebagai fondasi yang rapuh. Orang yang membangun hidupnya di atas ketidakbenaran, ketidakjujuran, dan eksploitasi orang lain, pada akhirnya akan mendapati bahwa bangunan hidup mereka tidak memiliki dasar yang kokoh. Ketika badai kehidupan datang, atau ketika kebenaran akhirnya terungkap, mereka akan runtuh. Kekayaan yang diperoleh secara tidak jujur, kekuasaan yang dibangun di atas penindasan, atau hubungan yang didasari kebohongan—semuanya ini tidak akan bertahan lama.</p>
+                <p>Di sisi lain, "akar orang benar tidak akan goyang." Ini adalah gambaran yang indah tentang kestabilan dan ketahanan. Orang benar adalah seperti pohon yang berakar dalam pada sumber air kehidupan, yaitu Tuhan dan prinsip-prinsip-Nya. Meskipun angin kencang atau kekeringan melanda, mereka tetap teguh. Kestabilan ini bukan berarti mereka tidak pernah menghadapi kesulitan atau tantangan, melainkan bahwa fondasi moral dan spiritual mereka memungkinkan mereka untuk bertahan dan bahkan bertumbuh di tengah badai. Integritas, keadilan, dan kebenaran adalah akar yang memberi kekuatan dan ketahanan, memastikan bahwa kehidupan mereka tidak hanya bertahan, tetapi juga berbuah dan memberkati. Ayat ini mengingatkan kita bahwa stabilitas sejati tidak ditemukan dalam harta benda atau kekuasaan, melainkan dalam karakter yang kokoh dan berlandaskan kebenaran.</p>
+            </section>
+
+            <section id="peran-seorang-istri-dalam-rumah-tangga">
+                <h2>Amsal 12:4 - Peran Seorang Istri dalam Rumah Tangga</h2>
+                <blockquote>
+                    <p>Isteri yang cakap adalah mahkota suaminya, tetapi yang membuat malu adalah seperti penyakit yang merongrong tulang.</p>
+                </blockquote>
+                <p>Amsal 12:4 menyajikan gambaran yang sangat kontras mengenai dampak seorang istri dalam kehidupan suaminya dan rumah tangganya. Ayat ini menggunakan metafora yang kuat untuk menggambarkan dua jenis istri: "isteri yang cakap" dan istri yang "membuat malu."</p>
+                <p>Seorang "isteri yang cakap" (sering juga diterjemahkan sebagai "isteri yang berbudi baik," "isteri yang bijaksana," atau "isteri yang saleh") digambarkan sebagai "mahkota suaminya." Mahkota adalah simbol kehormatan, martabat, kekuasaan, dan keindahan. Artinya, seorang istri yang cakap bukan hanya menjadi kebanggaan suaminya, tetapi juga meningkatkan status, reputasi, dan martabat suaminya di mata masyarakat. Kehadirannya memancarkan cahaya positif pada suaminya. Dia adalah penopang, penasihat, dan mitra yang membangun. Kecakapannya mungkin meliputi kebijaksanaan dalam mengelola rumah tangga, kesetiaan, kebaikan hati, semangat kerja keras, dan kemampuan untuk membimbing anak-anak. Dia tidak merongrong suaminya, melainkan membangunnya, memberikan dukungan moral dan emosional yang tak ternilai, serta menciptakan lingkungan rumah yang damai dan produktif. Kehormatan suaminya tidak hanya datang dari prestasinya sendiri, tetapi juga dari kualitas dan karakter istrinya, yang menjadi refleksi positif dari kehidupan pernikahan mereka.</p>
+                <p>Sebaliknya, istri yang "membuat malu" digambarkan "seperti penyakit yang merongrong tulang." Ini adalah gambaran yang sangat mengerikan. Penyakit yang merongrong tulang adalah penyakit yang perlahan-lahan mengikis kekuatan vital seseorang, menyebabkan rasa sakit yang mendalam dan melemahkan seluruh tubuh dari dalam. Istri yang membuat malu adalah kebalikan dari mahkota; dia adalah sumber kehinaan, aib, dan penderitaan. Perilakunya mungkin melibatkan ketidaksetiaan, kemalasan, sifat boros, pertengkaran yang tak henti, gosip, atau tindakan-tindakan lain yang merusak reputasi suami dan keluarganya. Kehadirannya tidak membawa sukacita atau damai, melainkan ketegangan, kekhawatiran, dan bahkan kehancuran. Dia menguras energi, semangat, dan bahkan kesehatan suaminya, menghancurkan fondasi rumah tangga dari dalam.</p>
+                <p>Ayat ini menekankan peran krusial seorang istri dalam dinamika rumah tangga dan kehidupan suaminya. Ini adalah pengingat akan pentingnya karakter dan kebijaksanaan dalam pernikahan, baik bagi suami maupun istri. Sementara ayat ini secara spesifik menyebut istri, prinsip dasarnya berlaku secara universal: setiap pasangan memiliki dampak besar pada pasangannya, dan karakter yang saleh adalah kunci untuk membangun hubungan yang kuat, saling mendukung, dan membawa kemuliaan, bukan kehancuran. Amsal ini mendorong kita untuk memilih pasangan hidup dengan bijaksana, dan bagi mereka yang sudah menikah, untuk senantiasa berusaha menjadi "mahkota" bagi pasangan, bukan "penyakit yang merongrong tulang," dengan terus-menerus memupuk karakter yang baik dan saling membangun dalam kasih dan hormat.</p>
+            </section>
+
+            <section id="niat-dan-perencanaan">
+                <h2>Amsal 12:5-7 - Niat dan Perencanaan</h2>
+                <blockquote>
+                    <p>Rancangan orang benar adalah adil, niat orang fasik adalah penipu.</p>
+                    <p>Perkataan orang fasik mengintai darah, tetapi mulut orang jujur menyelamatkan.</p>
+                    <p>Orang fasik dijungkirbalikkan sehingga tidak ada lagi, tetapi rumah orang benar berdiri tetap.</p>
+                </blockquote>
+                <p>Ketiga ayat ini secara berkesinambungan mengkontraskan motivasi, perkataan, dan nasib akhir orang benar dan orang fasik, menekankan pentingnya niat hati yang murni dan konsekuensi dari setiap pilihan hidup. Amsal 12:5 memulai dengan mengungkap perbedaan fundamental pada tingkat pikiran dan niat: "Rancangan orang benar adalah adil, niat orang fasik adalah penipu." Rancangan atau pikiran adalah akar dari segala tindakan. Orang benar memiliki rancangan yang adil, artinya pikiran dan tujuan mereka didasarkan pada kebenaran, keadilan, dan kejujuran. Mereka merencanakan dengan integritas, tidak mencari keuntungan dengan merugikan orang lain. Motivasi mereka bersih, dan tindakan mereka mencerminkan kejujuran tersebut.</p>
+                <p>Sebaliknya, niat orang fasik adalah penipu. Mereka merencanakan dengan licik, bertujuan untuk mengeksploitasi, menipu, atau merugikan orang lain demi keuntungan pribadi. Pikiran mereka dipenuhi dengan skema-skema tidak jujur, dan tindakan mereka adalah manifestasi dari niat jahat tersebut. Ayat ini mengajarkan bahwa karakter sejati tidak hanya terletak pada apa yang kita lakukan, tetapi pada mengapa kita melakukannya. Niat hati adalah fondasi moral yang menentukan arah hidup kita.</p>
+                <p>Kemudian, Amsal 12:6 beralih ke dampak perkataan: "Perkataan orang fasik mengintai darah, tetapi mulut orang jujur menyelamatkan." Ini adalah gambaran yang kuat mengenai bahaya lidah orang fasik. Perkataan mereka tidak hanya menipu, tetapi juga destruktif dan mematikan. Mereka bisa menggunakan fitnah, kebohongan, atau tuduhan palsu untuk menghancurkan reputasi, merusak kehidupan, atau bahkan secara harfiah menyebabkan kematian seseorang. Kata-kata mereka adalah senjata yang mematikan, dirancang untuk melukai dan menghancurkan. Di sisi lain, mulut orang jujur menyelamatkan. Perkataan mereka membawa kebenaran, keadilan, dan bahkan perlindungan. Mereka berbicara untuk membela yang tertindas, memberi kesaksian yang benar, atau menasihati dengan hikmat, sehingga menyelamatkan orang dari bahaya atau ketidakadilan. Ayat ini menekankan kekuatan luar biasa dari kata-kata dan urgensi untuk menggunakannya secara bijaksana dan bertanggung jawab.</p>
+                <p>Terakhir, Amsal 12:7 menyimpulkan dengan takdir yang kontras: "Orang fasik dijungkirbalikkan sehingga tidak ada lagi, tetapi rumah orang benar berdiri tetap." Ini adalah gambaran tentang keruntuhan total bagi orang fasik. Meskipun mereka mungkin tampak makmur untuk sementara waktu, fondasi yang rapuh dari kejahatan mereka pada akhirnya akan menyebabkan kehancuran. Mereka akan dihilangkan, tanpa warisan yang langgeng. Kehidupan mereka, yang dibangun di atas kebohongan dan penipuan, akan runtuh seperti bangunan pasir. Sebaliknya, rumah orang benar berdiri tetap. "Rumah" di sini melambangkan seluruh kehidupan mereka: keluarga, reputasi, warisan, dan stabilitas pribadi. Karena fondasi mereka dibangun di atas kebenaran dan keadilan, mereka akan bertahan dari segala badai. Mereka memiliki warisan yang abadi, dan kehidupan mereka akan menjadi kesaksian bagi generasi mendatang. Ayat ini memberikan harapan dan jaminan bagi mereka yang memilih jalan kebenaran, bahwa ketekunan dalam kebaikan akan menghasilkan stabilitas dan keberlanjutan.</p>
+            </section>
+
+            <section id="pengakuan-dan-penghinaan">
+                <h2>Amsal 12:8 - Pengakuan dan Penghinaan</h2>
+                <blockquote>
+                    <p>Seseorang dipuji menurut akal budinya, tetapi orang yang serong hatinya akan dihina.</p>
+                </blockquote>
+                <p>Amsal 12:8 berbicara tentang bagaimana akal budi dan integritas hati mempengaruhi reputasi dan pandangan orang lain terhadap kita. Ayat ini secara langsung mengaitkan pujian atau penghinaan yang diterima seseorang dengan dua aspek fundamental: akal budi dan keserongan hati.</p>
+                <p>"Seseorang dipuji menurut akal budinya." Akal budi di sini mengacu pada kebijaksanaan praktis, kemampuan untuk berpikir jernih, membuat keputusan yang tepat, dan bertindak dengan wawasan. Ini bukan sekadar kecerdasan intelektual, tetapi lebih kepada kemampuan untuk menerapkan pengetahuan secara bijaksana dalam kehidupan sehari-hari. Orang yang memiliki akal budi yang baik cenderung menjadi pribadi yang bertanggung jawab, adil, dapat dipercaya, dan efektif dalam tindakan mereka. Ketika seseorang menunjukkan kebijaksanaan dalam perkataan dan perbuatannya, ketika ia menunjukkan penilaian yang baik dalam situasi sulit, ia akan mendapatkan hormat dan pujian dari lingkungannya. Pujian ini adalah pengakuan alami atas kontribusi positif yang ia berikan, baik di lingkungan keluarga, pekerjaan, maupun masyarakat luas. Akal budi adalah sumber kehormatan dan pengakuan yang tulus, karena ia mencerminkan karakter yang solid dan kapasitas untuk memimpin atau membimbing dengan baik.</p>
+                <p>Namun, kontrasnya sangat tajam: "tetapi orang yang serong hatinya akan dihina." "Serong hati" menggambarkan seseorang yang memiliki hati yang bengkok, tidak jujur, licik, atau curang. Ini adalah orang yang motivasinya tidak tulus, yang mungkin berpura-pura baik di permukaan tetapi menyimpan niat jahat di dalam hati. Mereka mungkin mencoba menipu atau memanipulasi orang lain untuk keuntungan pribadi. Meskipun mungkin untuk sementara waktu mereka bisa menyembunyikan sifat asli mereka, pada akhirnya kebenaran akan terungkap. Ketika sifat serong hati mereka terkuak, mereka akan mendapatkan penghinaan. Penghinaan ini adalah konsekuensi wajar dari hilangnya kepercayaan dan rasa hormat. Orang tidak akan menghargai atau memercayai seseorang yang terbukti memiliki karakter yang tidak jujur atau licik. Ini merusak reputasi, menghancurkan hubungan, dan mengisolasi individu tersebut dari masyarakat yang berintegritas.</p>
+                <p>Pesan dari Amsal 12:8 sangat jelas: kehormatan dan pengakuan sejati tidak dapat dipalsukan atau direkayasa. Mereka adalah hasil dari karakter yang tulus dan akal budi yang diterapkan dalam kebaikan. Sebaliknya, ketidakjujuran dan niat jahat, meskipun mungkin memberikan keuntungan jangka pendek, pada akhirnya akan membawa kehinaan. Ayat ini mendorong kita untuk mengejar bukan hanya kecerdasan, tetapi juga integritas hati, karena itulah yang akan menentukan bagaimana kita dihargai dan diingat oleh orang lain, serta oleh Tuhan.</p>
+            </section>
+
+            <section id="kerendahan-hati-vs-kesombongan">
+                <h2>Amsal 12:9 - Kerendahan Hati vs. Kesombongan</h2>
+                <blockquote>
+                    <p>Lebih baik menjadi orang kecil, tetapi mempunyai pelayan, dari pada berpura-pura menjadi orang besar, tetapi kekurangan makanan.</p>
+                </blockquote>
+                <p>Amsal 12:9 menyajikan sebuah perbandingan menarik yang menekankan nilai kerendahan hati dan kepraktisan di atas kesombongan dan penampilan palsu. Ayat ini berbicara tentang realitas versus ilusi, substansi versus permukaan.</p>
+                <p>Frasa "Lebih baik menjadi orang kecil, tetapi mempunyai pelayan" menggambarkan seseorang yang mungkin tidak memiliki status sosial yang tinggi atau menonjol di mata publik, namun ia hidup dalam kemapanan dan stabilitas. "Orang kecil" di sini bisa diartikan sebagai orang biasa, yang tidak mencari perhatian atau kemuliaan duniawi. Namun, fakta bahwa ia "mempunyai pelayan" menunjukkan bahwa ia memiliki sumber daya yang cukup untuk memenuhi kebutuhannya dan bahkan membantu orang lain. Ia hidup dengan jujur, bekerja keras, dan mungkin tidak membual tentang kekayaannya atau posisinya. Hidupnya dicirikan oleh keamanan dan kepraktisan. Ini adalah seseorang yang memiliki rasa syukur atas apa yang ia miliki dan tidak terbebani oleh kebutuhan untuk memamerkan kekayaan atau kekuasaan.</p>
+                <p>Sebaliknya, "berpura-pura menjadi orang besar, tetapi kekurangan makanan" menggambarkan seseorang yang sibuk menciptakan ilusi tentang dirinya sendiri. Ia mungkin mengenakan pakaian mahal, berbicara dengan gaya yang bombastis, dan mencoba bergaul dengan orang-orang terpandang, namun di balik semua penampilan itu, ia menderita kemiskinan dan kelaparan. Ini adalah orang yang mengutamakan citra dan gengsi di atas kebutuhan dasar. Ia rela mengorbankan kesejahteraan pribadi dan keluarganya demi mempertahankan status sosial yang sebenarnya tidak ia miliki. Kesombongan dan keinginan untuk diakui sebagai "orang besar" membuatnya mengabaikan kenyataan pahit bahwa ia bahkan "kekurangan makanan." Kehidupan seperti ini adalah beban yang berat, penuh dengan kepalsuan, stres, dan kehampaan.</p>
+                <p>Pelajaran dari Amsal 12:9 sangat relevan di zaman kita. Di era media sosial, banyak orang tergoda untuk menampilkan versi ideal dari diri mereka yang seringkali jauh dari kenyataan. Mereka mungkin berusaha keras untuk menunjukkan kekayaan, kesuksesan, atau kebahagiaan yang tidak mereka miliki, semata-mata untuk mendapatkan validasi dari orang lain. Namun, Amsal mengingatkan kita bahwa substansi jauh lebih berharga daripada penampilan. Kerendahan hati, kepraktisan, dan keamanan yang diperoleh dari hidup jujur dan sesuai kemampuan jauh lebih baik daripada kesombongan yang dibangun di atas kebohongan dan ilusi. Ayat ini mendorong kita untuk hidup otentik, menghargai apa yang nyata, dan menghindari jebakan kesombongan yang pada akhirnya hanya membawa kehampaan dan penderitaan.</p>
+            </section>
+
+            <section id="keadilan-terhadap-binatang">
+                <h2>Amsal 12:10 - Keadilan Terhadap Binatang</h2>
+                <blockquote>
+                    <p>Orang benar memperhatikan hidup hewannya, tetapi belas kasihan orang fasik itu kejam.</p>
+                </blockquote>
+                <p>Amsal 12:10 adalah salah satu ayat yang unik dalam Kitab Amsal, karena secara eksplisit membahas perilaku manusia terhadap binatang. Ayat ini memberikan wawasan penting tentang karakter seseorang melalui cara mereka memperlakukan makhluk yang lebih lemah dan bergantung pada mereka.</p>
+                <p>"Orang benar memperhatikan hidup hewannya." Ini menunjukkan bahwa orang benar memiliki kepekaan dan rasa kasih sayang yang melampaui sesama manusia. Mereka menyadari bahwa binatang, meskipun tidak memiliki kesadaran moral seperti manusia, adalah makhluk hidup yang merasakan sakit, lapar, dan kebutuhan. Oleh karena itu, orang benar akan bertanggung jawab dalam merawat hewan peliharaan atau hewan ternak mereka. Mereka memastikan hewan-hewan tersebut diberi makan dengan baik, memiliki tempat tinggal yang layak, dan tidak disalahgunakan atau disiksa. Perhatian terhadap hidup hewan adalah indikasi dari hati yang penuh belas kasihan dan keadilan, sebuah karakter yang menghargai kehidupan dan menunjukkan empati terhadap makhluk ciptaan Tuhan yang rentan. Ini bukan hanya tentang memenuhi kebutuhan fisik, tetapi juga melindungi dari penderitaan yang tidak perlu. Perlakuan baik terhadap hewan merupakan cerminan dari integritas moral yang menyeluruh.</p>
+                <p>Sebaliknya, "belas kasihan orang fasik itu kejam." Ini adalah sebuah paradoks yang tajam. Bagaimana mungkin belas kasihan bisa menjadi kejam? Frasa ini menyiratkan bahwa bahkan ketika orang fasik *berpikir* mereka menunjukkan belas kasihan, atau ketika mereka *berpura-pura* peduli, tindakan mereka pada dasarnya tetap diselimuti kekejaman. Mungkin mereka memberi makanan sisa tetapi membiarkan hewan kelaparan di lain waktu, atau mereka memanfaatkan hewan secara berlebihan untuk keuntungan pribadi tanpa mempedulikan kesejahteraan mereka. Atau, bisa juga diartikan bahwa standar belas kasihan orang fasik sangat rendah, sehingga apa yang mereka anggap "baik" atau "berbelas kasihan" sebenarnya adalah tindakan yang lalai, acuh tak acuh, atau bahkan sadis dari sudut pandang yang benar. Mereka mungkin tidak secara langsung menyiksa, tetapi ketidakpedulian dan eksploitasi mereka sama kejamnya dengan penyiksaan fisik.</p>
+                <p>Ayat ini mengajarkan kita bahwa belas kasihan sejati adalah sifat yang konsisten dan menyeluruh, tidak hanya ditunjukkan kepada sesama manusia tetapi juga kepada seluruh ciptaan. Bagaimana seseorang memperlakukan makhluk yang tidak dapat berbicara untuk dirinya sendiri, yang sepenuhnya bergantung pada kebaikan hatinya, adalah indikator kuat dari karakter sejati orang tersebut. Jika seseorang tidak dapat menunjukkan kebaikan kepada binatang, bagaimana mungkin ia dapat menunjukkan belas kasihan yang tulus kepada manusia? Amsal 12:10 adalah pengingat bahwa kebenaran dan belas kasihan saling terkait, dan keduanya harus tercermin dalam setiap aspek kehidupan kita, termasuk hubungan kita dengan alam dan makhluk hidup lainnya. Ini adalah panggilan untuk mengembangkan hati yang berbelas kasihan dan adil secara holistik.</p>
+            </section>
+
+            <section id="kerja-keras-vs-kesia-siaan">
+                <h2>Amsal 12:11 - Kerja Keras vs. Kesia-siaan</h2>
+                <blockquote>
+                    <p>Siapa mengerjakan tanahnya, akan kenyang dengan makanan, tetapi siapa mengejar hal-hal yang sia-sia, tidak berakal budi.</p>
+                </blockquote>
+                <p>Amsal 12:11 secara langsung mengkontraskan nilai kerja keras yang produktif dengan pengejaran hal-hal yang tidak berarti, menyoroti pentingnya prioritas yang bijaksana dalam hidup. Ayat ini menggunakan analogi yang sangat relevan dengan masyarakat agraris pada zaman itu, namun prinsipnya bersifat universal dan abadi.</p>
+                <p>"Siapa mengerjakan tanahnya, akan kenyang dengan makanan." Frasa ini adalah gambaran metaforis dari kerja keras dan ketekunan yang berbuah. "Mengerjakan tanahnya" berarti menginvestasikan waktu, tenaga, dan upaya yang sungguh-sungguh dalam pekerjaan yang produktif. Ini adalah tentang dedikasi pada tugas yang nyata dan memberikan hasil yang konkret. Petani yang rajin membajak, menabur, menyirami, dan memanen akan mendapatkan hasil panen yang berlimpah, sehingga ia "kenyang dengan makanan." Ini bukan hanya tentang makanan secara harfiah, tetapi juga tentang kepuasan, kemandirian, dan kesejahteraan yang datang dari upaya yang jujur dan produktif. Mereka yang bekerja dengan tekun dalam bidang apa pun, baik itu karir, pendidikan, atau membangun keluarga, akan menuai imbalan dari kerja keras mereka. Mereka akan merasakan kepuasan batin dari pencapaian, stabilitas finansial, dan rasa hormat dari orang lain.</p>
+                <p>Sebaliknya, "siapa mengejar hal-hal yang sia-sia, tidak berakal budi." "Hal-hal yang sia-sia" merujuk pada aktivitas, ambisi, atau objek yang tidak memiliki nilai jangka panjang, tidak produktif, dan seringkali hanya membuang-buang waktu serta sumber daya. Ini bisa berupa pengejaran kekayaan secara cepat melalui skema-skema yang tidak etis, mengejar kesenangan sesaat tanpa tujuan yang lebih besar, atau menghabiskan waktu dengan bermalas-malasan dan melamun tentang hal-hal yang mustahil tanpa tindakan nyata. Orang yang mengejar hal-hal sia-sia digambarkan sebagai "tidak berakal budi" (atau "tidak memiliki pengertian"). Artinya, mereka kurang memiliki kebijaksanaan praktis untuk membedakan antara yang penting dan yang tidak penting, antara yang produktif dan yang destruktif. Mereka seringkali terperangkap dalam lingkaran frustrasi dan kegagalan karena investasi mereka pada hal-hal yang tidak substansial.</p>
+                <p>Ayat ini mengajarkan kita untuk menjadi pribadi yang bijaksana dalam mengelola waktu dan energi. Hidup ini terlalu singkat dan sumber daya kita terlalu berharga untuk dihabiskan pada hal-hal yang tidak memberikan nilai sejati. Amsal mendorong kita untuk fokus pada pekerjaan yang bermakna, yang tidak hanya memberikan kepuasan materi tetapi juga kepuasan batin. Ini adalah panggilan untuk menjadi produsen, bukan hanya konsumen; untuk menjadi pembangun, bukan hanya penghancur; dan untuk menanam benih-benih yang akan menghasilkan panen yang berlimpah, bukan mengejar angin yang hanya akan meninggalkan tangan kosong. Kebijaksanaan sejati terletak pada pengenalan nilai kerja keras dan penolakan terhadap godaan untuk menghabiskan hidup dalam pengejaran yang tidak berarti.</p>
+            </section>
+
+            <section id="akar-kebaikan-dan-godaan-orang-jahat">
+                <h2>Amsal 12:12 - Akar Kebaikan dan Godaan Orang Jahat</h2>
+                <blockquote>
+                    <p>Orang fasik mengingini jarahan orang jahat, tetapi akar orang benar menghasilkan buah.</p>
+                </blockquote>
+                <p>Amsal 12:12 adalah ayat yang menarik, karena mengkontraskan keinginan dan hasil dari orang fasik dengan orang benar, menunjukkan bahwa bahkan dalam hal keinginan, terdapat perbedaan fundamental yang menentukan arah hidup dan warisan mereka.</p>
+                <p>"Orang fasik mengingini jarahan orang jahat." Ungkapan ini mengungkapkan kedalaman kebejatan hati orang fasik. Jarahan adalah harta benda yang diambil secara tidak sah, seringkali melalui kekerasan, penipuan, atau eksploitasi. Orang fasik tidak hanya mencari keuntungan, tetapi mereka mengingini apa yang diperoleh melalui cara-cara yang jahat. Ini menunjukkan bahwa moralitas mereka sudah sedemikian rusak sehingga mereka tidak lagi membedakan antara yang benar dan salah dalam perolehan kekayaan. Mereka mungkin melihat "keberhasilan" orang jahat lainnya yang diperoleh melalui cara-cara curang, dan justru mendambakan metode serta hasilnya. Ini adalah keinginan yang didorong oleh keserakahan dan ketidakadilan, menunjukkan bahwa hati mereka sudah condong pada kejahatan, bahkan dalam hal yang mereka inginkan. Mereka tidak ingin bekerja keras atau bertindak jujur; mereka ingin mendapatkan keuntungan cepat dan mudah, bahkan jika itu berarti mengikuti jejak orang yang secara moral sudah bangkrut.</p>
+                <p>Sebaliknya, "tetapi akar orang benar menghasilkan buah." Ini adalah metafora yang kuat tentang produktivitas dan keberlanjutan. Akar adalah fondasi yang tak terlihat namun krusial bagi kehidupan sebuah pohon. Akar orang benar melambangkan karakter, prinsip-prinsip moral, iman, dan integritas yang mendalam dan kokoh. Karena akar mereka sehat dan kuat, mereka menghasilkan buah. "Buah" di sini bisa merujuk pada berbagai hal: hasil dari kerja keras yang jujur, keturunan yang saleh, reputasi yang baik, dampak positif pada masyarakat, atau kehidupan yang penuh dengan kebajikan seperti kasih, sukacita, damai sejahtera, kesabaran, kemurahan, kebaikan, kesetiaan, kelemahlembutan, dan penguasaan diri. Buah ini adalah hasil alami dari kehidupan yang dibangun di atas kebenaran. Berbeda dengan jarahan yang diperoleh secara instan namun tidak berkelanjutan, buah yang dihasilkan oleh akar yang benar bersifat organik, tumbuh secara bertahap, dan memberikan manfaat jangka panjang, baik bagi individu maupun bagi orang di sekitarnya.</p>
+                <p>Ayat ini mengajarkan kita tentang pentingnya sumber dari mana keinginan dan tindakan kita berasal. Orang fasik mencari keuntungan dari kejahatan, sementara orang benar menghasilkan kebaikan dari integritas mereka. Ini adalah peringatan bagi kita untuk memeriksa hati kita: apa yang sebenarnya kita inginkan? Apakah kita tergoda oleh keuntungan cepat yang diperoleh secara tidak etis, atau apakah kita berkomitmen untuk menumbuhkan karakter yang menghasilkan kebaikan sejati? Amsal 12:12 mengajak kita untuk berinvestasi pada akar karakter kita, karena itulah yang pada akhirnya akan menentukan buah yang akan kita hasilkan dalam hidup.</p>
+            </section>
+
+            <section id="kuasa-lidah-dan-buah-perbuatan">
+                <h2>Amsal 12:13-14 - Kuasa Lidah dan Buah Perbuatan</h2>
+                <blockquote>
+                    <p>Orang jahat terjerat oleh pelanggaran bibirnya, tetapi orang benar keluar dari kesukaran.</p>
+                    <p>Dari buah mulutnya orang makan kebaikan, dan orang akan membalas kepadanya perbuatan tangannya.</p>
+                </blockquote>
+                <p>Dua ayat ini membahas dua aspek krusial dari kehidupan manusia: dampak perkataan (lidah) dan konsekuensi dari perbuatan tangan, baik untuk kebaikan maupun kejahatan. Amsal 12:13 menyoroti bagaimana perkataan bisa menjadi jerat fatal.</p>
+                <p>"Orang jahat terjerat oleh pelanggaran bibirnya." Lidah memiliki kekuatan luar biasa untuk membangun atau menghancurkan. Bagi orang jahat, lidah sering kali menjadi alat untuk menyebarkan kebohongan, fitnah, gosip, sumpah palsu, atau perkataan yang menyesatkan. Namun, Amsal menegaskan bahwa perkataan jahat ini pada akhirnya akan berbalik dan menjerat mereka sendiri. Seperti burung yang terperangkap dalam jeratnya sendiri, orang jahat akan mengalami konsekuensi negatif dari apa yang telah mereka ucapkan. Mungkin reputasi mereka hancur karena kebohongan mereka terungkap, atau mereka terjerat dalam masalah hukum akibat kesaksian palsu. Perkataan mereka menjadi bukti yang memberatkan, menyebabkan kehancuran, hilangnya kepercayaan, dan bahkan kerugian materi. Ayat ini adalah peringatan keras bahwa kata-kata yang diucapkan tidak pernah hilang begitu saja; mereka memiliki dampak, dan dampak tersebut seringkali kembali kepada si pengucap.</p>
+                <p>Sebaliknya, "orang benar keluar dari kesukaran." Meskipun orang benar juga bisa menghadapi kesulitan atau dijebak oleh perkataan orang lain, integritas dan kebenaran perkataan mereka akan menjadi penyelamat. Ketika kebenaran terungkap, atau ketika mereka mempertahankan kejujuran mereka, mereka akan menemukan jalan keluar dari kesulitan. Kejujuran mereka akan membersihkan nama mereka, mendapatkan dukungan, atau menemukan solusi dari masalah yang ada. Perkataan yang tulus dan jujur adalah perlindungan, bukan jerat.</p>
+                <p>Amsal 12:14 kemudian memperluas prinsip ini ke tindakan secara umum: "Dari buah mulutnya orang makan kebaikan, dan orang akan membalas kepadanya perbuatan tangannya." Ayat ini mengajarkan prinsip universal tentang sebab dan akibat, atau hukum tabur tuai. "Buah mulutnya" di sini bisa merujuk pada perkataan yang bijaksana, jujur, menghibur, dan membangun. Orang yang menggunakan lidahnya untuk kebaikan akan menuai kebaikan dalam hidupnya. Mereka akan menerima respek, kepercayaan, dan dukungan dari orang lain. Kata-kata baik yang mereka ucapkan akan kembali kepada mereka dalam bentuk hubungan yang sehat dan peluang yang baik. Sama halnya, "orang akan membalas kepadanya perbuatan tangannya." Ini adalah penegasan bahwa setiap tindakan, baik atau buruk, akan mendatangkan balasan yang setimpal. Jika seseorang melakukan perbuatan yang baik, adil, dan murah hati, ia akan menerima balasan yang positif. Ini bisa berupa bantuan di masa sulit, pengakuan, atau berkat yang tak terduga. Sebaliknya, jika seseorang melakukan perbuatan jahat, ia juga akan menuai konsekuensi negatif yang sesuai.</p>
+                <p>Kedua ayat ini secara bersamaan menekankan akuntabilitas penuh manusia atas perkataan dan perbuatannya. Mereka mengajak kita untuk berpikir dua kali sebelum berbicara dan bertindak, karena setiap hal yang keluar dari diri kita memiliki kekuatan untuk membentuk nasib kita dan bagaimana orang lain memperlakukan kita. Menggunakan lidah untuk kebenaran dan tangan untuk kebaikan adalah jalan menuju kehidupan yang penuh berkat dan terhindar dari jerat kehancuran.</p>
+            </section>
+
+            <section id="kebijaksanaan-dan-kebodohan">
+                <h2>Amsal 12:15 - Kebijaksanaan dan Kebodohan</h2>
+                <blockquote>
+                    <p>Jalan orang bodoh lurus dalam anggapannya sendiri, tetapi orang bijak mendengarkan nasihat.</p>
+                </blockquote>
+                <p>Amsal 12:15 dengan jelas membedakan antara karakteristik orang bodoh dan orang bijak, menyoroti pentingnya kerendahan hati dan keterbukaan terhadap nasihat sebagai inti dari kebijaksanaan sejati.</p>
+                <p>"Jalan orang bodoh lurus dalam anggapannya sendiri." Orang bodoh (dungu) dalam konteks Amsal adalah seseorang yang angkuh dan keras kepala, merasa dirinya paling benar dan tidak perlu belajar dari siapa pun. Mereka memiliki keyakinan yang kuat terhadap penilaian dan keputusan mereka sendiri, bahkan ketika bukti menunjukkan sebaliknya atau ketika nasihat yang baik diberikan. Bagi mereka, jalan yang mereka tempuh, pandangan mereka, dan keputusan mereka selalu terlihat "lurus" atau benar. Mereka tidak melihat kekurangan dalam diri mereka, tidak mengakui kesalahan, dan tidak merasakan kebutuhan untuk introspeksi atau perbaikan. Kesombongan intelektual dan spiritual ini membuat mereka menutup diri dari perspektif lain, sehingga menghambat pertumbuhan dan seringkali membawa mereka pada kehancuran. Mereka beroperasi dalam gelembung ego mereka sendiri, di mana mereka adalah satu-satunya otoritas yang diakui.</p>
+                <p>Sebaliknya, "tetapi orang bijak mendengarkan nasihat." Ini adalah karakteristik yang paling menonjol dari orang bijak: kerendahan hati untuk mengakui bahwa mereka tidak tahu segalanya dan bahwa ada hikmat di luar diri mereka sendiri. Orang bijak adalah pendengar yang baik, yang bersedia menerima masukan, kritik konstruktif, dan bimbingan dari orang lain, terutama dari mereka yang lebih berpengalaman atau lebih berhikmat. Mereka tidak hanya mendengarkan, tetapi juga mempertimbangkan, merenungkan, dan menerapkan nasihat yang baik. Mereka memahami bahwa nasihat yang tulus adalah hadiah yang tak ternilai, sebuah alat untuk menghindari kesalahan, memperluas pemahaman, dan membuat keputusan yang lebih baik. Keterbukaan terhadap nasihat menunjukkan kedewasaan, kebijaksanaan sejati, dan keinginan untuk terus belajar dan berkembang.</p>
+                <p>Ayat ini adalah peringatan bagi kita semua. Di era informasi yang melimpah, godaan untuk merasa tahu segalanya semakin besar. Namun, Amsal mengingatkan bahwa sikap merasa tahu adalah awal dari kebodohan. Kebijaksanaan sejati tidak terletak pada memiliki semua jawaban, tetapi pada kemauan untuk terus bertanya, belajar, dan menerima bimbingan. Baik dalam kehidupan pribadi, profesional, maupun spiritual, kemampuan untuk mendengarkan nasihat yang baik adalah fondasi penting untuk membuat keputusan yang bijaksana, menghindari jebakan, dan mencapai kesuksesan yang langgeng. Amsal 12:15 mendorong kita untuk selalu memupuk kerendahan hati, karena di situlah pintu gerbang menuju kebijaksanaan yang lebih besar terbuka.</p>
+            </section>
+
+            <section id="kemarahan-dan-kearifan">
+                <h2>Amsal 12:16 - Kemarahan dan Kearifan</h2>
+                <blockquote>
+                    <p>Orang bodoh menyatakan kemarahannya dengan segera, tetapi orang bijak berdiam diri dan menyembunyikan malu.</p>
+                </blockquote>
+                <p>Amsal 12:16 membahas perbedaan signifikan dalam cara orang bodoh dan orang bijak mengelola emosi mereka, khususnya kemarahan dan perasaan malu. Ayat ini menyoroti pengendalian diri sebagai tanda kebijaksanaan.</p>
+                <p>"Orang bodoh menyatakan kemarahannya dengan segera." Ini adalah gambaran tentang seseorang yang kurang memiliki kendali emosi. Ketika merasa tersinggung, marah, atau frustrasi, orang bodoh cenderung meledak seketika. Mereka tidak berpikir sebelum berbicara atau bertindak, melainkan membiarkan emosi menguasai mereka. Mereka mungkin mengucapkan kata-kata kasar, bertindak agresif, atau melakukan hal-hal yang kemudian mereka sesali. Deklarasi kemarahan yang segera dan terbuka ini seringkali merusak hubungan, memperburuk situasi, dan menciptakan konflik yang tidak perlu. Tindakan impulsif ini adalah tanda kurangnya kebijaksanaan, karena ia menunjukkan ketidakmampuan untuk mengendalikan diri dan mempertimbangkan konsekuensi jangka panjang dari ledakan emosi tersebut. Orang bodoh tidak peduli dengan reputasinya atau dampak perkataannya terhadap orang lain; mereka hanya ingin melampiaskan perasaannya saat itu juga.</p>
+                <p>Sebaliknya, "tetapi orang bijak berdiam diri dan menyembunyikan malu." Orang bijak memiliki kapasitas untuk mengendalikan reaksi emosional mereka. Ketika mereka merasa dipermalukan atau tersinggung (malu di sini bisa juga berarti penghinaan atau celaan yang ditujukan kepada mereka), alih-alih langsung merespons dengan kemarahan, mereka memilih untuk "berdiam diri." Diam di sini bukan berarti pasif, melainkan menunjukkan kontrol diri, berpikir sebelum bereaksi, dan menimbang situasi. Mereka "menyembunyikan malu," yang berarti mereka tidak membiarkan emosi negatif tersebut mendikte respons mereka. Mereka mungkin memilih untuk tidak membalas dendam, tidak terlibat dalam pertengkaran yang tidak produktif, atau tidak mempublikasikan kemarahan mereka. Dengan menahan diri, mereka melindungi diri dari kerusakan lebih lanjut, mempertahankan martabat mereka, dan memberi diri mereka waktu untuk merespons dengan cara yang lebih konstruktif dan bijaksana.</p>
+                <p>Pelajaran dari Amsal 12:16 sangat penting dalam setiap aspek kehidupan, dari interaksi pribadi hingga profesional. Kemampuan untuk mengelola kemarahan adalah salah satu tanda kematangan emosional dan kebijaksanaan. Ledakan emosi yang tidak terkontrol dapat menghancurkan karier, hubungan, dan kesehatan. Orang bijak memahami bahwa terkadang, respons terbaik adalah tidak merespons sama sekali, atau menunda respons sampai emosi mereda dan pikiran jernih. Ini bukan tentang menekan perasaan, tetapi tentang mengelola cara kita mengekspresikannya. Ayat ini mendorong kita untuk mengembangkan pengendalian diri, kesabaran, dan kebijaksanaan dalam menghadapi situasi yang memicu kemarahan atau penghinaan, sehingga kita dapat bertindak dengan tenang dan efektif, bukan secara reaktif dan merusak.</p>
+            </section>
+
+            <section id="kesaksian-dan-kebohongan">
+                <h2>Amsal 12:17-19 - Kesaksian dan Kebohongan</h2>
+                <blockquote>
+                    <p>Siapa mengatakan kebenaran, menyatakan keadilan, tetapi saksi dusta menyatakan tipu daya.</p>
+                    <p>Ada orang yang lancang mulutnya seperti tikaman pedang, tetapi lidah orang bijak mendatangkan kesembuhan.</p>
+                    <p>Bibir yang mengatakan kebenaran tetap untuk selama-lamanya, tetapi lidah dusta hanya untuk sesaat.</p>
+                </blockquote>
+                <p>Ketiga ayat ini secara mendalam mengeksplorasi kekuatan lidah, khususnya dalam konteks kebenaran dan kebohongan, serta dampak jangka panjang dari masing-masing. Mereka menekankan bahwa kata-kata kita adalah alat yang sangat ampuh, dengan konsekuensi yang jauh melampaui momen pengucapannya.</p>
+                <p>Amsal 12:17 memulai dengan membedakan antara kesaksian yang jujur dan kesaksian palsu: "Siapa mengatakan kebenaran, menyatakan keadilan, tetapi saksi dusta menyatakan tipu daya." Orang yang berbicara jujur dalam memberikan kesaksian (baik di pengadilan atau dalam percakapan sehari-hari) sesungguhnya "menyatakan keadilan." Artinya, mereka berkontribusi pada penegakan kebenaran, memastikan bahwa keadilan ditegakkan, dan membantu memastikan bahwa yang benar dibenarkan dan yang salah dihukum. Perkataan mereka adalah fondasi bagi masyarakat yang adil dan berintegritas. Di sisi lain, "saksi dusta menyatakan tipu daya." Orang yang berbohong dalam kesaksiannya tidak hanya menyebarkan kebohongan, tetapi juga "menyatakan tipu daya" – mereka dengan sengaja menipu, memutarbalikkan fakta, dan menyesatkan orang lain, yang pada akhirnya merusak keadilan dan menciptakan kekacauan. Perkataan mereka membawa ketidakadilan dan seringkali menyebabkan penderitaan bagi orang yang tidak bersalah.</p>
+                <p>Kemudian, Amsal 12:18 memperluas ini dengan metafora yang hidup mengenai dampak kata-kata: "Ada orang yang lancang mulutnya seperti tikaman pedang, tetapi lidah orang bijak mendatangkan kesembuhan." Lidah orang yang "lancang mulutnya" adalah seperti "tikaman pedang" – kata-kata mereka tajam, melukai, menghancurkan, dan menyebabkan rasa sakit yang mendalam. Ini bisa berupa kata-kata fitnah, gosip, kritik yang kejam, atau perkataan yang tidak dipikirkan yang menyakiti hati dan merusak hubungan. Kata-kata seperti pedang dapat meninggalkan luka emosional yang sulit disembuhkan. Namun, kontrasnya sangat indah: "lidah orang bijak mendatangkan kesembuhan." Lidah orang bijak digunakan untuk menghibur, menasihati, mendorong, dan berbicara kebenaran dengan kasih. Kata-kata mereka memiliki kekuatan untuk memulihkan, menyatukan, dan membangun. Mereka seperti balsam yang menenangkan luka, membawa damai, dan mempromosikan rekonsiliasi. Ayat ini mengingatkan kita akan tanggung jawab besar dalam setiap kata yang kita ucapkan.</p>
+                <p>Terakhir, Amsal 12:19 membahas dimensi waktu dari kebenaran dan kebohongan: "Bibir yang mengatakan kebenaran tetap untuk selama-lamanya, tetapi lidah dusta hanya untuk sesaat." Kebenaran memiliki sifat yang abadi. Meskipun mungkin butuh waktu lama untuk terungkap atau diterima, kebenaran pada akhirnya akan bertahan. Perkataan yang didasarkan pada kebenaran memiliki kekuatan dan kredibilitas yang langgeng, membangun reputasi yang kokoh dan warisan yang abadi. Sebaliknya, "lidah dusta hanya untuk sesaat." Kebohongan mungkin memberikan keuntungan sesaat atau menutupi kebenaran untuk sementara waktu, tetapi sifatnya yang rapuh akan selalu terungkap. Seperti kabut yang menghilang di bawah sinar matahari, kebohongan tidak dapat bertahan lama. Ketika kebohongan terungkap, ia meninggalkan kehancuran, hilangnya kepercayaan, dan rasa malu. Ayat ini adalah peringatan yang kuat bahwa investasi terbaik adalah pada kebenaran, karena itulah satu-satunya hal yang akan bertahan dalam ujian waktu.</p>
+                <p>Ketiga ayat ini secara kolektif mengajak kita untuk memilih jalan kebenaran dalam setiap perkataan kita. Lidah kita adalah alat yang dahsyat, dan kita bertanggung jawab atas setiap kata yang keluar darinya. Dengan memilih untuk berbicara kebenaran, kita tidak hanya menegakkan keadilan dan mendatangkan kesembuhan, tetapi juga membangun kehidupan yang kokoh dan abadi di atas fondasi integritas.</p>
+            </section>
+
+            <section id="peran-kejujuran-dalam-kedamaian">
+                <h2>Amsal 12:20 - Peran Kejujuran dalam Kedamaian</h2>
+                <blockquote>
+                    <p>Tipu daya ada dalam hati orang yang merancang kejahatan, tetapi sukacita pada orang yang menasihatkan kesejahteraan.</p>
+                </blockquote>
+                <p>Amsal 12:20 mengungkapkan kontras yang tajam antara hati dan hasil dari mereka yang merancang kejahatan dengan mereka yang menasihatkan kesejahteraan. Ayat ini secara fundamental menghubungkan niat hati dengan buah yang dihasilkannya, baik itu tipu daya atau sukacita.</p>
+                <p>"Tipu daya ada dalam hati orang yang merancang kejahatan." Ini menunjuk pada inti masalah: kejahatan seringkali dimulai jauh sebelum tindakan fisik terwujud. Ia berakar di dalam hati, dalam pikiran yang merancang rencana-rencana yang tidak jujur, curang, dan merugikan orang lain. Orang yang merancang kejahatan adalah mereka yang secara sengaja dan sistematis merencanakan untuk menipu, mengeksploitasi, atau menyakiti. Hati mereka dipenuhi dengan kepalsuan, motif tersembunyi, dan niat untuk memanipulasi situasi demi keuntungan pribadi atau untuk membalas dendam. Kehadiran "tipu daya" dalam hati mereka berarti bahwa integritas dan kejujuran telah dikesampingkan. Mereka mungkin tampil ramah di permukaan, tetapi di dalam hati mereka menyimpan niat jahat yang pada akhirnya akan merugikan orang lain dan diri mereka sendiri. Ayat ini adalah peringatan bahwa motivasi internal kita sangatlah penting; dari hati keluar rancangan kehidupan, baik yang membangun maupun yang merusak.</p>
+                <p>Sebaliknya, "sukacita pada orang yang menasihatkan kesejahteraan." Ini menggambarkan orang yang memiliki hati yang murni dan berkeinginan untuk melihat kebaikan pada orang lain. "Menasihatkan kesejahteraan" berarti memberikan nasihat yang baik, mencari solusi damai, mempromosikan harmoni, dan mendorong orang lain untuk melakukan yang benar. Orang-orang seperti ini tidak mencari keuntungan pribadi dari penderitaan orang lain, melainkan bekerja untuk kebaikan bersama. Hasil dari niat dan tindakan mereka adalah "sukacita." Sukacita ini bukan hanya sukacita bagi mereka yang menerima nasihat baik dan mengalami kesejahteraan, tetapi juga sukacita yang dirasakan oleh si penasihat itu sendiri. Ada kepuasan dan kebahagiaan mendalam yang datang dari menjadi agen perdamaian, keadilan, dan kebaikan. Mereka mendapatkan sukacita dari melihat orang lain makmur dan hubungan membaik berkat intervensi atau nasihat bijaksana mereka.</p>
+                <p>Amsal 12:20 mengajarkan kita bahwa kedamaian dan sukacita sejati tidak dapat ditemukan dalam intrik atau kejahatan. Sebaliknya, mereka adalah hasil dari hati yang jujur dan niat yang baik, yang secara aktif berusaha untuk membangun dan menciptakan kesejahteraan. Ayat ini mendorong kita untuk memeriksa motivasi kita, untuk membersihkan hati dari tipu daya, dan untuk menjadi pribadi yang membawa kedamaian dan solusi, bukan masalah. Dengan memilih untuk menasihatkan kesejahteraan, kita tidak hanya memberkati orang lain tetapi juga menemukan sukacita yang langgeng dalam hati kita sendiri.</p>
+            </section>
+
+            <section id="keamanan-orang-benar-dan-kebencian-tuhan">
+                <h2>Amsal 12:21-22 - Keamanan Orang Benar dan Kebencian Tuhan</h2>
+                <blockquote>
+                    <p>Orang benar tidak akan ditimpa malapetaka apapun, tetapi orang fasik akan penuh dengan kemalangan.</p>
+                    <p>Bibir dusta adalah kekejian bagi TUHAN, tetapi orang yang berlaku setia dikenan-Nya.</p>
+                </blockquote>
+                <p>Dua ayat ini dengan tegas membedakan nasib orang benar dan orang fasik, dengan fokus pada perlindungan ilahi bagi yang benar dan kebencian Tuhan terhadap ketidakjujuran. Amsal 12:21 mungkin tampak kontroversial pada pandangan pertama:</p>
+                <p>"Orang benar tidak akan ditimpa malapetaka apapun, tetapi orang fasik akan penuh dengan kemalangan." Ini bukan berarti orang benar kebal terhadap segala bentuk kesulitan, penyakit, atau tragedi dalam hidup. Sejarah dan pengalaman hidup menunjukkan bahwa orang benar pun menghadapi penderitaan. Namun, dalam konteks Amsal, "malapetaka" sering kali merujuk pada kehancuran yang diakibatkan oleh pilihan yang salah, konsekuensi dari dosa, atau hilangnya dukungan ilahi. Jadi, ayat ini bisa diartikan bahwa orang benar tidak akan ditimpa malapetaka yang disebabkan oleh kesalahan mereka sendiri atau oleh hukuman ilahi yang adil. Mereka mungkin mengalami kesulitan, tetapi mereka akan memiliki kekuatan, hikmat, dan dukungan Tuhan untuk melewatinya, sehingga malapetaka tersebut tidak sampai menghancurkan mereka sepenuhnya. Fondasi kehidupan mereka yang kokoh memungkinkan mereka untuk bertahan. Sebaliknya, "orang fasik akan penuh dengan kemalangan." Karena mereka hidup dalam ketidakbenaran, keputusan buruk, dan perlawanan terhadap Tuhan, hidup mereka akan dipenuhi dengan kesulitan, kegagalan, dan konsekuensi negatif yang berulang. Malapetaka yang menimpa mereka seringkali merupakan hasil dari jalan mereka sendiri yang curang dan menipu.</p>
+                <p>Amsal 12:22 kemudian menguatkan fondasi moral dari janji ini:</p>
+                <p>"Bibir dusta adalah kekejian bagi TUHAN, tetapi orang yang berlaku setia dikenan-Nya." Ayat ini mengungkapkan esensi dari karakter ilahi. Tuhan adalah kebenaran, dan oleh karena itu, kebohongan adalah "kekejian" bagi-Nya. Kekejian adalah sesuatu yang sangat dibenci dan menjijikkan bagi Tuhan. Kebohongan merusak kepercayaan, memutarbalikkan kebenaran, dan menimbulkan kekacauan, yang semuanya bertentangan dengan sifat dan kehendak Tuhan. Ini adalah salah satu dosa yang paling sering dikutuk dalam Amsal, karena ia merusak tatanan moral dan sosial. Tuhan tidak hanya membenci kebohongan, tetapi juga menolaknya secara fundamental.</p>
+                <p>Namun, di sisi lain, "orang yang berlaku setia dikenan-Nya." Kata "setia" di sini mencakup kejujuran, integritas, dan kebenaran dalam perkataan dan perbuatan. Orang yang hidup jujur, tulus, dan dapat dipercaya adalah mereka yang berkenan di hadapan Tuhan. Mereka mencerminkan karakter Tuhan sendiri. Pengenanan Tuhan bukan hanya berarti Dia tidak membenci mereka, tetapi juga bahwa Dia menyetujui mereka, memberkati mereka, dan berada di pihak mereka. Ini adalah sumber keamanan sejati bagi orang benar, karena mereka hidup di bawah naungan perkenanan ilahi.</p>
+                <p>Kedua ayat ini secara kolektif mengajarkan bahwa ada korelasi langsung antara integritas moral kita dan bagaimana Tuhan memandang serta memperlakukan kita. Hidup dalam kebenaran membawa perlindungan dan perkenanan ilahi, sementara hidup dalam kebohongan dan kefasikan menarik konsekuensi negatif dan kebencian Tuhan. Ini adalah panggilan untuk hidup dengan kejujuran mutlak, tidak hanya karena itu adalah jalan yang benar, tetapi juga karena itu adalah jalan menuju keamanan dan kedamaian sejati, yang berakar pada hubungan yang baik dengan Pencipta.</p>
+                <div class="svg-icon outline">
+                    <svg role="img" aria-labelledby="title-kebenaran desc-kebenaran" viewBox="0 0 24 24">
+                        <title id="title-kebenaran">Simbol Keadilan dan Kebenaran</title>
+                        <desc id="desc-kebenaran">Timbangan yang seimbang, melambangkan keadilan dan kesetaraan.</desc>
+                        <path d="M12 2L12 22M3 16L21 16"/>
+                        <circle cx="12" cy="16" r="3"/>
+                        <path d="M6 16L6 20M18 16L18 20"/>
+                    </svg>
+                </div>
+            </section>
+
+            <section id="hikmat-dalam-menyimpan-pengetahuan">
+                <h2>Amsal 12:23 - Hikmat dalam Menyimpan Pengetahuan</h2>
+                <blockquote>
+                    <p>Orang bijak menyembunyikan pengetahuannya, tetapi hati orang bodoh memasyhurkan kebodohan.</p>
+                </blockquote>
+                <p>Amsal 12:23 memberikan wawasan tentang bagaimana orang bijak dan orang bodoh menggunakan atau menyalahgunakan pengetahuan mereka, menyoroti pentingnya kebijaksanaan dalam ekspresi diri.</p>
+                <p>"Orang bijak menyembunyikan pengetahuannya." Pada pandangan pertama, frasa ini mungkin terdengar negatif, seolah-olah orang bijak kikir dengan pengetahuannya. Namun, dalam konteks Amsal, "menyembunyikan" tidak berarti menyembunyikannya sama sekali, melainkan menggunakannya dengan bijaksana dan pada waktu yang tepat. Orang bijak tidak perlu memamerkan apa yang mereka tahu untuk mengesankan orang lain atau merasa superior. Mereka berbicara hanya ketika ada kebutuhan yang jelas, ketika perkataan mereka akan membawa manfaat, atau ketika situasi memang membutuhkan intervensi mereka. Mereka memiliki kebijaksanaan untuk mengenali kapan harus diam dan kapan harus berbicara. Mereka mengerti bahwa tidak semua pengetahuan harus diumbar, terutama jika itu dapat menyebabkan konflik, kesombongan, atau bahkan bahaya. Dengan menyembunyikan pengetahuannya, orang bijak juga menunjukkan kerendahan hati dan kontrol diri. Mereka lebih tertarik pada substansi dan dampak positif daripada pada pengakuan diri.</p>
+                <p>Sebaliknya, "hati orang bodoh memasyhurkan kebodohan." Orang bodoh adalah kebalikan totalnya. Mereka cenderung berbicara banyak tanpa berpikir, mengumbar semua yang mereka "tahu" (yang seringkali sebenarnya adalah pengetahuan yang dangkal atau salah), dan berusaha keras untuk menarik perhatian. Dalam upaya mereka untuk terlihat pintar, mereka justru "memasyhurkan kebodohan" mereka. Artinya, perkataan dan tindakan mereka yang tidak bijaksana, kurangnya pemahaman yang sebenarnya, dan kecenderungan untuk berbicara tanpa henti pada akhirnya hanya akan menyingkapkan kebodohan mereka kepada semua orang. Mereka tidak memiliki filter, tidak memiliki pengendalian diri, dan tidak memiliki kebijaksanaan untuk membedakan antara informasi yang relevan dan yang tidak. Keinginan mereka untuk selalu berbicara dan menjadi pusat perhatian seringkali membuat mereka mengucapkan hal-hal yang tidak masuk akal atau merugikan diri sendiri, sehingga mengkonfirmasi reputasi mereka sebagai orang yang dungu.</p>
+                <p>Ayat ini adalah pelajaran penting tentang retorika dan komunikasi yang efektif. Kebijaksanaan sejati tidak diukur dari seberapa banyak yang kita ucapkan, melainkan dari kualitas dan dampak dari perkataan kita. Orang bijak memahami kekuatan diam dan pentingnya waktu yang tepat untuk berbicara. Mereka menggunakan pengetahuan mereka sebagai alat untuk membangun, bukan untuk memamerkan. Amsal 12:23 mendorong kita untuk mengembangkan kebijaksanaan dalam berbicara, untuk menjadi pendengar yang lebih baik, dan untuk mempertimbangkan dampak dari setiap kata yang kita ucapkan. Lebih baik memiliki sedikit pengetahuan yang diterapkan dengan bijaksana daripada banyak pengetahuan yang diumbar tanpa tujuan dan hanya menyingkapkan kebodohan.</p>
+            </section>
+
+            <section id="ketekunan-dan-kemalasan">
+                <h2>Amsal 12:24 - Ketekunan dan Kemalasan</h2>
+                <blockquote>
+                    <p>Tangan orang rajin memegang kekuasaan, tetapi kemalasan mengakibatkan kerja paksa.</p>
+                </blockquote>
+                <p>Amsal 12:24 menyajikan kontras yang kuat antara hasil dari ketekunan dan kemalasan, menunjukkan bagaimana etos kerja mempengaruhi posisi dan kebebasan seseorang dalam masyarakat. Ayat ini berbicara tentang konsekuensi alami dari pilihan kita dalam pekerjaan.</p>
+                <p>"Tangan orang rajin memegang kekuasaan." Frasa ini menggambarkan hasil positif dari ketekunan, dedikasi, dan kerja keras. "Orang rajin" adalah seseorang yang giat, bertanggung jawab, dan memiliki inisiatif dalam tugas-tugasnya. Karena kualitas-kualitas ini, mereka "memegang kekuasaan," yang dapat diartikan dalam beberapa cara. Ini bisa berarti mereka naik pangkat, mendapatkan posisi kepemimpinan, atau memiliki kendali lebih besar atas hidup dan pekerjaan mereka. Mereka mendapatkan rasa hormat, kepercayaan, dan kesempatan. Kekuasaan di sini bukan semata-mata tentang dominasi, tetapi tentang memiliki otoritas, kemampuan untuk membuat keputusan, dan mengendalikan nasibnya sendiri. Kerja keras membuka pintu-pintu kesempatan, membangun reputasi yang baik, dan menghasilkan kemandirian, yang semuanya adalah bentuk kekuasaan yang positif. Mereka adalah tuan atas pekerjaan mereka, bukan budak.</p>
+                <p>Sebaliknya, "kemalasan mengakibatkan kerja paksa." Ini adalah konsekuensi negatif yang menyakitkan dari kemalasan dan ketidakmampuan untuk bekerja dengan giat. "Kemalasan" berarti menghindari tanggung jawab, menunda-nunda, atau tidak mau berusaha. Orang malas pada akhirnya akan terjebak dalam situasi di mana mereka terpaksa bekerja, seringkali dalam kondisi yang tidak mereka sukai, dengan upah rendah, atau di bawah kendali orang lain. "Kerja paksa" (kadang diterjemahkan sebagai "diperbudak" atau "ditaruh di bawah pajak") menyiratkan kehilangan kebebasan dan otonomi. Mereka tidak memiliki pilihan, karena kemalasan mereka telah menutup pintu kesempatan dan memaksa mereka menerima pekerjaan apa pun yang tersedia, betapapun tidak menyenangkannya. Hidup mereka dikendalikan oleh keadaan, bukan oleh pilihan mereka sendiri. Kemalasan, yang awalnya terasa seperti kebebasan, pada akhirnya justru mengarah pada perbudakan, baik secara hararirah maupun metaforis.</p>
+                <p>Ayat ini adalah pelajaran mendasar tentang etika kerja dan tanggung jawab pribadi. Di dunia modern, di mana godaan untuk mencari jalan pintas atau menghindari kerja keras semakin besar, pesan Amsal 12:24 tetap relevan. Ketekunan adalah kunci menuju kemerdekaan finansial, kepuasan profesional, dan pengembangan diri. Kemalasan, sebaliknya, adalah jalan menuju ketergantungan, frustrasi, dan keterbatasan. Amsal ini mendorong kita untuk merangkul kerja keras, melihatnya sebagai jalan menuju martabat dan kendali atas hidup kita, bukan sebagai beban. Dengan menjadi rajin, kita membangun masa depan yang cerah dan bebas; dengan menjadi malas, kita menjebak diri dalam lingkaran keterbatasan dan kerja yang tidak menyenangkan.</p>
+            </section>
+
+            <section id="kekhawatiran-dan-kata-kata-penghiburan">
+                <h2>Amsal 12:25 - Kekhawatiran dan Kata-kata Penghiburan</h2>
+                <blockquote>
+                    <p>Kekhawatiran dalam hati membengkokkan orang, tetapi perkataan yang baik menggembirakan dia.</p>
+                </blockquote>
+                <p>Amsal 12:25 secara tajam menggambarkan dampak emosional dari kekhawatiran dan kekuatan penyembuhan dari perkataan yang baik, menyoroti peran penting empati dan dukungan verbal.</p>
+                <p>"Kekhawatiran dalam hati membengkokkan orang." Ayat ini menangkap esensi penderitaan batiniah yang disebabkan oleh kekhawatiran atau kecemasan. "Kekhawatiran" (sering diterjemahkan juga sebagai kecemasan atau kesusahan) adalah beban mental yang berat. Ketika kekhawatiran menguasai hati seseorang, itu dapat "membengkokkan" mereka. Ini adalah metafora yang kuat yang bisa berarti beberapa hal: kekhawatiran dapat membuat seseorang menjadi lesu, putus asa, kehilangan semangat, atau bahkan secara fisik terlihat bungkuk karena beban pikiran. Kekhawatiran juga dapat membengkokkan pandangan mereka terhadap hidup, membuat mereka melihat segala sesuatu secara negatif, merusak kemampuan mereka untuk berfungsi secara normal, dan menguras energi mereka. Seseorang yang terbebani oleh kekhawatiran akan kehilangan sukacita, produktivitas, dan bahkan hubungan sehat. Kekhawatiran adalah musuh jiwa, yang secara perlahan-lahan mengikis kekuatan dan vitalitas seseorang dari dalam.</p>
+                <p>Namun, Amsal menawarkan penawar yang sederhana namun ampuh: "tetapi perkataan yang baik menggembirakan dia." "Perkataan yang baik" di sini tidak hanya berarti kata-kata yang sopan, tetapi lebih kepada kata-kata yang menghibur, mendorong, penuh harapan, dan penuh kasih. Ketika seseorang sedang terbebani oleh kekhawatiran, sebuah kata yang tulus, pengertian, atau nasihat yang bijaksana dapat memiliki efek yang luar biasa. Perkataan yang baik dapat "menggembirakan" (atau "menyegarkan," "mengangkat") hati yang sedang tertekan. Kata-kata seperti ini memberikan perspektif baru, mengingatkan orang tersebut bahwa mereka tidak sendirian, memberikan harapan, atau menawarkan solusi. Mereka dapat memulihkan semangat, mengurangi beban kecemasan, dan memberikan kekuatan untuk menghadapi tantangan. Ini menekankan pentingnya peran kita sebagai sesama manusia untuk menjadi sumber dukungan dan penghiburan bagi mereka yang sedang berjuang.</p>
+                <p>Ayat ini memiliki relevansi yang mendalam dalam masyarakat modern yang seringkali diliputi oleh stres, kecemasan, dan kesepian. Amsal 12:25 mengingatkan kita tentang kekuatan besar yang kita miliki dalam perkataan kita. Kata-kata yang diucapkan dengan niat baik dan empati dapat menjadi cahaya di tengah kegelapan bagi seseorang yang sedang berjuang. Ini adalah ajakan untuk tidak meremehkan dampak dari sebuah ucapan sederhana yang baik, sebuah pujian yang tulus, atau sebuah dorongan yang bijaksana. Dengan menyadari beban kekhawatiran yang dapat ditanggung orang lain, kita didorong untuk menjadi agen harapan dan penyembuhan melalui perkataan kita, sehingga membawa sukacita dan menyegarkan jiwa yang lesu.</p>
+            </section>
+
+            <section id="pembimbing-dan-penyesat">
+                <h2>Amsal 12:26 - Pembimbing dan Penyesat</h2>
+                <blockquote>
+                    <p>Orang benar menjadi penuntun bagi sesamanya, tetapi jalan orang fasik menyesatkan mereka sendiri.</p>
+                </blockquote>
+                <p>Amsal 12:26 mengkontraskan peran orang benar sebagai penuntun dan konsekuensi dari jalan orang fasik, menekankan dampak kepemimpinan moral dan bahaya penipuan diri.</p>
+                <p>"Orang benar menjadi penuntun bagi sesamanya." Frasa ini menggambarkan orang benar sebagai mercusuar atau kompas moral dalam masyarakat. "Penuntun" (terkadang diterjemahkan sebagai "pembimbing" atau "teladan") berarti mereka memberikan arah yang benar, nasihat yang bijaksana, dan contoh hidup yang patut ditiru. Karena integritas, kebijaksanaan, dan kebenaran mereka, orang lain merasa aman untuk mengikuti nasihat dan contoh mereka. Orang benar tidak hanya hidup benar secara pribadi, tetapi juga secara aktif mempengaruhi lingkungan mereka untuk kebaikan. Mereka membantu sesama menghindari bahaya, membuat keputusan yang lebih baik, dan menemukan jalan menuju kesejahteraan. Peran mereka adalah untuk mencerahkan, membimbing, dan mengangkat orang lain, membangun komunitas yang lebih kuat dan berintegritas.</p>
+                <p>Sebaliknya, "tetapi jalan orang fasik menyesatkan mereka sendiri." Orang fasik, dengan cara hidup mereka yang curang, tidak jujur, dan tidak bermoral, tidak hanya gagal menjadi penuntun yang baik bagi orang lain, tetapi juga "menyesatkan mereka sendiri." Ini adalah konsekuensi yang tragis. Mereka mungkin mencoba untuk menipu orang lain, tetapi pada akhirnya, mereka adalah korban terbesar dari penipuan mereka sendiri. Jalan mereka, yang didasarkan pada kebohongan dan ketidakbenaran, membawa mereka ke dalam kebingungan, kesalahan, dan kehancuran. Mereka mungkin berpikir bahwa mereka cerdas dan dapat mengakali sistem, tetapi kenyataannya, mereka hanya menuntun diri mereka sendiri menuju jurang. Mereka kehilangan arah moral, membuat keputusan yang buruk, dan pada akhirnya menghadapi kehancuran yang tak terhindarkan. Frasa ini juga bisa berarti bahwa bahkan niat atau saran orang fasik, yang tampak menarik di permukaan, sebenarnya adalah jebakan yang menyesatkan, bahkan bagi mereka yang menerapkannya.</p>
+                <p>Ayat ini adalah peringatan penting tentang siapa yang kita pilih untuk menjadi teladan atau penuntun dalam hidup kita, dan juga tentang tanggung jawab kita sendiri dalam memengaruhi orang lain. Kita semua, dalam kapasitas tertentu, adalah penuntun bagi seseorang, entah itu anak-anak kita, rekan kerja, teman, atau bahkan orang asing yang mengamati kita. Amsal 12:26 mendorong kita untuk menjadi orang benar, yang melalui perkataan dan perbuatan kita, dapat menuntun orang lain menuju kebaikan dan kebenaran. Ini juga mengingatkan kita untuk berhati-hati terhadap jalan orang fasik, karena meskipun mungkin terlihat menjanjikan, pada akhirnya hanya akan membawa kita pada kesesatan dan kehancuran. Pilihlah jalan kebenaran, agar kita tidak hanya menjadi berkat bagi sesama, tetapi juga memastikan langkah kita sendiri tetap lurus dan terhindar dari penyesatan.</p>
+            </section>
+
+            <section id="buah-kemalasan">
+                <h2>Amsal 12:27 - Buah Kemalasan</h2>
+                <blockquote>
+                    <p>Orang malas tidak menangkap buruannya, tetapi harta yang berharga bagi seseorang ialah kerajinan.</p>
+                </blockquote>
+                <p>Amsal 12:27 mengilustrasikan konsekuensi dari kemalasan dan memuji nilai kerajinan dengan menggunakan metafora berburu yang relevan dengan kehidupan sehari-hari pada zaman dahulu.</p>
+                <p>"Orang malas tidak menangkap buruannya." Dalam konteks masyarakat kuno, berburu adalah aktivitas penting untuk mendapatkan makanan dan sumber daya. Proses berburu membutuhkan perencanaan, ketekunan, kesabaran, dan usaha yang signifikan. Orang malas, meskipun mungkin memiliki kesempatan atau melihat peluang, tidak memiliki dorongan atau etos kerja untuk menindaklanjuti. Mereka mungkin memulai dengan niat baik, tetapi cepat putus asa, tidak mau menunggu, atau tidak mau melakukan upaya fisik dan mental yang diperlukan. Akibatnya, mereka "tidak menangkap buruannya" – mereka gagal meraih tujuan mereka, tidak memperoleh hasil yang diinginkan, dan pada akhirnya menderita kekurangan. Frasa ini berlaku di luar konteks berburu; ini adalah gambaran universal tentang kegagalan untuk mencapai kesuksesan atau memenuhi kebutuhan karena kurangnya inisiatif dan ketekunan. Kesempatan yang datang pun akan terlewat jika tidak ada kemauan untuk berusaha.</p>
+                <p>Kontrasnya, "tetapi harta yang berharga bagi seseorang ialah kerajinan." Ayat ini menegaskan bahwa kerajinan atau ketekunan itu sendiri adalah harta yang sangat berharga. Ini bukan hanya tentang apa yang dihasilkan oleh kerajinan (seperti kekayaan atau kesuksesan), tetapi kerajinan itu sendiri sebagai karakter. Seseorang yang rajin memiliki kualitas-kualitas seperti dedikasi, disiplin, inisiatif, dan ketekunan. Kualitas-kualitas ini jauh lebih berharga daripada harta materi yang bisa hilang. Kerajinan adalah sumber daya internal yang memungkinkan seseorang untuk mencapai tujuan, mengatasi rintangan, dan menciptakan nilai. Ini adalah kunci untuk kemandirian, kehormatan, dan kemampuan untuk berkontribusi secara positif. Orang yang rajin akan selalu menemukan cara untuk memenuhi kebutuhannya dan bahkan mengumpulkan kekayaan, karena mereka memiliki "harta" berupa etos kerja yang kuat yang tidak dapat diambil dari mereka. Mereka tidak hanya menunggu berkat datang, tetapi secara aktif menciptakan peluang.</p>
+                <p>Amsal 12:27 adalah ajakan untuk menumbuhkan semangat kerajinan dalam hidup kita. Ini mengingatkan kita bahwa kesuksesan jarang datang tanpa usaha yang sungguh-sungguh. Kemalasan adalah musuh dari kemajuan dan kepuasan. Ayat ini mendorong kita untuk menghargai dan mempraktikkan ketekunan sebagai salah satu kebajikan terpenting. Dengan mengembangkan kerajinan, kita tidak hanya akan mampu "menangkap buruan" kita (yaitu, mencapai tujuan kita), tetapi juga akan memiliki harta yang lebih berharga: karakter yang memungkinkan kita untuk terus-menerus menciptakan nilai dan menjalani kehidupan yang produktif dan bermakna. Harta sejati bukan hanya apa yang kita miliki, tetapi juga siapa diri kita.</p>
+            </section>
+
+            <section id="jalan-kebenaran-adalah-kehidupan">
+                <h2>Amsal 12:28 - Jalan Kebenaran Adalah Kehidupan</h2>
+                <blockquote>
+                    <p>Di jalan kebenaran terdapat kehidupan, dan di jalur itu tidak ada kematian.</p>
+                </blockquote>
+                <p>Amsal 12:28 adalah penutup yang kuat dan menegaskan kembali tema sentral dari seluruh pasal, serta Kitab Amsal secara keseluruhan: perbedaan esensial antara jalan kebenaran dan jalan kejahatan, serta takdir abadi yang menanti masing-masing. Ayat ini memberikan janji yang mendalam dan peringatan yang serius.</p>
+                <p>"Di jalan kebenaran terdapat kehidupan." "Jalan kebenaran" merujuk pada cara hidup yang selaras dengan prinsip-prinsip Tuhan: keadilan, integritas, kejujuran, kasih, dan ketaatan pada perintah-Nya. Ini adalah jalan yang dipilih oleh orang benar, yang telah kita lihat sepanjang pasal ini. Di jalan ini, terdapat "kehidupan." Kehidupan di sini bukan hanya eksistensi fisik, melainkan kehidupan yang berkelimpahan, penuh makna, damai sejahtera, dan berkat. Ini mencakup kehidupan yang utuh – secara spiritual, emosional, mental, dan bahkan fisik. Orang yang berjalan di jalan kebenaran akan mengalami kedamaian batin, hubungan yang sehat, reputasi yang baik, dan berkat dari Tuhan. Kehidupan ini juga bisa merujuk pada kehidupan kekal, hubungan yang abadi dengan Tuhan yang adalah sumber kehidupan itu sendiri. Ini adalah janji yang melegakan bahwa memilih jalan yang benar tidak akan sia-sia; ia akan mengarah pada kepenuhan hidup.</p>
+                <p>Dan kemudian, pernyataan yang semakin kuat: "dan di jalur itu tidak ada kematian." Ini bukan jaminan bahwa orang yang benar tidak akan pernah mengalami kematian fisik. Namun, dalam konteks Amsal, "kematian" sering kali merujuk pada kehancuran spiritual, moral, atau eksistensial. Orang yang berjalan di jalan kebenaran akan terhindar dari "kematian" semacam itu. Mereka tidak akan mengalami kehancuran karakter, kehancuran hubungan, kehancuran reputasi, atau kehancuran spiritual yang menjadi konsekuensi dari dosa dan kefasikan. Meskipun mereka mungkin menghadapi tantangan dan penderitaan, inti dari keberadaan mereka, jiwa mereka, dan warisan mereka akan tetap hidup dan utuh. Mereka tidak akan mengalami "kematian" dalam arti kehilangan makna, harapan, dan tujuan yang sejati. Di jalur kebenaran, selalu ada jalan keluar, selalu ada pemulihan, dan selalu ada harapan yang hidup.</p>
+                <p>Amsal 12:28 adalah intisari dari ajaran moral dan spiritual. Ini adalah panggilan terakhir untuk memilih jalan hidup yang bijaksana, yang didasarkan pada kebenaran dan integritas. Ayat ini menegaskan bahwa pilihan ini memiliki implikasi abadi. Kehidupan sejati, dengan segala kekayaan dan kedamaiannya, ditemukan hanya di jalan kebenaran. Dan di jalan ini, tidak ada kekuatan yang dapat menghancurkan semangat atau tujuan ilahi seseorang. Ini adalah janji penghiburan bagi yang berjuang dan peringatan bagi yang menyimpang, bahwa takdir tertinggi manusia adalah kehidupan yang berakar pada kebenaran Tuhan.</p>
+                <div class="svg-icon">
+                    <svg role="img" aria-labelledby="title-kesejahteraan desc-kesejahteraan" viewBox="0 0 24 24">
+                        <title id="title-kesejahteraan">Simbol Kesejahteraan dan Pertumbuhan</title>
+                        <desc id="desc-kesejahteraan">Pohon sederhana dengan akar yang kokoh, melambangkan kehidupan yang berakar kuat dan subur.</desc>
+                        <path d="M12 2C9.24 2 7 4.24 7 7s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM12 12c-2.76 0-5 2.24-5 5v5h10v-5c0-2.76-2.24-5-5-5z"/>
+                        <path fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 17v-5M7 17h10"/>
+                        <path d="M12 17c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 21a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="var(--accent-color)"/>
+                    </svg>
+                </div>
+            </section>
+
+            <section id="kesimpulan">
+                <h2>Kesimpulan: Mengintegrasikan Hikmat Amsal 12</h2>
+                <p>Pasal Amsal 12 adalah sebuah permata kebijaksanaan yang tak lekang oleh waktu, menawarkan panduan komprehensif untuk menjalani kehidupan yang penuh integritas, kebenaran, dan makna. Melalui dua puluh delapan ayatnya, kita telah diajak untuk merenungkan kontras tajam antara orang benar dan orang fasik, dengan segala konsekuensi yang menyertainya. Dari pentingnya menerima didikan dan nasihat (Amsal 12:1, 15), hingga dampak perkataan kita (Amsal 12:6, 13, 18, 19, 25), serta nilai kerja keras dan ketekunan (Amsal 12:11, 24, 27), setiap ayat memberikan pelajaran krusial bagi kehidupan kita sehari-hari.</p>
+                <p>Kita belajar bahwa kebenaran dan keadilan adalah fondasi yang kokoh bagi stabilitas (Amsal 12:3), sedangkan kebohongan adalah kekejian bagi Tuhan dan hanya akan bertahan sesaat (Amsal 12:19, 22). Pasal ini juga menyoroti pentingnya karakter dalam hubungan, baik dalam pernikahan (Amsal 12:4) maupun dalam memperlakukan sesama dan bahkan binatang (Amsal 12:10, 26). Niat hati yang murni dan rancangan yang adil akan menghasilkan sukacita dan perkenanan ilahi (Amsal 12:5, 20, 22), sementara hati yang licik akan membawa tipu daya dan kemalangan.</p>
+                <p>Amsal 12 secara konsisten menantang kita untuk melakukan introspeksi mendalam. Apakah kita adalah pribadi yang mencintai didikan atau membenci teguran? Apakah perkataan kita mendatangkan kesembuhan atau tikaman pedang? Apakah kita rajin dalam pekerjaan kita atau tenggelam dalam kemalasan yang mengarah pada kerja paksa? Apakah kita menjadi penuntun bagi sesama atau justru menyesatkan diri sendiri dengan jalan yang curang?</p>
+                <p>Puncak dari semua nasihat ini terangkum dalam Amsal 12:28: "Di jalan kebenaran terdapat kehidupan, dan di jalur itu tidak ada kematian." Ini adalah janji yang menghibur dan sekaligus tantangan. Kehidupan sejati, yang penuh dengan berkat, damai sejahtera, dan kebahagiaan, hanya ditemukan dalam ketaatan pada prinsip-prinsip kebenaran Tuhan. Ini adalah kehidupan yang tidak hanya bertahan dalam ujian waktu tetapi juga menghasilkan warisan yang abadi.</p>
+                <p>Sebagai pembaca, kita diundang untuk tidak hanya membaca ayat-ayat ini sebagai kata-kata kuno, tetapi untuk mengintegrasikannya ke dalam setiap serat kehidupan kita. Mari kita berkomitmen untuk membangun karakter yang berlandaskan kebenaran, mengendalikan lidah kita untuk memberkati, bertekun dalam kerja keras yang jujur, dan selalu membuka hati untuk didikan dan nasihat. Dengan demikian, kita dapat berjalan di jalan kebenaran yang dijanjikan, sebuah jalan yang pada akhirnya akan membawa kita pada kehidupan yang berkelimpahan dan jauh dari bayang-bayang kematian spiritual dan kehancuran.</p>
+                <p>Semoga renungan atas Amsal 12 ini menginspirasi kita semua untuk hidup dengan hikmat, integritas, dan kasih, menjadi terang bagi dunia di sekitar kita dan memuliakan Sang Pemberi Hikmat.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; Renungan Hikmat Abadi. Semua hak dilindungi undang-undang.</p>
+        <p>Diinspirasi oleh Kitab Amsal.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/khotbah-wahyu-21-1-8">Khotbah Wahyu 21 1 8</a></li>
+<li><a href="/khotbah-untuk-pemuda-kristen">Khotbah Untuk Pemuda Kristen</a></li>
+<li><a href="/khotbah-tentang-wanita-hebat">Khotbah Tentang Wanita Hebat</a></li>
+<li><a href="/renungan-singkat-tentang-kehidupan-sehari-hari">Renungan Singkat Tentang Kehidupan Sehari Hari</a></li>
+<li><a href="/khotbah-yesaya-58-1-12">Khotbah Yesaya 58 1 12</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

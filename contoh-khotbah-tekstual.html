@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Lengkap Contoh Khotbah Tekstual & Praktiknya</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Reset dan Dasar */
+        :root {
+            --primary-bg: hsl(200, 60%, 98%); /* Sangat terang, biru muda */
+            --secondary-bg: hsl(190, 80%, 95%); /* Biru kehijauan muda */
+            --text-color: hsl(210, 30%, 20%); /* Biru gelap keabu-abuan */
+            --heading-color: hsl(190, 70%, 30%); /* Teal gelap */
+            --accent-color: hsl(190, 70%, 55%); /* Teal sedang */
+            --border-color: hsl(190, 30%, 85%); /* Abu-abu kehijauan muda */
+            --shadow-color: hsla(210, 30%, 20%, 0.1); /* Bayangan lembut */
+            --font-family-base: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            --font-family-heading: 'Poppins', var(--font-family-base);
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Segoe+UI:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-size: 1.125rem; /* 18px untuk paragraf */
+        }
+
+        header {
+            background-color: var(--secondary-bg);
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        header h1 {
+            color: var(--heading-color);
+            font-family: var(--font-family-heading);
+            font-size: clamp(2rem, 5vw, 3.5rem); /* Responsive font size */
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: var(--text-color);
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+            padding: 0 1.5rem;
+            flex-grow: 1;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px var(--shadow-color);
+            margin-bottom: 2.5rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-family: var(--font-family-heading);
+            color: var(--heading-color);
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-family: var(--font-family-heading);
+            color: var(--accent-color);
+            font-size: clamp(1.4rem, 3vw, 2rem);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-family: var(--font-family-heading);
+            color: var(--text-color);
+            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        ul, ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--heading-color);
+            text-decoration: underline;
+        }
+
+        strong {
+            font-weight: 600;
+            color: var(--heading-color);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--accent-color);
+        }
+
+        blockquote {
+            background-color: var(--primary-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            font-style: italic;
+            color: var(--text-color);
+            border-radius: 6px;
+        }
+
+        blockquote p {
+            margin-bottom: 0;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2.5rem 0;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px var(--shadow-color);
+            background-color: #ffffff;
+            padding: 1rem;
+        }
+
+        footer {
+            background-color: var(--heading-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+            border-top: 2px solid var(--accent-color);
+        }
+
+        footer p {
+            margin-bottom: 0;
+            line-height: 1.5;
+            color: #e0f2f7; /* Warna teks lebih terang untuk kontras */
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1rem; /* 16px untuk paragraf */
+            }
+            main {
+                padding: 0 1rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+            header {
+                padding: 2rem 1rem;
+            }
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            h4 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Panduan Lengkap Contoh Khotbah Tekstual & Praktiknya</h1>
+        <p>Menjelajahi esensi khotbah tekstual: dari interpretasi mendalam hingga penyampaian yang mengena, mari kita pahami bagaimana Firman Tuhan dapat disampaikan dengan kuasa dan relevansi.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengantar: Mengapa Khotbah Tekstual Penting?</h2>
+            <p>Khotbah tekstual adalah salah satu bentuk khotbah yang paling fundamental dan berpusat pada Alkitab. Ini adalah pendekatan di mana isi, struktur, dan poin-poin utama khotbah secara langsung ditarik dari sebuah bagian Alkitab tertentu. Berbeda dengan khotbah topikal yang berpusat pada tema atau ide, atau khotbah ekspositori yang membahas sebuah pasal atau kitab secara keseluruhan, khotbah tekstual fokus pada beberapa ayat atau sebuah perikop kecil. Tujuannya adalah untuk menggali makna asli dari teks tersebut dan menerapkannya pada kehidupan jemaat.</p>
+
+            <p>Pentingnya khotbah tekstual tidak bisa diremehkan. Dalam dunia yang semakin kompleks dan penuh dengan berbagai narasi, khotbah yang berakar kuat dalam Firman Tuhan menjadi mercusuar kebenaran. Khotbah tekstual memastikan bahwa pesan yang disampaikan adalah pesan Tuhan sendiri, bukan sekadar opini atau pemikiran manusia. Ini membangun iman jemaat di atas dasar yang kokoh, melengkapi mereka dengan kebenaran yang tidak lekang oleh waktu, dan memberdayakan mereka untuk hidup sesuai kehendak Tuhan. Dengan fokus pada teks, pengkhotbah menjaga diri dari penyimpangan, memastikan integritas doktrinal, dan membantu jemaat untuk memahami Alkitab dengan lebih baik.</p>
+
+            <p>Artikel ini akan memandu Anda melalui seluk-beluk khotbah tekstual, dari prinsip-prinsip dasar hingga langkah-langkah praktis dalam menyusun dan menyampaikannya. Kita akan membahas teknik-teknik interpretasi, cara mengembangkan poin-poin khotbah, dan bahkan menyediakan <strong>contoh khotbah tekstual</strong> yang mendetail untuk memberikan gambaran nyata. Harapannya, panduan ini dapat memperkaya pemahaman Anda dan membantu Anda dalam menyajikan Firman Tuhan dengan lebih efektif dan berkuasa.</p>
+        </section>
+
+        <section>
+            <h2>Apa Itu Khotbah Tekstual? Definisi dan Karakteristik Utama</h2>
+            <p>Secara sederhana, khotbah tekstual adalah khotbah yang pokok-pokok utamanya diambil langsung dari frasa atau kalimat-kalimat dalam sebuah perikop Alkitab yang relatif singkat. Teks tersebut berfungsi sebagai kerangka, dan setiap poin khotbah muncul langsung dari teks itu sendiri. Inti dari khotbah tekstual adalah membiarkan Alkitab berbicara untuk dirinya sendiri, dengan pengkhotbah berperan sebagai penafsir dan penyampai pesan asli teks tersebut.</p>
+
+            <h3>Karakteristik Utama Khotbah Tekstual:</h3>
+            <ul>
+                <li><strong>Berpusat pada Teks Spesifik:</strong> Seluruh khotbah berputar di sekitar beberapa ayat atau satu perikop pendek. Setiap detail, setiap argumen, dan setiap aplikasi harus dapat ditelusuri kembali ke teks tersebut.</li>
+                <li><strong>Poin-poin dari Teks:</strong> Poin-poin utama khotbah (biasanya 2-4 poin) adalah frasa, klausa, atau ide-ide kunci yang secara eksplisit ada di dalam teks yang dipilih. Pengkhotbah tidak membawa ide dari luar untuk dicocokkan dengan teks, melainkan mengekstraksi ide dari teks.</li>
+                <li><strong>Struktur yang Jelas:</strong> Khotbah ini biasanya memiliki struktur yang sangat jelas dan mudah diikuti karena poin-poinnya sudah ada dalam teks. Misalnya, jika teks memiliki tiga klausa penting, maka khotbah dapat memiliki tiga poin yang sesuai dengan klausa-klausa tersebut.</li>
+                <li><strong>Fokus pada Makna Asli:</strong> Penekanan kuat pada eksegesis, yaitu studi cermat terhadap teks untuk memahami makna aslinya dalam konteks sejarah, budaya, dan tata bahasa penulis aslinya.</li>
+                <li><strong>Aplikasi Relevan:</strong> Setelah makna asli dipahami, khotbah kemudian bergeser untuk menerapkan kebenaran tersebut ke dalam konteks kehidupan pendengar masa kini, menunjukkan bagaimana Firman Tuhan tetap relevan.</li>
+            </ul>
+
+            <h3>Perbedaan dengan Khotbah Lain:</h3>
+            <p>Meskipun seringkali tumpang tindih dengan khotbah ekspositori, khotbah tekstual lebih terfokus pada unit teks yang lebih kecil. Khotbah ekspositori mungkin membahas sebuah pasal penuh atau serangkaian pasal, sementara khotbah tekstual lebih intensif pada satu "nugget" kebenaran dalam unit yang lebih kecil. Khotbah topikal, di sisi lain, memilih sebuah tema (misalnya, "kasih," "pengampunan") dan kemudian mencari ayat-ayat di seluruh Alkitab untuk mendukung tema tersebut. Khotbah tekstual memulai dengan teks, dan dari teks itulah tema atau kebenaran muncul.</p>
+
+            <div class="image-container">
+                <svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg1title svg1desc">
+                    <title id="svg1title">Alkitab Terbuka dengan Sinar</title>
+                    <desc id="svg1desc">Sebuah buku Alkitab terbuka dengan halaman-halaman yang memancarkan cahaya, melambangkan wahyu dan inspirasi ilahi. Desain minimalis dengan warna-warna sejuk dan cerah.</desc>
+                    <rect x="0" y="0" width="600" height="300" fill="none"/>
+                    <path d="M150 250 L300 50 L450 250 L150 250 Z" fill="hsl(190, 70%, 85%)" stroke="hsl(190, 70%, 55%)" stroke-width="2"/>
+                    <rect x="180" y="240" width="240" height="10" fill="hsl(190, 70%, 55%)" rx="5"/>
+                    <path d="M200 240 L200 60 L400 60 L400 240 L200 240 Z" fill="#FFFFFF" stroke="hsl(210, 30%, 20%)" stroke-width="1.5"/>
+                    <path d="M200 60 C250 20, 350 20, 400 60" stroke="hsl(210, 30%, 20%)" stroke-width="1.5" fill="none"/>
+                    <path d="M220 80 L380 80 M220 100 L380 100 M220 120 L380 120 M220 140 L380 140 M220 160 L380 160 M220 180 L380 180 M220 200 L380 200 M220 220 L380 220" stroke="hsl(210, 10%, 70%)" stroke-width="0.8"/>
+                    <path d="M300 60 L300 240" stroke="hsl(210, 30%, 20%)" stroke-width="1.5"/>
+                    <circle cx="300" cy="150" r="100" fill="url(#grad1)" opacity="0.4"/>
+                    <defs>
+                        <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                            <stop offset="0%" style="stop-color:hsl(50, 100%, 90%);stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:hsl(190, 70%, 90%);stop-opacity:0" />
+                        </radialGradient>
+                    </defs>
+                </svg>
+                <p><em>Ilustrasi Alkitab terbuka yang memancarkan cahaya, melambangkan kebenaran ilahi yang digali dalam khotbah tekstual.</em></p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Langkah-Langkah Menyiapkan Khotbah Tekstual yang Efektif</h2>
+            <p>Mempersiapkan khotbah tekstual adalah sebuah proses yang membutuhkan ketelitian, doa, dan dedikasi. Berikut adalah langkah-langkah yang sistematis untuk membantu Anda:</p>
+
+            <h3>1. Pemilihan Teks Alkitab</h3>
+            <p>Langkah pertama dan krusial adalah memilih perikop Alkitab. Pilih perikop yang relatif pendek (misalnya, 3-10 ayat) yang memiliki kesatuan tema atau ide. Hindari memilih ayat-ayat secara acak. Perhatikan konteks pasal dan kitab secara keseluruhan. Tanyakan: "Apakah perikop ini cukup kaya untuk diuraikan menjadi beberapa poin khotbah yang relevan?"</p>
+            <ul>
+                <li><strong>Kesatuan Ide:</strong> Pastikan teks memiliki ide sentral yang jelas.</li>
+                <li><strong>Panjang yang Tepat:</strong> Cukup pendek untuk fokus, cukup panjang untuk substansi.</li>
+                <li><strong>Relevansi:</strong> Meskipun semua Firman Tuhan relevan, beberapa teks mungkin lebih cocok untuk konteks jemaat Anda saat ini.</li>
+            </ul>
+
+            <h3>2. Observasi Mendalam (Apa yang Teks Katakan?)</h3>
+            <p>Bacalah teks berulang-ulang, setidaknya 10-20 kali, dalam berbagai terjemahan jika memungkinkan. Jangan terburu-buru. Tujuan Anda adalah menjadi akrab dengan setiap kata, frasa, dan struktur. Ajukan pertanyaan-pertanyaan berikut:</p>
+            <ul>
+                <li><strong>Siapa:</strong> Siapa yang berbicara? Siapa pendengarnya? Siapa karakter-karakter utamanya?</li>
+                <li><strong>Apa:</strong> Apa yang terjadi? Apa kata benda, kata kerja, kata sifat kunci? Apa perintah atau janji yang ada?</li>
+                <li><strong>Kapan:</strong> Kapan peristiwa ini terjadi? Kapan pesan ini disampaikan?</li>
+                <li><strong>Di mana:</strong> Di mana latar belakang kejadian atau pesan ini?</li>
+                <li><strong>Mengapa:</strong> Mengapa hal ini dikatakan atau dilakukan? Apa tujuan penulis?</li>
+                <li><strong>Bagaimana:</strong> Bagaimana hal ini diungkapkan? Bagaimana struktur kalimatnya?</li>
+                <li><strong>Kata Kunci:</strong> Identifikasi kata atau frasa yang diulang, ditekankan, atau memiliki makna penting.</li>
+                <li><strong>Struktur Teks:</strong> Perhatikan hubungan antara kalimat dan klausa (sebab-akibat, perbandingan-kontras, tujuan-hasil, umum-spesifik).</li>
+            </ul>
+
+            <h3>3. Interpretasi (Apa Artinya Teks Ini?)</h3>
+            <p>Setelah mengamati, sekarang saatnya menafsirkan. Ini adalah proses memahami makna asli teks bagi pembaca atau pendengar aslinya. Gunakan alat-alat studi Alkitab:</p>
+            <ul>
+                <li><strong>Konteks Historis-Kultural:</strong> Pahami latar belakang sejarah, budaya, dan sosial saat teks itu ditulis. Apa yang orang-orang pada masa itu pahami dari kata-kata ini?</li>
+                <li><strong>Konteks Sastra:</strong> Pahami genre sastra teks (narasi, puisi, hukum, nubuat, surat, Injil, dll.). Setiap genre memiliki aturan interpretasinya sendiri.</li>
+                <li><strong>Konteks Teologis (Biblika):</strong> Bagaimana teks ini berhubungan dengan ajaran Alkitab lainnya? Di mana posisi teks ini dalam keseluruhan cerita keselamatan Tuhan?</li>
+                <li><strong>Tata Bahasa dan Sintaksis:</strong> Jika Anda memiliki kemampuan bahasa asli (Yunani/Ibrani) atau alat bantu, periksa makna kata-kata kunci dan hubungan gramatikal antar kata.</li>
+                <li><strong>Komentar Alkitab:</strong> Konsultasikan beberapa komentar Alkitab yang kredibel, tetapi jangan biarkan mereka mendikte interpretasi Anda. Gunakan mereka untuk memperluas pemahaman dan memeriksa penafsiran Anda sendiri.</li>
+                <li><strong>Tujuan Penulis:</strong> Apa yang ingin dicapai oleh penulis asli dengan menulis bagian ini?</li>
+            </ul>
+
+            <h3>4. Ekstraksi Poin-Poin Utama dari Teks</h3>
+            <p>Ini adalah jantung dari khotbah tekstual. Poin-poin khotbah Anda harus muncul secara alami dari struktur dan ide-ide yang ditemukan dalam teks itu sendiri. Misalnya, jika sebuah ayat memiliki tiga pernyataan yang jelas, ini bisa menjadi tiga poin Anda.</p>
+            <ul>
+                <li><strong>Identifikasi Ide Sentral:</strong> Temukan satu kalimat yang merangkum pesan utama dari perikop tersebut.</li>
+                <li><strong>Pecah Menjadi Sub-Ide:</strong> Bagilah ide sentral menjadi beberapa poin utama yang didukung langsung oleh frasa atau klausa dalam teks.</li>
+                <li><strong>Formulasi Poin:</strong> Buat poin-poin tersebut menjadi kalimat yang jelas, ringkas, paralel (jika mungkin), dan berkesan. Poin-poin ini harus "berasal dari" dan "membimbing kembali ke" teks.</li>
+            </ul>
+            <p>Contoh: Jika teks Anda adalah Filipi 4:13 ("Segala perkara dapat kutanggung di dalam Dia yang memberi kekuatan kepadaku."), poin-poin Anda mungkin bisa seperti: 1. Kekuatan Ilahi Adalah Sumber Ketahanan (di dalam Dia yang memberi kekuatan kepadaku). 2. Ketahanan Mencakup Segala Keadaan (Segala perkara dapat kutanggung). 3. Ketergantungan Total pada Kristus Memungkinkan Semua Ini (di dalam Dia).</p>
+
+            <h3>5. Pengembangan dan Ilustrasi</h3>
+            <p>Setelah Anda memiliki poin-poin utama, kembangkan setiap poin dengan:</p>
+            <ul>
+                <li><strong>Penjelasan:</strong> Jelaskan apa arti setiap poin secara lebih rinci, merujuk kembali ke teks asli.</li>
+                <li><strong>Bukti dari Teks:</strong> Tunjukkan bagaimana teks itu sendiri mendukung poin tersebut.</li>
+                <li><strong>Konteks yang Lebih Luas:</strong> Bagaimana poin ini sesuai dengan ajaran Alkitab lainnya?</li>
+                <li><strong>Ilustrasi:</strong> Gunakan cerita, anekdot, metafora, atau contoh nyata untuk menjelaskan poin dan membuatnya lebih mudah dipahami dan diingat oleh jemaat. Pastikan ilustrasi relevan dan tidak mengalihkan perhatian dari teks.</li>
+                <li><strong>Aplikasi Awal:</strong> Mulai pikirkan bagaimana kebenaran ini berlaku dalam kehidupan.</li>
+            </ul>
+
+            <div class="image-container">
+                <svg width="600" height="300" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svg2title svg2desc">
+                    <title id="svg2title">Proses Pemahaman Teks</title>
+                    <desc id="svg2desc">Ilustrasi tiga lingkaran yang saling berhubungan, melambangkan langkah-langkah observasi, interpretasi, dan aplikasi dalam persiapan khotbah tekstual. Warna-warna sejuk dan cerah.</desc>
+                    <rect x="0" y="0" width="600" height="300" fill="none"/>
+                    <circle cx="200" cy="150" r="80" fill="hsl(190, 80%, 90%)" stroke="hsl(190, 70%, 55%)" stroke-width="2"/>
+                    <text x="200" y="155" text-anchor="middle" font-family="var(--font-family-heading)" font-size="24" fill="hsl(190, 70%, 30%)">Observasi</text>
+
+                    <circle cx="400" cy="150" r="80" fill="hsl(170, 80%, 90%)" stroke="hsl(170, 70%, 55%)" stroke-width="2"/>
+                    <text x="400" y="155" text-anchor="middle" font-family="var(--font-family-heading)" font-size="24" fill="hsl(170, 70%, 30%)">Interpretasi</text>
+
+                    <path d="M280 150 Q300 130, 320 150 Q300 170, 280 150" fill="hsl(200, 60%, 80%)" stroke="hsl(200, 60%, 50%)" stroke-width="1.5"/>
+                    <path d="M320 150 Q300 170, 280 150" fill="none" stroke="hsl(200, 60%, 50%)" stroke-width="1.5" stroke-dasharray="5,5"/>
+                    <text x="300" y="145" text-anchor="middle" font-family="var(--font-family-base)" font-size="16" fill="var(--text-color)">Hubungan</text>
+
+                    <circle cx="300" cy="240" r="60" fill="hsl(220, 70%, 95%)" stroke="hsl(220, 70%, 70%)" stroke-width="1.5"/>
+                    <text x="300" y="245" text-anchor="middle" font-family="var(--font-family-heading)" font-size="20" fill="hsl(220, 70%, 40%)">Aplikasi</text>
+
+                    <line x1="260" y1="180" x2="280" y2="210" stroke="hsl(200, 60%, 50%)" stroke-width="1.5" stroke-dasharray="4,4"/>
+                    <line x1="340" y1="180" x2="320" y2="210" stroke="hsl(200, 60%, 50%)" stroke-width="1.5" stroke-dasharray="4,4"/>
+                </svg>
+                <p><em>Grafik yang melambangkan tahapan kunci dalam studi teks Alkitab: Observasi, Interpretasi, dan Aplikasi.</em></p>
+            </div>
+
+            <h3>6. Menyusun Pendahuluan dan Penutup</h3>
+            <p><strong>Pendahuluan:</strong> Tujuannya adalah untuk menarik perhatian pendengar, memperkenalkan teks, dan menyatakan ide sentral khotbah.</p>
+            <ul>
+                <li><strong>Pengait (Hook):</strong> Mulailah dengan pertanyaan, statistik, cerita singkat, atau pernyataan yang menarik perhatian dan berhubungan dengan kehidupan sehari-hari.</li>
+                <li><strong>Konteks Teks:</strong> Berikan sedikit latar belakang tentang perikop, posisi dalam kitab, atau situasi historis.</li>
+                <li><strong>Pernyataan Ide Sentral:</strong> Nyatakan dengan jelas apa yang akan dipelajari dari teks tersebut dalam satu kalimat ringkas. Ini bisa menjadi jembatan menuju poin-poin Anda.</li>
+            </ul>
+
+            <p><strong>Penutup:</strong> Tujuannya adalah untuk meringkas, menguatkan pesan, dan memberikan dorongan aplikasi.</p>
+            <ul>
+                <li><strong>Rangkuman Singkat:</strong> Ingatkan jemaat tentang poin-poin utama khotbah.</li>
+                <li><strong>Penekanan Ulang Ide Sentral:</strong> Nyatakan kembali pesan inti dengan cara yang kuat.</li>
+                <li><strong>Panggilan untuk Bertindak (Aplikasi Akhir):</strong> Berikan tantangan konkret kepada jemaat tentang bagaimana mereka dapat menerapkan kebenaran ini dalam hidup mereka minggu ini. Ini harus spesifik, personal, dan dapat dicapai.</li>
+                <li><strong>Doa atau Pujian:</strong> Akhiri dengan doa atau pernyataan harapan dan iman.</li>
+            </ul>
+
+            <h3>7. Menulis Naskah Khotbah</h3>
+            <p>Meskipun Anda mungkin tidak akan membaca naskah sepenuhnya saat berkhotbah, menulisnya membantu Anda mengorganisir pikiran, memastikan alur yang logis, dan mengukur waktu.</p>
+            <ul>
+                <li><strong>Alur Logis:</strong> Pastikan transisi antar poin mulus dan koheren.</li>
+                <li><strong>Bahasa Jelas:</strong> Gunakan bahasa yang mudah dipahami oleh semua kalangan.</li>
+                <li><strong>Waktu:</strong> Perkirakan waktu yang dibutuhkan. Umumnya, satu halaman teks berukuran 12pt dengan spasi ganda membutuhkan sekitar 2-3 menit untuk dibacakan. Khotbah tekstual biasanya berkisar 20-40 menit.</li>
+                <li><strong>Revisi:</strong> Bacalah keras-keras, perbaiki kalimat yang canggung, hapus pengulangan yang tidak perlu, dan pertajam pesan Anda.</li>
+            </ul>
+
+            <h3>8. Latihan Penyampaian</h3>
+            <p>Latihan membuat Anda lebih percaya diri dan alami. Latihlah khotbah Anda beberapa kali:</p>
+            <ul>
+                <li><strong>Di Depan Cermin:</strong> Perhatikan ekspresi wajah dan bahasa tubuh Anda.</li>
+                <li><strong>Rekam Diri Sendiri:</strong> Dengarkan dan tonton kembali untuk mengidentifikasi area yang perlu diperbaiki (kecepatan bicara, nada, pengulangan).</li>
+                <li><strong>Fokus pada Kontak Mata:</strong> Meskipun Anda memiliki catatan, usahakan untuk sering melakukan kontak mata dengan jemaat.</li>
+                <li><strong>Doa:</strong> Serahkan seluruh proses kepada Tuhan, memohon hikmat dan urapan-Nya.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contoh Khotbah Tekstual 1: Anugerah Keselamatan dan Tujuan Hidup (Efesus 2:8-10)</h2>
+            <p>Mari kita terapkan langkah-langkah di atas pada salah satu perikop yang paling fundamental dalam Alkitab:</p>
+            <blockquote style="background-color: var(--secondary-bg); border-color: var(--heading-color);">
+                <p><strong>Efesus 2:8-10 (Terjemahan Baru)</strong><br>
+                <sup>8</sup>Sebab karena <strong>kasih karunia</strong> kamu diselamatkan <strong>melalui iman</strong>; itu bukan hasil usahamu, tetapi karunia Allah,<br>
+                <sup>9</sup>itu bukan hasil pekerjaanmu, supaya jangan ada orang yang memegahkan diri.<br>
+                <sup>10</sup>Karena kita ini buatan Allah, diciptakan dalam Kristus Yesus untuk melakukan <strong>pekerjaan baik</strong>, yang dipersiapkan Allah sebelumnya. Ia mau, supaya kita hidup di dalamnya.</p>
+            </blockquote>
+
+            <h3>1. Observasi Mendalam:</h3>
+            <ul>
+                <li><strong>Kata Kunci yang Diulang/Ditekankan:</strong> "Kasih karunia," "iman," "diselamatkan," "bukan hasil usahamu/pekerjaanmu," "karunia Allah," "buatan Allah," "diciptakan," "pekerjaan baik," "Kristus Yesus."</li>
+                <li><strong>Kontras:</strong> Ayat 8-9 menekankan keselamatan <em>bukan</em> hasil usaha atau pekerjaan, melainkan karunia. Ayat 10 menekankan bahwa kita <em>diciptakan untuk</em> melakukan pekerjaan baik. Ini adalah kontras krusial.</li>
+                <li><strong>Hubungan:</strong> Ayat 8 menjelaskan <em>cara</em> keselamatan (kasih karunia melalui iman). Ayat 9 menjelaskan <em>mengapa</em> bukan pekerjaan (supaya tidak memegahkan diri). Ayat 10 menjelaskan <em>tujuan</em> keselamatan (melakukan pekerjaan baik).</li>
+                <li><strong>Subjek:</strong> Ayat 8-9 berpusat pada "kamu" (jemaat Efesus, dan kita). Ayat 10 berpusat pada "kita" dan "Allah" (kita buatan Allah, diciptakan oleh-Nya).</li>
+            </ul>
+
+            <h3>2. Interpretasi:</h3>
+            <ul>
+                <li><strong>Konteks Efesus:</strong> Pasal 1 berbicara tentang rencana keselamatan Allah yang kekal. Pasal 2:1-7 menggambarkan kondisi manusia yang mati dalam dosa dan bagaimana Allah menghidupkan mereka bersama Kristus oleh anugerah. Ayat 8-10 adalah klimaks dari bagian ini, menjelaskan bagaimana anugerah ini diterima dan apa implikasinya.</li>
+                <li><strong>"Kasih karunia":</strong> <em>Charis</em> (Yunani), kebaikan atau anugerah yang tidak pantas diterima. Ini adalah inisiatif dan kemurahan Allah sepenuhnya.</li>
+                <li><strong>"Iman":</strong> <em>Pistis</em> (Yunani), bukan hanya kepercayaan intelektual, tetapi penyerahan diri dan ketergantungan yang penuh.</li>
+                <li><strong>"Bukan hasil usahamu/pekerjaanmu":</strong> Ini menolak gagasan keselamatan melalui perbuatan baik atau ritual keagamaan. Keselamatan adalah murni hadiah.</li>
+                <li><strong>"Supaya jangan ada orang yang memegahkan diri":</strong> Tujuan Allah adalah menyingkirkan kesombongan manusia dan memastikan bahwa semua kemuliaan hanya bagi-Nya.</li>
+                <li><strong>"Buatan Allah":</strong> <em>Poiēma</em> (Yunani), dari mana kita mendapatkan kata "puisi" atau "mahakarya." Kita adalah ciptaan Allah yang indah, hasil karya-Nya yang sempurna.</li>
+                <li><strong>"Diciptakan dalam Kristus Yesus untuk melakukan pekerjaan baik":</strong> Keselamatan bukan akhir, melainkan awal dari kehidupan yang bertujuan. Pekerjaan baik adalah <em>hasil</em> dari keselamatan, bukan <em>syarat</em> untuknya. Allah sudah menyediakannya.</li>
+            </ul>
+
+            <h3>3. Ekstraksi Poin-Poin Utama:</h3>
+            <p>Dari perikop ini, kita bisa melihat tiga poin utama yang saling terkait dan mengalir secara logis:</p>
+            <ol>
+                <li><strong>Keselamatan Adalah Karunia Ilahi yang Diterima Melalui Iman (Ay. 8-9)</strong></li>
+                <li><strong>Kita Adalah Mahakarya Ciptaan Allah (Ay. 10a)</strong></li>
+                <li><strong>Kita Diciptakan untuk Tujuan Mulia: Melakukan Pekerjaan Baik (Ay. 10b)</strong></li>
+            </ol>
+
+            <h3>4. Pengembangan dan Ilustrasi (Draft Ringkas):</h3>
+
+            <h4>Pendahuluan:</h4>
+            <p>Selamat pagi Saudara-saudari terkasih. Pernahkah Anda merasa bahwa hidup ini seolah-olah sebuah perlombaan tanpa henti? Perlombaan untuk menjadi lebih baik, lebih sukses, lebih rohani, dan seringkali, lebih 'layak' di mata Tuhan? Atau mungkin Anda merasa tidak pernah cukup baik, selalu dihantui oleh rasa bersalah dan ketidakmampuan? Hari ini, Firman Tuhan dari Efesus 2:8-10 akan membawa kita pada sebuah kebenaran yang membebaskan dan mengubah hidup, mengingatkan kita tentang dasar keselamatan kita dan tujuan luhur di balik keberadaan kita. Ini bukan tentang apa yang kita lakukan untuk Tuhan, melainkan apa yang telah Tuhan lakukan untuk kita, dan apa yang Dia ingin kita lakukan sebagai respons kasih kita.</p>
+
+            <h4>Poin 1: Keselamatan Adalah Karunia Ilahi yang Diterima Melalui Iman (Ay. 8-9)</h4>
+            <ul>
+                <li><strong>Penjelasan:</strong> Paulus dengan tegas menyatakan bahwa keselamatan kita bukanlah hasil dari usaha atau pekerjaan kita. Ini adalah murni anugerah, hadiah cuma-cuma dari Allah.</li>
+                <li><strong>Bukti dari Teks:</strong> "Sebab karena <strong>kasih karunia</strong> kamu diselamatkan <strong>melalui iman</strong>; itu bukan hasil usahamu, tetapi <strong>karunia Allah</strong>, itu bukan hasil pekerjaanmu, supaya jangan ada orang yang memegahkan diri." Kata-kata ini sangat jelas. Kita tidak bisa membeli, mendapatkan, atau meraih keselamatan dengan perbuatan baik kita, seberapa pun tulusnya. Jika bisa, maka kemuliaan akan jatuh kepada kita, bukan kepada Allah.</li>
+                <li><strong>Ilustrasi:</strong> Bayangkan seorang anak yang ingin membeli hadiah mahal untuk orang tuanya. Ia tidak punya uang, tetapi orang tuanya yang kaya, melihat kerinduan hatinya, membelikan hadiah itu dan memberikannya kepadanya untuk dipersembahkan. Itu adalah karunia! Anak itu hanya bisa menerima dan bersukacita. Begitulah keselamatan. Kita hanya bisa menerima dengan iman.</li>
+                <li><strong>Aplikasi:</strong> Berhentilah mencoba "mendapatkan" keselamatan. Terimalah itu sebagai hadiah. Apakah Anda masih bergumul dengan legalisme atau rasa tidak layak? Ingatlah anugerah ini.</li>
+            </ul>
+
+            <h4>Poin 2: Kita Adalah Mahakarya Ciptaan Allah (Ay. 10a)</h4>
+            <ul>
+                <li><strong>Penjelasan:</strong> Ayat 10 dimulai dengan "Karena kita ini buatan Allah..." Kata "buatan" di sini adalah <em>poiēma</em>, dari mana kita mendapatkan kata puisi atau mahakarya. Allah bukan hanya menyelamatkan kita; Dia membentuk ulang, menciptakan kita kembali.</li>
+                <li><strong>Bukti dari Teks:</strong> "Karena kita ini <strong>buatan Allah</strong>, diciptakan dalam Kristus Yesus..." Ini berarti identitas kita yang sejati, yang telah ditebus, adalah hasil karya seni ilahi. Kita adalah ciptaan baru, yang diukir dengan hati-hati oleh tangan Sang Pencipta.</li>
+                <li><strong>Ilustrasi:</strong> Seorang seniman mengambil gumpalan tanah liat yang tak berbentuk, kotor, dan tidak berguna. Dengan keahliannya, ia membentuknya menjadi sebuah vas yang indah dan berharga. Begitulah kita di mata Tuhan setelah diselamatkan. Dari keberadaan kita yang hancur karena dosa, Dia membentuk kita menjadi sesuatu yang indah, berharga, dan memiliki tujuan.</li>
+                <li><strong>Aplikasi:</strong> Hargailah identitas Anda dalam Kristus. Jangan biarkan dunia mendefinisikan Anda. Anda adalah mahakarya Allah! Lihatlah diri Anda sebagaimana Tuhan melihat Anda.</li>
+            </ul>
+
+            <h4>Poin 3: Kita Diciptakan untuk Tujuan Mulia: Melakukan Pekerjaan Baik (Ay. 10b)</h4>
+            <ul>
+                <li><strong>Penjelasan:</strong> Keselamatan bukan tujuan akhir. Paulus melanjutkan, "diciptakan dalam Kristus Yesus <strong>untuk melakukan pekerjaan baik</strong>, yang dipersiapkan Allah sebelumnya. Ia mau, supaya kita hidup di dalamnya." Pekerjaan baik adalah bukti, buah, dan tujuan dari keselamatan kita, bukan penyebabnya.</li>
+                <li><strong>Bukti dari Teks:</strong> Frasa "untuk melakukan pekerjaan baik" adalah kunci. Ada tujuan yang telah disiapkan Allah. Ini adalah "jalan yang telah disiapkan Allah."</li>
+                <li><strong>Ilustrasi:</strong> Sebuah pohon apel yang sehat tidak berjuang untuk menghasilkan buah; itu adalah hasil alami dari akarnya yang kuat dan pertumbuhannya yang sehat. Demikian juga, orang Kristen yang telah diselamatkan oleh anugerah, akan secara alami menghasilkan "buah" pekerjaan baik. Pekerjaan baik ini bukan daftar tugas yang harus kita penuhi, melainkan cara hidup yang mencerminkan siapa kita di dalam Kristus.</li>
+                <li><strong>Aplikasi:</strong> Hidupilah tujuan ini. Apa "pekerjaan baik" yang telah Allah persiapkan untuk Anda? Bagaimana Anda bisa melayani keluarga, gereja, komunitas, dan dunia di sekitar Anda dengan kasih Kristus?</li>
+            </ul>
+
+            <h4>Penutup:</h4>
+            <p>Saudara-saudari yang dikasihi Tuhan, hari ini kita telah diingatkan bahwa keselamatan bukanlah sesuatu yang kita usahakan, melainkan karunia termanis dari Allah yang diterima melalui iman. Kita bukan lagi orang asing atau orang berdosa, melainkan mahakarya Allah yang berharga, diciptakan kembali dalam Kristus Yesus. Dan sebagai mahakarya-Nya, kita memiliki tujuan ilahi: untuk melakukan pekerjaan baik yang telah dipersiapkan-Nya bagi kita. Ini adalah hidup yang berkelimpahan! Jangan hidup dalam ketakutan atau merasa tidak cukup. Terimalah anugerah-Nya, hiduplah dalam identitas Anda sebagai ciptaan-Nya yang berharga, dan wujudkanlah tujuan-Nya dalam setiap langkah hidup Anda. Kiranya kita semua bertekad untuk menghidupi kebenaran ini, memuliakan nama Tuhan, dan menjadi berkat bagi dunia ini.</p>
+            <p>Mari kita berdoa.</p>
+        </section>
+
+        <section>
+            <h2>Contoh Khotbah Tekstual 2: Kasih Allah yang Mengubahkan (Yohanes 3:16-17)</h2>
+            <p>Sekarang, mari kita ambil perikop lain yang juga sangat terkenal, Yohanes 3:16-17, dan terapkan proses yang sama.</p>
+            <blockquote style="background-color: var(--secondary-bg); border-color: var(--heading-color);">
+                <p><strong>Yohanes 3:16-17 (Terjemahan Baru)</strong><br>
+                <sup>16</sup>Karena begitu besar <strong>kasih Allah</strong> akan dunia ini, sehingga Ia telah mengaruniakan <strong>Anak-Nya yang tunggal</strong>, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh <strong>hidup yang kekal</strong>.<br>
+                <sup>17</sup>Sebab Allah mengutus Anak-Nya ke dunia bukan untuk menghakimi dunia, melainkan supaya dunia diselamatkan oleh Dia.</p>
+            </blockquote>
+
+            <h3>1. Observasi Mendalam:</h3>
+            <ul>
+                <li><strong>Kata Kunci yang Diulang/Ditekankan:</strong> "Kasih Allah," "dunia," "Anak-Nya yang tunggal," "percaya," "binasa," "hidup yang kekal," "menghakimi," "diselamatkan."</li>
+                <li><strong>Pola:</strong> Kalimat "Karena begitu besar kasih Allah akan dunia ini, sehingga..." menunjukkan hubungan sebab-akibat yang kuat. Ayat 16 menjelaskan motif (kasih) dan cara (memberi Anak) untuk hasil (hidup kekal). Ayat 17 memperjelas tujuan kedatangan Anak (bukan menghakimi, melainkan menyelamatkan).</li>
+                <li><strong>Kontras:</strong> "Tidak binasa, melainkan beroleh hidup yang kekal." Dan "bukan untuk menghakimi dunia, melainkan supaya dunia diselamatkan." Ini menekankan tujuan positif dari tindakan Allah.</li>
+                <li><strong>Target:</strong> "Dunia ini" muncul berulang kali, menunjukkan cakupan kasih dan keselamatan yang luas. "Setiap orang yang percaya" menunjukkan respons yang dibutuhkan.</li>
+            </ul>
+
+            <h3>2. Interpretasi:</h3>
+            <ul>
+                <li><strong>Konteks Yohanes 3:</strong> Perikop ini adalah bagian dari percakapan Yesus dengan Nikodemus, seorang pemimpin agama Yahudi yang bingung tentang kelahiran kembali. Yesus menjelaskan natur Kerajaan Allah dan bagaimana seseorang bisa masuk ke dalamnya. Ayat 16-17 adalah ringkasan yang indah dari Injil.</li>
+                <li><strong>"Begitu besar kasih Allah":</strong> Kata "begitu besar" (Yunani: <em>houtōs</em>) tidak hanya berarti 'kuantitas' (betapa banyaknya), tetapi juga 'kualitas' (bagaimana cara-Nya). Allah menunjukkan kasih-Nya dengan cara yang paling ekstrem, yaitu mengorbankan yang paling berharga bagi-Nya.</li>
+                <li><strong>"Dunia ini":</strong> <em>Kosmos</em> (Yunani), seringkali merujuk pada umat manusia yang jatuh dalam dosa, yang menentang Allah, namun Allah tetap mengasihi. Ini menunjukkan universalitas kasih Allah.</li>
+                <li><strong>"Anak-Nya yang tunggal":</strong> <em>Monogenēs huios</em> (Yunani), Anak satu-satunya, unik dalam natur ilahi-Nya dan hubungan-Nya dengan Bapa. Pengorbanan yang paling mahal.</li>
+                <li><strong>"Percaya kepada-Nya":</strong> Bukan sekadar tahu tentang Yesus, tetapi menaruh kepercayaan dan ketergantungan penuh pada-Nya sebagai Juruselamat.</li>
+                <li><strong>"Tidak binasa, melainkan beroleh hidup yang kekal":</strong> Kontras yang jelas antara nasib tanpa Kristus dan dengan Kristus. Hidup kekal bukan hanya hidup yang tidak berkesudahan, melainkan hidup dalam kualitas ilahi, dimulai sekarang dan berlanjut selamanya.</li>
+                <li><strong>"Bukan untuk menghakimi... melainkan supaya dunia diselamatkan":</strong> Menekankan misi utama Kristus adalah penyelamatan, bukan penghukuman, meskipun penolakan terhadap-Nya membawa penghakiman.</li>
+            </ul>
+
+            <h3>3. Ekstraksi Poin-Poin Utama:</h3>
+            <p>Dari dua ayat ini, kita dapat mengembangkan tiga poin kuat yang saling berkaitan:</p>
+            <ol>
+                <li><strong>Kasih Allah adalah Motif Utama Keselamatan Kita (Ay. 16a)</strong></li>
+                <li><strong>Yesus Kristus Adalah Jalan Tunggal Menuju Hidup Kekal (Ay. 16b)</strong></li>
+                <li><strong>Misi Kristus Adalah Menyelamatkan, Bukan Menghakimi (Ay. 17)</strong></li>
+            </ol>
+
+            <h3>4. Pengembangan dan Ilustrasi (Draft Ringkas):</h3>
+
+            <h4>Pendahuluan:</h4>
+            <p>Saudari dan Saudara yang terkasih, jika ada satu ayat dalam Alkitab yang mungkin paling dikenal, mungkin itu adalah Yohanes 3:16. Ayat ini seringkali disebut sebagai "Injil dalam nutshell" atau "hati dari Alkitab." Namun, apakah kita benar-benar memahami kedalaman dan implikasi dari kebenaran yang terkandung di dalamnya? Mari kita hari ini menggali lebih dalam ke dalam permata rohani ini, dan juga ayat 17 yang menyertainya, untuk menyegarkan kembali pemahaman kita tentang kasih Allah yang luar biasa dan misi penyelamatan-Nya bagi dunia.</p>
+
+            <h4>Poin 1: Kasih Allah adalah Motif Utama Keselamatan Kita (Ay. 16a)</h4>
+            <ul>
+                <li><strong>Penjelasan:</strong> Yohanes 3:16 dimulai dengan, "Karena begitu besar kasih Allah akan dunia ini..." Ini adalah fondasi dari segala sesuatu. Motif di balik seluruh rencana keselamatan Allah bukanlah keadilan yang menuntut hukuman, melainkan kasih-Nya yang tak terbatas.</li>
+                <li><strong>Bukti dari Teks:</strong> "Kasih Allah" dan "dunia ini." Allah mengasihi bukan hanya orang-orang baik, atau orang yang layak, tetapi "dunia" – umat manusia yang telah jatuh dalam dosa, yang seringkali memberontak melawan-Nya. Kasih ini adalah <em>agape</em>, kasih tanpa syarat, yang rela berkorban.</li>
+                <li><strong>Ilustrasi:</strong> Seorang ibu yang mengasihi anaknya tanpa syarat, bahkan ketika anaknya berbuat salah besar. Ia mungkin sedih dan kecewa, tetapi kasihnya tidak pernah pudar. Kasih ini mendorongnya untuk mencari cara terbaik agar anaknya kembali ke jalan yang benar, meskipun itu memerlukan pengorbanan besar darinya. Kasih Allah jauh melampaui itu.</li>
+                <li><strong>Aplikasi:</strong> Biarkan kasih Allah ini meresap ke dalam hati Anda. Apakah Anda merasa tidak layak? Ingatlah bahwa kasih-Nya tidak berdasarkan kelayakan Anda, melainkan natur-Nya.</li>
+            </ul>
+
+            <h4>Poin 2: Yesus Kristus Adalah Jalan Tunggal Menuju Hidup Kekal (Ay. 16b)</h4>
+            <ul>
+                <li><strong>Penjelasan:</strong> Bagaimana kasih Allah ini diwujudkan? Teks melanjutkan: "sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal." Jalan menuju keselamatan adalah melalui karunia yang paling berharga dari Allah: Anak-Nya, Yesus Kristus.</li>
+                <li><strong>Bukti dari Teks:</strong> "Anak-Nya yang tunggal" – menunjukkan keunikan dan nilai tak ternilai Kristus. "Setiap orang yang percaya kepada-Nya" – menunjukkan bahwa respons iman adalah kuncinya. "Tidak binasa, melainkan beroleh hidup yang kekal" – menunjukkan hasil yang transformatif dari iman ini.</li>
+                <li><strong>Ilustrasi:</strong> Bayangkan seseorang yang tersesat di padang gurun yang luas, sekarat karena kehausan. Tiba-tiba, sebuah helikopter datang dan menjatuhkan sebotol air. Air itu adalah karunia cuma-cuma, tetapi orang itu harus mengambilnya dan meminumnya untuk diselamatkan. Air itu adalah Kristus, dan meminumnya adalah tindakan iman. Tidak ada jalan lain di padang gurun itu untuk mendapatkan air kehidupan.</li>
+                <li><strong>Aplikasi:</strong> Apakah Anda telah menaruh iman Anda kepada Yesus Kristus? Atau apakah Anda masih mencoba mencari jalan lain? Ingatlah, Dia adalah satu-satunya jalan menuju kehidupan yang sejati dan kekal.</li>
+            </ul>
+
+            <h4>Poin 3: Misi Kristus Adalah Menyelamatkan, Bukan Menghakimi (Ay. 17)</h4>
+            <ul>
+                <li><strong>Penjelasan:</strong> Ayat 17 memperjelas: "Sebab Allah mengutus Anak-Nya ke dunia bukan untuk menghakimi dunia, melainkan supaya dunia diselamatkan oleh Dia." Misi utama Yesus adalah penyelamatan, bukan penghukuman. Ini adalah berita baik yang luar biasa!</li>
+                <li><strong>Bukti dari Teks:</strong> Kontras yang jelas antara "bukan untuk menghakimi" dan "melainkan supaya dunia diselamatkan." Ini menggarisbawahi sifat penuh kasih dari kedatangan-Nya yang pertama. Meskipun penghakiman akan datang, tujuan utama kedatangan pertama-Nya adalah menawarkan jalan keluar dari penghakiman itu.</li>
+                <li><strong>Ilustrasi:</strong> Seorang dokter bedah yang ahli datang ke sebuah rumah sakit dengan tujuan menyembuhkan pasien yang sakit parah, bukan untuk mengutuk penyakit mereka. Meskipun ia tahu penyakit itu bisa mematikan, fokus utamanya adalah membawa kesembuhan dan kehidupan. Yesus datang bukan untuk menunjuk jari dan mengutuk dosa kita, tetapi untuk memberikan obat penyembuhan melalui darah-Nya.</li>
+                <li><strong>Aplikasi:</strong> Bagikan kabar baik ini kepada orang lain! Dunia membutuhkan kasih dan keselamatan ini. Jangan biarkan rasa takut atau rasa bersalah menghalangi Anda, tetapi terimalah anugerah penyelamatan-Nya dan bagikan kepada mereka yang masih terikat.</li>
+            </ul>
+
+            <h4>Penutup:</h4>
+            <p>Saudara-saudari terkasih, Yohanes 3:16-17 bukan hanya sekadar ayat yang indah; itu adalah jantung Injil, sebuah undangan yang penuh kasih dari Allah. Ini menyatakan bahwa kasih-Nya yang besar adalah pendorong utama keselamatan kita, Yesus Kristus adalah satu-satunya jalan untuk menerima hidup kekal, dan misi-Nya yang mulia adalah untuk menyelamatkan kita, bukan menghakimi. Kiranya kebenaran ini menguatkan iman kita, memenuhi kita dengan sukacita, dan mendorong kita untuk hidup dalam kasih dan tujuan-Nya setiap hari. Terimalah kasih-Nya, hiduplah di dalam Kristus, dan jadilah saksi-Nya bagi dunia yang membutuhkan keselamatan ini.</p>
+            <p>Mari kita menundukkan kepala dalam doa.</p>
+        </section>
+
+        <section>
+            <h2>Tips Tambahan untuk Khotbah Tekstual yang Berpengaruh</h2>
+            <p>Selain langkah-langkah di atas, ada beberapa tips praktis yang dapat membantu Anda menyempurnakan khotbah tekstual Anda:</p>
+            <ul>
+                <li><strong>Doa yang Konsisten:</strong> Seluruh proses persiapan harus diawali, diiringi, dan diakhiri dengan doa. Mohon hikmat Roh Kudus untuk memahami dan menyampaikan Firman-Nya dengan benar.</li>
+                <li><strong>Berhati-hati dengan "Ayat Bukti":</strong> Hindari mengutip ayat-ayat di luar perikop utama hanya untuk mendukung poin Anda tanpa terlebih dahulu menunjukkan bagaimana ayat-ayat tersebut secara teologis selaras dengan konteks. Jangan jadikan khotbah tekstual menjadi khotbah topikal terselubung.</li>
+                <li><strong>Gunakan Bahasa yang Relevan:</strong> Terjemahkan kebenaran kuno ke dalam bahasa yang dapat dipahami dan relevan bagi pendengar modern tanpa mengkompromikan makna aslinya.</li>
+                <li><strong>Variasi Ilustrasi:</strong> Jangan hanya terpaku pada satu jenis ilustrasi (misalnya, hanya cerita pribadi). Gunakan metafora, analogi, fakta sejarah, atau contoh dari budaya pop (secara bijak) untuk menjaga khotbah tetap menarik.</li>
+                <li><strong>Fokus pada Kristus:</strong> Dalam setiap perikop Perjanjian Lama maupun Perjanjian Baru, carilah bagaimana teks tersebut menunjuk kepada Kristus, Injil, atau rencana penebusan Allah secara keseluruhan.</li>
+                <li><strong>Ketahui Audiens Anda:</strong> Sesuaikan bahasa, ilustrasi, dan aplikasi dengan kebutuhan dan tingkat pemahaman jemaat Anda.</li>
+                <li><strong>Tanyakan "Jadi Apa?":</strong> Setelah setiap poin, selalu tanyakan pada diri sendiri, "Jadi apa artinya ini bagi jemaat saya hari ini?" Ini akan membantu Anda merumuskan aplikasi yang kuat dan praktis.</li>
+                <li><strong>Tetap Rendah Hati:</strong> Ingatlah bahwa Anda hanyalah penyampai pesan Tuhan. Kemuliaan adalah milik-Nya.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Kesimpulan: Kuasa Khotbah Tekstual dalam Membangun Iman</h2>
+            <p>Khotbah tekstual adalah metode yang sangat ampuh dan alkitabiah untuk menyampaikan Firman Tuhan. Dengan berakar kuat pada teks Alkitab, ia memastikan bahwa pesan yang disampaikan adalah murni kebenaran ilahi, bebas dari agenda pribadi atau interpretasi yang menyimpang. Ia melatih jemaat untuk mencintai Alkitab, memahaminya secara mendalam, dan menerapkan kebenarannya dalam kehidupan sehari-hari.</p>
+
+            <p>Proses persiapan khotbah tekstual — dari observasi yang cermat, interpretasi yang teliti, ekstraksi poin yang akurat, hingga pengembangan dan aplikasi yang relevan — adalah sebuah perjalanan rohani yang memperkaya baik pengkhotbah maupun pendengar. Ini adalah bentuk khotbah yang tidak hanya mengajar, tetapi juga membentuk, menantang, dan menginspirasi jemaat untuk bertumbuh dalam Kristus dan hidup sesuai panggilan-Nya.</p>
+
+            <p>Melalui dua <strong>contoh khotbah tekstual</strong> yang telah kita bahas, kita dapat melihat bagaimana sebuah perikop kecil pun dapat diuraikan untuk mengungkapkan kekayaan kebenaran yang tak terbatas, memberikan fondasi yang kuat untuk iman, dan memotivasi tindakan nyata. Semoga panduan ini memberikan Anda kepercayaan diri dan peralatan yang diperlukan untuk terus menggali harta Firman Tuhan dan menyampaikannya dengan kuasa Roh Kudus, membangun gereja yang kokoh di atas dasar kebenaran-Nya.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Artikel ini didedikasikan untuk memperkaya pemahaman dan praktik khotbah.</p>
+        <p>Semoga bermanfaat bagi setiap pelayan Firman Tuhan.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/khotbah-yeremia-31-27-34">Khotbah Yeremia 31 27 34</a></li>
+<li><a href="/pembacaan-alkitab-minggu-ini-gmim">Pembacaan Alkitab Minggu Ini Gmim</a></li>
+<li><a href="/renungan-matius-7-12">Renungan Matius 7 12</a></li>
+<li><a href="/renungan-1-korintus-1-18-31">Renungan 1 Korintus 1 18 31</a></li>
+<li><a href="/khotbah-yesaya-52-13-15">Khotbah Yesaya 52 13 15</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

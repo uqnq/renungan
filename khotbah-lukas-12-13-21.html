@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah Lukas 12:13-21: Peringatan Akan Ketamakan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #F8FBFD; /* Sangat terang, hampir putih */
+            --secondary-bg: #E0F2F7; /* Biru muda cerah */
+            --accent-color: #79D1C3; /* Teal sejuk */
+            --text-dark: #333333;
+            --text-light: #555555;
+            --border-light: #D1E5ED;
+            --highlight-color: #FFFACD; /* Kuning muda cerah */
+            --shadow-color: rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 20px 0;
+            font-size: 16px;
+        }
+
+        header {
+            background-color: var(--secondary-bg);
+            color: var(--text-dark);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid var(--accent-color);
+            box-shadow: 0 4px 8px var(--shadow-color);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 20px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        section {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2, h3, h4 {
+            font-family: 'Lora', serif;
+            color: var(--text-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: var(--accent-color);
+            border-left: 5px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            color: var(--text-dark);
+            margin-top: 25px;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed var(--border-light);
+        }
+
+        h4 {
+            font-size: 1.3em;
+            color: var(--text-light);
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        blockquote {
+            background-color: var(--secondary-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 20px 25px;
+            margin: 25px 0;
+            font-style: italic;
+            color: var(--text-dark);
+            font-size: 1.1em;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px var(--shadow-color);
+        }
+
+        blockquote p {
+            margin-bottom: 0.5em;
+        }
+
+        ul, ol {
+            margin: 15px 0 15px 25px;
+            padding: 0;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 25px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px var(--shadow-color);
+            background-color: white; /* Untuk jaga-jaga jika SVG transparan */
+            padding: 5px; /* Sedikit padding agar bayangan tidak langsung di objek */
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            background-color: var(--secondary-bg);
+            color: var(--text-light);
+            font-size: 0.9em;
+            border-top: 3px solid var(--accent-color);
+            box-shadow: 0 -4px 8px var(--shadow-color);
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+                padding: 15px 0;
+            }
+
+            header {
+                padding: 30px 15px;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            main {
+                padding: 20px 15px;
+                border-radius: 8px;
+            }
+
+            h2 {
+                font-size: 1.8em;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 1.5em;
+                margin-top: 20px;
+            }
+
+            h4 {
+                font-size: 1.2em;
+                margin-top: 15px;
+            }
+
+            blockquote {
+                padding: 15px 20px;
+                margin: 20px 0;
+                font-size: 1em;
+            }
+
+            footer {
+                padding: 20px 15px;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.6em;
+            }
+
+            h3 {
+                font-size: 1.3em;
+            }
+
+            h4 {
+                font-size: 1.1em;
+            }
+        }
+
+        .highlight {
+            background-color: var(--highlight-color);
+            padding: 2px 4px;
+            border-radius: 3px;
+        }
+
+        .centered-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khotbah Lukas 12:13-21: Peringatan Akan Ketamakan dan Harta Duniawi</h1>
+        <p>Sebuah Renungan Mendalam Mengenai Prioritas Hidup, Kekayaan Sejati, dan Bahaya Memusatkan Hati pada Hal-hal yang Fana.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pendahuluan: Sebuah Peringatan yang Abadi</h2>
+            <p>Dalam rentang Injil Lukas, kita seringkali dihadapkan pada ajaran-ajaran Yesus yang menantang status quo dan norma-norma sosial pada zamannya. Salah satu perikop yang paling menohok dan relevan hingga hari ini adalah Lukas 12:13-21. Ini bukan sekadar cerita atau perumpamaan biasa; ini adalah sebuah <span class="highlight">peringatan keras</span> yang menggema melintasi zaman, berbicara langsung kepada hati manusia yang cenderung mencintai harta benda dan keamanan duniawi.</p>
+            <p>Pada pandangan pertama, perikop ini mungkin tampak sebagai respons Yesus terhadap sebuah permintaan sepele mengenai warisan. Namun, seperti banyak ajaran-Nya, Yesus menggunakan peristiwa sehari-hari sebagai pintu masuk untuk menyampaikan kebenaran ilahi yang jauh lebih mendalam. Dia tidak hanya menolak menjadi hakim dalam sengketa warisan, tetapi Dia justru mengalihkan fokus dari masalah hukum duniawi ke <span class="highlight">masalah hati</span> yang jauh lebih krusial: bahaya ketamakan dan ilusi kekayaan duniawi.</p>
+            <p>Di tengah masyarakat modern yang digempur oleh konsumerisme, tuntutan untuk memiliki lebih, dan pengejaran kekayaan sebagai tolok ukur kesuksesan, pesan Lukas 12:13-21 menjadi semakin mendesak. Apakah kita benar-benar memahami apa arti "hidup" itu? Apakah kita sudah mengidentifikasi di mana letak keamanan sejati kita? Apakah kita membangun "lumbung" kita di dunia yang fana ini, atau kita menginvestasikan hidup kita pada sesuatu yang kekal? Melalui perikop ini, Yesus mengajak kita untuk melakukan introspeksi mendalam, meninjau kembali prioritas hidup kita, dan bertanya, "Apakah aku kaya di hadapan Allah?"</p>
+            <p>Mari kita selami lebih dalam setiap bagian dari perikop ini, memahami konteksnya, menggali makna teologisnya, dan menarik aplikasi praktis untuk kehidupan kita sebagai pengikut Kristus di era kontemporer ini. Kita akan menemukan bahwa ajaran Yesus di sini bukan hanya untuk orang-orang kaya pada zamannya, melainkan untuk setiap jiwa yang bergumul dengan godaan harta, kemapanan, dan keamanan yang ditawarkan oleh dunia.</p>
+        </section>
+
+        <section>
+            <h2>Konteks Injil Lukas dan Pasal 12</h2>
+            <p>Sebelum kita menyelami perikop inti, penting untuk memahami latar belakang Injil Lukas secara keseluruhan dan posisi perikop ini dalam pasal 12. Injil Lukas ditulis oleh Lukas, seorang tabib dan rekan seperjalanan Rasul Paulus, yang menujukan injilnya kepada Teofilus dan mungkin juga pembaca non-Yahudi pada umumnya. Lukas dikenal dengan perhatiannya yang mendalam terhadap orang miskin, doa, Roh Kudus, dan inklusivitas keselamatan bagi semua bangsa.</p>
+
+            <h3>Lukas dan Temanya</h3>
+            <p>Lukas seringkali menyajikan Yesus sebagai Juruselamat yang berbelas kasihan, peduli terhadap mereka yang terpinggirkan, dan yang menantang asumsi-asumsi sosial dan agama. Ia banyak menampilkan perumpamaan yang unik dan ajaran yang menekankan <span class="highlight">keadilan sosial</span> dan kepedulian terhadap sesama. Konsep berbagi harta, bahaya kekayaan, dan pentingnya kemiskinan rohani adalah tema-tema yang berulang dalam tulisannya. Perikop tentang orang kaya yang bodoh ini sangat selaras dengan tema-tema tersebut.</p>
+
+            <h3>Pasal 12: Sebuah Persiapan untuk Kerajaan</h3>
+            <p>Pasal 12 dari Injil Lukas adalah bagian yang kaya akan ajaran Yesus yang padat dan penting. Sebelum perikop tentang ketamakan, Yesus telah berbicara tentang kemunafikan (ayat 1-3), keberanian untuk bersaksi (ayat 4-7), penolakan terhadap Roh Kudus (ayat 8-12), dan kemudian berlanjut dengan peringatan tentang kekhawatiran dan kebutuhan akan berjaga-jaga. Perikop Lukas 12:13-21 ini berfungsi sebagai <span class="highlight">jembatan krusial</span> antara ajaran-ajaran tersebut, menegaskan bahwa kekhawatiran dan kemunafikan seringkali berakar pada keterikatan yang salah terhadap hal-hal duniawi.</p>
+            <p>Yesus sedang mempersiapkan murid-murid-Nya dan orang banyak untuk kedatangan Kerajaan Allah. Persiapan ini melibatkan bukan hanya pengakuan iman secara lisan, tetapi juga transformasi hati dan prioritas hidup. Dia ingin mereka memahami bahwa kehidupan sejati tidak ditemukan dalam akumulasi kekayaan atau keamanan finansial, tetapi dalam <span class="highlight">hubungan yang benar dengan Allah</span> dan penggunaan sumber daya yang bijaksana sesuai dengan kehendak-Nya. Dalam konteks ini, permintaan warisan menjadi kesempatan emas bagi Yesus untuk memaparkan kebenaran yang fundamental tentang hakikat ketamakan.</p>
+
+            <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><rect x="50" y="70" width="200" height="100" rx="15" fill="%23E0F2F7" stroke="%2379D1C3"/><path d="M50 85h200M50 100h200M50 115h200M50 130h200M50 145h200M50 160h200"/><rect x="120" y="50" width="60" height="20" rx="5" fill="%2379D1C3"/><path d="M150 70 L150 50 M150 170 L150 190 M150 190 Q140 195 130 190 Q120 185 110 190 Q100 195 90 190 Q80 185 70 190 Q60 195 50 190 M150 190 Q160 195 170 190 Q180 185 190 190 Q200 195 210 190 Q220 185 230 190 Q240 195 250 190" stroke="%2379D1C3" stroke-width="6" fill="none"/><path d="M150 100 L150 150 M135 125 L165 125" stroke="%23333333" stroke-width="6"/><circle cx="150" cy="125" r="15" fill="%23FFFACD" stroke="%23333333" stroke-width="4"/></svg>' alt="Ilustrasi lumbung gandum dengan lambang salib dan uang di dalamnya, melambangkan pilihan antara kekayaan duniawi dan kekayaan rohani.">
+            <figcaption class="centered-text">Ilustrasi lumbung gandum, sebuah simbol kekayaan duniawi, dengan sebuah lambang yang mirip salib di tengahnya yang melambangkan kekayaan rohani. Ini menyoroti perumpamaan Yesus tentang orang kaya yang bodoh.</figcaption>
+        </section>
+
+        <section>
+            <h2>Analisis Ayat Per Ayat: Inti Peringatan Yesus</h2>
+
+            <h3>Ayat 13-14: Permintaan yang Salah Arah</h3>
+            <blockquote>
+                <p>"Seorang dari orang banyak itu berkata kepada Yesus: Guru, katakanlah kepada saudaraku, supaya ia berbagi warisan dengan aku."</p>
+                <p>"Tetapi Ia berkata kepadanya: Hai orang, siapakah yang telah mengangkat Aku menjadi hakim atau pembagi harta di antaramu?"</p>
+            </blockquote>
+            <p>Perikop ini dibuka dengan sebuah intervensi yang sangat manusiawi. Seorang pria dari kerumunan, yang mungkin terkesan dengan ajaran atau otoritas Yesus, melihat kesempatan untuk menyelesaikan masalah pribadinya. Ia memohon kepada Yesus untuk memerintahkan saudaranya agar berbagi warisan dengannya. Permintaan ini, meskipun tampak wajar dari sudut pandang manusia yang mencari keadilan atau keuntungan pribadi, menempatkan Yesus dalam posisi sebagai seorang <span class="highlight">hakim sipil</span> atau arbiter hukum. Dalam masyarakat Yahudi kuno, rabi seringkali berperan dalam menyelesaikan sengketa hukum, termasuk masalah warisan.</p>
+            <p>Namun, Yesus dengan tegas menolak peran tersebut. Respons-Nya, "Hai orang, siapakah yang telah mengangkat Aku menjadi hakim atau pembagi harta di antaramu?", adalah sebuah penolakan yang penting. Ini bukan karena Yesus tidak peduli dengan keadilan atau tidak mampu menyelesaikan masalah tersebut. Sebaliknya, penolakan ini menunjukkan bahwa <span class="highlight">misi Yesus jauh melampaui</span> urusan-urusan duniawi yang sementara. Dia datang bukan untuk mengurus warisan atau membagi harta, melainkan untuk membawa Kerajaan Allah, untuk membebaskan jiwa dari perbudakan dosa, dan untuk mengarahkan manusia kepada kekayaan yang kekal.</p>
+            <p>Penolakan Yesus ini menggeser fokus dari sengketa materi ke sengketa yang lebih mendalam dalam hati manusia. Permintaan pria itu menjadi <span class="highlight">pemicu</span> bagi Yesus untuk berbicara tentang bahaya yang lebih besar daripada ketidakadilan warisan, yaitu bahaya ketamakan yang mengakar di hati. Yesus tidak ingin terjerat dalam masalah-masalah duniawi yang bisa mengalihkan perhatian dari tujuan utama kedatangan-Nya. Dia ingin mengajarkan bahwa masalah sesungguhnya bukan pada warisan itu sendiri, melainkan pada motif dan sikap hati di baliknya.</p>
+
+            <h3>Ayat 15: Peringatan Keras Akan Ketamakan</h3>
+            <blockquote>
+                <p>"Kata-Nya lagi kepada mereka: Berjaga-jagalah dan waspadalah terhadap segala ketamakan, sebab walaupun seorang berlimpah-limpah hartanya, hidupnya tidaklah tergantung dari pada kekayaan itu."</p>
+            </blockquote>
+            <p>Dari respons yang tajam, Yesus langsung beralih ke sebuah <span class="highlight">peringatan fundamental</span>. Frasa "Berjaga-jagalah dan waspadalah terhadap segala ketamakan" adalah sebuah perintah ganda yang menunjukkan urgensi dan keseriusan masalah ini. Kata Yunani untuk ketamakan adalah "pleonexia," yang secara harfiah berarti "keinginan untuk memiliki lebih" atau "nafsu akan lebih banyak." Ini bukan sekadar keinginan untuk memiliki kebutuhan dasar, tetapi sebuah dorongan yang tidak pernah terpuaskan untuk mengumpulkan lebih banyak lagi, seringkali tanpa memperhatikan kebutuhan orang lain atau kehendak Allah.</p>
+            <p>Peringatan Yesus ini diikuti dengan sebuah pernyataan krusial: <span class="highlight">"sebab walaupun seorang berlimpah-limpah hartanya, hidupnya tidaklah tergantung dari pada kekayaan itu."</span> Ini adalah inti dari seluruh perikop. Masyarakat, dulu dan sekarang, cenderung mengasosiasikan kekayaan dengan kehidupan yang baik, aman, dan memuaskan. Kita sering percaya bahwa semakin banyak yang kita miliki, semakin baik, aman, dan bahagia hidup kita. Namun, Yesus dengan tegas membantah gagasan ini. Dia menyatakan bahwa esensi kehidupan, makna keberadaan, dan keamanan sejati tidak bergantung pada jumlah harta yang dimiliki seseorang.</p>
+            <p>Kenyamanan, status, dan kekuatan yang ditawarkan oleh kekayaan hanyalah ilusi. Kekayaan tidak bisa membeli kesehatan abadi, tidak bisa menunda kematian, dan tidak bisa menjamin kebahagiaan sejati. Terlebih lagi, kekayaan tidak bisa membeli anugerah Allah atau keselamatan jiwa. Ketergantungan pada kekayaan adalah <span class="highlight">kesesatan fundamental</span> yang dapat membutakan seseorang terhadap realitas spiritual dan nilai-nilai kekal. Peringatan ini mempersiapkan kita untuk perumpamaan yang akan datang, yang secara dramatis mengilustrasikan kebenaran ini.</p>
+
+            <h3>Ayat 16-19: Perumpamaan Orang Kaya yang Bodoh</h3>
+            <blockquote>
+                <p>"Kemudian Ia mengatakan kepada mereka suatu perumpamaan: Adalah seorang kaya, tanahnya berlimpah-limpah hasilnya."</p>
+                <p>"Ia berpikir dalam hatinya: Apakah yang harus aku perbuat, sebab aku tidak mempunyai tempat di mana aku dapat menyimpan hasil tanahku."</p>
+                <p>"Lalu katanya: Inilah yang akan aku perbuat: Aku akan merombak lumbung-lumbungku dan mendirikan yang lebih besar; dan di situ aku akan menyimpan segala gandum dan barang-barangku."</p>
+                <p>"Sesudah itu aku akan berkata kepada jiwaku: Jiwaku, ada padamu banyak barang, tertimbun untuk bertahun-tahun lamanya; beristirahatlah, makanlah, minumlah dan bersenang-senanglah!"</p>
+            </blockquote>
+            <p>Untuk memperjelas peringatan-Nya, Yesus menceritakan sebuah perumpamaan yang ikonik: perumpamaan tentang orang kaya yang bodoh. Tokoh sentral dalam perumpamaan ini adalah seorang pria yang, dari sudut pandang duniawi, adalah <span class="highlight">model kesuksesan</span>. Tanah pertaniannya menghasilkan panen yang melimpah ruah, jauh melebihi kapasitas lumbungnya yang ada. Dia bukanlah penjahat, penipu, atau pemeras. Dia hanya seorang yang berhasil dalam bisnisnya, yang oleh banyak orang akan dipandang sebagai teladan keberhasilan.</p>
+            <p>Masalahnya bukan pada kekayaannya, melainkan pada <span class="highlight">respons hatinya</span> terhadap kekayaan itu. Ketika dihadapkan pada kelebihan panen, pemikirannya berpusat sepenuhnya pada dirinya sendiri. Perhatikan penggunaan kata ganti orang pertama: "aku", "hatiku", "lumbung-lumbungku", "gandumku", "barang-barangku", "jiwaku". Dia tidak sekali pun memikirkan Allah, tidak ada syukur, tidak ada pertimbangan untuk berbagi dengan sesama yang membutuhkan, atau bahkan tidak ada rencana untuk menggunakan kelebihan itu demi kemuliaan Allah.</p>
+            <p>Rencananya sederhana: merobohkan lumbung yang ada dan membangun yang lebih besar. Ini bukan tindakan yang salah secara moral jika dilakukan dengan motivasi yang benar. Namun, bagi orang kaya ini, lumbung yang lebih besar adalah simbol dari <span class="highlight">keamanan diri</span> yang mutlak dan kepuasan diri yang tak terbatas. Dia melihat kekayaannya sebagai jaminan untuk masa depan, memungkinkan dia untuk hidup dalam kemewahan dan kesenangan tanpa henti.</p>
+            <p>Puncaknya ada pada ayat 19, di mana ia berbicara kepada jiwanya: <span class="highlight">"Jiwaku, ada padamu banyak barang, tertimbun untuk bertahun-tahun lamanya; beristirahatlah, makanlah, minumlah dan bersenang-senanglah!"</span> Ini adalah ekspresi tertinggi dari egoisme dan pandangan hidup yang sempit. Dia percaya bahwa kekayaan material akan memberikan dia kebahagiaan, kedamaian, dan kebebasan untuk menikmati hidup tanpa batas. Dia telah menempatkan seluruh kepercayaannya pada hartanya, menganggapnya sebagai sumber kepuasan jiwanya.</p>
+            <p>Kesalahannya yang mendasar adalah dia menganggap dirinya adalah pemilik mutlak dari apa yang dia miliki, dan bahwa waktu hidupnya adalah miliknya untuk direncanakan sesuka hati. Dia lupa bahwa ia hanyalah <span class="highlight">pengelola</span>, dan bahwa hidupnya bukanlah miliknya sendiri, tetapi pinjaman dari Allah. Dia telah membangun sebuah kerajaan pribadi yang sepenuhnya terpisah dari Sang Pemberi hidup dan berkat.</p>
+
+            <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M150 20 L150 180 M100 80 Q150 20 200 80 M100 120 Q150 180 200 120" stroke="%2379D1C3" stroke-width="6"/><circle cx="150" cy="100" r="80" stroke="%23333333" stroke-width="4" fill="%23F8FBFD"/><path d="M150 100 L150 140 M130 120 L170 120 M140 110 L160 110 M140 130 L160 130" stroke="%23333333" stroke-width="3"/><path d="M150 100 A80 80 0 0 1 150 20 L150 100Z" fill="%23FFFACD" opacity="0.7"/><path d="M170 100 L170 140 M150 120 L190 120" stroke="%23333333" stroke-width="3"/><path d="M130 100 L130 140 M110 120 L150 120" stroke="%23333333" stroke-width="3"/><rect x="110" y="60" width="80" height="80" rx="10" stroke="%2379D1C3" stroke-width="6" fill="none" transform="rotate(45 150 100)"/><path d="M150 100 L150 180 M100 150 L200 150" stroke="%23333333" stroke-width="4"/><path d="M150 100 L150 20 M100 50 L200 50" stroke="%23333333" stroke-width="4"/><circle cx="150" cy="100" r="15" fill="%23FFFACD" stroke="%23333333" stroke-width="4"/></svg>' alt="Ilustrasi timbangan yang berat sebelah, satu sisi penuh dengan koin emas dan sisi lain kosong, melambangkan ketidakseimbangan prioritas hidup.">
+            <figcaption class="centered-text">Timbangan yang tidak seimbang, menggambarkan bagaimana fokus pada harta duniawi seringkali membuat kita mengabaikan kekayaan rohani dan kekekalan.</figcaption>
+
+            <h3>Ayat 20-21: Vonis Ilahi dan Realitas Kekal</h3>
+            <blockquote>
+                <p>"Tetapi firman Allah kepadanya: Hai orang bodoh, pada malam ini juga jiwamu akan diambil dari padamu, lalu siapakah yang akan memiliki segala yang telah kausediakan itu?"</p>
+                <p>"Demikianlah jadinya dengan orang yang mengumpulkan harta bagi dirinya sendiri, tetapi tidak kaya di hadapan Allah."</p>
+            </blockquote>
+            <p>Inilah <span class="highlight">titik balik</span> yang dramatis dan mengejutkan dalam perumpamaan ini. Tepat ketika orang kaya itu merencanakan masa depan yang panjang dan penuh kesenangan, firman Allah datang kepadanya dengan sebuah vonis yang telak. Allah menyebutnya <span class="highlight">"Hai orang bodoh!"</span> Mengapa bodoh? Bukan karena dia tidak pintar berbisnis atau tidak cakap mengelola aset. Dia bodoh karena dia gagal memahami realitas paling mendasar tentang kehidupan: ketidakpastian hidup dan kepastian kematian.</p>
+            <p>Dia bodoh karena mengira dapat mengontrol masa depan dan mengabaikan Sang Pemberi hidup itu sendiri. Dia bodoh karena telah menaruh seluruh harapannya pada hal-hal fana yang dapat lenyap dalam sekejap. Dia bodoh karena mengabaikan tujuan sejati dari keberadaannya dan kekayaan yang kekal.</p>
+            <p>Ancaman itu jelas: <span class="highlight">"pada malam ini juga jiwamu akan diambil dari padamu."</span> Semua rencana jangka panjangnya, semua lumbung besar yang dia bangun, semua harta yang dia timbun, menjadi tidak berarti dalam sekejap mata. Dia tidak bisa membawa satu pun dari itu bersamanya ke alam baka. Pertanyaan retoris Allah, "lalu siapakah yang akan memiliki segala yang telah kausediakan itu?", menohok pada kesia-siaan dari seluruh usahanya. Semua yang ia kumpulkan dengan susah payah kini akan menjadi milik orang lain, tanpa dia bisa menikmati atau mengendalikannya.</p>
+            <p>Ayat 21 adalah <span class="highlight">kesimpulan yang pahit</span> dan sebuah peringatan universal: <span class="highlight">"Demikianlah jadinya dengan orang yang mengumpulkan harta bagi dirinya sendiri, tetapi tidak kaya di hadapan Allah."</span> Ini bukan hanya tentang orang kaya dalam perumpamaan; ini tentang setiap orang yang menimbun kekayaan untuk kepentingannya sendiri, yang menjadikan harta sebagai dewa, dan yang mengabaikan panggilan untuk menjadi kaya di hadapan Allah. Kekayaan di hadapan Allah berarti memiliki hubungan yang benar dengan-Nya, berinvestasi dalam nilai-nilai Kerajaan-Nya (seperti kasih, keadilan, kemurahan hati), dan menggunakan sumber daya kita untuk kemuliaan-Nya serta kebaikan sesama.</p>
+            <p>Kontrasnya sangat tajam: kekayaan duniawi vs. kekayaan ilahi. Orang kaya itu kaya di mata dunia, tetapi miskin di hadapan Allah. Kematian menyingkapkan bahwa satu-satunya kekayaan yang benar-benar penting adalah <span class="highlight">kekayaan rohani</span> yang telah kita kumpulkan melalui iman dan ketaatan kepada Allah. Orang kaya yang bodoh gagal dalam ujian ini karena ia menempatkan "diri sendiri" sebagai pusat alam semestanya, bukan Allah.</p>
+        </section>
+
+        <section>
+            <h2>Tema-Tema Teologis Utama</h2>
+            <p>Perikop Lukas 12:13-21 ini adalah sumber yang kaya akan tema-tema teologis yang relevan untuk setiap era.</p>
+
+            <h3>1. Prioritas Kerajaan Allah atas Kekayaan Duniawi</h3>
+            <p>Yesus secara konsisten mengajarkan bahwa Kerajaan Allah harus menjadi prioritas utama dalam hidup kita. Dalam Matius 6:33, Dia berkata, "Carilah dahulu Kerajaan Allah dan kebenarannya, maka semuanya itu akan ditambahkan kepadamu." Perumpamaan orang kaya yang bodoh secara dramatis menunjukkan konsekuensi dari mengabaikan prinsip ini. Orang kaya itu mencari kerajaannya sendiri, membangun lumbung-lumbung yang lebih besar, dan merencanakan masa depan berdasarkan akumulasi kekayaan. Dia gagal melihat bahwa hidup sejati dan berkat abadi berasal dari prioritas yang benar.</p>
+            <p>Kisah ini menegaskan bahwa kita tidak bisa melayani dua tuan: Allah dan Mamon (kekayaan). Jika hati kita terikat pada harta benda, maka hati kita tidak sepenuhnya tertuju kepada Allah. Prioritas Kerajaan Allah berarti kesediaan untuk melepaskan genggaman kita pada hal-hal duniawi dan menginvestasikan energi, waktu, dan sumber daya kita untuk tujuan-tujuan ilahi.</p>
+
+            <h3>2. Sifat Sementara Harta Duniawi vs. Kekekalan</h3>
+            <p>Salah satu pelajaran paling mencolok dari perikop ini adalah <span class="highlight">sifat fana</span> dari harta benda duniawi. Orang kaya itu merencanakan untuk "bertahun-tahun lamanya," namun hidupnya diambil dalam satu malam. Kekayaannya, yang ia yakini akan memberinya keamanan dan kesenangan, menjadi tidak relevan saat kematian tiba. Ini adalah pengingat yang kuat bahwa "kita tidak membawa apa-apa ke dunia dan kita tidak dapat membawa apa-apa ke luar" (1 Timotius 6:7).</p>
+            <p>Sebaliknya, ada <span class="highlight">kekayaan yang kekal</span>: hubungan kita dengan Allah, perbuatan baik yang kita lakukan dalam nama-Nya, jiwa-jiwa yang kita sentuh dengan kasih Kristus, dan warisan iman yang kita tinggalkan. Yesus mengundang kita untuk menimbun harta di surga, di mana ngengat dan karat tidak merusaknya, dan pencuri tidak membongkar serta mencurinya (Matius 6:19-21). Perikop Lukas ini adalah undangan untuk merenungkan, "Di mana hartaku, di situlah hatiku."</p>
+
+            <h3>3. Bahaya Ketamakan dan Egosentrisme</h3>
+            <p>Ketamakan, atau "pleonexia," adalah <span class="highlight">akar dari banyak kejahatan</span>. Ini adalah keinginan yang tidak pernah puas untuk memiliki lebih banyak, yang seringkali mengarah pada ketidakadilan, eksploitasi, dan pengabaian sesama. Orang kaya dalam perumpamaan ini bukanlah penipu, tetapi ketamakanlah yang membuatnya buta terhadap kebutuhan orang lain dan bahkan kebutuhannya sendiri akan Allah.</p>
+            <p>Perkataan orang kaya itu kepada jiwanya adalah ekspresi <span class="highlight">egosentrisme yang ekstrem</span>: "aku akan...", "jiwaku...", "barang-barangku...". Tidak ada ruang bagi Allah atau orang lain dalam rencananya. Ketamakan memutarbalikkan persepsi seseorang, membuat mereka percaya bahwa kebahagiaan dan keamanan ditemukan dalam kepemilikan pribadi, dan bukan dalam pemberian atau hubungan. Ini adalah dosa yang insidious, karena seringkali tersembunyi di balik fasad kerja keras dan kesuksesan.</p>
+
+            <h3>4. Stewardship (Pengelolaan) vs. Ownership (Kepemilikan)</h3>
+            <p>Perikop ini secara implisit mengajarkan konsep <span class="highlight">stewardship</span> Kristen. Sebagai pengikut Kristus, kita dipanggil untuk menjadi pengelola yang setia atas segala sesuatu yang telah dipercayakan Allah kepada kita – waktu, talenta, dan harta benda. Kita bukanlah pemilik mutlak, melainkan penatalayan yang suatu hari harus mempertanggungjawabkan pengelolaan kita kepada Allah.</p>
+            <p>Orang kaya itu bertindak seolah-olah dia adalah pemilik mutlak dari panennya. Dia tidak bertanya, "Bagaimana Allah ingin aku menggunakan berkat ini?" atau "Bagaimana aku bisa menjadi saluran berkat bagi orang lain?" Sebaliknya, ia hanya bertanya, "Apa yang harus aku perbuat dengan *milikku*?" Ini adalah kesalahan fatal dalam memahami peran kita di hadapan Allah.</p>
+
+            <h3>5. Kematian sebagai Pengungkap Realitas Sejati</h3>
+            <p>Ancaman kematian yang tiba-tiba dalam perumpamaan ini adalah sebuah <span class="highlight">pengingat yang gamblang</span> akan kerapuhan hidup dan kepastian kematian. Kematian adalah realitas yang tidak dapat ditawar dan tidak dapat dihindari oleh siapa pun, kaya atau miskin. Ketika kematian datang, semua kekayaan duniawi menjadi tidak berdaya. Tidak ada kekayaan yang dapat membeli perpanjangan hidup.</p>
+            <p>Kematian berfungsi sebagai <span class="highlight">pengungkap realitas</span>. Ia menyingkapkan apa yang benar-benar kita pegang erat, apa yang benar-benar kita percayai sebagai sumber keamanan kita. Bagi orang kaya itu, kematian tiba-tiba menelanjangi semua ilusi keamanannya. Ini mendorong kita untuk hidup dengan kesadaran akan kekekalan, untuk setiap hari mempersiapkan diri bertemu dengan Pencipta kita, bukan dengan menimbun harta tetapi dengan membangun hubungan yang kuat dengan-Nya.</p>
+
+            <h3>6. Kekayaan Sejati di Hadapan Allah</h3>
+            <p>Kontras utama dalam perikop ini adalah antara <span class="highlight">kaya di hadapan dunia</span> dan <span class="highlight">kaya di hadapan Allah</span>. Orang kaya itu kaya raya secara materi, tetapi miskin secara rohani. Dia tidak memiliki apa-apa yang dapat ia bawa ke hadapan Allah. Kekayaan di hadapan Allah bukan diukur dari jumlah uang di rekening bank atau besar aset yang dimiliki, melainkan dari kedalaman iman, ketaatan, kasih, dan kemurahan hati kita.</p>
+            <p>Menjadi kaya di hadapan Allah berarti:
+                <ul>
+                    <li>Menggunakan harta kita untuk kemuliaan-Nya dan untuk melayani sesama.</li>
+                    <li>Berinvestasi dalam Kerajaan Allah melalui persembahan, misi, dan pelayanan.</li>
+                    <li>Membangun karakter Kristen yang kudus.</li>
+                    <li>Menyimpan harta di surga melalui perbuatan kasih dan keadilan.</li>
+                    <li>Menjalani hidup yang memuliakan Allah dengan setiap napas kita.</li>
+                </ul>
+            </p>
+            <p>Pesan Yesus sangat jelas: fokuslah pada hal-hal yang memiliki nilai kekal, bukan pada hal-hal yang akan musnah bersama dunia ini.</p>
+        </section>
+
+        <section>
+            <h2>Aplikasi Praktis untuk Kehidupan Modern</h2>
+            <p>Peringatan Yesus di Lukas 12:13-21 tidak terbatas pada abad pertama. Pesan ini sangat relevan dan mendesak bagi masyarakat kita saat ini, yang seringkali terjerat dalam siklus konsumerisme, tekanan finansial, dan obsesi terhadap kekayaan.</p>
+
+            <h3>1. Mengidentifikasi dan Melawan Konsumerisme</h3>
+            <p>Masyarakat modern seringkali mendorong kita untuk <span class="highlight">selalu menginginkan lebih</span>. Iklan, media sosial, dan budaya di sekitar kita seringkali mengirimkan pesan bahwa kebahagiaan dapat dibeli, bahwa status diukur dari kepemilikan, dan bahwa kita harus selalu mengikuti tren terbaru. Ini adalah bentuk modern dari ketamakan yang Yesus peringatkan.</p>
+            <p>Bagaimana kita bisa melawan ini?
+                <ul>
+                    <li><span class="highlight">Praktikkan hidup sederhana:</span> Belajar untuk bersyukur atas apa yang kita miliki dan menahan diri dari membeli barang-barang yang tidak perlu.</li>
+                    <li><span class="highlight">Refleksi kritis:</span> Pertanyakan mengapa kita ingin memiliki sesuatu. Apakah itu kebutuhan atau keinginan yang didorong oleh budaya?</li>
+                    <li><span class="highlight">Fokus pada pengalaman, bukan kepemilikan:</span> Alihkan energi dan sumber daya kita untuk membangun hubungan, belajar, dan melayani, daripada hanya mengumpulkan barang.</li>
+                </ul>
+            </p>
+
+            <h3>2. Meninjau Kembali Hubungan Kita dengan Uang dan Keamanan Finansial</h3>
+            <p>Adalah bijaksana untuk menabung, merencanakan masa depan, dan bertanggung jawab secara finansial. Ini bukan dosa. Masalahnya muncul ketika keamanan finansial <span class="highlight">menggantikan Allah</span> sebagai sumber utama kepercayaan dan harapan kita. Orang kaya yang bodoh dalam perumpamaan itu tidak membangun lumbung besar karena dia lapar, tetapi karena dia ingin menyimpan untuk dirinya sendiri dan merasa aman selama bertahun-tahun.</p>
+            <p>Kita perlu bertanya pada diri sendiri:
+                <ul>
+                    <li>Apakah aku menganggap uang sebagai sumber keamanan utamaku, atau Allah?</li>
+                    <li>Apakah aku rela berbagi atau memberi jika Allah memanggilku untuk itu, meskipun itu berarti mengurangi "keamanan" pribadiku?</li>
+                    <li>Apakah aku terlalu khawatir tentang masa depan finansialku sehingga melupakan janji-janji Allah akan pemeliharaan-Nya?</li>
+                </ul>
+            Memiliki uang bukanlah dosa, tetapi <span class="highlight">cinta uang</span> adalah akar segala kejahatan (1 Timotius 6:10).</p>
+
+            <h3>3. Menjadi Pengelola yang Setia (Stewardship)</h3>
+            <p>Allah adalah Pemilik segala sesuatu. Kita adalah pengelola-Nya. Ini berarti setiap berkat yang kita terima, termasuk harta benda, adalah <span class="highlight">kepercayaan kudus</span> yang harus kita kelola sesuai dengan kehendak-Nya. Ini melibatkan:
+                <ul>
+                    <li><span class="highlight">Persembahan:</span> Memberi persepuluhan dan persembahan dengan sukarela untuk mendukung pekerjaan Tuhan dan pelayanan gereja.</li>
+                    <li><span class="highlight">Berbagi dengan yang membutuhkan:</span> Mengenali bahwa kelebihan kita adalah kesempatan untuk menjadi berkat bagi orang lain, terutama mereka yang kurang beruntung.</li>
+                    <li><span class="highlight">Investasi yang bijaksana:</span> Menggunakan uang kita dengan cara yang memuliakan Tuhan, misalnya menghindari investasi yang merugikan orang lain atau lingkungan.</li>
+                    <li><span class="highlight">Transparansi dan integritas:</span> Mengelola keuangan kita dengan jujur dan bertanggung jawab.</li>
+                </ul>
+            </p>
+            <p>Konsep stewardship ini menantang pemikiran egois "milikku" yang ditunjukkan oleh orang kaya yang bodoh. Ini mendorong kita untuk melihat harta benda sebagai alat untuk pelayanan, bukan sebagai tujuan akhir.</p>
+
+            <h3>4. Membangun "Lumbung" Rohani</h3>
+            <p>Alih-alih membangun lumbung-lumbung fisik yang lebih besar, Yesus memanggil kita untuk <span class="highlight">membangun lumbung-lumbung rohani</span>. Apa artinya ini? Ini berarti berinvestasi dalam hal-hal yang memiliki nilai kekal:
+                <ul>
+                    <li><span class="highlight">Hubungan dengan Allah:</span> Melalui doa, pembacaan Firman, ibadah, dan ketaatan.</li>
+                    <li><span class="highlight">Pelayanan kepada sesama:</span> Menggunakan waktu, talenta, dan harta kita untuk melayani orang lain, membantu yang miskin, mengunjungi yang sakit, dan memberitakan Injil.</li>
+                    <li><span class="highlight">Membangun karakter Kristen:</span> Mengembangkan buah Roh Kudus (Galatia 5:22-23) yang akan bertahan melampaui hidup ini.</li>
+                    <li><span class="highlight">Berinvestasi dalam Kerajaan Allah:</span> Mendukung misi penginjilan dan pekerjaan gereja yang menyebarkan Injil.</li>
+                </ul>
+            </p>
+            <p>Harta yang kita kumpulkan di surga adalah kekayaan yang tidak dapat diambil oleh pencuri, tidak dapat dirusak oleh ngengat, dan tidak akan lenyap saat kita meninggalkan dunia ini. Ini adalah jaminan sejati untuk masa depan kekal kita.</p>
+
+            <h3>5. Hidup dengan Kesadaran akan Kekekalan</h3>
+            <p>Peringatan "pada malam ini juga jiwamu akan diambil dari padamu" adalah pengingat tajam bahwa hidup itu singkat dan tidak ada yang tahu kapan waktunya akan tiba. Kesadaran akan <span class="highlight">kekekalan</span> harus membentuk cara kita hidup setiap hari. Ini bukan untuk membuat kita hidup dalam ketakutan, melainkan untuk memberikan perspektif yang benar tentang apa yang benar-benar penting.</p>
+            <p>Jika kita hidup dengan kesadaran bahwa hidup kita adalah anugerah yang sementara, maka kita akan lebih cenderung untuk:
+                <ul>
+                    <li>Memaksimalkan setiap kesempatan untuk memuliakan Allah.</li>
+                    <li>Menjalin hubungan yang berarti dengan Allah dan sesama.</li>
+                    <li>Melepaskan genggaman kita pada hal-hal duniawi yang fana.</li>
+                    <li>Fokus pada pembangunan warisan rohani yang akan bertahan selamanya.</li>
+                </ul>
+            </p>
+            <p>Setiap keputusan yang kita buat mengenai uang, waktu, dan energi harus dipertimbangkan dalam terang kekekalan. Apakah ini akan membantuku menjadi "kaya di hadapan Allah" atau hanya menumpuk harta bagi diriku sendiri?</p>
+
+            <h3>6. Memaafkan dan Berdamai dalam Sengketa Harta</h3>
+            <p>Kembali ke awal perikop, permintaan pria itu mengenai warisan. Yesus tidak menghakimi masalah warisan itu sendiri, tetapi akar ketamakan di baliknya. Dalam kehidupan nyata, sengketa harta benda, warisan, atau keuangan seringkali menyebabkan keretakan hubungan dalam keluarga dan komunitas.</p>
+            <p>Pesan Yesus mengajarkan kita untuk:
+                <ul>
+                    <li><span class="highlight">Prioritaskan hubungan:</span> Hubungan dengan Allah dan sesama jauh lebih berharga daripada jumlah warisan atau keuntungan finansial.</li>
+                    <li><span class="highlight">Mencari perdamaian:</span> Jika ada sengketa, carilah solusi yang damai dan adil, yang menghormati Allah dan sesama, daripada hanya mengejar keuntungan pribadi.</li>
+                    <li><span class="highlight">Berikan pengampunan:</span> Terkadang, melepaskan hak kita atau memaafkan ketidakadilan adalah tindakan kasih yang jauh lebih kaya daripada memenangkan argumen finansial.</li>
+                </ul>
+            </p>
+            <p>Injil Lukas, dengan penekanannya pada keadilan dan belas kasihan, mengajak kita untuk melihat sengketa harta bukan sebagai ajang untuk memenangkan hak pribadi, tetapi sebagai kesempatan untuk menunjukkan kasih Kristus dan mencari perdamaian.</p>
+
+            <img src='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="10" width="280" height="180" rx="20" fill="%23E0F2F7" stroke="%2379D1C3"/><circle cx="150" cy="100" r="70" fill="%23F8FBFD" stroke="%23333333" stroke-width="4"/><path d="M150 70 L150 130 M120 100 L180 100" stroke="%2379D1C3" stroke-width="6"/><path d="M120 30 L180 30 C190 30 190 40 190 50 C190 60 180 70 170 70 L130 70 C120 70 110 60 110 50 C110 40 120 30 130 30 Z" fill="%23FFFACD" stroke="%23333333" stroke-width="4"/><circle cx="130" cy="40" r="5" fill="%23333333"/><circle cx="170" cy="40" r="5" fill="%23333333"/><path d="M140 140 L160 140 M150 140 L150 160 M140 160 L160 160" stroke="%23333333" stroke-width="4"/></svg>' alt="Ilustrasi hati manusia yang terbuka, dengan simbol uang kecil keluar darinya dan sebuah salib di tengah, melambangkan hati yang melepaskan ketamakan dan menerima kekayaan rohani.">
+            <figcaption class="centered-text">Hati manusia yang membebaskan diri dari jeratan uang, digantikan oleh salib yang melambangkan kekayaan sejati dalam Kristus.</figcaption>
+        </section>
+
+        <section>
+            <h2>Kesimpulan: Pilihan yang Menentukan</h2>
+            <p>Perikop Lukas 12:13-21 adalah salah satu ajaran Yesus yang paling langsung dan tidak kompromi mengenai harta benda dan prioritas hidup. Melalui penolakan-Nya atas peran sebagai hakim warisan, peringatan-Nya akan ketamakan, dan perumpamaan yang dramatis tentang orang kaya yang bodoh, Yesus menyingkapkan <span class="highlight">ilusi keamanan</span> yang ditawarkan oleh kekayaan duniawi dan bahaya memusatkan hati pada hal-hal yang fana.</p>
+            <p>Pesan intinya adalah ini: <span class="highlight">hidup sejati tidak bergantung pada kelimpahan harta</span>. Kematian adalah pengingat yang tak terhindarkan bahwa semua kekayaan duniawi akan kita tinggalkan. Yang benar-benar penting adalah <span class="highlight">bagaimana kita hidup di hadapan Allah</span>, bagaimana kita menggunakan berkat-berkat-Nya, dan di mana kita menimbun harta kita. Apakah kita membangun lumbung-lumbung yang lebih besar di dunia ini, dengan mengabaikan panggilan untuk menjadi pengelola yang setia dan kaya di hadapan Allah?</p>
+            <p>Yesus memanggil kita untuk sebuah pilihan yang menentukan. Pilihan ini bukanlah antara memiliki atau tidak memiliki uang, tetapi antara <span class="highlight">mencintai uang</span> dan <span class="highlight">mencintai Allah</span>. Ini adalah pilihan antara mengejar keamanan diri yang sementara dan berinvestasi dalam keamanan abadi yang hanya ditemukan dalam Kristus. Ini adalah pilihan antara hidup untuk diri sendiri atau hidup untuk kemuliaan Allah dan kebaikan sesama.</p>
+            <p>Mari kita renungkan pertanyaan kunci Yesus: "Lalu siapakah yang akan memiliki segala yang telah kausediakan itu?" Dan pertanyaan pribadi untuk kita masing-masing: <span class="highlight">"Apakah aku kaya di hadapan Allah?"</span> Semoga kita semua memilih untuk hidup sedemikian rupa sehingga ketika hidup kita berakhir, kita akan didapati kaya di hadapan Allah, dengan harta yang tak terbinasakan, iman yang kokoh, dan kasih yang melimpah ruah.</p>
+            <p>Dengan demikian, kita akan menemukan kehidupan sejati, kedamaian yang abadi, dan sukacita yang tak tergantikan, bukan dalam lumbung-lumbung kita yang melimpah, melainkan dalam hubungan kita yang intim dengan Sang Pencipta dan Juruselamat kita.</p>
+            <p class="centered-text">Amin.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Renungan Firman Tuhan. Untuk pertumbuhan rohani pribadi.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/khotbah-natal-pemuda">Khotbah Natal Pemuda</a></li>
+<li><a href="/renungan-roma-8-28">Renungan Roma 8 28</a></li>
+<li><a href="/khotbah-2-timotius-2-1-13">Khotbah 2 Timotius 2 1 13</a></li>
+<li><a href="/khotbah-pernikahan-kristen-2020">Khotbah Pernikahan Kristen 2020</a></li>
+<li><a href="/khotbah-kematian-gki">Khotbah Kematian Gki</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

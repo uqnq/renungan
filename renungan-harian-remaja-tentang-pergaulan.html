@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renungan Harian Remaja: Memilih Jalan Terbaik dalam Pergaulan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Reset CSS & General Styling */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #F8F8FF; /* GhostWhite - sangat cerah dan sejuk */
+            padding: 20px 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Container for content */
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #FFFFFF; /* Putih bersih */
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            padding: 30px 25px;
+            flex-grow: 1;
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            padding: 40px 20px 60px;
+            background: linear-gradient(135deg, #E0FFFF 0%, #B0E0E6 100%); /* LightCyan to PowderBlue - gradien sejuk */
+            color: #2F4F4F; /* DarkSlateGray - kontras yang bagus */
+            border-bottom: 5px solid #ADD8E6; /* LightBlue */
+            border-radius: 12px 12px 0 0;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: clamp(2em, 5vw, 3.5em); /* Responsive font size */
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        header p {
+            font-size: clamp(1em, 2.5vw, 1.3em);
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* Article Content Styling */
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #D3D3D3; /* LightGray */
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: clamp(1.6em, 4vw, 2.5em);
+            color: #4682B4; /* SteelBlue - warna dominan judul */
+            margin-bottom: 20px;
+            padding-top: 10px;
+            border-left: 5px solid #87CEEB; /* SkyBlue */
+            padding-left: 15px;
+        }
+
+        h3 {
+            font-size: clamp(1.3em, 3vw, 1.8em);
+            color: #5F9EA0; /* CadetBlue */
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 1px dotted #A9A9A9; /* DarkGray */
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.05em;
+            color: #444;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 1.5em;
+            color: #444;
+        }
+
+        li {
+            margin-bottom: 0.8em;
+            line-height: 1.6;
+        }
+
+        blockquote {
+            background-color: #F0F8FF; /* AliceBlue */
+            border-left: 6px solid #87CEFA; /* LightSkyBlue */
+            padding: 20px 25px;
+            margin: 30px 0;
+            font-style: italic;
+            color: #555;
+            border-radius: 6px;
+            font-size: 1.1em;
+            line-height: 1.7;
+        }
+
+        blockquote p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #1E90FF; /* DodgerBlue */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #007BFF; /* Blue */
+            text-decoration: underline;
+        }
+
+        /* Image/SVG Styling */
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+            background-color: #F0F8FF; /* AliceBlue */
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .image-container svg {
+            max-width: 80%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.1));
+        }
+
+        .image-container p {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 15px;
+            font-style: italic;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+            background-color: #B0C4DE; /* LightSteelBlue */
+            color: #2F4F4F; /* DarkSlateGray */
+            border-top: 5px solid #87CEFA; /* LightSkyBlue */
+            border-radius: 0 0 12px 12px;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+                margin: 0 15px;
+            }
+
+            header {
+                padding: 30px 15px 40px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+                padding-left: 10px;
+            }
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            blockquote {
+                padding: 15px 20px;
+                margin: 25px 0;
+            }
+
+            .image-container svg {
+                max-width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px 0;
+            }
+            .container {
+                padding: 15px 10px;
+                margin: 0 10px;
+            }
+            header {
+                padding: 20px 10px 30px;
+                border-radius: 6px 6px 0 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.8em;
+                padding-left: 8px;
+            }
+            h3 {
+                font-size: 1.3em;
+            }
+            blockquote {
+                font-size: 1em;
+                padding: 12px 15px;
+            }
+            footer {
+                padding: 20px 10px;
+                border-radius: 0 0 6px 6px;
+            }
+        }
+
+        /* Styling for the SVG elements */
+        .svg-icon {
+            fill: #ADD8E6; /* LightBlue */
+            stroke: #4682B4; /* SteelBlue */
+            stroke-width: 1.5;
+            transition: fill 0.3s ease, stroke 0.3s ease;
+        }
+        .svg-icon-accent {
+            fill: #87CEEB; /* SkyBlue */
+            stroke: #4682B4;
+            stroke-width: 1;
+        }
+        .svg-icon-text {
+            fill: #2F4F4F; /* DarkSlateGray */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .svg-icon-shadow {
+            filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.1));
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Renungan Harian Remaja: Memilih Jalan Terbaik dalam Pergaulan</h1>
+        <p>Sebuah panduan untuk memahami, memilih, dan tumbuh dalam pergaulan yang positif dan konstruktif.</p>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Pengantar: Jejak Remaja dalam Pergaulan</h2>
+            <p>Masa remaja adalah fase kehidupan yang penuh warna, di mana setiap individu mulai menemukan identitas diri, mengeksplorasi dunia di sekitarnya, dan membangun fondasi untuk masa depan. Salah satu aspek paling krusial dalam perjalanan ini adalah pergaulan. Bukan sekadar teman bermain, pergaulan adalah laboratorium sosial tempat kita belajar berinteraksi, berempati, bernegosiasi, dan bahkan menghadapi konflik. Ia membentuk cara kita berpikir, bertindak, dan memandang diri sendiri serta dunia.</p>
+            <p>Bagi seorang remaja, pergaulan adalah kebutuhan dasar yang tak terelakkan. Kita adalah makhluk sosial, dan koneksi dengan teman sebaya memberikan rasa memiliki, dukungan emosional, dan kesempatan untuk saling berbagi pengalaman. Namun, di balik segala keindahan dan keseruan pergaulan, tersimpan pula tantangan dan pilihan-pilihan penting yang harus diambil. Pilihan tentang siapa yang akan kita jadikan teman dekat, kelompok mana yang akan kita ikuti, dan nilai-nilai seperti apa yang akan kita anut, semuanya akan membentuk arah hidup kita.</p>
+            <p>Renungan ini dirancang untuk mengajak setiap remaja merenungkan kembali arti penting pergaulan dalam hidup mereka. Bukan untuk menghakimi atau memberi label "baik" atau "buruk," melainkan untuk menyediakan sudut pandang, alat, dan pertanyaan reflektif yang dapat membantu kalian menavigasi kompleksitas dunia pertemanan dengan bijaksana. Mari kita telaah bersama bagaimana pergaulan dapat menjadi sumber kekuatan, inspirasi, dan kebahagiaan, sekaligus bagaimana kita dapat melindungi diri dari potensi dampak negatifnya.</p>
+            <p>Ingatlah, setiap langkah kecil dalam memilih teman dan lingkungan pergaulan adalah investasi berharga untuk masa depan kalian. Ini bukan hanya tentang menghindari masalah, melainkan tentang membangun fondasi karakter yang kuat, mental yang sehat, dan jiwa yang penuh semangat untuk meraih potensi terbaik diri.</p>
+
+            <div class="image-container">
+                <svg width="100%" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-intro-svg desc-intro-svg">
+                    <title id="title-intro-svg">Ikon Tiga Orang Saling Bergandengan Tangan</title>
+                    <desc id="desc-intro-svg">Gambar tiga siluet orang remaja yang saling bergandengan tangan, melambangkan pergaulan dan koneksi sosial.</desc>
+                    <!-- Person 1 -->
+                    <circle cx="100" cy="50" r="25" class="svg-icon-accent svg-icon-shadow"/>
+                    <rect x="75" y="70" width="50" height="60" rx="10" ry="10" class="svg-icon svg-icon-shadow"/>
+                    <line x1="125" y1="90" x2="150" y2="90" stroke="#4682B4" stroke-width="5" class="svg-icon-shadow"/>
+                    <!-- Person 2 -->
+                    <circle cx="200" cy="50" r="25" class="svg-icon-accent svg-icon-shadow"/>
+                    <rect x="175" y="70" width="50" height="60" rx="10" ry="10" class="svg-icon svg-icon-shadow"/>
+                    <line x1="150" y1="90" x2="175" y2="90" stroke="#4682B4" stroke-width="5" class="svg-icon-shadow"/>
+                    <line x1="225" y1="90" x2="250" y2="90" stroke="#4682B4" stroke-width="5" class="svg-icon-shadow"/>
+                    <!-- Person 3 -->
+                    <circle cx="300" cy="50" r="25" class="svg-icon-accent svg-icon-shadow"/>
+                    <rect x="275" y="70" width="50" height="60" rx="10" ry="10" class="svg-icon svg-icon-shadow"/>
+                    <line x1="250" y1="90" x2="275" y2="90" stroke="#4682B4" stroke-width="5" class="svg-icon-shadow"/>
+
+                    <text x="200" y="145" text-anchor="middle" class="svg-icon-text">Pergaulan Remaja</text>
+                </svg>
+                <p>Koneksi sosial adalah bagian penting dari pertumbuhan remaja.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Pentingnya Memilih Lingkaran Pergaulan</h2>
+            <p>Kita sering mendengar pepatah “siapa kamu akan terlihat dari temanmu.” Pepatah ini, meskipun klise, mengandung kebenaran yang mendalam, terutama bagi remaja. Lingkungan pergaulan kita adalah cerminan dari nilai-nilai, kebiasaan, dan bahkan impian kita. Sama seperti sebuah benih yang membutuhkan tanah subur untuk tumbuh, seorang remaja membutuhkan lingkungan pergaulan yang positif untuk berkembang secara optimal.</p>
+            <p>Memilih teman bukan sekadar mencari orang yang seru diajak nongkrong atau punya hobi yang sama. Lebih dari itu, memilih teman adalah memilih pengaruh yang akan membentuk karaktermu, tantangan yang akan menguji ketahananmu, dan dukungan yang akan menguatkanmu saat terjatuh. Teman sebaya memiliki pengaruh yang sangat kuat pada masa remaja, bahkan terkadang melebihi pengaruh keluarga atau guru. Mereka bisa menjadi sumber motivasi, inspirasi, atau sebaliknya, menyeret kita ke arah yang tidak diinginkan.</p>
+            <p>Bayangkan dirimu seperti sebuah kapal yang sedang berlayar. Teman-temanmu adalah angin yang mengisi layarmu. Angin yang baik akan membawamu melaju kencang ke tujuan. Angin yang buruk, atau bahkan badai, bisa saja menghempaskanmu dari jalur, atau bahkan menenggelamkanmu. Oleh karena itu, kemampuan untuk memilah dan memilih dengan bijak adalah keterampilan hidup yang tak ternilai harganya.</p>
+            <p>Proses memilih ini bukan berarti kita harus menjauhi semua orang yang berbeda atau tidak sempurna. Justru, keberagaman dalam pertemanan bisa memperkaya perspektif. Namun, ada batas antara menghargai perbedaan dan membiarkan diri terjerumus ke dalam pengaruh yang merugikan. Ini tentang mengenali batasan diri, memahami nilai-nilai yang kita pegang, dan mencari teman yang menghormati serta mendukung nilai-nilai tersebut, bukan yang justru mencoba menggoyahkannya.</p>
+            <p>Pertimbangkan ini: apakah teman-temanmu mendorongmu untuk menjadi versi terbaik dari dirimu? Apakah mereka merayakan keberhasilanmu dan mendukung saat kamu menghadapi kesulitan? Atau justru mereka sering menjatuhkan, meremehkan, atau mengajakmu melakukan hal-hal yang kamu tahu tidak benar? Jawaban atas pertanyaan-pertanyaan ini akan menjadi kompas yang membimbingmu dalam menentukan arah pergaulanmu.</p>
+
+            <h3>Dampak Positif Pergaulan yang Sehat</h3>
+            <ul>
+                <li><strong>Pengembangan Diri:</strong> Teman yang baik akan mendorongmu untuk belajar, mencoba hal baru, dan mengembangkan bakat. Mereka menginspirasi kamu untuk mencapai potensi maksimal.</li>
+                <li><strong>Dukungan Emosional:</strong> Saat kamu sedih, bingung, atau gembira, mereka ada untuk mendengarkan, memberi nasihat, atau merayakan bersamamu. Kamu merasa tidak sendirian.</li>
+                <li><strong>Peningkatan Keterampilan Sosial:</strong> Berinteraksi dengan beragam teman melatih kemampuan komunikasi, empati, negosiasi, dan penyelesaian konflik.</li>
+                <li><strong>Pembentukan Nilai Positif:</strong> Lingkungan pergaulan yang sehat menanamkan nilai-nilai seperti kejujuran, integritas, rasa hormat, dan tanggung jawab.</li>
+                <li><strong>Sumber Inspirasi dan Kreativitas:</strong> Teman-teman yang memiliki minat dan ide berbeda dapat membuka cakrawalamu, memicu kreativitas, dan memunculkan ide-ide baru.</li>
+                <li><strong>Rasa Percaya Diri:</strong> Diterima dan dihargai oleh teman sebaya dapat meningkatkan harga diri dan kepercayaan diri.</li>
+                <li><strong>Pengalaman Baru:</strong> Melalui teman, kamu bisa mendapatkan kesempatan untuk mencoba aktivitas baru, mengunjungi tempat baru, atau terpapar budaya yang berbeda.</li>
+            </ul>
+
+            <h3>Tanda-tanda Pergaulan Negatif yang Perlu Diwaspadai</h3>
+            <ul>
+                <li><strong>Tekanan untuk Melakukan Hal Buruk:</strong> Teman yang selalu memaksamu melakukan sesuatu yang kamu tidak nyaman atau bertentangan dengan prinsipmu.</li>
+                <li><strong>Penurunan Prestasi Akademik:</strong> Waktu yang dihabiskan untuk hal-hal yang tidak produktif bersama teman mengganggu fokus belajar.</li>
+                <li><strong>Perubahan Perilaku Negatif:</strong> Kamu mulai sering berbohong, membolos, merokok, minum alkohol, atau terlibat dalam perilaku berisiko lainnya.</li>
+                <li><strong>Menjauh dari Keluarga atau Teman Lama:</strong> Merasa perlu menyembunyikan aktivitasmu dari keluarga atau teman yang peduli.</li>
+                <li><strong>Rasa Tidak Aman atau Cemas:</strong> Kamu merasa tidak nyaman, sering di-bully, atau diejek oleh kelompok pertemananmu.</li>
+                <li><strong>Kehilangan Diri Sendiri:</strong> Merasa harus berpura-pura menjadi orang lain agar diterima, atau kehilangan minat pada hal-hal yang dulunya kamu suka.</li>
+                <li><strong>Gosip dan Drama Berlebihan:</strong> Lingkungan yang dipenuhi intrik, gosip, dan konflik tak berujung yang menguras energi.</li>
+            </ul>
+
+            <blockquote class="svg-icon-shadow">
+                <p>"Kualitas hidupmu sebagian besar ditentukan oleh kualitas orang-orang yang kamu izinkan masuk ke dalam hidupmu."</p>
+            </blockquote>
+
+            <p>Renungkanlah, apakah teman-temanmu membantumu tumbuh atau justru menahanmu? Apakah mereka mendorongmu ke arah yang lebih baik atau malah ke arah yang menyesatkan? Jawaban jujur atas pertanyaan ini adalah kunci pertama untuk mengambil kendali atas pergaulanmu.</p>
+        </section>
+
+        <section>
+            <h2>Membangun Jati Diri yang Kuat di Tengah Arus Pergaulan</h2>
+            <p>Dalam pusaran pergaulan remaja, seringkali muncul pertanyaan tentang jati diri: siapa aku sebenarnya? Apa yang aku yakini? Apa yang penting bagiku? Tekanan untuk menyesuaikan diri atau "fit in" bisa sangat kuat, dan ini adalah salah satu tantangan terbesar dalam membangun jati diri yang otentik. Banyak remaja merasa harus berpura-pura menjadi orang lain, mengadopsi gaya atau opini yang sebenarnya bukan milik mereka, hanya demi diterima oleh sebuah kelompok.</p>
+            <p>Padahal, inti dari pergaulan yang sehat adalah kemampuan untuk menjadi diri sendiri dan diterima apa adanya. Jati diri yang kuat memungkinkan kita untuk berdiri teguh pada prinsip, meskipun itu berarti kita berbeda dari mayoritas. Ini adalah fondasi yang akan melindungimu dari pengaruh negatif dan membantumu menarik teman-teman yang benar-benar menghargai dan mendukungmu.</p>
+
+            <h3>Langkah-langkah Membangun Jati Diri yang Kokoh:</h3>
+            <ol>
+                <li><strong>Kenali Nilai-Nilaimu:</strong> Apa yang benar-benar penting bagimu? Kejujuran, kebaikan, kerja keras, kreativitas, keadilan? Mengetahui nilai-nilai inti ini akan membantumu mengambil keputusan dan memilih teman yang sejalan.</li>
+                <li><strong>Pahami Kekuatan dan Kelemahanmu:</strong> Setiap orang memiliki kelebihan dan kekurangan. Merangkul keduanya adalah bagian dari penerimaan diri. Fokus pada mengembangkan kekuatan dan berupaya memperbaiki kelemahan.</li>
+                <li><strong>Temukan Minat dan Bakatmu:</strong> Habiskan waktu untuk mengeksplorasi hobi dan aktivitas yang kamu nikmati. Ini tidak hanya mengembangkan skill-mu, tetapi juga membantumu menemukan kelompok pergaulan yang memiliki minat yang sama.</li>
+                <li><strong>Belajar Mengatakan "Tidak":</strong> Ini adalah salah satu keterampilan terpenting dalam pergaulan. Mengatakan "tidak" pada ajakan yang tidak sesuai dengan nilai atau kenyamananmu adalah bentuk pertahanan diri dan menunjukkan kekuatan karakter.</li>
+                <li><strong>Jangan Takut Menjadi Berbeda:</strong> Dunia ini akan lebih menarik jika semua orang memiliki keunikan masing-masing. Terkadang, berdiri sendiri atau bersama sedikit teman yang sejalan jauh lebih bermakna daripada larut dalam keramaian yang tidak sesuai dengan hatimu.</li>
+                <li><strong>Refleksi Diri Secara Teratur:</strong> Luangkan waktu untuk berpikir tentang pengalamanmu, bagaimana perasaanmu tentang suatu situasi, dan pelajaran apa yang bisa kamu ambil. Jurnal pribadi bisa sangat membantu.</li>
+            </ol>
+
+            <div class="image-container">
+                <svg width="100%" height="180" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-jati-diri-svg desc-jati-diri-svg">
+                    <title id="title-jati-diri-svg">Ikon Pohon Tumbuh dengan Akar Kuat</title>
+                    <desc id="desc-jati-diri-svg">Gambar pohon dengan akar yang kokoh menancap ke tanah dan daun-daun hijau yang rimbun, melambangkan pertumbuhan, kekuatan jati diri, dan ketahanan.</desc>
+                    <!-- Trunk -->
+                    <path d="M180 150 Q190 80 200 150 L220 150 Q210 80 220 150 Z" fill="#8B4513" class="svg-icon-shadow"/>
+                    <rect x="190" y="80" width="20" height="70" rx="5" ry="5" fill="#8B4513" class="svg-icon-shadow"/>
+                    <!-- Roots -->
+                    <path d="M190 150 C180 160, 160 160, 150 170" stroke="#8B4513" stroke-width="4" fill="none" class="svg-icon-shadow"/>
+                    <path d="M210 150 C220 160, 240 160, 250 170" stroke="#8B4513" stroke-width="4" fill="none" class="svg-icon-shadow"/>
+                    <path d="M200 150 L200 170" stroke="#8B4513" stroke-width="4" fill="none" class="svg-icon-shadow"/>
+                    <!-- Leaves/Crown -->
+                    <circle cx="200" cy="50" r="50" fill="#90EE90" class="svg-icon-accent svg-icon-shadow" stroke="#3CB371" stroke-width="2"/>
+                    <circle cx="170" cy="70" r="35" fill="#98FB98" class="svg-icon-accent svg-icon-shadow" stroke="#3CB371" stroke-width="2"/>
+                    <circle cx="230" cy="70" r="35" fill="#98FB98" class="svg-icon-accent svg-icon-shadow" stroke="#3CB371" stroke-width="2"/>
+                    <text x="200" y="175" text-anchor="middle" class="svg-icon-text">Jati Diri Kuat</text>
+                </svg>
+                <p>Membangun jati diri yang kokoh akan membantu remaja menghadapi tantangan pergaulan.</p>
+            </div>
+
+            <p>Jati diri yang kuat bukanlah hasil instan, melainkan sebuah proses panjang yang membutuhkan kesadaran, keberanian, dan kesabaran. Setiap kali kamu memilih untuk jujur pada dirimu sendiri, kamu sedang memperkuat fondasi jati dirimu. Setiap kali kamu berdiri teguh pada prinsipmu, kamu sedang membangun karaktermu. Ingatlah, pergaulan yang sejati adalah pergaulan yang memungkinkanmu untuk bersinar sebagai dirimu sendiri, bukan yang memaksamu redup atau berubah demi orang lain.</p>
+        </section>
+
+        <section>
+            <h2>Peran Media Sosial dalam Pergaulan Remaja</h2>
+            <p>Di era digital ini, pergaulan tidak hanya terbatas pada interaksi tatap muka, tetapi juga meluas ke dunia maya melalui berbagai platform media sosial. Instagram, TikTok, Twitter, Facebook, dan aplikasi pesan instan telah menjadi bagian tak terpisahkan dari kehidupan remaja. Media sosial menawarkan kesempatan tak terbatas untuk terhubung, berbagi, dan mengekspresikan diri. Namun, ia juga membawa tantangan dan risiko yang perlu diwaspadai.</p>
+
+            <h3>Sisi Positif Media Sosial:</h3>
+            <ul>
+                <li><strong>Memperluas Lingkaran Pergaulan:</strong> Remaja bisa terhubung dengan teman lama yang jauh, menemukan komunitas dengan minat yang sama, atau bahkan berteman dengan orang dari berbagai belahan dunia.</li>
+                <li><strong>Sumber Informasi dan Pembelajaran:</strong> Media sosial dapat menjadi platform untuk belajar hal baru, mengikuti berita, atau mengakses informasi edukatif.</li>
+                <li><strong>Ekspresi Diri dan Kreativitas:</strong> Remaja bisa berbagi karya, ide, dan pemikiran mereka melalui postingan, video, atau story, sehingga membantu mereka mengembangkan identitas online.</li>
+                <li><strong>Dukungan Sosial:</strong> Dalam komunitas online yang positif, remaja bisa mendapatkan dukungan emosional, motivasi, dan rasa memiliki.</li>
+                <li><strong>Membangun Jaringan:</strong> Media sosial bisa menjadi alat untuk membangun jaringan profesional atau akademik di masa depan.</li>
+            </ul>
+
+            <h3>Sisi Negatif dan Tantangan Media Sosial:</h3>
+            <ul>
+                <li><strong>Perbandingan Sosial:</strong> Melihat 'hidup sempurna' orang lain di media sosial dapat memicu perasaan iri, rendah diri, atau tidak puas dengan diri sendiri.</li>
+                <li><strong>Tekanan untuk Tampil Sempurna:</strong> Ada tekanan untuk selalu menampilkan sisi terbaik diri, yang bisa mengarah pada kecemasan dan stres.</li>
+                <li><strong>Cyberbullying:</strong> Media sosial bisa menjadi sarana bagi perilaku perundungan (bullying) yang dapat menyebabkan trauma psikologis serius.</li>
+                <li><strong>Penyebaran Informasi Palsu (Hoax):</strong> Mudah terpapar berita bohong yang bisa memengaruhi pandangan dan keputusan.</li>
+                <li><strong>Kecanduan dan Gangguan Tidur:</strong> Penggunaan berlebihan dapat menyebabkan kecanduan, mengganggu waktu belajar, dan mengurangi kualitas tidur.</li>
+                <li><strong>Risiko Privasi dan Keamanan:</strong> Berbagi informasi pribadi secara sembarangan bisa membahayakan keamanan diri.</li>
+                <li><strong>Pembentukan Citra Palsu:</strong> Beberapa orang menggunakan media sosial untuk menciptakan persona yang tidak sesuai dengan kenyataan, sehingga pergaulan menjadi tidak otentik.</li>
+            </ul>
+
+            <blockquote class="svg-icon-shadow">
+                <p>"Jangan biarkan layar kecil mengendalikan dunia besarmu. Jadilah penguasa digitalmu sendiri."</p>
+            </blockquote>
+
+            <div class="image-container">
+                <svg width="100%" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-medsos-svg desc-medsos-svg">
+                    <title id="title-medsos-svg">Ikon Tangan Memegang Ponsel dengan Ikon Media Sosial</title>
+                    <desc id="desc-medsos-svg">Gambar tangan memegang ponsel pintar dengan beberapa ikon media sosial (like, hati, chat bubble) melayang di atasnya, melambangkan interaksi digital.</desc>
+                    <!-- Hand -->
+                    <path d="M200 130 C180 140, 160 130, 150 110 C140 90, 150 70, 170 60 L230 60 C250 70, 260 90, 250 110 C240 130, 220 140, 200 130 Z" fill="#FFDAB9" class="svg-icon-shadow" stroke="#CD853F" stroke-width="1"/>
+                    <!-- Phone -->
+                    <rect x="160" y="30" width="80" height="100" rx="10" ry="10" fill="#FFFFFF" stroke="#333" stroke-width="2" class="svg-icon-shadow"/>
+                    <rect x="165" y="35" width="70" height="90" rx="5" ry="5" fill="#ADD8E6"/>
+                    <!-- Icons -->
+                    <circle cx="180" cy="55" r="8" fill="#FF6347"/> <!-- Heart -->
+                    <path d="M220 55 L215 50 L225 50 Z M220 55 Q210 65 200 60 Q190 65 180 55" fill="#4682B4"/> <!-- Chat Bubble -->
+                    <path d="M190 85 L180 80 L185 75 Z M190 85 Q195 95 205 90 Q215 95 220 85" fill="#90EE90"/> <!-- Thumb Up -->
+                    <text x="200" y="145" text-anchor="middle" class="svg-icon-text">Pergaulan Digital</text>
+                </svg>
+                <p>Media sosial adalah alat yang kuat, perlu digunakan dengan bijak.</p>
+            </div>
+
+            <p>Sama seperti interaksi tatap muka, kunci untuk mengelola media sosial adalah kesadaran dan kontrol diri. Jadilah pengguna yang cerdas: saring informasi yang kamu terima, batasi waktu layarmu, pertimbangkan baik-baik sebelum memposting, dan jangan ragu untuk memblokir atau melaporkan konten atau akun yang merugikan. Ingatlah bahwa kehidupan nyata jauh lebih penting daripada citra di media sosial. Prioritaskan koneksi yang tulus dan otentik, baik di dunia nyata maupun di dunia maya.</p>
+        </section>
+
+        <section>
+            <h2>Komunikasi Efektif: Jembatan Pergaulan yang Sehat</h2>
+            <p>Pergaulan yang sehat tidak akan terwujud tanpa komunikasi yang efektif. Komunikasi adalah fondasi dari setiap hubungan, baik itu dengan teman, keluarga, maupun guru. Kemampuan untuk mengungkapkan pikiran, perasaan, dan kebutuhan dengan jelas, serta mendengarkan orang lain dengan empati, adalah keterampilan penting yang akan membantumu menavigasi setiap aspek pergaulan.</p>
+
+            <h3>Mengapa Komunikasi Penting dalam Pergaulan?</h3>
+            <ul>
+                <li><strong>Mencegah Kesalahpahaman:</strong> Banyak konflik dan ketegangan muncul karena komunikasi yang buruk atau asumsi yang salah.</li>
+                <li><strong>Membangun Kepercayaan:</strong> Berbicara secara jujur dan terbuka membangun rasa percaya antara teman.</li>
+                <li><strong>Menyelesaikan Konflik:</strong> Komunikasi yang baik adalah alat utama untuk mencari solusi saat terjadi perbedaan pendapat atau masalah.</li>
+                <li><strong>Mengekspresikan Diri:</strong> Kamu bisa menunjukkan siapa dirimu sebenarnya, apa yang kamu suka, dan apa yang kamu inginkan.</li>
+                <li><strong>Membangun Ikatan Emosional:</strong> Berbagi perasaan dan pengalaman secara mendalam akan mempererat hubungan pertemanan.</li>
+                <li><strong>Menetapkan Batasan:</strong> Komunikasi membantumu menjelaskan batasan pribadi dan ekspektasi dalam sebuah hubungan.</li>
+            </ul>
+
+            <h3>Keterampilan Komunikasi yang Perlu Dilatih:</h3>
+            <ol>
+                <li><strong>Mendengar Aktif:</strong> Fokus sepenuhnya pada apa yang dikatakan orang lain, bukan hanya menunggu giliranmu berbicara. Beri tanggapan verbal ("Oh, begitu," "Aku mengerti") atau non-verbal (kontak mata, anggukan).</li>
+                <li><strong>Berbicara Asertif:</strong> Ungkapkan pikiran dan perasaanmu dengan jelas dan lugas, tanpa agresif atau pasif. Gunakan pernyataan "Aku merasa..." daripada "Kamu selalu...".</li>
+                <li><strong>Empati:</strong> Cobalah menempatkan diri pada posisi orang lain untuk memahami sudut pandang dan perasaannya. Ini bukan berarti kamu harus setuju, tapi kamu mencoba memahami.</li>
+                <li><strong>Hindari Gosip:</strong> Berpartisipasi dalam gosip atau membicarakan orang di belakangnya adalah bentuk komunikasi yang merusak kepercayaan dan reputasi.</li>
+                <li><strong>Kelola Emosi:</strong> Saat sedang marah atau kesal, coba tenangkan diri sebelum berbicara. Kata-kata yang diucapkan dalam emosi seringkali disesali.</li>
+                <li><strong>Gunakan "Aku" Statement:</strong> Contoh: "Aku merasa sedih ketika kamu tidak menepati janji" lebih baik daripada "Kamu selalu membuatku sedih." Ini fokus pada perasaanmu tanpa menyalahkan.</li>
+                <li><strong>Perhatikan Bahasa Tubuh:</strong> Bahasa non-verbal seringkali lebih jujur daripada kata-kata. Pastikan bahasa tubuhmu (kontak mata, postur, ekspresi wajah) sejalan dengan pesan yang ingin kamu sampaikan.</li>
+            </ol>
+
+            <div class="image-container">
+                <svg width="100%" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-komunikasi-svg desc-komunikasi-svg">
+                    <title id="title-komunikasi-svg">Ikon Dua Orang Berbicara dengan Gelembung Obrolan</title>
+                    <desc id="desc-komunikasi-svg">Dua siluet kepala orang remaja saling berhadapan dengan gelembung obrolan di antara mereka, melambangkan komunikasi dan dialog.</desc>
+                    <!-- Head 1 -->
+                    <circle cx="120" cy="70" r="35" class="svg-icon-accent svg-icon-shadow"/>
+                    <!-- Head 2 -->
+                    <circle cx="280" cy="70" r="35" class="svg-icon-accent svg-icon-shadow"/>
+                    <!-- Speech bubbles -->
+                    <path d="M160 55 Q170 30 190 30 Q210 30 220 55 Q210 60 160 55 Z" fill="#F0F8FF" stroke="#4682B4" stroke-width="2" class="svg-icon-shadow"/>
+                    <path d="M240 85 Q230 110 210 110 Q190 110 180 85 Q190 80 240 85 Z" fill="#F0F8FF" stroke="#4682B4" stroke-width="2" class="svg-icon-shadow"/>
+                    <text x="200" y="145" text-anchor="middle" class="svg-icon-text">Komunikasi Efektif</text>
+                </svg>
+                <p>Komunikasi yang baik adalah kunci untuk pergaulan yang sehat dan harmonis.</p>
+            </div>
+
+            <p>Meningkatkan kemampuan komunikasi memang butuh latihan, tetapi hasilnya akan sangat sepadan. Pergaulanmu akan menjadi lebih dalam, konflik akan lebih mudah diatasi, dan kamu akan merasa lebih percaya diri dalam berinteraksi dengan siapa pun. Ingatlah, kamu layak didengarkan dan dimengerti, dan orang lain juga demikian. Bangun jembatan komunikasi, bukan tembok kesalahpahaman.</p>
+        </section>
+
+        <section>
+            <h2>Mengelola Konflik dan Perbedaan dalam Pergaulan</h2>
+            <p>Pergaulan, seharmonis apa pun, tidak akan lepas dari konflik dan perbedaan pendapat. Itu adalah hal yang wajar karena setiap individu memiliki latar belakang, pandangan, dan keinginan yang berbeda. Yang membedakan pergaulan yang sehat dari yang tidak sehat bukanlah ketiadaan konflik, melainkan cara kita mengelola dan menyelesaikannya. Kemampuan untuk menghadapi konflik dengan konstruktif adalah tanda kedewasaan emosional dan keterampilan sosial yang sangat berharga.</p>
+
+            <h3>Mengapa Konflik Bisa Terjadi?</h3>
+            <ul>
+                <li><strong>Perbedaan Pendapat:</strong> Setiap orang memiliki cara pandang yang unik.</li>
+                <li><strong>Salah Paham:</strong> Informasi yang tidak lengkap atau komunikasi yang tidak jelas.</li>
+                <li><strong>Perebutan Sumber Daya/Perhatian:</strong> Misalnya, teman yang merasa tersisih.</li>
+                <li><strong>Perbedaan Nilai dan Prioritas:</strong> Apa yang penting bagi satu orang mungkin tidak penting bagi yang lain.</li>
+                <li><strong>Perubahan Emosi:</strong> Mood yang buruk atau stres dapat memicu ketegangan.</li>
+            </ul>
+
+            <h3>Strategi Mengelola Konflik dengan Bijak:</h3>
+            <ol>
+                <li><strong>Identifikasi Akar Masalah:</strong> Jangan hanya fokus pada gejala konflik, tapi coba pahami apa sebenarnya yang menjadi penyebab utamanya.</li>
+                <li><strong>Tenangkan Diri:</strong> Jangan mengambil keputusan atau berbicara saat emosi sedang memuncak. Ambil waktu sejenak untuk menenangkan diri.</li>
+                <li><strong>Bicara Langsung dan Jujur:</strong> Jika ada masalah dengan teman, bicarakan langsung dengannya, bukan melalui pihak ketiga atau gosip. Gunakan "Aku" statement untuk menyampaikan perasaanmu.</li>
+                <li><strong>Dengarkan dengan Empati:</strong> Beri kesempatan temanmu untuk menyampaikan sudut pandangnya tanpa menyela atau menghakimi. Cobalah memahami perasaannya.</li>
+                <li><strong>Cari Solusi Bersama:</strong> Fokus pada menemukan solusi yang menguntungkan kedua belah pihak, bukan siapa yang menang atau kalah. Kompromi seringkali diperlukan.</li>
+                <li><strong>Bersedia Meminta Maaf dan Memaafkan:</strong> Jika kamu melakukan kesalahan, berani untuk meminta maaf. Jika temanmu yang salah, berikan kesempatan untuk meminta maaf dan belajarlah memaafkan.</li>
+                <li><strong>Tetapkan Batasan:</strong> Jika konflik terus berulang atau merugikanmu, mungkin saatnya untuk mengevaluasi kembali hubungan tersebut atau menetapkan batasan yang lebih tegas.</li>
+                <li><strong>Pertimbangkan Pihak Ketiga:</strong> Jika konflik terasa terlalu besar untuk diselesaikan sendiri, mencari bantuan dari orang dewasa yang dipercaya (guru, konselor, orang tua) bisa menjadi pilihan.</li>
+            </ol>
+
+            <blockquote class="svg-icon-shadow">
+                <p>"Konflik bukanlah akhir dari pertemanan, melainkan ujian untuk memperkuatnya."</p>
+            </blockquote>
+
+            <div class="image-container">
+                <svg width="100%" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-konflik-svg desc-konflik-svg">
+                    <title id="title-konflik-svg">Ikon Dua Anak Remaja Berhadapan dengan Tanda Silang</title>
+                    <desc id="desc-konflik-svg">Dua siluet orang remaja saling berhadapan dengan tanda silang merah di tengah, melambangkan konflik atau perbedaan yang perlu diselesaikan.</desc>
+                    <!-- Person 1 -->
+                    <circle cx="100" cy="70" r="30" class="svg-icon-accent svg-icon-shadow"/>
+                    <rect x="80" y="95" width="40" height="40" rx="5" ry="5" fill="#ADD8E6" stroke="#4682B4" stroke-width="1"/>
+                    <!-- Person 2 -->
+                    <circle cx="300" cy="70" r="30" class="svg-icon-accent svg-icon-shadow"/>
+                    <rect x="280" y="95" width="40" height="40" rx="5" ry="5" fill="#ADD8E6" stroke="#4682B4" stroke-width="1"/>
+                    <!-- Conflict symbol -->
+                    <line x1="160" y1="50" x2="240" y2="100" stroke="red" stroke-width="8" class="svg-icon-shadow"/>
+                    <line x1="240" y1="50" x2="160" y2="100" stroke="red" stroke-width="8" class="svg-icon-shadow"/>
+                    <text x="200" y="145" text-anchor="middle" class="svg-icon-text">Mengelola Konflik</text>
+                </svg>
+                <p>Konflik adalah bagian tak terhindarkan dari pergaulan, penting untuk mengelolanya dengan baik.</p>
+            </div>
+
+            <p>Belajar mengelola konflik adalah investasi jangka panjang untuk semua hubunganmu. Ini mengajarkanmu kesabaran, empati, dan kemampuan berpikir kritis. Dengan menghadapi konflik secara konstruktif, kamu tidak hanya menyelamatkan sebuah pertemanan, tetapi juga tumbuh sebagai individu yang lebih kuat dan bijaksana.</p>
+        </section>
+
+        <section>
+            <h2>Mencari Dukungan dan Berani Meminta Bantuan</h2>
+            <p>Meskipun kita berusaha sekuat tenaga untuk memilih pergaulan yang baik dan membangun jati diri yang kuat, terkadang kita tetap menghadapi tantangan yang sulit. Ada kalanya kita merasa sendirian, terjebak dalam situasi yang tidak nyaman, atau bahkan menjadi korban pergaulan negatif. Dalam kondisi seperti ini, yang terpenting adalah berani mencari dukungan dan meminta bantuan. Ini bukanlah tanda kelemahan, melainkan kekuatan dan kebijaksanaan.</p>
+            <p>Banyak remaja merasa malu atau takut untuk berbicara tentang masalah pergaulan yang mereka alami. Mereka mungkin takut dihakimi, tidak dimengerti, atau memperburuk keadaan. Padahal, ada banyak orang dewasa yang peduli dan siap membantu, mulai dari keluarga, guru, konselor sekolah, hingga pemuka agama atau mentor lainnya.</p>
+
+            <h3>Kapan Saatnya Mencari Bantuan?</h3>
+            <ul>
+                <li><strong>Ketika Kamu Merasa Tertekan atau Tidak Nyaman:</strong> Jika ada teman atau kelompok yang membuatmu merasa tidak aman, cemas, atau tertekan secara emosional.</li>
+                <li><strong>Ketika Mengalami Cyberbullying atau Perundungan Fisik:</strong> Ini adalah situasi serius yang memerlukan intervensi. Jangan pernah ragu untuk melaporkannya.</li>
+                <li><strong>Ketika Dipaksa Melakukan Hal yang Melanggar Nilai atau Hukum:</strong> Jika kamu diancam atau dipaksa terlibat dalam tindakan berbahaya seperti merokok, minum alkohol, menggunakan narkoba, atau mencuri.</li>
+                <li><strong>Ketika Merasa Terisolasi atau Kesepian:</strong> Jika kamu kesulitan menemukan teman atau merasa sangat kesepian.</li>
+                <li><strong>Ketika Prestasi Akademik Menurun Drastis:</strong> Ini bisa menjadi indikator adanya masalah dalam pergaulan atau masalah lain yang perlu diatasi.</li>
+                <li><strong>Ketika Ada Perubahan Drastis pada Diri Sendiri:</strong> Misalnya, menjadi sangat tertutup, mudah marah, atau kehilangan minat pada hal-hal yang dulunya disukai.</li>
+            </ul>
+
+            <h3>Siapa yang Bisa Kamu Hubungi untuk Bantuan?</h3>
+            <ol>
+                <li><strong>Orang Tua atau Wali:</strong> Mereka adalah sumber dukungan utama dan seringkali memiliki pengalaman hidup yang bisa membimbingmu.</li>
+                <li><strong>Guru atau Konselor Sekolah:</strong> Mereka terlatih untuk menangani masalah remaja dan dapat memberikan nasihat serta mediasi.</li>
+                <li><strong>Anggota Keluarga Lain:</strong> Kakak, paman, bibi, atau kakek/nenek yang kamu percaya.</li>
+                <li><strong>Pemuka Agama:</strong> Jika kamu aktif di komunitas keagamaan, pemuka agama bisa menjadi tempat curhat dan mencari nasihat spiritual.</li>
+                <li><strong>Mentor atau Orang Dewasa Terpercaya:</strong> Pelatih olahraga, pembina ekstrakurikuler, atau siapa pun yang kamu anggap bijaksana dan peduli.</li>
+                <li><strong>Layanan Konseling Profesional:</strong> Jika masalahnya sangat kompleks atau melibatkan trauma, seorang psikolog atau terapis dapat memberikan bantuan yang lebih terstruktur.</li>
+            </ol>
+
+            <blockquote class="svg-icon-shadow">
+                <p>"Meminta bantuan bukanlah tanda kelemahan, melainkan bukti keberanianmu untuk mencari jalan keluar."</p>
+            </blockquote>
+
+            <div class="image-container">
+                <svg width="100%" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-bantuan-svg desc-bantuan-svg">
+                    <title id="title-bantuan-svg">Ikon Tangan Memegang Tangan dengan Jantung</title>
+                    <desc id="desc-bantuan-svg">Gambar dua tangan yang saling memegang dengan sebuah jantung di tengah, melambangkan dukungan, bantuan, dan empati.</desc>
+                    <!-- Hand 1 (giving) -->
+                    <path d="M150 110 C140 120, 120 120, 110 100 C100 80, 110 60, 130 50 L180 50 C200 60, 210 80, 200 100 C190 120, 170 130, 150 110 Z" fill="#FFDAB9" stroke="#CD853F" stroke-width="1" class="svg-icon-shadow"/>
+                    <!-- Hand 2 (receiving) -->
+                    <path d="M250 110 C260 120, 280 120, 290 100 C300 80, 290 60, 270 50 L220 50 C200 60, 190 80, 200 100 C210 120, 230 130, 250 110 Z" fill="#FFE4C4" stroke="#CD853F" stroke-width="1" transform="scale(-1,1) translate(-400,0)" class="svg-icon-shadow"/>
+                    <!-- Heart -->
+                    <path d="M200 70 L190 60 Q180 50 190 40 Q200 30 210 40 Q220 50 210 60 Z M200 70 L210 60 Q220 50 210 40 Q200 30 190 40 Q180 50 190 60 Z" fill="#FF6347" class="svg-icon-shadow"/>
+                    <text x="200" y="145" text-anchor="middle" class="svg-icon-text">Dukungan & Bantuan</text>
+                </svg>
+                <p>Mencari dukungan adalah langkah berani untuk mengatasi masalah pergaulan.</p>
+            </div>
+
+            <p>Jangan biarkan rasa takut atau malu menghalangimu untuk mendapatkan pertolongan yang kamu butuhkan. Lingkungan pergaulan seharusnya menjadi tempat yang mendukung pertumbuhanmu, bukan yang membuatmu tertekan. Berani mencari bantuan adalah langkah pertama menuju penyelesaian masalah dan pemulihan, yang pada akhirnya akan membantumu membangun pergaulan yang lebih sehat dan kebahagiaan sejati.</p>
+        </section>
+
+        <section>
+            <h2>Menjadi Teladan dalam Pergaulan</h2>
+            <p>Setelah merenungkan berbagai aspek pergaulan, penting untuk diingat bahwa kita tidak hanya menjadi penerima pengaruh, tetapi juga pemberi pengaruh. Setiap remaja memiliki potensi untuk menjadi teladan positif bagi teman-teman dan lingkungan sekitarnya. Ini bukan berarti kamu harus sempurna atau menjadi pemimpin kelompok, tetapi lebih kepada bagaimana kamu menjalani hidupmu dengan integritas, kebaikan, dan keberanian untuk melakukan hal yang benar.</p>
+            <p>Menjadi teladan berarti kamu adalah cahaya di tengah kegelapan, seorang teman yang dapat diandalkan, dan seseorang yang membawa energi positif ke mana pun kamu pergi. Tindakanmu, bahkan yang paling kecil sekalipun, dapat menginspirasi orang lain untuk menjadi lebih baik.</p>
+
+            <h3>Bagaimana Menjadi Teladan Positif?</h3>
+            <ol>
+                <li><strong>Jadilah Dirimu Sendiri:</strong> Keaslian adalah daya tarik terbesar. Ketika kamu jujur pada dirimu sendiri, kamu menginspirasi orang lain untuk melakukan hal yang sama.</li>
+                <li><strong>Tunjukkan Empati dan Kebaikan:</strong> Selalu berusaha memahami perasaan orang lain dan tawarkan bantuan atau kata-kata penyemangat. Kebaikan kecil dapat membuat perbedaan besar.</li>
+                <li><strong>Berani Berdiri untuk Kebenaran:</strong> Jika kamu melihat perundungan, ketidakadilan, atau tindakan yang salah, beranilah untuk berbicara atau bertindak sesuai kemampuanmu. Jangan menjadi penonton pasif.</li>
+                <li><strong>Hargai Perbedaan:</strong> Tunjukkan sikap inklusif dan terbuka terhadap teman-teman yang memiliki latar belakang, pandangan, atau minat yang berbeda. Ajari orang lain tentang toleransi.</li>
+                <li><strong>Fokus pada Pertumbuhan Diri:</strong> Teruslah belajar, mengembangkan bakat, dan mengejar impianmu. Semangatmu untuk berkembang akan menular.</li>
+                <li><strong>Jadilah Pendengar yang Baik:</strong> Kadang kala, yang dibutuhkan teman hanyalah seseorang yang mau mendengarkan tanpa menghakimi.</li>
+                <li><strong>Kelola Emosi dengan Baik:</strong> Tunjukkan bagaimana menghadapi tantangan dan kekecewaan dengan tenang dan dewasa, daripada dengan kemarahan atau keputusasaan.</li>
+                <li><strong>Berikan Dukungan:</strong> Rayakan keberhasilan teman-temanmu dan berikan dukungan saat mereka menghadapi kesulitan.</li>
+                <li><strong>Jaga Integritas Online:</strong> Jadilah pengguna media sosial yang bertanggung jawab, posting hal-hal yang positif dan konstruktif.</li>
+            </ol>
+
+            <blockquote class="svg-icon-shadow">
+                <p>"Jangan hanya berharap lingkunganmu berubah, jadilah bagian dari perubahan itu."</p>
+            </blockquote>
+
+            <div class="image-container">
+                <svg width="100%" height="150" viewBox="0 0 400 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title-teladan-svg desc-teladan-svg">
+                    <title id="title-teladan-svg">Ikon Seseorang Membawa Obor yang Bersinar</title>
+                    <desc id="desc-teladan-svg">Siluet orang remaja yang sedang berjalan sambil membawa obor yang menyala terang, melambangkan kepemimpinan, inspirasi, dan menjadi teladan.</desc>
+                    <!-- Person -->
+                    <circle cx="200" cy="50" r="25" class="svg-icon-accent svg-icon-shadow"/>
+                    <rect x="175" y="70" width="50" height="60" rx="10" ry="10" class="svg-icon svg-icon-shadow"/>
+                    <!-- Arm holding torch -->
+                    <line x1="220" y1="80" x2="260" y2="60" stroke="#4682B4" stroke-width="5" class="svg-icon-shadow"/>
+                    <!-- Torch -->
+                    <rect x="250" y="55" width="10" height="30" fill="#8B4513" class="svg-icon-shadow"/>
+                    <path d="M255 55 Q265 45 255 35 Q245 45 255 55 Z" fill="#FFA500" class="svg-icon-shadow"/>
+                    <path d="M255 50 Q260 40 255 30 Q250 40 255 50 Z" fill="#FFD700" class="svg-icon-shadow"/>
+                    <text x="200" y="145" text-anchor="middle" class="svg-icon-text">Menjadi Teladan</text>
+                </svg>
+                <p>Jadilah inspirasi bagi teman-temanmu dengan tindakan dan karakter positif.</p>
+            </div>
+
+            <p>Ingatlah, setiap orang memiliki potensi untuk memengaruhi lingkungannya. Pilihlah untuk menjadi pengaruh yang membawa kebaikan, yang membangun, dan yang mencerahkan. Dengan menjadi teladan, kamu tidak hanya membantu orang lain, tetapi juga mengukir jejak positif dalam hidupmu sendiri, membentuk karaktermu menjadi pribadi yang lebih kuat, bijaksana, dan bermakna.</p>
+        </section>
+
+        <section>
+            <h2>Kesimpulan: Masa Depan dalam Genggaman Pilihan Pergaulan</h2>
+            <p>Perjalanan remaja adalah tentang pertumbuhan, penemuan, dan pembangunan. Dalam lanskap yang dinamis ini, pergaulan memainkan peran sentral. Ia bukan sekadar latar belakang, melainkan kekuatan aktif yang secara terus-menerus membentuk siapa dirimu hari ini dan siapa yang akan kamu jadikan esok hari. Pilihan teman-teman, kelompok yang kamu ikuti, dan nilai-nilai yang kamu anut dalam pergaulan, adalah salah satu investasi paling signifikan yang dapat kamu lakukan untuk dirimu sendiri.</p>
+            <p>Kita telah menelusuri betapa pentingnya memilih lingkungan pergaulan yang positif, bagaimana membangun jati diri yang kuat dapat menjadi pelindungmu, menghadapi tantangan media sosial dengan bijaksana, mengasah komunikasi efektif untuk hubungan yang lebih dalam, dan berani menghadapi konflik serta mencari bantuan saat dibutuhkan. Semua aspek ini saling terkait, membentuk jaringan keterampilan dan kesadaran yang akan memandumu melewati masa remaja dengan lebih percaya diri dan bertanggung jawab.</p>
+            <p>Ingatlah, kamu adalah arsitek dari masa depanmu sendiri. Setiap keputusan kecil yang kamu ambil dalam pergaulan – apakah itu memilih untuk mendengarkan nasihat baik, menolak ajakan yang merugikan, atau berani menjadi diri sendiri – adalah bata yang membangun istanamu. Jangan pernah meremehkan kekuatan pilihan-pilihanmu.</p>
+            <p>Jika kamu pernah merasa tersesat atau membuat kesalahan dalam pergaulan, jangan menyerah. Setiap kesalahan adalah pelajaran, dan setiap hari adalah kesempatan baru untuk memulai kembali, memperbaiki, dan memilih jalan yang lebih baik. Beranilah untuk berubah, berani untuk tumbuh, dan berani untuk mencari yang terbaik bagi dirimu.</p>
+            <p>Pergaulan yang sehat adalah anugerah. Ia memberikanmu sayap untuk terbang, akar untuk tetap membumi, dan cermin untuk melihat potensi terbaik dirimu. Dengan kebijaksanaan, keberanian, dan kesadaran, kamu dapat menciptakan pergaulan yang tidak hanya menyenangkan, tetapi juga bermakna dan memberdayakan. Teruslah merenung, teruslah belajar, dan teruslah memilih jalan terbaik dalam setiap langkah pergaulanmu. Masa depan yang cerah menantimu!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Artikel ini bersifat renungan dan panduan umum untuk remaja. Setiap individu mungkin memiliki pengalaman yang berbeda.</p>
+        <p>&copy; Semua Hak Dilindungi Undang-Undang.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/renungan-amos-8">Renungan Amos 8</a></li>
+<li><a href="/renungan-2-samuel-20">Renungan 2 Samuel 20</a></li>
+<li><a href="/renungan-amsal-6-6-11">Renungan Amsal 6 6 11</a></li>
+<li><a href="/bacaan-harian">Bacaan Harian</a></li>
+<li><a href="/khotbah-tentang-wanita-yang-kuat">Khotbah Tentang Wanita Yang Kuat</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

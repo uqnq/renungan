@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah Yesus di Bukit: Panduan Hidup Kerajaan Surga</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --primary-color: #4CAF50; /* Hijau cerah, sejuk */
+            --secondary-color: #2196F3; /* Biru cerah, sejuk */
+            --accent-color: #FFC107; /* Kuning cerah, hangat */
+            --text-color: #333;
+            --light-text-color: #555;
+            --background-light: #F8F9FA; /* Sangat terang, sejuk */
+            --background-card: #FFFFFF;
+            --border-color: #ECEFF1;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 1.1em;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px 30px;
+            background-color: var(--background-card);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            body {
+                font-size: 1em;
+            }
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Georgia', 'Palatino Linotype', 'Book Antiqua', serif;
+            color: var(--primary-color);
+            margin-top: 1.8em;
+            margin-bottom: 0.8em;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.8em;
+            text-align: center;
+            color: var(--secondary-color);
+            margin-top: 0.5em;
+            margin-bottom: 0.8em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.3em;
+            margin-top: 2em;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            color: var(--light-text-color);
+            margin-top: 1.5em;
+        }
+
+        p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--secondary-color);
+        }
+
+        ul, ol {
+            margin-bottom: 1.2em;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 0.6em;
+            color: var(--light-text-color);
+        }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            border-bottom: 1px dotted var(--secondary-color);
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 25px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        blockquote {
+            background-color: #e3f2fd; /* Warna biru muda sejuk */
+            border-left: 5px solid var(--secondary-color);
+            margin: 25px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            color: #424242;
+            border-radius: 4px;
+        }
+
+        cite {
+            display: block;
+            text-align: right;
+            font-size: 0.9em;
+            margin-top: 10px;
+            color: var(--light-text-color);
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid var(--border-color);
+            margin: 40px 0;
+        }
+
+        .highlight {
+            background-color: #fffde7; /* Kuning sangat pucat */
+            padding: 3px 6px;
+            border-radius: 4px;
+        }
+
+        .footnote {
+            font-size: 0.9em;
+            color: var(--light-text-color);
+            margin-top: 3em;
+            border-top: 1px solid var(--border-color);
+            padding-top: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Khotbah Yesus di Bukit: Panduan Hidup Kerajaan Surga</h1>
+
+        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAwcHgiIGhlaWdodD0iNDAwcHgiIHZpZXdCb3g9IjAgMCA4MDAgNDAwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5orgvMmcI+CiAgPGRlZnM+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2FjY2FlZSIgb2Zmc2V0PSIwJSIvPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjNjZhMmU1IiBvZmZzZXQ9IjEwMCUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2Y1ZjVkYyIgb2Zmc2V0PSIwJSIvPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZWRmMGZjIiBvZmZzZXQ9IjEwMCUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQzIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agc3RvcC1jb2xvcj0iI2ZmYjgyMiIgb2Zmc2V0PSIwJSIvPgogICAgICA8c3RvcCBzdG9wLWNvbG9yPSIjZmZjYTE2IiBvZmZzZXQ9IjEwMCUiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIAogIDxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMTAwIiB4PSI1MCIgeT0iMTIwIiBmaWxsPSJ1cmwoI2dyYWQyKSIgcng9IjEwIiByeT0iMTAiLz4KICA8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjE1MCIgeD0iMzAwiCB5PSIxNzUiIGZpbGw9InVybCgjZ3JhZDEpIiByeD0iMTAiIHJ5PSIxMCIvPgogIDxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTAwIiB4PSI0MDAiIHk9IjIwMCIgZmlsbD0idXJsKCNncmFkMiIpIiByeD0iMTAiIHJ5PSIxMCIvPgogIDxyZWN0IHdpZHRoPSIyNTAiIGhlaWdodD0iMTAwIiB4PSI1NTAiIHk9IjI1MCIgZmlsbD0idXJsKCNncmFkMSkiIHJ4PSIxMCIgcnk9IjEwIi8+CiAgPHJlY3Qgd2lkdGg9IjE1MCIgaGVpZ2h0PSI3NSIgeD0iNjUwIiB5PSIzMDAiIGZpbGw9InVybCgjZ3JhZDMpIiByeD0iMTAiIHJ5PSIxMCIvPgogIAogIAogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI3NSwxMzApIHJvdGF0ZSgxNSkiPgogICAgPHJlY3Qgd2lkdGg9IjUwIiBoZWlnaHQ9IjUwIiBmaWxsPSIjREREREREIiByeD0iNSIgcnk9IjUiLz4KICAgIDxjaXJjbGUgY3g9IjI1IiBjeT0iMjUiIHI9IjE1IiBmaWxsPSIjRkZGRkZGIi8+CiAgICA8cGF0aCBkPSJNMjUgMkwzMCAxNUwyNSAxMEwyMCAxNVoyNCAyMkwyOSAzNUwyNCAzMkwxOSAzNVoiIGZpbGw9IiM2MzczNzgiLz4KICAgIDxwYXRoIGQ9Ik0yNSA1TDMwIDE4TDI1IDEzTDIwIDE4WiIgZmlsbD0iIzQ2NUE0QiIvPgogIDwvZz4KCiAgPHBhdGggZD0iTTUwIDMyMEwyMCAzODBIMzg1TDM1NSAzMjBaIiBmaWxsPSIjRUE0MzM1Ii8+CiAgPHBhdGggZD0iTTM1MCAzNDBMMjkwIDQwMEg1ODBMNTUwIDM0MFoiIGZpbGw9IiM0Mjg1RjQiLz4KICA8cGF0aCBkPSJNNTUwIDMxNkw1MjAgMzc1SDc3NUw3NDAgMzE2WiIgZmlsbD0iIzNGQTkxMiIvPgogIAogIDxjaXJjbGUgY3g9IjYwMCIgY3k9IjE1MCIgcj0iMTIwIiBmaWxsPSJ1cmwoI2dyYWQzKSIgb3BhY2l0eT0iMC41Ii8+CiAgPHBhdGggZD0iTTU2MCAxNjBDNTYwIDE2MCA1OTAgMTIwIDYzMCAxMjBDNjcwIDEyMCA3MDAgMTYwIDcwMCAxNjBDNzAwIDE2MCA2NzAgMjAwIDYzMCAyMDBDNjEwIDIwMCA1ODAgMTcwIDU2MCAxNjBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgPHBhdGggZD0iTTU4NSAxNjBDNTg1IDE2MCA2MDcgMTM1IDYzMCAxMzVDNjUzIDEzNSA2NzUgMTYwIDY3NSAxNjBDNjc1IDE2MCA2NTMgMTg1IDYzMCAxODVDNjA3IDE4NSA1ODUgMTYwIDU4NSAxNjBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgPHBhdGggZD0iTTYxNSAxNjBDNjE1IDE2MCA2MjMgMTQ3IDYzMCAxNDdDNjM3IDE0NyA2NDUgMTYwIDY0NSAxNjBDNjQ1IDE2MCA2MzcgMTczIDYzMCAxNzNDNjIzIDE3MyA2MTUgMTYwIDYxNSAxNjBaIiBmaWxsPSIjRkZGRkZGIi8+CiAgCiAgPHBhdGggZD0iTTUyMCwyNzVMNTQ1LDI1MEw1NzAsMjc1TDU0NSwzMDBaIiBmaWxsPSIjOTBjNmYzIi8+CiAgPHBhdGggZD0iTTMxMCwxNDVMMzMzLDEyNUwzNTYsMTQ1TDMzMywxNjVaIiBmaWxsPSIjOTBjNmYzIi8+CiAgPHBhdGggZD0iTTg1LDE0NUwxMDgsMTI1TDEzMSwxNDVMMTA4LDE2NVoiIGZpbGw9IiM5MGM2ZjMiLz4KICA8cGF0aCBkPSJNNjUwLDMxNUw2NzUsMjk1TDcwMCwzMTVMNjc1LDMzNVoiIGZpbGw9IiM5MGM2ZjMiLz4KCiAgPHBhdGggZD0iTTUwIDQwMEg3NTAgTDIwMCAyNTBMNTAgNDAwWiIgc3Ryb2tlPSIjY2NlM2ZmIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9IiNlMGYyZjUiLz4KICA8cGF0aCBkPSJNNjAwIDQwMEg4MDAgTDUwMCAyNzBMNjAwIDQwMFoiIHN0cm9rZT0iI2RiZjFlNSIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSIjZWZmNGZhIi8+CiAgPHBhdGggZD0iTTI1MCA0MDAgSDUwMCBMMzUwIDMxMCBMMjUwIDQwMFoiIHN0cm9rZT0iI2FlZDRlNyIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSIjYzFlNGYwIi8+CiAgPHBhdGggZD0iTTQyMCwzMzBMMzkwLDM1MEw0MDUsMzcwTDQ0NSwzMzBaIiBmaWxsPSIjNjhhNGZmIi8+CiAgPHBhdGggZD0iTTQzMCwzMzVMNDEwLDM1NUw0MjUsMzc1TDQ2NSwzMzVaIiBmaWxsPSIjOTBjNmYzIi8+CiAgPHBhdGggZD0iTTM1MCwzNjBMMzIwLDM4MExzNTUsMzk1TDM5MCwzNzBaIiBmaWxsPSIjOTBjNmYzIi8+CiAgPHBhdGggZD0iTTM2MCwzNjVMMzMwLDM4NUwzNjUsNDAwTDM5NSwzNzVaIiBpbGw9IiM2OGE0ZmYiLz4KCiAgPHBhdGggZD0iTTMwMCAxNjAgQzMwMCA5MCAzNTkgMzAgNDMwIDMwQzUxMCAzMCA1NzAgOTAgNTcwIDE2MEM1NzAgMjMwIDUwMCAyOTAgNDMwIDI5MEMzNTkgMjkwIDMwMCAyMzAgMzAwIDE2MFoiIHN0cm9rZT0iIzZkYmYzZSIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSIjYThkNGZlIiBvcGFjaXR5PSIwLjMiLz4KICA8cGF0aCBkPSJNMzk1IDgwQzM5NSAyNSA0MzkgMTAgNDYwIDEwQzQ4MCAxMCA1MjUgMjUgNTI1IDgwQzUyNSAxMzUgNDgwIDE1MCA0NjAgMTUwQzQzOSAxNTAgMzk1IDEzNSAzOTUgODBMMzMwIDE3NSBMNDA1IDI0MCBMNDk1IDE3NSBMNDYwIDMwIFoiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC44KSIgc3Ryb2tlPSIjZmZmZmZmIiBzdHJva2Utd2lkdGg9IjMiLz4KCiAgPHBhdGggZD0iTTM2MCAxOTAgQzM2MCAxOTAgMzg1IDE4MCA0MTUgMTgwQzQ0NSAxODAgNDcwIDE5MCA0NzAgMTkwQzQ3MCAxOTAgNDQ1IDIwMCA0MTUgMjAwQzM4NSAyMDAgMzYwIDE5MCAzNjAgMTkwWiIgZmlsbD0iI0ZGRkZGRiIvPgogIDxwYXRoIGQ9Ik00MTUgMTg1TDQxNSAyMzAgQzQxNSAyMzAgNDIwIDI0NSA0MzAgMjQ1QzQ0MCAyNDUgNDQ1IDIzMCA0NDUgMjMwTDQ0NSAxODVMNDE1IDE4NVoiIGZpbGw9IiNGRkZGRkYiLz4KICA8cGF0aCBkPSJNMzk1IDI2NSBDMzk1IDI2NSAzOTggMjc1IDQwNSAyNzVDNDEzIDI3NSA0MTUgMjY1IDQxNSAyNjVDNDE1IDI2NSA0MTMgMjU1IDQwNSAyNTVDMzk4IDI1NSAzOTUgMjY1IDM5NSAyNjVaIiBmaWxsPSIjRkZGRkZGIi8+CiAgPHBhdGggZD0iTTQyNSAyNTUgQzQyNSAyNTUgNDI4IDI2NSA0MzUgMjY1QzQ0MyAyNjUgNDQ1IDI1NSA0NDUgMjU1QzQ0NSAyNTUgNDQzIDI0NSA0MzUgMjQ1QzQyOCAyNDUgNDI1IDI1NSA0MjUgMjU1WiIgZmlsbD0iI0ZGRkZGRiIvPgogPC9zdmc+" alt="Ilustrasi bukit dengan cahaya terang yang melambangkan Khotbah Yesus di Bukit, dengan latar belakang langit biru cerah dan awan." loading="lazy">
+
+        <p>Khotbah Yesus di Bukit adalah salah satu bagian paling mendalam dan berpengaruh dalam seluruh kitab suci Kristen. Disajikan dalam Injil Matius (pasal 5, 6, dan 7) dan dengan paralel di Injil Lukas (pasal 6), khotbah ini bukan sekadar kumpulan ajaran moral; ia adalah piagam hidup bagi mereka yang ingin menjadi warga Kerajaan Allah. Ini adalah cetak biru untuk etika yang radikal, menantang konvensi, dan mengundang para pengikut Kristus untuk hidup dalam standar kebenaran yang jauh melampaui kepatuhan lahiriah terhadap hukum.</p>
+
+        <p>Sebagai pembuka, penting untuk memahami konteks historis dan geografis dari peristiwa ini. Yesus baru saja memulai pelayanan publik-Nya, mengumpulkan murid-murid, dan menarik perhatian orang banyak dari seluruh Galilea, Dekapolis, Yerusalem, Yudea, dan seberang Yordan. Ketika kerumunan orang mengikuti-Nya, Yesus naik ke sebuah bukit—mungkin salah satu dari banyak bukit di sekitar Laut Galilea—duduk, dan mulai mengajar murid-murid-Nya, meskipun kerumunan juga mendengarkan.</p>
+
+        <p>Tindakan Yesus duduk untuk mengajar adalah khas seorang rabi pada masa itu, menandakan otoritas. Namun, otoritas yang dimiliki Yesus melampaui rabi mana pun. Ajaran-Nya tidak bersandar pada tradisi atau interpretasi para ahli Taurat, melainkan pada kebenaran ilahi yang berasal dari diri-Nya sendiri. Khotbah ini memperkenalkan sebuah realitas baru, sebuah "Kerajaan Surga" yang bukan bersifat politis atau teritorial, melainkan spiritual dan transformatif, mengubah hati dan pikiran mereka yang menerimanya.</p>
+
+        <p>Dalam khotbah ini, Yesus menyajikan visi yang komprehensif tentang kehidupan yang benar di hadapan Allah. Ia tidak menghapus Hukum Taurat, melainkan menggenapinya dan mengungkap makna terdalamnya. Ia memanggil para pendengar-Nya untuk melihat melampaui tindakan lahiriah dan menggali motivasi hati, menekankan bahwa kebenaran sejati berasal dari dalam. Mari kita selami lebih dalam setiap bagian penting dari Khotbah Yesus di Bukit ini.</p>
+
+        <hr>
+
+        <h2>1. Ucapan Bahagia (Matius 5:3-12)</h2>
+        <p>Khotbah Yesus di Bukit dimulai dengan serangkaian pernyataan yang revolusioner, yang dikenal sebagai Ucapan Bahagia atau Beatitudes. Ini adalah pernyataan paradoks tentang siapa yang diberkati oleh Allah. Berbeda dengan pandangan umum tentang kebahagiaan yang sering dikaitkan dengan kekayaan, kekuasaan, atau status sosial, Yesus mengumumkan bahwa kebahagiaan sejati ditemukan dalam kualitas-kualitas yang sering diremehkan atau bahkan dianggap sebagai kelemahan oleh dunia.</p>
+
+        <p>Setiap Ucapan Bahagia dimulai dengan kata "Berbahagialah" (Yunani: <em>makarioi</em>), yang berarti "diberkati" atau "bahagia dalam pengertian yang mendalam dan spiritual, terlepas dari keadaan luar." Ini adalah kebahagiaan yang diberikan oleh Allah, sebuah keadaan keberkatan yang kekal. Mari kita uraikan masing-masing:</p>
+
+        <h3>1.1. Berbahagialah orang yang miskin di hadapan Allah, karena merekalah yang empunya Kerajaan Surga.</h3>
+        <p>Kemiskinan di hadapan Allah bukanlah tentang kekurangan materi, melainkan kemiskinan roh. Ini adalah pengakuan akan ketergantungan total kita kepada Allah, kerendahan hati yang mendalam yang menyadari bahwa kita tidak memiliki apa pun yang dapat kita tawarkan kepada Allah dengan kekuatan kita sendiri. Ini adalah kesadaran akan kebutuhan kita akan kasih karunia ilahi. Mereka yang mengenali kehampaan spiritual mereka sendiri dan mencari Allah dengan hati yang hancur akan menemukan Kerajaan Surga, bukan sebagai hadiah yang pantas, tetapi sebagai warisan yang murah hati.</p>
+
+        <h3>1.2. Berbahagialah orang yang berdukacita, karena mereka akan dihibur.</h3>
+        <p>Dukacita di sini dapat memiliki beberapa makna. Ini bisa berarti dukacita atas dosa sendiri atau dosa dunia, rasa sakit yang mendalam karena ketidakadilan dan penderitaan. Ini juga bisa berarti kesedihan yang tulus karena kehilangan atau kesulitan dalam hidup yang, ketika dihadapi dengan iman, mengarahkan kita kepada penghiburan ilahi. Orang yang tidak mengabaikan rasa sakit dan penderitaan, melainkan menghadapinya dan berbalik kepada Allah, akan mengalami penghiburan sejati yang hanya dapat diberikan oleh-Nya, baik di dunia ini maupun di dunia yang akan datang.</p>
+
+        <h3>1.3. Berbahagialah orang yang lemah lembut, karena mereka akan memiliki bumi.</h3>
+        <p>Lemah lembut (Yunani: <em>praeis</em>) bukan berarti lemah atau pasif, melainkan kekuatan yang terkendali. Ini adalah sikap rendah hati, tidak mementingkan diri sendiri, dan bersedia tunduk kepada kehendak Allah. Orang yang lemah lembut tidak bersikeras pada hak-haknya sendiri dengan agresif, melainkan menunjukkan kesabaran, kebaikan, dan kelembutan, bahkan di hadapan provokasi. Janji bahwa mereka akan "memiliki bumi" adalah referensi pada Mazmur 37:11 dan menunjuk pada warisan yang kekal dalam Kerajaan Allah, di mana damai sejahtera dan keadilan akan memerintah.</p>
+
+        <h3>1.4. Berbahagialah orang yang lapar dan haus akan kebenaran, karena mereka akan dipuaskan.</h3>
+        <p>Lapar dan haus adalah kebutuhan dasar manusia yang paling mendesak. Yesus menggunakan analogi ini untuk menggambarkan kerinduan yang mendalam dan intens akan kebenaran Allah—yaitu, keadilan, moralitas, dan keselarasan dengan kehendak-Nya. Ini bukan sekadar keinginan pasif, tetapi pencarian aktif dan hasrat yang membakar untuk hidup dalam kebenaran dan melihat kebenaran ditegakkan. Mereka yang memiliki hasrat seperti itu akan dipuaskan sepenuhnya oleh Allah, baik melalui anugerah-Nya di sini maupun pemenuhan penuh di masa depan.</p>
+
+        <h3>1.5. Berbahagialah orang yang murah hatinya, karena mereka akan beroleh kemurahan.</h3>
+        <p>Murah hati berarti berbelas kasih, menunjukkan empati, dan bertindak dengan kebaikan terhadap orang lain, terutama mereka yang menderita atau membutuhkan. Ini adalah cerminan dari karakter Allah sendiri, yang kaya akan kemurahan. Yesus mengajarkan bahwa cara kita memperlakukan orang lain akan menjadi ukuran bagaimana Allah memperlakukan kita. Mereka yang menunjukkan kemurahan hati akan menerima kemurahan hati dari Allah, baik dalam pengampunan dosa maupun dalam berkat-berkat lainnya.</p>
+
+        <h3>1.6. Berbahagialah orang yang suci hatinya, karena mereka akan melihat Allah.</h3>
+        <p>Hati yang suci berarti hati yang murni dalam motivasi, bebas dari kemunafikan, kesombongan, atau motif tersembunyi. Ini adalah hati yang seluruhnya ditujukan kepada Allah, jujur, dan tidak terbagi. Kemurnian hati memungkinkan seseorang untuk merasakan dan memahami Allah dengan cara yang tidak dapat dilakukan oleh hati yang tercemar atau terbagi. "Melihat Allah" berarti memiliki hubungan yang intim dengan-Nya, pengalaman kehadiran-Nya, dan pada akhirnya, melihat-Nya muka dengan muka dalam kekekalan.</p>
+
+        <h3>1.7. Berbahagialah orang yang membawa damai, karena mereka akan disebut anak-anak Allah.</h3>
+        <p>Pembawa damai adalah mereka yang secara aktif bekerja untuk menciptakan keharmonisan dan rekonsiliasi, baik di antara individu, kelompok, maupun dengan Allah. Ini bukan hanya menghindari konflik, tetapi secara proaktif membangun jembatan dan mencari perdamaian. Yesus sendiri adalah Pangeran Damai, dan mereka yang mengikuti teladan-Nya dalam membawa damai mencerminkan karakter Allah, sehingga layak disebut sebagai anak-anak-Nya. Mereka menunjukkan identitas ilahi mereka melalui tindakan mereka.</p>
+
+        <h3>1.8. Berbahagialah orang yang dianiaya oleh sebab kebenaran, karena merekalah yang empunya Kerajaan Surga.</h3>
+        <p>Ucapan Bahagia yang terakhir ini mengakui bahwa hidup dalam kebenaran Kristus akan sering kali bertentangan dengan nilai-nilai dunia, yang dapat menyebabkan penganiayaan. Ini bisa berupa ejekan, pengucilan, atau bahkan kekerasan fisik. Yesus meyakinkan para pengikut-Nya bahwa penderitaan karena kebenaran adalah tanda kemuliaan, bukan kegagalan. Ini mengulang janji dari Ucapan Bahagia yang pertama, menegaskan bahwa mereka yang setia di tengah penganiayaan akan menerima warisan penuh Kerajaan Surga. Ini juga menghubungkan penderitaan mereka dengan penderitaan para nabi di masa lalu.</p>
+
+        <p>Ucapan Bahagia ini menetapkan standar moral dan spiritual yang radikal untuk para pengikut Kristus. Ini adalah panggilan untuk transformasi internal, bukan hanya kepatuhan eksternal. Mereka yang menjalani prinsip-prinsip ini akan menemukan kebahagiaan sejati dan menjadi pewaris Kerajaan Allah.</p>
+
+        <hr>
+
+        <h2>2. Garam dan Terang Dunia (Matius 5:13-16)</h2>
+        <p>Setelah meletakkan dasar karakter Kerajaan Allah dalam Ucapan Bahagia, Yesus beralih ke peran para pengikut-Nya di dunia. Ia menggunakan dua metafora kuat—garam dan terang—untuk menjelaskan bagaimana hidup yang transformatif ini harus mempengaruhi lingkungan sekitar.</p>
+
+        <h3>2.1. Kamu adalah Garam Dunia</h3>
+        <p>Garam pada zaman Yesus memiliki beberapa fungsi penting: sebagai pengawet, perasa, dan bahkan sebagai pupuk. Ketika Yesus berkata, "Kamu adalah garam dunia," Ia mengacu pada peran ganda ini:</p>
+        <ul>
+            <li><strong>Pengawet Moral:</strong> Seperti garam mencegah pembusukan, para pengikut Kristus dipanggil untuk mencegah pembusukan moral dan spiritual di dunia. Kehadiran mereka harus menunda atau bahkan membalikkan kemerosotan masyarakat dengan menjadi teladan kebenaran dan integritas.</li>
+            <li><strong>Pemberi Rasa:</strong> Garam memberikan rasa pada makanan. Demikian pula, hidup orang percaya harus menambahkan "rasa" atau makna pada dunia yang mungkin hambar dan tanpa arah. Ini adalah panggilan untuk membawa pengaruh positif, kasih, dan harapan di tengah keputusasaan.</li>
+        </ul>
+        <p>Namun, Yesus juga memberikan peringatan: "Jika garam itu menjadi tawar, dengan apakah ia diasinkan? Tidak ada lagi gunanya selain dibuang dan diinjak orang." Garam yang kehilangan rasanya tidak lagi berguna. Ini adalah peringatan keras bahwa jika orang Kristen kehilangan kekhasan mereka—karakter ilahi yang membedakan mereka—mereka akan kehilangan relevansi dan pengaruh mereka di dunia. Mereka harus mempertahankan "rasa" mereka melalui ketaatan yang konsisten pada ajaran Kristus.</p>
+
+        <h3>2.2. Kamu adalah Terang Dunia</h3>
+        <p>Terang adalah metafora lain yang sangat signifikan. Dalam Yohanes 8:12, Yesus sendiri menyatakan, "Akulah terang dunia." Sekarang, Ia menyatakan bahwa para pengikut-Nya juga adalah terang dunia, memantulkan terang-Nya kepada orang lain. Cahaya memiliki beberapa fungsi:</p>
+        <ul>
+            <li><strong>Menerangi Jalan:</strong> Terang menghilangkan kegelapan, mengungkapkan kebenaran, dan menunjukkan jalan. Orang Kristen dipanggil untuk menerangi kegelapan spiritual dan moral dunia dengan ajaran dan teladan hidup mereka. Mereka harus memancarkan kebenaran Allah.</li>
+            <li><strong>Memimpin:</strong> Orang tidak menyembunyikan terang di bawah tempayan, melainkan menaruhnya di atas kaki dian agar dapat menerangi seluruh rumah. Demikian pula, kehidupan orang percaya tidak boleh disembunyikan. Mereka harus secara terbuka memancarkan kebaikan dan kebenaran, menjadi mercusuar harapan bagi orang lain.</li>
+        </ul>
+        <p>Tujuannya adalah agar orang-orang melihat "perbuatan baikmu dan memuliakan Bapamu yang di surga." Ini bukan tentang mencari pujian untuk diri sendiri, melainkan agar terang yang dipancarkan oleh hidup mereka mengarahkan orang lain kepada Allah. Kehidupan yang berpusat pada Kerajaan Allah akan secara alami memancarkan kebaikan yang menarik perhatian dan memuliakan Allah.</p>
+        <p>Bagian ini menekankan bahwa spiritualitas Kerajaan Surga bukan bersifat pasif atau tersembunyi. Sebaliknya, ia harus aktif, transformatif, dan berdampak pada masyarakat. Orang percaya dipanggil untuk menjadi agen perubahan yang positif, yang hidupnya menjadi saksi nyata bagi kebaikan Allah.</p>
+
+        <hr>
+
+        <h2>3. Menggenapi Hukum Taurat (Matius 5:17-48)</h2>
+        <p>Bagian ini adalah salah satu inti Khotbah Yesus di Bukit, di mana Yesus dengan tegas menyatakan hubungan-Nya dengan Hukum Taurat dan para Nabi. Ada kesalahpahaman umum bahwa Yesus datang untuk menghapus Hukum Taurat, tetapi Ia menyangkal hal ini dengan keras.</p>
+
+        <h3>3.1. Bukan untuk Menghapus, melainkan Menggenapi (Matius 5:17-20)</h3>
+        <p>Yesus menyatakan, "Janganlah kamu menyangka, bahwa Aku datang untuk meniadakan hukum Taurat atau kitab para nabi; Aku datang bukan untuk meniadakannya, melainkan untuk menggenapinya." Kata "menggenapi" (Yunani: <em>plērōsai</em>) memiliki makna yang dalam. Ini berarti membawa ke pemenuhan, melengkapi, dan mengungkapkan makna terdalam dari Hukum Taurat. Yesus datang untuk menunjukkan tujuan asli Hukum Taurat dan bagaimana ia harus diaplikasikan dalam kehidupan yang berpusat pada Kerajaan Allah.</p>
+        <p>Yesus menegaskan kekekalan Hukum Taurat, menyatakan bahwa "satu iota atau satu titik pun tidak akan ditiadakan dari hukum Taurat, sebelum semuanya terjadi." Kemudian Ia mengeluarkan pernyataan yang menantang: "Jika hidup keagamaanmu tidak lebih benar dari hidup keagamaan ahli-ahli Taurat dan orang-orang Farisi, sesungguhnya kamu tidak akan masuk ke dalam Kerajaan Surga." Ini adalah tuntutan radikal. Para ahli Taurat dan Farisi dikenal karena kepatuhan mereka yang ketat terhadap Hukum Taurat secara lahiriah. Yesus menuntut sesuatu yang lebih dari sekadar kepatuhan eksternal—Ia menuntut kebenaran yang berasal dari hati.</p>
+
+        <h3>3.2. Kebenaran yang Melampaui Batas (Matius 5:21-48)</h3>
+        <p>Yesus kemudian memberikan serangkaian antitesis, di mana Ia mengambil Hukum Taurat yang sudah dikenal ("Kamu telah mendengar firman...") dan kemudian memberikan interpretasi-Nya yang lebih dalam ("Tetapi Aku berkata kepadamu..."). Ini menunjukkan bahwa kebenaran Kerajaan Allah melampaui kepatuhan harfiah terhadap aturan, masuk ke dalam wilayah motivasi dan sikap hati.</p>
+
+        <h4>3.2.1. Mengenai Pembunuhan (Matius 5:21-26)</h4>
+        <p>Hukum Lama melarang membunuh. Yesus memperluas ini, menyatakan bahwa kemarahan yang tidak terkendali terhadap saudara, memanggilnya "bodoh" (<em>Raka</em> – kepala kosong) atau "jahil" (<em>Moreh</em> – bodoh secara moral, pemberontak terhadap Allah), sama berbahayanya dan dapat membuat seseorang bersalah di hadapan pengadilan ilahi. Akar pembunuhan adalah kemarahan dan kebencian dalam hati. Yesus menyerukan rekonsiliasi segera sebelum mempersembahkan persembahan kepada Allah, menekankan urgensi untuk berdamai.</p>
+        <blockquote>
+            "Kamu telah mendengar firman: Jangan membunuh; siapa yang membunuh harus dihukum. Tetapi Aku berkata kepadamu: Setiap orang yang marah terhadap saudaranya harus dihukum."
+            <cite>Matius 5:21-22</cite>
+        </blockquote>
+
+        <h4>3.2.2. Mengenai Perzinahan (Matius 5:27-30)</h4>
+        <p>Hukum Lama melarang perzinahan secara fisik. Yesus membawa ini ke tingkat pemikiran, menyatakan bahwa "setiap orang yang memandang perempuan dengan menginginkannya, sudah berzinah dengan dia di dalam hatinya." Ini adalah pernyataan yang sangat menantang, menunjukkan bahwa dosa dapat berakar dalam hati dan pikiran, bahkan sebelum tindakan fisik terjadi. Ia bahkan menggunakan metafora radikal tentang membuang mata atau tangan jika itu menyebabkan seseorang berdosa, menekankan betapa seriusnya dosa hati ini dan perlunya langkah-langkah drastis untuk mengatasinya.</p>
+
+        <h4>3.2.3. Mengenai Perceraian (Matius 5:31-32)</h4>
+        <p>Musa mengizinkan surat cerai karena kekerasan hati orang Israel. Yesus kembali ke maksud asli Allah dalam penciptaan: pernikahan adalah ikatan kudus yang tidak dapat dipisahkan kecuali karena perzinahan. Ia memperketat interpretasi ini, melindungi kesucian pernikahan dan posisi wanita yang rentan pada masa itu.</p>
+
+        <h4>3.2.4. Mengenai Sumpah (Matius 5:33-37)</h4>
+        <p>Hukum Lama mengizinkan sumpah tertentu untuk menegaskan kebenaran. Yesus melarang sumpah sama sekali, menyerukan agar perkataan pengikut-Nya selalu dapat dipercaya. "Jika ya, hendaklah kamu katakan: ya, jika tidak, hendaklah kamu katakan: tidak. Apa yang lebih dari itu berasal dari si Jahat." Ini adalah panggilan untuk integritas mutlak dalam setiap perkataan, sehingga tidak perlu bersumpah demi membenarkan perkataan.</p>
+
+        <h4>3.2.5. Mengenai Pembalasan (Matius 5:38-42)</h4>
+        <p>Prinsip "mata ganti mata, gigi ganti gigi" (<em>lex talionis</em>) dalam Hukum Lama sebenarnya adalah pembatasan pembalasan, mencegah pembalasan yang berlebihan. Yesus melangkah lebih jauh dengan melarang pembalasan sama sekali. "Janganlah kamu melawan orang yang berbuat jahat kepadamu, melainkan siapa pun yang menampar pipi kananmu, berilah juga kepadanya pipi kirimu." Ini adalah panggilan untuk menolak siklus kekerasan dan membalas kejahatan dengan kebaikan, menunjukkan kasih yang radikal bahkan di tengah ketidakadilan. Ini bukan kepasifan, melainkan perlawanan aktif terhadap kejahatan dengan cara yang non-kekerasan.</p>
+
+        <h4>3.2.6. Mengenai Mengasihi Musuh (Matius 5:43-48)</h4>
+        <p>Ini mungkin adalah ajaran yang paling revolusioner dalam Khotbah Yesus di Bukit. Hukum Lama mengajarkan untuk mengasihi sesama. Yesus memperluas ini secara dramatis: "Kasihilah musuhmu dan berdoalah bagi mereka yang menganiaya kamu." Ini adalah panggilan untuk melampaui batasan alami kasih manusia, yang cenderung hanya mengasihi mereka yang mengasihi kita. Mengasihi musuh mencerminkan karakter Allah sendiri, yang "menerbitkan matahari bagi orang yang jahat dan orang yang baik dan menurunkan hujan bagi orang yang benar dan orang yang tidak benar." Panggilan ini menantang para pengikut-Nya untuk menjadi "sempurna, sama seperti Bapamu yang di surga adalah sempurna." Ini adalah kesempurnaan dalam kasih, meniru kasih universal Allah.</p>
+        <p>Secara keseluruhan, bagian ini menunjukkan bahwa Yesus tidak datang untuk menghapus Hukum Taurat, melainkan untuk memperdalam pemahamannya, mengungkap makna spiritualnya, dan menuntut standar kebenaran yang jauh melampaui kepatuhan lahiriah. Ia memanggil para pengikut-Nya untuk menjalani etika Kerajaan Allah yang radikal, yang berakar pada hati yang telah diubahkan.</p>
+
+        <hr>
+
+        <h2>4. Kebenaran yang Sejati (Matius 6:1-18)</h2>
+        <p>Setelah membahas interpretasi Hukum Taurat, Yesus beralih ke praktik-praktik keagamaan yang umum pada waktu itu: memberi sedekah, berdoa, dan berpuasa. Ia mengkritik keras motivasi di balik praktik-praktik ini jika dilakukan demi pujian manusia, dan sebaliknya, menyerukan kesalehan yang tulus dan rahasia di hadapan Allah.</p>
+
+        <h3>4.1. Tentang Memberi Sedekah (Matius 6:1-4)</h3>
+        <p>Yesus memulai dengan prinsip umum: "Hati-hatilah, jangan kamu melakukan kewajiban agamamu di hadapan orang supaya dilihat mereka, karena jika demikian, kamu tidak memperoleh upah dari Bapamu yang di surga." Ia kemudian mengaplikasikannya pada memberi sedekah. Para Farisi sering kali mengumumkan pemberian mereka atau melakukannya di tempat umum untuk menarik perhatian. Yesus mengajarkan sebaliknya: "Jadi, apabila engkau memberi sedekah, janganlah engkau mencanangkan hal itu, seperti yang dilakukan orang munafik di rumah-rumah ibadat dan di lorong-lorong, supaya mereka dipuji orang. Aku berkata kepadamu: Sesungguhnya mereka sudah mendapat upahnya."</p>
+        <p>Sebaliknya, Ia memerintahkan: "Tetapi jika engkau memberi sedekah, janganlah diketahui tangan kirimu apa yang diperbuat tangan kananmu. Hendaklah sedekahmu itu diberikan dengan tersembunyi, maka Bapamu yang melihat yang tersembunyi akan membalasnya kepadamu." Ini adalah panggilan untuk kemurahan hati yang tulus, termotivasi oleh kasih kepada Allah dan sesama, bukan oleh keinginan untuk dipuji. Upah sejati datang dari Allah, bukan dari manusia.</p>
+
+        <h3>4.2. Tentang Doa (Matius 6:5-15)</h3>
+        <p>Sama seperti memberi sedekah, doa juga sering digunakan sebagai panggung untuk pertunjukan kesalehan. Yesus mengutuk doa-doa yang panjang dan berlebihan di tempat umum yang bertujuan untuk dilihat orang lain. "Apabila kamu berdoa, janganlah berdoa seperti orang munafik. Mereka suka mengucapkan doanya dengan berdiri di rumah-rumah ibadat dan di tikungan-tikungan jalan, supaya mereka dilihat orang." Upah mereka adalah pujian manusia, tidak ada yang lain.</p>
+        <p>Yesus memerintahkan: "Tetapi jika engkau berdoa, masuklah ke kamarmu, tutuplah pintu dan berdoalah kepada Bapamu yang ada di tempat tersembunyi. Maka Bapamu yang melihat yang tersembunyi akan membalasnya kepadamu." Ini menekankan hubungan pribadi dan intim dengan Allah, bukan pertunjukan publik. Selain itu, Yesus juga memperingatkan agar tidak menggunakan "perkataan yang bertele-tele" seperti orang-orang yang tidak mengenal Allah, yang berpikir bahwa mereka akan didengar karena banyaknya kata-kata. Doa bukanlah tentang jumlah kata, melainkan ketulusan hati dan iman.</p>
+
+        <p>Kemudian, Yesus memberikan contoh doa yang sempurna, yang dikenal sebagai <strong>Doa Bapa Kami</strong> (Matius 6:9-13). Ini bukan formula magis yang harus diucapkan berulang-ulang, melainkan model atau pola untuk bagaimana kita harus berdoa. Mari kita bedah setiap bagiannya:</p>
+        <ul>
+            <li><strong>"Bapa kami yang di surga, dikuduskanlah nama-Mu."</strong> Ini adalah pengakuan akan hubungan kita dengan Allah sebagai Bapa yang penuh kasih, namun juga pengakuan akan kekudusan dan keagungan-Nya. Prioritas utama adalah memuliakan nama-Nya.</li>
+            <li><strong>"Datanglah Kerajaan-Mu, jadilah kehendak-Mu di bumi seperti di surga."</strong> Ini adalah doa agar pemerintahan Allah, nilai-nilai Kerajaan-Nya, dan kehendak-Nya yang sempurna terwujud di dunia ini, sama seperti di surga. Ini adalah komitmen untuk hidup sesuai dengan nilai-nilai Kerajaan.</li>
+            <li><strong>"Berikanlah kami pada hari ini makanan kami yang secukupnya."</strong> Ini adalah permohonan yang sederhana untuk kebutuhan fisik sehari-hari, menunjukkan ketergantungan kita kepada Allah untuk penyediaan. Ini mengajarkan kepuasan dan kepercayaan.</li>
+            <li><strong>"Ampunilah kami akan kesalahan kami, seperti kami juga mengampuni orang yang bersalah kepada kami."</strong> Bagian ini sangat krusial. Permohonan pengampunan dari Allah terkait langsung dengan kesediaan kita untuk mengampuni orang lain. Pengampunan adalah inti dari hubungan Kerajaan.</li>
+            <li><strong>"Dan janganlah membawa kami ke dalam pencobaan, tetapi lepaskanlah kami dari yang jahat."</strong> Ini adalah permohonan untuk perlindungan dan kekuatan agar tidak menyerah pada godaan dan untuk dibebaskan dari kuasa kejahatan. Ini mengakui kerapuhan kita dan kebutuhan kita akan pertolongan ilahi.</li>
+        </ul>
+        <p>Setelah Doa Bapa Kami, Yesus menekankan kembali pentingnya pengampunan: "Karena jikalau kamu mengampuni kesalahan orang, Bapamu yang di surga akan mengampuni kamu juga. Tetapi jikalau kamu tidak mengampuni orang, Bapamu juga tidak akan mengampuni kesalahanmu." Ini menggarisbawahi bahwa pengampunan adalah landasan penting dalam hubungan kita dengan Allah dan sesama, bukan hanya sebuah saran, tetapi sebuah keharusan.</p>
+
+        <h3>4.3. Tentang Puasa (Matius 6:16-18)</h3>
+        <p>Puasa, seperti sedekah dan doa, adalah praktik keagamaan yang dihormati. Namun, orang Farisi sering berpuasa dengan wajah muram dan penampilan sengaja lesu untuk menunjukkan pengorbanan mereka kepada orang lain. Yesus mengutuk motivasi ini: "Apabila kamu berpuasa, janganlah muram mukamu seperti orang munafik yang mengubah air mukanya, supaya orang melihat bahwa mereka sedang berpuasa. Aku berkata kepadamu: Sesungguhnya mereka sudah mendapat upahnya."</p>
+        <p>Perintah Yesus adalah: "Tetapi apabila engkau berpuasa, minyakilah kepalamu dan cucilah mukamu, supaya jangan dilihat oleh orang bahwa engkau sedang berpuasa, melainkan hanya oleh Bapamu yang ada di tempat tersembunyi. Maka Bapamu yang melihat yang tersembunyi akan membalasnya kepadamu." Puasa harus menjadi tindakan spiritual pribadi antara individu dan Allah, sebuah disiplin yang dilakukan untuk tujuan mendekatkan diri kepada-Nya, bukan untuk pertunjukan.</p>
+        <p>Dalam ketiga praktik keagamaan ini, Yesus secara konsisten menyoroti pentingnya motivasi hati. Bukan tindakan itu sendiri yang salah, tetapi tujuan di baliknya. Kebenaran Kerajaan Allah menuntut kesalehan yang tulus, yang berakar pada kasih dan ketaatan kepada Allah, bukan pada keinginan untuk pujian manusia.</p>
+
+        <hr>
+
+        <h2>5. Harta, Kekhawatiran, dan Prioritas Hidup (Matius 6:19-34)</h2>
+        <p>Bagian ini membahas tentang prioritas dan kepercayaan. Yesus mengarahkan perhatian para pendengar-Nya dari kekhawatiran duniawi ke kekayaan surgawi dan kepercayaan penuh pada pemeliharaan Allah.</p>
+
+        <h3>5.1. Harta di Surga (Matius 6:19-21)</h3>
+        <p>Yesus menantang konsep kekayaan dan keamanan. Ia memerintahkan, "Janganlah kamu mengumpulkan harta di bumi; di bumi ngengat dan karat merusakkannya dan pencuri membongkar serta mencurinya. Tetapi kumpulkanlah bagimu harta di surga; di surga ngengat dan karat tidak merusakkannya dan pencuri tidak membongkar serta mencurinya." Harta duniawi bersifat fana dan tidak aman; harta surgawi bersifat kekal dan tidak dapat dicuri.</p>
+        <p>Inti dari ajaran ini adalah: "Karena di mana hartamu berada, di situ juga hatimu berada." Hati manusia akan selalu mengikuti apa yang paling dihargainya. Jika hati kita terpaku pada kekayaan materi, maka fokus, energi, dan loyalitas kita akan terikat pada hal-hal duniawi yang fana. Namun, jika kita menginvestasikan hidup kita dalam hal-hal yang kekal—kasih, keadilan, pelayanan kepada Allah dan sesama—maka hati kita akan berlabuh pada Kerajaan Surga.</p>
+
+        <h3>5.2. Mata adalah Pelita Tubuh (Matius 6:22-23)</h3>
+        <p>Yesus menggunakan analogi mata sebagai pelita tubuh untuk menjelaskan dampak dari prioritas kita. "Mata adalah pelita tubuh. Jika matamu baik, teranglah seluruh tubuhmu. Jika matamu jahat, gelaplah seluruh tubuhmu." Mata yang "baik" (Yunani: <em>haplous</em>, berarti "tunggal" atau "fokus") berarti memiliki pandangan yang jelas dan tidak terbagi, fokus pada Allah dan nilai-nilai Kerajaan-Nya. Sebaliknya, mata yang "jahat" (Yunani: <em>ponēros</em>, berarti "jahat" atau "serakah") berarti memiliki pandangan yang terbagi atau serakah, terpikat pada kekayaan dan hal-hal duniawi.</p>
+        <p>Jika prioritas kita salah, seluruh keberadaan kita akan menjadi gelap secara spiritual. Ini adalah peringatan bahwa motivasi internal kita mempengaruhi seluruh kehidupan kita.</p>
+
+        <h3>5.3. Tidak Dapat Mengabdi kepada Dua Tuan (Matius 6:24)</h3>
+        <p>Prinsip ini sangat jelas: "Tidak seorang pun dapat mengabdi kepada dua tuan. Karena jika demikian, ia akan membenci yang seorang dan mengasihi yang lain, atau ia akan setia kepada yang seorang dan tidak mengindahkan yang lain. Kamu tidak dapat mengabdi kepada Allah dan Mamon." Mamon (Yunani: <em>mamōnas</em>) adalah istilah Semit yang merujuk pada kekayaan atau uang, sering kali dipersonifikasikan sebagai dewa kekayaan. Yesus menyatakan ketidakmungkinan untuk melayani Allah sepenuhnya sambil juga mengejar kekayaan sebagai tujuan utama.</p>
+        <p>Ini adalah panggilan untuk membuat pilihan yang jelas dan tidak terbagi dalam loyalitas kita. Allah menuntut kesetiaan yang mutlak, dan Dia tidak dapat berbagi takhta hati kita dengan ambisi materi.</p>
+
+        <h3>5.4. Jangan Khawatir (Matius 6:25-34)</h3>
+        <p>Yesus kemudian beralih ke salah satu penyebab kekhawatiran terbesar manusia: kebutuhan hidup. Ia melarang kekhawatiran dengan alasan yang kuat dan menghibur.</p>
+        <ul>
+            <li><strong>Perhatikan Burung di Udara dan Bunga Bakung di Ladang:</strong> Allah memelihara burung-burung di udara yang tidak menabur dan tidak menuai, dan Ia menghiasi bunga-bunga di ladang bahkan lebih indah dari Salomo dalam segala kemegahannya. Jika Allah memelihara ciptaan-Nya yang lebih rendah, betapa lebih lagi Ia akan memelihara manusia yang diciptakan menurut gambar-Nya? Ini adalah argumen dari yang kurang ke yang lebih besar.</li>
+            <li><strong>Kekhawatiran Tidak Menambahkan Apa-apa:</strong> "Siapakah di antara kamu yang karena kekhawatirannya dapat menambahkan sehasta pada jalan hidupnya?" Kekhawatiran adalah sia-sia; ia tidak mengubah masa depan tetapi hanya menguras energi di masa kini.</li>
+            <li><strong>Allah Tahu Kebutuhanmu:</strong> Orang-orang yang tidak mengenal Allah (bangsa-bangsa lain) mencari hal-hal ini (makanan, minuman, pakaian), tetapi Bapa di surga tahu bahwa kita membutuhkan semuanya itu. Allah memiliki pengetahuan dan pemeliharaan atas hidup kita.</li>
+            <li><strong>Prioritaskan Kerajaan Allah:</strong> "Tetapi carilah dahulu Kerajaan Allah dan kebenarannya, maka semuanya itu akan ditambahkan kepadamu." Ini adalah janji inti. Ketika kita memprioritaskan Allah dan kehendak-Nya, mengejar kebenaran Kerajaan-Nya, maka Allah akan memenuhi semua kebutuhan kita. Ini adalah undangan untuk mempercayai Allah sepenuhnya.</li>
+            <li><strong>Jangan Khawatir tentang Hari Esok:</strong> "Sebab itu janganlah kamu khawatir akan hari besok, karena hari besok mempunyai kesusahannya sendiri. Kesusahan sehari cukuplah untuk sehari." Setiap hari memiliki tantangan tersendiri; kekhawatiran tentang masa depan yang belum tiba hanya menambah beban yang tidak perlu. Percayalah kepada Allah untuk hari ini.</li>
+        </ul>
+        <p>Bagian ini adalah seruan untuk hidup dengan iman dan kepercayaan penuh kepada Allah. Daripada mengejar kekayaan duniawi atau menyerah pada kekhawatiran, para pengikut Kristus dipanggil untuk memprioritaskan Kerajaan Allah, mengetahui bahwa Bapa mereka yang di surga akan memenuhi semua kebutuhan mereka yang sejati.</p>
+
+        <hr>
+
+        <h2>6. Mengenai Menghakimi, Meminta, dan Jalan Hidup (Matius 7:1-12)</h2>
+        <p>Bagian terakhir dari Khotbah di Bukit ini melanjutkan dengan ajaran praktis mengenai hubungan antarmanusia, pentingnya doa yang tekun, dan prinsip etika yang mendasar.</p>
+
+        <h3>6.1. Jangan Menghakimi (Matius 7:1-5)</h3>
+        <p>Yesus memulai dengan peringatan keras: "Jangan kamu menghakimi, supaya kamu tidak dihakimi. Karena dengan penghakiman yang kamu pakai untuk menghakimi, kamu akan dihakimi dan ukuran yang kamu pakai untuk mengukur, akan diukurkan kepadamu." Ini bukan larangan untuk membedakan antara yang benar dan yang salah, atau untuk mengevaluasi perilaku, melainkan larangan terhadap penghakiman yang kritis, menghukum, dan munafik yang tidak didasarkan pada kasih dan pemahaman.</p>
+        <p>Yesus mengilustrasikan ini dengan metafora yang kuat dan jenaka: "Mengapakah engkau melihat selumbar di mata saudaramu, sedangkan balok di matamu sendiri tidak engkau ketahui? Bagaimanakah mungkin engkau berkata kepada saudaramu: Biarlah aku mengeluarkan selumbar itu dari matamu, padahal ada balok di matamu?" Balok (Yunani: <em>dokos</em>) adalah sebatang kayu besar, jauh lebih besar daripada selumbar. Ini adalah hiperbola yang menunjukkan kemunafikan seseorang yang sibuk mencari kesalahan kecil orang lain sementara mengabaikan dosa-dosa besar dalam hidupnya sendiri.</p>
+        <p>Perintahnya jelas: "Keluarkanlah dahulu balok dari matamu, maka engkau akan melihat dengan jelas untuk mengeluarkan selumbar dari mata saudaramu." Ini adalah panggilan untuk introspeksi diri yang jujur, mengakui dan mengatasi kelemahan serta dosa-dosa kita sendiri sebelum mencoba mengoreksi orang lain. Hanya dengan hati yang bersih dan rendah hati kita dapat membantu orang lain dengan kasih.</p>
+
+        <h3>6.2. Jangan Berikan yang Kudus kepada Anjing (Matius 7:6)</h3>
+        <p>Yesus memberikan peringatan singkat namun penting: "Jangan kamu memberikan barang yang kudus kepada anjing dan jangan kamu melemparkan mutiaramu kepada babi, supaya jangan diinjak-injaknya lalu berbalik mengoyak kamu." Ini adalah nasihat untuk menggunakan hikmat dalam berbagi kebenaran rohani. "Anjing" dan "babi" pada zaman itu adalah hewan yang najis dan seringkali agresif.</p>
+        <p>Ini bukan berarti kita tidak boleh memberitakan Injil kepada siapa pun, tetapi kita harus bijaksana dan membedakan kapan seseorang tidak memiliki hati yang reseptif terhadap kebenaran rohani, dan bahkan dapat membalas dengan permusuhan. Kebenaran ilahi adalah berharga, dan harus diberikan dengan hati-hati kepada mereka yang siap menerimanya.</p>
+
+        <h3>6.3. Meminta, Mencari, Mengetok (Matius 7:7-11)</h3>
+        <p>Setelah mengajarkan tentang tidak menghakimi, Yesus kemudian beralih ke pentingnya ketekunan dalam doa dan kepercayaan pada kemurahan Allah. "Mintalah, maka akan diberikan kepadamu; carilah, maka kamu akan mendapat; ketoklah, maka pintu akan dibukakan bagimu. Karena setiap orang yang meminta, menerima; dan setiap orang yang mencari, mendapat; dan setiap orang yang mengetok, baginya pintu akan dibukakan."</p>
+        <p>Tiga kata kerja ini—meminta, mencari, mengetok—menunjukkan intensitas dan ketekunan yang meningkat dalam doa. Ini bukan hanya sekali minta, tetapi berlanjut dalam pencarian dan pengetukan. Yesus menjamin bahwa Allah, seperti Bapa yang baik, akan menanggapi doa-doa yang tulus dari anak-anak-Nya. Ia menggunakan perbandingan yang kuat: "Adakah seorang dari padamu jika anaknya meminta roti, akan memberinya batu? Atau jika ia meminta ikan, akan memberinya ular? Jadi jika kamu yang jahat tahu memberi pemberian yang baik kepada anak-anakmu, apalagi Bapamu yang di surga! Ia akan memberikan yang baik kepada mereka yang meminta kepada-Nya."</p>
+        <p>Pesan di sini adalah dorongan besar untuk berdoa dengan iman dan keyakinan bahwa Allah kita adalah Bapa yang jauh lebih baik dan lebih murah hati daripada orang tua manusia mana pun. Dia akan memberikan hal-hal yang baik kepada mereka yang mencari Dia.</p>
+
+        <h3>6.4. Aturan Emas (Matius 7:12)</h3>
+        <p>Ayat ini sering disebut sebagai "Aturan Emas" dan berfungsi sebagai ringkasan etika Kerajaan Allah. "Segala sesuatu yang kamu kehendaki supaya orang perbuat kepadamu, perbuatlah demikian juga kepada mereka. Itulah isi seluruh hukum Taurat dan kitab para nabi."</p>
+        <p>Aturan Emas ini bukan sekadar prinsip timbal balik ("perlakukan orang lain seperti mereka memperlakukanmu"), melainkan prinsip proaktif dan empati ("perlakukan orang lain seperti kamu ingin mereka memperlakukanmu"). Ini adalah panggilan untuk menempatkan diri kita pada posisi orang lain dan bertindak dengan kasih, keadilan, dan kebaikan yang kita inginkan untuk diri kita sendiri. Yesus mengatakan bahwa prinsip ini adalah esensi dari seluruh Hukum Taurat dan ajaran para Nabi, menunjukkan bagaimana seluruh kehendak Allah dapat diringkas dalam satu pernyataan sederhana namun mendalam ini. Ini adalah etika yang berpusat pada kasih dan hubungan yang benar.</p>
+
+        <hr>
+
+        <h2>7. Jalan Sempit dan Lebar, Pohon dan Buahnya, Pondasi yang Kuat (Matius 7:13-27)</h2>
+        <p>Yesus mengakhiri Khotbah di Bukit dengan serangkaian peringatan yang mendesak, menantang para pendengar-Nya untuk membuat keputusan tegas dan memeriksa fondasi iman mereka.</p>
+
+        <h3>7.1. Dua Jalan (Matius 7:13-14)</h3>
+        <p>Yesus berbicara tentang dua jalan yang berbeda: "Masuklah melalui pintu yang sempit itu, karena lebarlah pintu dan luaslah jalan yang menuju kepada kebinasaan, dan banyak orang yang masuk melaluinya; karena sempitlah pintu dan sesaklah jalan yang menuju kepada kehidupan, dan sedikit orang yang mendapatkannya."</p>
+        <p>Jalan yang lebar adalah jalan yang mudah diikuti, sesuai dengan keinginan duniawi, dan populer. Ini adalah jalan yang membutuhkan sedikit pengorbanan dan komitmen. Namun, jalan ini pada akhirnya membawa kepada kehancuran spiritual. Sebaliknya, jalan yang sempit adalah jalan yang menuntut, yang membutuhkan disiplin, pengorbanan, dan ketaatan pada ajaran Yesus yang radikal. Ini adalah jalan yang tidak populer dan seringkali sulit, tetapi jalan inilah yang menuju kepada kehidupan kekal.</p>
+        <p>Peringatan ini menantang para pendengar untuk memilih dengan bijak. Kebanyakan orang akan memilih jalan yang mudah, tetapi kehidupan sejati hanya ditemukan di jalan yang menuntut ketaatan pada kehendak Allah.</p>
+
+        <h3>7.2. Nabi-nabi Palsu (Matius 7:15-20)</h3>
+        <p>Di jalan yang sempit itu, kita harus berhati-hati terhadap nabi-nabi palsu. "Waspadalah terhadap nabi-nabi palsu yang datang kepadamu dengan menyamar seperti domba, tetapi sesungguhnya mereka adalah serigala yang buas." Nabi-nabi palsu akan terlihat saleh dan menarik dari luar, tetapi motivasi dan ajaran mereka pada akhirnya akan merusak.</p>
+        <p>Bagaimana cara mengenali mereka? "Dari buahnyalah kamu akan mengenal mereka." Sama seperti pohon yang baik menghasilkan buah yang baik dan pohon yang busuk menghasilkan buah yang busuk, demikian pula ajaran dan kehidupan seorang nabi (atau pemimpin spiritual) akan terlihat dari hasil-hasilnya. Buah-buah ini termasuk karakter moral, dampak dari ajaran mereka pada kehidupan orang lain, dan apakah ajaran mereka selaras dengan kebenaran Injil yang diungkapkan Yesus. Orang percaya harus menggunakan hikmat dan wawasan untuk membedakan antara kebenaran dan kesalahan.</p>
+
+        <h3>7.3. Bukan Setiap Orang yang Berseru "Tuhan, Tuhan" (Matius 7:21-23)</h3>
+        <p>Yesus melanjutkan dengan peringatan yang sangat serius: "Bukan setiap orang yang berseru kepada-Ku: Tuhan, Tuhan! akan masuk ke dalam Kerajaan Surga, melainkan dia yang melakukan kehendak Bapa-Ku yang di surga." Ini adalah sanggahan terhadap formalisme agama dan pengakuan lisan yang dangkal.</p>
+        <p>Banyak orang akan datang pada Hari Penghakiman, mengklaim telah melakukan perbuatan luar biasa atas nama Yesus—bernubuat, mengusir setan, melakukan mukjizat. Namun, Yesus akan menyatakan kepada mereka: "Aku tidak pernah mengenal kamu! Enyahlah dari pada-Ku, kamu sekalian pembuat kejahatan!" Ini menunjukkan bahwa melakukan perbuatan rohani yang mengesankan saja tidak cukup. Yang penting adalah hubungan pribadi dengan Yesus dan ketaatan yang tulus pada kehendak Bapa. Kehidupan yang saleh harus didasarkan pada ketaatan yang sejati, bukan hanya pada penampilan atau kekuatan rohani.</p>
+
+        <h3>7.4. Dua Macam Dasar (Matius 7:24-27)</h3>
+        <p>Khotbah Yesus di Bukit mencapai puncaknya dengan perumpamaan tentang dua macam dasar—rumah yang dibangun di atas batu dan rumah yang dibangun di atas pasir. Ini adalah ilustrasi yang kuat tentang pentingnya mendengarkan dan melakukan ajaran Yesus.</p>
+        <ul>
+            <li><strong>Rumah di Atas Batu:</strong> "Setiap orang yang mendengar perkataan-Ku ini dan melakukannya, ia sama dengan orang yang bijaksana, yang mendirikan rumahnya di atas batu." Ketika badai datang—hujan turun, banjir melanda, dan angin bertiup kencang—rumah itu tidak roboh karena didirikan di atas dasar yang kuat. Ini melambangkan kehidupan yang dibangun di atas ketaatan pada ajaran Yesus. Ketika cobaan dan tantangan hidup datang, iman orang tersebut tetap teguh.</li>
+            <li><strong>Rumah di Atas Pasir:</strong> "Tetapi setiap orang yang mendengar perkataan-Ku ini dan tidak melakukannya, ia sama dengan orang yang bodoh, yang mendirikan rumahnya di atas pasir." Ketika badai yang sama datang, rumah itu roboh dengan hebat. Ini melambangkan kehidupan yang mendengarkan ajaran Yesus tetapi tidak mengaplikasikannya dalam tindakan. Ketika menghadapi kesulitan, iman mereka runtuh karena tidak memiliki fondasi yang kokoh.</li>
+        </ul>
+        <p>Perumpamaan ini menekankan bahwa bukan sekadar mendengarkan ajaran Yesus yang penting, melainkan <span class="highlight">melakukannya</span>. Ketaatan adalah kunci untuk membangun kehidupan yang kokoh dan tahan uji, yang akan bertahan dalam menghadapi ujian hidup dan Hari Penghakiman.</p>
+
+        <hr>
+
+        <h2>8. Reaksi terhadap Khotbah Yesus (Matius 7:28-29)</h2>
+        <p>Khotbah Yesus di Bukit berakhir dengan catatan yang kuat tentang dampaknya pada para pendengar-Nya. "Setelah Yesus mengakhiri perkataan ini, takjublah orang banyak itu akan pengajaran-Nya, sebab Ia mengajar mereka sebagai orang yang berkuasa, tidak seperti ahli-ahli Taurat mereka."</p>
+        <p>Reaksi ini mengungkapkan perbedaan fundamental antara Yesus dan pemimpin agama pada masa itu. Para ahli Taurat mengajar dengan mengutip otoritas rabi-rabi sebelumnya, bersandar pada tradisi dan interpretasi. Yesus, di sisi lain, mengajar dengan otoritas inheren, berbicara sebagai satu-satunya yang memiliki kebenaran dan dapat menyatakan kehendak Allah secara langsung. Ajaran-Nya menembus hati, menantang asumsi, dan menuntut respons yang radikal. Tidak ada yang pernah berbicara seperti ini sebelumnya.</p>
+        <p>Ketakjuban mereka bukan hanya karena retorika-Nya, tetapi karena kebenaran mendalam yang disampaikan dan otoritas ilahi yang terpancar dari-Nya. Khotbah ini meninggalkan dampak yang tak terhapuskan pada mereka yang mendengarkan, dan terus menjadi dasar bagi etika dan spiritualitas Kristen selama dua milenium.</p>
+
+        <hr>
+
+        <h2>Kesimpulan: Hidup di Bawah Standar Kerajaan Surga</h2>
+        <p>Khotbah Yesus di Bukit bukanlah sekadar daftar aturan moral atau nasihat etis yang baik. Ini adalah deklarasi radikal tentang bagaimana hidup dalam Kerajaan Allah. Ini adalah panggilan untuk transformasi total, dari dalam ke luar, yang mempengaruhi pikiran, hati, motivasi, dan tindakan kita.</p>
+        <p>Yesus menantang kita untuk melihat melampaui kepatuhan lahiriah dan menyelami kedalaman hati, di mana dosa dan kebenaran sejati berakar. Ia memanggil kita untuk:</p>
+        <ul>
+            <li><strong>Mengadopsi Karakter Kerajaan:</strong> Dengan mempraktikkan Ucapan Bahagia, kita mengembangkan karakter yang rendah hati, berbelas kasih, damai, dan haus akan kebenaran.</li>
+            <li><strong>Menjadi Agen Transformasi:</strong> Sebagai garam dan terang dunia, kita dipanggil untuk mempengaruhi lingkungan kita secara positif, memelihara moralitas dan menerangi kegelapan.</li>
+            <li><strong>Hidup dalam Kebenaran yang Lebih Tinggi:</strong> Kita harus melampaui sekadar kepatuhan pada hukum dan hidup dengan kebenaran yang datang dari hati yang telah diubahkan, mengasihi bahkan musuh-musuh kita.</li>
+            <li><strong>Mencari Allah dengan Ketulusan:</strong> Praktik-praktik keagamaan kita—sedekah, doa, puasa—harus dilakukan dengan motivasi yang murni, mencari upah dari Allah, bukan dari manusia.</li>
+            <li><strong>Memiliki Prioritas Surgawi:</strong> Kita harus mengumpulkan harta di surga, mempercayai Allah untuk kebutuhan kita, dan mencari Kerajaan-Nya di atas segalanya, bebas dari kekhawatiran duniawi.</li>
+            <li><strong>Berinteraksi dengan Kasih dan Hikmat:</strong> Kita harus berhenti menghakimi dengan munafik, mengasihi sesama seperti diri sendiri (Aturan Emas), dan berdoa dengan tekun.</li>
+            <li><strong>Membangun di Atas Dasar yang Kuat:</strong> Akhirnya, kita harus menjadi pelaku firman, bukan hanya pendengar, membangun kehidupan kita di atas dasar yang kokoh dari ketaatan kepada Yesus.</li>
+        </ul>
+        <p>Khotbah Yesus di Bukit adalah cermin yang memperlihatkan kepada kita betapa jauhnya kita dari standar ilahi, namun juga peta jalan menuju kesempurnaan dalam Kristus. Ini adalah undangan untuk menjalani hidup yang sepenuhnya selaras dengan kehendak Allah, mencerminkan karakter-Nya, dan menjadi saksi yang kuat bagi Kerajaan Surga di bumi. Ini adalah tantangan untuk tidak hanya percaya, tetapi juga untuk menghidupkan setiap firman yang keluar dari mulut Sang Guru dari Galilea.</p>
+        <p>Melalui Khotbah ini, Yesus tidak hanya memberikan ajaran, tetapi juga model kehidupan yang dapat mengubah dunia, satu hati pada satu waktu. Ini bukan jalan yang mudah, tetapi ini adalah jalan menuju kehidupan yang penuh makna, damai, dan keberkatan yang kekal.</p>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/khotbah-keluarga">Khotbah Keluarga</a></li>
+<li><a href="/khotbah-yesaya-43-1-7">Khotbah Yesaya 43 1 7</a></li>
+<li><a href="/khotbah-zakheus">Khotbah Zakheus</a></li>
+<li><a href="/renungan-kamis-putih-2022">Renungan Kamis Putih 2022</a></li>
+<li><a href="/renungan-kejadian-22">Renungan Kejadian 22</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

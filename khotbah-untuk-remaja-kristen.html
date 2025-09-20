@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah Remaja: Mengukir Hidup Penuh Makna dalam Kristus</title>
+    <meta name="description" content="Khotbah inspiratif untuk remaja Kristen tentang identitas, tujuan, tantangan, dan hidup berdampak dalam Kristus. Temukan siapa dirimu sebenarnya dan hiduplah sesuai panggilan-Nya.">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* Desain Warna Sejuk Cerah */
+        :root {
+            --color-primary-light: hsl(190, 70%, 97%); /* Sangat terang, biru kehijauan */
+            --color-primary-medium: hsl(190, 60%, 75%); /* Biru kehijauan sedang */
+            --color-primary-dark: hsl(190, 60%, 45%);  /* Biru kehijauan gelap */
+            --color-text-dark: hsl(210, 10%, 20%);    /* Abu-abu gelap */
+            --color-text-light: hsl(210, 10%, 90%);   /* Abu-abu terang */
+            --color-accent: hsl(30, 80%, 70%);       /* Kuning oranye cerah, sentuhan hangat */
+            --color-background-card: hsl(0, 0%, 100%); /* Putih bersih */
+            --color-border-light: hsl(190, 20%, 90%);  /* Batas sangat terang */
+        }
+
+        /* Global Resets dan Font */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            background-color: var(--color-primary-light);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            font-size: 1.1em; /* Ukuran font dasar yang nyaman */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-bottom: 3rem; /* Ruang untuk footer */
+        }
+
+        /* Kontainer Utama untuk Konten */
+        .container {
+            max-width: 800px;
+            margin: 1.5rem auto;
+            padding: 1.5rem;
+            background-color: var(--color-background-card);
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--color-primary-dark);
+            color: var(--color-text-light);
+            padding: 2.5rem 1.5rem;
+            text-align: center;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.6em;
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Typography */
+        h2 {
+            font-size: 2.2em;
+            color: var(--color-primary-dark);
+            margin-top: 2.5rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid var(--color-border-light);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.7em;
+            color: var(--color-primary-dark);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.3em;
+            color: var(--color-primary-medium);
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify; /* Untuk kerapian baca */
+        }
+
+        strong {
+            color: var(--color-primary-dark);
+        }
+
+        em {
+            color: var(--color-primary-medium);
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        /* Blockquote untuk Kutipan Alkitab/Penting */
+        blockquote {
+            background-color: var(--color-primary-light);
+            border-left: 5px solid var(--color-primary-medium);
+            margin: 1.5em 0;
+            padding: 1em 1.5em;
+            font-style: italic;
+            color: var(--color-text-dark);
+            border-radius: 0 8px 8px 0;
+        }
+        blockquote p {
+            margin-bottom: 0.5em;
+            text-align: left;
+        }
+        blockquote cite {
+            display: block;
+            text-align: right;
+            font-size: 0.9em;
+            color: var(--color-primary-dark);
+            margin-top: 0.5em;
+        }
+
+        /* Gambar SVG */
+        figure {
+            margin: 2em auto;
+            text-align: center;
+            max-width: 100%;
+            padding: 0.5em;
+            border: 1px solid var(--color-border-light);
+            border-radius: 8px;
+            background-color: var(--color-primary-light);
+        }
+
+        figure img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 4px;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: var(--color-primary-dark);
+            margin-top: 0.8em;
+            padding: 0 0.5em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-primary-dark);
+            color: var(--color-text-light);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            font-size: 0.9em;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Responsiveness untuk Mobile */
+        @media (max-width: 768px) {
+            body {
+                font-size: 1em; /* Sedikit lebih kecil untuk layar kecil */
+            }
+            .container {
+                margin: 1rem auto;
+                padding: 1rem;
+                border-radius: 0; /* Tanpa border-radius di mobile penuh */
+                box-shadow: none; /* Tanpa shadow di mobile penuh */
+            }
+            header {
+                padding: 2rem 1rem;
+                border-radius: 0;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.8em;
+                margin-top: 2rem;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 1.5rem;
+            }
+            blockquote {
+                margin: 1em 0;
+                padding: 0.8em 1em;
+            }
+            figure {
+                margin: 1.5em auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.6em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            body {
+                font-size: 0.95em;
+            }
+            .container {
+                margin: 0; /* Margin 0 untuk mengisi lebar layar sepenuhnya */
+                padding: 0.8rem;
+            }
+            header {
+                padding: 1.5rem 0.8rem;
+            }
+            footer {
+                padding: 1rem;
+            }
+        }
+
+        /* SVG Data URI for Favicon - Placeholder */
+        /* Anda akan membutuhkan file favicon.svg yang sebenarnya di root domain Anda */
+        /* Favicon ini tidak akan terlihat jika Anda hanya membuka file HTML lokal */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mengukir Hidup Penuh Makna dalam Kristus</h1>
+        <p>Sebuah khotbah untuk remaja Kristen tentang menemukan identitas sejati, menghadapi tantangan, dan hidup berdampak melalui iman.</p>
+    </header>
+
+    <main class="container">
+        <section id="pendahuluan">
+            <h2>Pendahuluan: Siapa Aku Sebenarnya?</h2>
+            <p>Halo, teman-teman remaja yang luar biasa! Pernahkah kalian bertanya pada diri sendiri, "Siapa aku sebenarnya? Apa tujuanku di dunia ini?" Ini adalah pertanyaan universal, terutama di masa remaja. Masa remaja adalah waktu yang penuh dengan perubahan, baik secara fisik, emosional, maupun sosial. Dunia seolah menuntut kita untuk menjadi ini dan itu, untuk mengikuti tren, untuk mencapai standar tertentu. Kita dibombardir dengan citra-citra ‘kesempurnaan’ di media sosial, tekanan dari teman sebaya, dan ekspektasi dari keluarga atau sekolah. Tidak heran jika banyak dari kita merasa bingung, tidak aman, atau bahkan tersesat.</p>
+            <p>Dalam pencarian identitas ini, banyak dari kita cenderung melihat ke luar diri kita—ke popularitas, penampilan, nilai akademik, atau bahkan jumlah pengikut di media sosial. Kita mencari pengakuan, penerimaan, dan makna dari hal-hal yang fana. Namun, apakah hal-hal itu benar-benar bisa memberikan kepuasan yang abadi? Seringkali, saat kita mencapai satu tujuan, kita langsung merasa hampa dan mencari validasi lain. Ini adalah siklus yang melelahkan dan tidak pernah berakhir.</p>
+            <p>Sebagai remaja Kristen, kita memiliki sumber identitas yang jauh lebih kuat dan stabil. Kita tidak perlu bergantung pada standar dunia yang berubah-ubah. Kita memiliki kompas yang tidak pernah salah, yaitu Firman Tuhan dan hubungan pribadi kita dengan Yesus Kristus. Di dalam Kristus, kita menemukan jawaban yang sesungguhnya tentang siapa kita, mengapa kita ada, dan bagaimana kita harus hidup.</p>
+            <p>Hari ini, mari kita selami kebenaran ini bersama. Kita akan belajar bagaimana mengukir hidup yang penuh makna, bukan berdasarkan apa yang dunia katakan, tetapi berdasarkan kebenaran abadi dari Allah. Kita akan melihat bagaimana iman kita dapat menjadi jangkar di tengah badai kehidupan remaja, bagaimana kita dapat menghadapi tantangan dengan kepala tegak, dan bagaimana kita dapat menjadi terang dan garam bagi dunia di sekitar kita. Ini bukan sekadar teori, tetapi panggilan untuk hidup yang radikal dan transformatif. Bersediakah kalian menerima tantangan ini?</p>
+
+            <figure>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='hsl(190, 70%, 97%)'/><path d='M200 50 L180 150 L220 150 Z M200 50 C150 50 120 100 120 150 V250 H280 V150 C280 100 250 50 200 50 Z' fill='hsl(190, 60%, 45%)' opacity='0.7'/><circle cx='200' cy='120' r='30' fill='hsl(30, 80%, 70%)'/><path d='M200 150 L150 250 M200 150 L250 250' stroke='hsl(190, 60%, 45%)' stroke-width='8' stroke-linecap='round'/><text x='200' y='270' font-family='Arial' font-size='20' fill='hsl(190, 60%, 45%)' text-anchor='middle'>Siapa Aku?</text></svg>" alt="Ilustrasi seseorang di persimpangan jalan dengan tanda tanya dan salib di cakrawala, melambangkan pencarian identitas dalam Kristus.">
+                <figcaption>Pencarian jati diri adalah perjalanan setiap remaja, namun di dalam Kristus kita menemukan fondasi yang kokoh.</figcaption>
+            </figure>
+        </section>
+
+        <section id="fondasi-identitas">
+            <h2>Fondasi Identitas dalam Kristus</h2>
+            <h3>Diciptakan Menurut Gambar Allah: Harga Diri yang Tak Ternilai</h3>
+            <p>Mari kita mulai dari awal. Alkitab dengan jelas menyatakan identitas kita yang paling mendasar: kita diciptakan menurut gambar dan rupa Allah. Kejadian 1:27 berkata, <blockquote><p>"Maka Allah menciptakan manusia itu menurut gambar-Nya, menurut gambar Allah diciptakan-Nya dia; laki-laki dan perempuan diciptakan-Nya mereka."</p><cite>Kejadian 1:27</cite></blockquote> Ini bukan sekadar kalimat biasa, ini adalah deklarasi fundamental tentang nilai dan martabat kita. Bayangkan! Pencipta alam semesta yang maha agung, yang menciptakan gunung-gemunung, samudra, bintang-bintang, dan galaksi, memutuskan untuk menciptakan manusia dengan menorehkan sebagian dari esensi diri-Nya ke dalam kita. Ini berarti setiap dari kita, tanpa kecuali, memiliki nilai yang tak terhingga di mata-Nya.</p>
+            <p>Apa implikasinya bagi kita sebagai remaja? Ini berarti harga diri kalian tidak ditentukan oleh seberapa populer kalian di sekolah, seberapa banyak ‘likes’ yang kalian dapat di Instagram, seberapa bagus nilai kalian, atau seberapa keren penampilan kalian. Harga diri kalian sudah ditetapkan sejak awal oleh Allah yang Mahatinggi. Kalian adalah mahakarya-Nya, dirancang dengan tujuan dan keunikan yang sempurna. Dunia mungkin mencoba merendahkan kalian, membuat kalian merasa tidak cukup baik, tetapi suara Tuhan berkata: "Engkau berharga, engkau istimewa, engkau diciptakan dengan cinta dan tujuan."</p>
+            <p>Memahami hal ini akan mengubah cara pandang kita terhadap diri sendiri dan orang lain. Jika kita diciptakan menurut gambar Allah, maka setiap orang di sekitar kita juga demikian. Ini mengajarkan kita untuk menghargai diri sendiri dan memperlakukan orang lain dengan hormat dan kasih, karena mereka juga adalah ciptaan yang berharga di mata Tuhan.</p>
+
+            <h3>Ditebus oleh Kristus: Tujuan dan Penerimaan</h3>
+            <p>Identitas kita tidak berhenti pada penciptaan. Ada bagian kedua yang bahkan lebih menakjubkan: kita ditebus oleh Kristus. Meskipun kita semua jatuh dalam dosa dan terpisah dari Allah, kasih-Nya begitu besar sehingga Dia mengutus Anak-Nya yang tunggal, Yesus, untuk mati di kayu salib demi dosa-dosa kita. Efesus 2:10 menyatakan, <blockquote><p>"Karena kita ini buatan Allah, diciptakan dalam Kristus Yesus untuk melakukan pekerjaan baik, yang dipersiapkan Allah sebelumnya, supaya kita hidup di dalamnya."</p><cite>Efesus 2:10</cite></blockquote></p>
+            <p>Ayat ini adalah fondasi yang luar biasa untuk identitas kita. Pertama, "kita ini buatan Allah," mengkonfirmasi lagi bahwa kita adalah ciptaan-Nya. Kedua, "diciptakan dalam Kristus Yesus." Ini berarti melalui iman kepada Yesus, kita diberikan identitas baru, dilahirkan kembali. Kita bukan lagi budak dosa, melainkan anak-anak Allah yang dikasihi. Kita diampuni, dibersihkan, dan diterima sepenuhnya. Tidak ada lagi rasa bersalah, tidak ada lagi rasa malu yang perlu kita bawa. Kristus telah menanggung semuanya.</p>
+            <p>Ketiga, dan ini sangat penting untuk para remaja: kita diciptakan "untuk melakukan pekerjaan baik, yang dipersiapkan Allah sebelumnya, supaya kita hidup di dalamnya." Ini berbicara tentang tujuan! Kalian tidak ada di dunia ini secara kebetulan. Allah memiliki rencana yang spesifik dan indah untuk hidup kalian. Kalian diciptakan untuk melakukan pekerjaan baik yang telah Dia persiapkan. Ini bisa berupa talenta kalian, passion kalian, cara kalian berinteraksi dengan orang lain, atau bahkan cita-cita besar kalian. Setiap aspek dari hidup kalian dapat digunakan untuk kemuliaan-Nya dan untuk kebaikan sesama.</p>
+            <p>Saat kalian bergumul dengan pertanyaan tentang masa depan—jurusan apa yang harus diambil, pekerjaan apa yang cocok, apa yang harus saya lakukan dengan hidup saya—ingatlah ayat ini. Allah telah mempersiapkan pekerjaan baik untuk kalian. Tugas kita adalah mencari kehendak-Nya, mengembangkan karunia yang telah Dia berikan, dan melangkah dengan iman. Rasa diterima dan memiliki tujuan yang jelas ini adalah penawar terbaik untuk kegelisahan dan kebingungan yang sering melanda masa remaja.</p>
+
+            <h3>Anak-anak Allah, Pewaris Kerajaan: Status yang Tak Tergantikan</h3>
+            <p>Melanjutkan dari poin sebelumnya, ketika kita menerima Kristus, kita tidak hanya diampuni dan diberikan tujuan, tetapi kita juga diadopsi sebagai anak-anak Allah. Roma 8:17 mengatakan, <blockquote><p>"Jika kita adalah anak-anak, maka kita juga adalah ahli waris—ahli waris Allah dan ahli waris bersama Kristus—asalkan kita menderita bersama-sama dengan Dia, supaya kita juga dimuliakan bersama-sama dengan Dia."</p><cite>Roma 8:17</cite></blockquote> Dan Galatia 3:26 menegaskan, <blockquote><p>"Sebab kamu semua adalah anak-anak Allah karena iman di dalam Yesus Kristus."</p><cite>Galatia 3:26</cite></blockquote></p>
+            <p>Coba renungkan betapa luar biasanya status ini! Kalian bukan sekadar pengikut, bukan sekadar hamba, tetapi anak-anak dari Raja segala raja, Pencipta alam semesta. Sebagai anak-anak-Nya, kita memiliki akses langsung kepada-Nya melalui doa, kita memiliki janji perlindungan dan pemeliharaan-Nya, dan kita adalah pewaris Kerajaan-Nya. Ini berarti kita memiliki warisan yang tak ternilai, yaitu kehidupan kekal dan kemuliaan bersama Kristus.</p>
+            <p>Status "anak Allah" ini memberikan kita identitas yang tak tergantikan dan tak tergoyahkan. Dunia mungkin memandang rendah kalian karena latar belakang, penampilan, atau kemampuan kalian. Tetapi di mata Bapa Surgawi, kalian adalah anak-anak-Nya yang sangat dikasihi, yang memiliki nilai dan martabat yang tak terhingga. Tidak ada yang bisa mengambil status ini dari kalian. Popularitas bisa pudar, penampilan bisa berubah, kekayaan bisa hilang, tetapi status kalian sebagai anak Allah adalah abadi dan kekal.</p>
+            <p>Dengan identitas ini, kita dipanggil untuk hidup sesuai dengan siapa kita. Sebagai anak-anak Raja, kita harus mencerminkan karakter Bapa kita—kasih, kebaikan, keadilan, kekudusan. Ini berarti membuat pilihan yang menghormati nama-Nya, bertindak dengan integritas, dan mengasihi sesama seperti Dia mengasihi kita. Ini adalah fondasi yang kokoh untuk seluruh hidup kita, sebuah fondasi yang tidak akan goyah di tengah badai kehidupan remaja.</p>
+        </section>
+
+        <section id="tantangan-dunia-remaja">
+            <h2>Tantangan Dunia Remaja dan Cara Menghadapinya</h2>
+            <p>Meskipun kita memiliki fondasi identitas yang kuat dalam Kristus, kita tidak dapat memungkiri bahwa dunia remaja penuh dengan tantangan. Ini adalah masa transisi yang kompleks, di mana kita bergumul dengan berbagai tekanan, godaan, dan pertanyaan. Penting bagi kita untuk mengenali tantangan-tantangan ini dan bagaimana iman kita dapat membimbing kita menghadapinya.</p>
+
+            <h3>A. Tekanan Sosial dan Peer Pressure: Berani Berbeda</h3>
+            <p>Salah satu tantangan terbesar bagi remaja adalah tekanan sosial, atau yang sering kita sebut <em>peer pressure</em>. Keinginan untuk diterima, untuk menjadi bagian dari kelompok, adalah naluri manusia yang kuat. Kita ingin disukai, tidak ingin diasingkan. Akibatnya, kita sering merasa tertekan untuk melakukan hal-hal yang tidak sesuai dengan hati nurani atau nilai-nilai Kristen kita, hanya agar kita bisa "cocok" dengan teman-teman kita.</p>
+            <p>Tekanan ini bisa datang dalam berbagai bentuk: mulai dari cara berpakaian, jenis musik yang didengar, tempat nongkrong, bahasa yang digunakan, sampai pada keputusan-keputusan yang lebih serius seperti merokok, minum alkohol, atau terlibat dalam hubungan yang tidak sehat. Sangat mudah untuk terseret arus ketika semua orang di sekitar kita melakukan hal yang sama. Kita takut menjadi "aneh" atau "ketinggalan zaman".</p>
+            <p>Namun, Alkitab memanggil kita untuk berani berbeda. Roma 12:2 mengatakan, <blockquote><p>"Janganlah kamu menjadi serupa dengan dunia ini, tetapi berubahlah oleh pembaharuan budimu, sehingga kamu dapat membedakan manakah kehendak Allah: apa yang baik, yang berkenan kepada Allah dan yang sempurna."</p><cite>Roma 12:2</cite></blockquote> Ayat ini adalah panggilan yang jelas untuk tidak menyerah pada standar dunia. Sebagai remaja Kristen, identitas kita dalam Kristus jauh lebih berharga daripada popularitas sesaat atau penerimaan dari kelompok yang salah. Kita dipanggil untuk menjadi pengikut Kristus, bukan pengikut tren dunia.</p>
+            <p>Bagaimana caranya? Pertama, <strong>pahami siapa dirimu dalam Kristus.</strong> Ketika kamu tahu bahwa kamu adalah anak Allah yang dikasihi, harga dirimu tidak akan goyah hanya karena tidak diterima oleh sekelompok orang. Kedua, <strong>pilih teman dengan bijak.</strong> Carilah teman-teman yang juga mengasihi Tuhan, yang saling membangun, dan yang mendukungmu untuk hidup benar. Tentu, bergaul dengan semua orang itu baik, tetapi lingkaran terdekatmu haruslah orang-orang yang mendorongmu mendekat kepada Tuhan. Ketiga, <strong>beranilah berkata 'tidak'.</strong> Ini mungkin sulit pada awalnya, tapi semakin kamu melatihnya, semakin mudah. Ingatlah bahwa integritasmu di hadapan Tuhan jauh lebih penting daripada validasi sesaat dari manusia. Keempat, <strong>berdoa.</strong> Mintalah kekuatan dan hikmat dari Tuhan untuk menghadapi tekanan sosial. Dia akan selalu menyertaimu.</p>
+
+            <figure>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='hsl(190, 70%, 97%)'/><path d='M100 250 L120 150 L140 250 Z M160 250 L180 150 L200 250 Z M220 250 L240 150 L260 250 Z' fill='hsl(190, 60%, 75%)' opacity='0.5'/><circle cx='200' cy='120' r='40' fill='hsl(30, 80%, 70%)'/><path d='M180 100 Q200 80 220 100 L210 120 L190 120 Z' fill='hsl(190, 60%, 45%)'/><rect x='195' y='120' width='10' height='40' fill='hsl(190, 60%, 45%)'/><path d='M180 100 C150 130 150 170 180 200 L220 200 C250 170 250 130 220 100 Z' stroke='hsl(190, 60%, 45%)' stroke-width='4' fill='none'/><text x='200' y='270' font-family='Arial' font-size='20' fill='hsl(190, 60%, 45%)' text-anchor='middle'>Tantangan & Tekanan</text></svg>" alt="Ilustrasi kepala seseorang yang dikelilingi oleh panah-panah dan tanda tanya, melambangkan tekanan sosial dan kebingungan di masa remaja.">
+                <figcaption>Menghadapi tekanan sosial membutuhkan keberanian untuk berdiri teguh pada kebenaran.</figcaption>
+            </figure>
+
+            <h3>B. Media Sosial dan Perbandingan: Menemukan Harga Diri Sejati</h3>
+            <p>Di era digital ini, media sosial menjadi bagian tak terpisahkan dari kehidupan remaja. TikTok, Instagram, YouTube, dan platform lainnya menawarkan hiburan, informasi, dan koneksi. Namun, di balik semua manfaatnya, media sosial juga membawa tantangan besar, terutama dalam hal perbandingan. Kita melihat hidup "sempurna" orang lain: liburan mewah, pesta seru, penampilan menawan, prestasi gemilang. Tanpa sadar, kita mulai membandingkan hidup kita yang "biasa-biasa saja" dengan sorotan terbaik orang lain. Ini bisa memicu rasa iri, tidak aman, cemas, bahkan depresi.</p>
+            <p>Jebakan kesempurnaan palsu di media sosial sangat berbahaya. Ingatlah bahwa apa yang kita lihat di media sosial seringkali hanyalah 'highlight reel', bukan realita penuh. Semua orang memiliki perjuangan, masalah, dan kelemahan yang tidak mereka posting. Ketika kita terus-menerus membandingkan diri dengan standar yang tidak realistis ini, kita akan selalu merasa tidak cukup baik, tidak cukup cantik, tidak cukup populer, atau tidak cukup sukses.</p>
+            <p>Lalu, bagaimana kita menghadapinya?
+            <ol>
+                <li><strong>Fokus pada nilai diri, bukan 'like'.</strong> Ingatlah identitas kalian dalam Kristus. Nilai kalian tidak ditentukan oleh jumlah 'like' atau komentar. Kalian sudah berharga di mata Tuhan.</li>
+                <li><strong>Gunakan medsos untuk kebaikan.</strong> Filipi 4:8 mendorong kita untuk memikirkan semua yang benar, yang mulia, yang adil, yang suci, yang manis, yang sedap didengar, semua yang disebut kebajikan dan patut dipuji. Ini juga berlaku untuk konten yang kita konsumsi dan kita bagikan. Gunakan media sosial untuk menyebarkan inspirasi, kebaikan, dan terang Tuhan, bukan untuk menyombongkan diri atau menjatuhkan orang lain.</li>
+                <li><strong>Batasi waktu layar.</strong> Terlalu banyak waktu di media sosial dapat merugikan kesehatan mental. Tetapkan batas waktu, luangkan waktu untuk berinteraksi langsung dengan orang-orang di sekitar kalian, dan fokus pada aktivitas yang membangun.</li>
+                <li><strong>Kembangkan rasa syukur.</strong> Alih-alih membandingkan diri dan merasa iri, latihlah diri untuk bersyukur atas berkat-berkat yang kalian miliki. Rasa syukur adalah penawar yang ampuh untuk rasa tidak puas.</li>
+            </ol>
+            Ingatlah, kalian adalah asli, dan keaslian kalian adalah kekuatan. Jangan biarkan dunia digital merampas sukacita dan harga diri kalian yang sejati.</p>
+
+            <h3>C. Pergulatan Emosi dan Kegelisahan: Percayakan pada Tuhan</h3>
+            <p>Masa remaja adalah masa badai emosi. Perubahan hormon, tekanan sekolah, masalah keluarga, dan hubungan pertemanan semuanya bisa memicu perasaan yang campur aduk: senang, sedih, marah, cemas, frustasi, euforia—semuanya bisa datang silih berganti dalam satu hari. Ini adalah hal yang normal, tetapi seringkali terasa sangat membingungkan dan melelahkan.</p>
+            <p>Banyak remaja juga bergumul dengan kegelisahan tentang masa depan, ekspektasi, atau bahkan sekadar menghadapi hari esok. Kecemasan ini bisa menjadi sangat berat dan mengganggu. Terkadang, kita merasa sendirian dengan semua perasaan ini, takut untuk berbagi dengan orang lain karena merasa tidak akan dimengerti atau dianggap lemah.</p>
+            <p>Dalam menghadapi pergulatan emosi dan kegelisahan, iman kita menawarkan tempat perlindungan dan kekuatan. Filipi 4:6-7 adalah ayat yang sangat menguatkan: <blockquote><p>"Janganlah hendaknya kamu kuatir tentang apa pun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus."</p><cite>Filipi 4:6-7</cite></blockquote></p>
+            <p>Pesan di sini sangat jelas: jangan khawatir tentang apa pun! Tentu, ini lebih mudah diucapkan daripada dilakukan. Tetapi perintah ini disertai dengan solusi: nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Tuhan ingin kita membawa semua kegelisahan, ketakutan, dan perasaan kita kepada-Nya. Dia adalah Bapa yang mengasihi, yang peduli pada setiap detail hidup kita.</p>
+            <p>Ketika kita berdoa dan menyerahkan kekhawatiran kita kepada-Nya, hasilnya adalah damai sejahtera Allah yang melampaui segala akal. Ini bukan damai sejahtera seperti yang dunia berikan, yang mungkin hanya sementara. Ini adalah damai sejahtera yang menenangkan hati dan pikiran kita, bahkan ketika situasi di sekitar kita tidak berubah. Ini adalah jaminan bahwa Tuhan memegang kendali dan Dia akan menyertai kita melalui setiap badai.</p>
+            <p>Selain berdoa, penting juga untuk:
+            <ul>
+                <li><strong>Cari dukungan.</strong> Berbicaralah dengan orang dewasa yang kamu percaya—orang tua, guru rohani, pembimbing rohani, atau konselor. Jangan menanggung semuanya sendiri.</li>
+                <li><strong>Identifikasi pemicu.</strong> Cobalah pahami apa yang memicu perasaan negatifmu. Dengan mengenali pemicunya, kamu bisa belajar mengelola atau menghindarinya.</li>
+                <li><strong>Jaga kesehatan fisik.</strong> Tidur yang cukup, makan makanan bergizi, dan berolahraga secara teratur memiliki dampak besar pada kesehatan mental dan emosionalmu.</li>
+                <li><strong>Libatkan diri dalam aktivitas yang positif.</strong> Temukan hobi atau kegiatan yang kamu nikmati, yang bisa mengalihkan pikiran dari hal-hal negatif dan memberimu energi positif.</li>
+            </ul>
+            Ingatlah, Tuhan mengerti perasaanmu. Dia tidak akan pernah meninggalkanmu. Bersandarlah kepada-Nya dan izinkan damai sejahtera-Nya memenuhi hatimu.</p>
+
+            <h3>D. Pilihan Masa Depan dan Ketidakpastian: Rencana Tuhan yang Indah</h3>
+            <p>Salah satu sumber kegelisahan besar di masa remaja adalah pertanyaan tentang masa depan. Pilihan jurusan sekolah, universitas, karier, dan jalan hidup apa yang harus diambil seringkali terasa menakutkan dan membebani. Kita mungkin merasa ada tekanan besar untuk membuat keputusan yang "benar" sekarang, padahal kita sendiri masih dalam tahap mencari tahu siapa diri kita. Rasa takut akan kegagalan, takut salah pilih, atau takut tidak memenuhi ekspektasi orang lain bisa sangat mencekam.</p>
+            <p>Dunia sering mengajarkan bahwa kita harus memiliki semuanya sudah terencana, dengan jalur yang jelas menuju kesuksesan. Namun, sebagai orang percaya, kita tahu bahwa ada kekuatan yang lebih besar yang memegang kendali atas masa depan kita. Yeremia 29:11 adalah janji yang sangat menghibur: <blockquote><p>"Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."</p><cite>Yeremia 29:11</cite></blockquote></p>
+            <p>Ayat ini adalah batu penjuru dalam menghadapi ketidakpastian masa depan. Allah tidak hanya mengetahui, tetapi Dia memiliki rancangan yang spesifik untuk kita. Rancangan-Nya adalah rancangan damai sejahtera, bukan kecelakaan. Rancangan-Nya adalah untuk memberikan kita hari depan yang penuh harapan. Ini berarti kita tidak perlu takut. Kita tidak perlu cemas berlebihan. Tuhan yang menciptakan kita dan yang menebus kita juga adalah Tuhan yang merencanakan jalan kita.</p>
+            <p>Ini bukan berarti kita hanya duduk diam tanpa berusaha. Justru sebaliknya! Kita dipanggil untuk:
+            <ol>
+                <li><strong>Mencari kehendak Tuhan.</strong> Habiskan waktu dalam doa, membaca Firman-Nya, dan meminta bimbingan Roh Kudus. Dia akan berbicara melalui orang-orang yang bijaksana di sekitar kita, melalui situasi yang Dia izinkan, dan melalui damai sejahtera di hati kita.</li>
+                <li><strong>Mengembangkan karunia dan talenta.</strong> Allah telah memberikan setiap dari kita kemampuan dan minat yang unik. Gunakan masa remajamu untuk mengeksplorasi dan mengembangkan talenta-talenta ini. Ini bisa menjadi petunjuk ke arah mana Tuhan ingin kalian melangkah.</li>
+                <li><strong>Belajar dan berusaha sebaik mungkin.</strong> Baik di sekolah, di rumah, maupun di komunitas. Lakukan yang terbaik dengan apa yang ada di hadapanmu. Kesetiaan dalam hal-hal kecil akan membuka pintu untuk hal-hal yang lebih besar.</li>
+                <li><strong>Percaya dan melangkah dengan iman.</strong> Terkadang, Tuhan hanya menunjukkan satu langkah di depan. Kita tidak perlu melihat seluruh jalan. Percayalah bahwa Dia akan memimpin kita langkah demi langkah, dan bahwa setiap langkah yang kita ambil dalam ketaatan akan membawa kita lebih dekat pada rencana-Nya yang sempurna.</li>
+            </ol>
+            Masa depan ada di tangan Tuhan, dan itu adalah tempat teraman untuk masa depan kita. Berhentilah khawatir, dan mulailah percaya!</p>
+        </section>
+
+        <section id="hidup-berdampak">
+            <h2>Hidup Berdampak: Menjadi Garam dan Terang Dunia</h2>
+            <p>Setelah kita memahami identitas kita yang kokoh dalam Kristus dan bagaimana menghadapi tantangan remaja, pertanyaan berikutnya adalah: apa yang harus kita lakukan dengan semua itu? Allah tidak menyelamatkan kita hanya agar kita bisa merasa aman dan nyaman. Dia menyelamatkan kita untuk suatu tujuan yang lebih besar—untuk hidup berdampak, menjadi garam dan terang bagi dunia di sekitar kita.</p>
+
+            <h3>A. Tujuan Hidup yang Lebih Besar: Melayani Tuhan dan Sesama</h3>
+            <p>Kita sering mendengar tentang "mengejar impian" atau "mewujudkan potensi diri." Itu semua baik, tetapi sebagai remaja Kristen, tujuan hidup kita melampaui sekadar kepuasan pribadi. Yesus sendiri berkata, "Barangsiapa ingin menjadi besar di antara kamu, hendaklah ia menjadi pelayanmu." (Matius 20:26). Ini adalah prinsip kunci dalam Kerajaan Allah. Tujuan hidup kita yang paling tinggi adalah untuk memuliakan Tuhan dan melayani sesama.</p>
+            <p>Memuliakan Tuhan berarti hidup dengan cara yang mencerminkan karakter-Nya, menunjukkan kasih-Nya, dan meninggikan nama-Nya dalam segala hal yang kita lakukan. Melayani sesama berarti melihat kebutuhan orang lain dan bertindak untuk memenuhinya, entah itu melalui tindakan kebaikan kecil sehari-hari, menjadi telinga yang mendengarkan, atau terlibat dalam pelayanan yang lebih besar.</p>
+            <p>Ketika kita mengalihkan fokus dari "apa yang bisa saya dapatkan" menjadi "bagaimana saya bisa memberi," hidup kita akan dipenuhi dengan makna yang mendalam. Kebahagiaan sejati seringkali ditemukan dalam memberi, bukan menerima. Ini adalah kebenaran yang revolusioner di tengah dunia yang egois, dan sebagai remaja Kristen, kita dipanggil untuk hidup dengan kebenaran ini.</p>
+            <p>Bagaimana kita bisa mulai melayani? Itu tidak harus menunggu sampai kalian dewasa atau memiliki posisi tertentu. Kalian bisa memulai sekarang:
+            <ul>
+                <li>Membantu pekerjaan rumah tangga tanpa diminta.</li>
+                <li>Menjadi sukarelawan di gereja atau komunitas.</li>
+                <li>Mendengarkan teman yang sedang berjuang.</li>
+                <li>Berbagi bekal makanan dengan teman yang kelupaan.</li>
+                <li>Mengunjungi panti asuhan atau panti jompo.</li>
+            </ul>
+            Setiap tindakan kecil dari kasih dan pelayanan memiliki dampak yang besar di mata Tuhan.</p>
+
+            <h3>B. Mengembangkan Karunia dan Talenta: Untuk Kemuliaan Tuhan</h3>
+            <p>Setiap dari kita diciptakan dengan unik dan dianugerahi dengan berbagai karunia dan talenta. Ada yang pandai di bidang akademik, ada yang berbakat dalam seni musik, ada yang jago olahraga, ada yang ahli dalam memecahkan masalah, ada yang memiliki karunia mengajar, karunia belas kasihan, atau karunia kepemimpinan. Ini semua adalah anugerah dari Tuhan, dan Dia ingin kita mengembangkannya untuk kemuliaan-Nya dan untuk kebaikan orang lain.</p>
+            <p>1 Petrus 4:10 mengatakan, <blockquote><p>"Layanilah seorang akan yang lain, sesuai dengan karunia yang telah diperoleh tiap-tiap orang sebagai pelayan-pelayan yang baik dari kasih karunia Allah yang bermacam-macam."</p><cite>1 Petrus 4:10</cite></blockquote> Ayat ini jelas mendorong kita untuk menggunakan karunia kita dalam pelayanan.</p>
+            <p>Jangan pernah meremehkan talenta yang kalian miliki, sekecil apapun itu. Allah bisa menggunakan hal-hal kecil untuk tujuan yang besar. Jika kalian pandai bermain musik, gunakanlah untuk memuji Tuhan atau menghibur orang lain. Jika kalian pandai menulis, gunakanlah untuk menyebarkan pesan kebenaran. Jika kalian memiliki kemampuan dalam bidang sains atau teknologi, bayangkan bagaimana itu bisa digunakan untuk menyelesaikan masalah di dunia ini dan membawa kemuliaan bagi Tuhan.</p>
+            <p>Mengembangkan karunia tidak hanya berarti menguasai keterampilan, tetapi juga menggunakannya dengan hati yang benar—yaitu hati yang melayani. Ini juga berarti terus belajar dan tidak pernah berhenti untuk meningkatkan diri. Investasikan waktu dan usaha dalam apa yang Tuhan telah berikan kepada kalian, karena melalui itu kalian dapat menjadi saluran berkat yang luar biasa.</p>
+
+            <figure>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='hsl(190, 70%, 97%)'/><path d='M200 80 C150 80 120 120 120 170 C120 220 150 260 200 260 C250 260 280 220 280 170 C280 120 250 80 200 80 Z' fill='hsl(30, 80%, 70%)' opacity='0.7'/><circle cx='200' cy='170' r='60' fill='white'/><path d='M200 120 L200 220 M150 170 L250 170' stroke='hsl(190, 60%, 45%)' stroke-width='10' stroke-linecap='round'/><path d='M150 120 A70 70 0 0 1 250 120' stroke='hsl(190, 60%, 45%)' stroke-width='10' fill='none'/><text x='200' y='270' font-family='Arial' font-size='20' fill='hsl(190, 60%, 45%)' text-anchor='middle'>Tumbuh & Berdampak</text></svg>" alt="Ilustrasi tangan yang memegang bibit pohon yang tumbuh subur, melambangkan pertumbuhan rohani dan dampak positif yang dihasilkan.">
+                <figcaption>Setiap remaja dipanggil untuk bertumbuh dan menggunakan karunia-karunia mereka untuk kemuliaan Tuhan.</figcaption>
+            </figure>
+
+            <h3>C. Menjadi Teladan: Hidup Sebagai Saksi Kristus</h3>
+            <p>Kita dipanggil untuk menjadi teladan, bukan hanya di lingkungan gereja, tetapi di mana pun kita berada: di sekolah, di rumah, di antara teman-teman, dan di dunia maya. 1 Timotius 4:12 adalah ayat yang sangat relevan untuk remaja: <blockquote><p>"Jangan seorang pun menganggap engkau rendah karena engkau muda. Jadilah teladan bagi orang-orang percaya, dalam perkataanmu, dalam tingkah lakumu, dalam kasihmu, dalam imanmu dan dalam kesucianmu."</p><cite>1 Timotius 4:12</cite></blockquote></p>
+            <p>Ayat ini adalah tantangan yang luar biasa! Paulus mengatakan kepada Timotius, seorang pemimpin muda, untuk tidak membiarkan siapa pun meremehkannya karena usianya. Sebaliknya, ia harus membuktikan dirinya sebagai teladan. Ini juga berlaku untuk kalian! Kalian mungkin merasa terlalu muda, tidak berpengalaman, atau tidak punya pengaruh. Tetapi Tuhan bisa menggunakan kalian untuk menjadi teladan yang kuat.</p>
+            <p>Bagaimana kita menjadi teladan?
+            <ol>
+                <li><strong>Dalam Perkataan:</strong> Ucapkan kata-kata yang membangun, jujur, dan penuh kasih. Hindari gosip, kata-kata kotor, atau perkataan yang merendahkan orang lain.</li>
+                <li><strong>Dalam Tingkah Laku:</strong> Hidup dengan integritas, kejujuran, dan kebaikan. Lakukan apa yang benar, bahkan ketika tidak ada yang melihat. Hargai otoritas, berikan yang terbaik dalam tugas-tugasmu.</li>
+                <li><strong>Dalam Kasih:</strong> Tunjukkan kasih Kristus kepada semua orang, bahkan kepada mereka yang sulit dikasihi. Kasih yang tanpa pamrih adalah kesaksian paling kuat tentang iman kita.</li>
+                <li><strong>Dalam Iman:</strong> Tetaplah percaya kepada Tuhan dalam segala situasi. Ketika ada masalah, tunjukkanlah bahwa imanmu adalah jangkar. Ketika ada kesempatan, beranilah berbagi imanmu dengan rendah hati.</li>
+                <li><strong>Dalam Kesucian:</strong> Jaga hati, pikiran, dan tubuhmu tetap kudus. Hindari kompromi moral, pornografi, atau hal-hal lain yang mencemarkan. Ini adalah area yang sangat menantang di masa remaja, tetapi Roh Kudus akan memberimu kekuatan.</li>
+            </ol>
+            Ketika kita hidup sebagai teladan, hidup kita sendiri menjadi khotbah yang paling efektif. Orang lain akan melihat Kristus melalui kita, bahkan tanpa kita perlu banyak bicara. Kalian adalah duta-duta Kristus di sekolah, di rumah, dan di mana pun kalian berada.</p>
+
+            <h3>D. Membangun Hubungan yang Intim dengan Tuhan: Sumber Kekuatan Utama</h3>
+            <p>Semua yang kita bahas di atas—menemukan identitas, menghadapi tantangan, hidup berdampak—tidak akan mungkin terjadi tanpa hubungan yang intim dengan Tuhan. Dia adalah sumber kekuatan kita, sumber hikmat kita, dan sumber kasih kita. Tanpa Dia, kita akan mudah tersesat dan kehabisan tenaga.</p>
+            <p>Membangun hubungan intim dengan Tuhan melibatkan:
+            <ol>
+                <li><strong>Doa yang Konsisten:</strong> Berbicara dengan Tuhan setiap hari, berbagi semua yang ada di hatimu—sukacita, kekhawatiran, pertanyaan, pujian. Doa adalah komunikasi dua arah; Dia juga ingin berbicara kepadamu.</li>
+                <li><strong>Membaca Alkitab Secara Teratur:</strong> Firman Tuhan adalah pelita bagi kakimu dan terang bagi jalanmu (Mazmur 119:105). Melalui Alkitab, kita mengenal Allah, memahami kehendak-Nya, dan mendapatkan hikmat untuk hidup. Jadikan membaca Alkitab sebagai kebiasaan sehari-hari, bukan hanya tugas.</li>
+                <li><strong>Persekutuan dengan Sesama Orang Percaya:</strong> Jangan mencoba berjalan sendiri. Bergabunglah dengan kelompok kecil di gereja, hadiri ibadah, dan carilah mentor rohani. Dalam persekutuan, kita saling menguatkan, belajar, dan bertumbuh bersama.</li>
+                <li><strong>Menyembah Tuhan:</strong> Baik itu melalui lagu, melalui pelayanan, atau melalui hidup ketaatan. Penyembahan adalah cara kita mengarahkan hati kita kepada Allah dan mengakui kebesaran-Nya.</li>
+            </ol>
+            Masa remaja adalah waktu yang tepat untuk membangun fondasi rohani yang kuat ini. Kebiasaan-kebiasaan rohani yang kalian tanamkan sekarang akan menjadi penopang kalian di masa depan. Prioritaskan Tuhan, dan Dia akan memprioritaskan kalian dalam segala hal.</p>
+        </section>
+
+        <section id="kesimpulan">
+            <h2>Kesimpulan: Melangkah Maju dalam Iman</h2>
+            <p>Teman-teman remaja yang dikasihi, kita telah membahas banyak hal hari ini. Kita belajar bahwa identitas sejati kita tidak ditemukan dalam apa yang dunia tawarkan, tetapi dalam Kristus Yesus. Kita diciptakan menurut gambar Allah, ditebus oleh darah-Nya, dan diadopsi sebagai anak-anak-Nya. Ini adalah fondasi yang kokoh, tak tergoyahkan oleh opini manusia atau standar dunia yang fana.</p>
+            <p>Kita juga menyadari bahwa masa remaja bukanlah tanpa tantangan—tekanan sosial, jebakan media sosial, pergulatan emosi, dan ketidakpastian masa depan. Namun, kita tidak sendirian. Kita memiliki kekuatan dan hikmat dari Tuhan untuk menghadapi setiap tantangan tersebut. Dengan berpegang pada Firman-Nya, memilih teman dengan bijak, membatasi diri dari hal-hal yang merusak, mempercayakan kekhawatiran kita kepada-Nya, dan bersandar pada rencana-Nya yang indah, kita dapat melangkah maju dengan keyakinan.</p>
+            <p>Dan yang terakhir, kita diingatkan tentang panggilan kita yang lebih besar: untuk hidup berdampak. Kita dipanggil untuk tidak hanya menjadi penerima berkat, tetapi juga menjadi saluran berkat. Dengan melayani Tuhan dan sesama, mengembangkan karunia kita untuk kemuliaan-Nya, menjadi teladan dalam setiap aspek hidup, dan terus membangun hubungan yang intim dengan Dia, kita dapat menjadi garam dan terang yang mengubah dunia di sekitar kita.</p>
+            <p>Sekarang, pertanyaan terpenting adalah: Apa yang akan kalian lakukan dengan kebenaran ini? Apakah kalian akan terus membiarkan dunia mendikte siapa kalian dan bagaimana kalian harus hidup? Atau, apakah kalian akan memilih untuk merangkul identitas kalian dalam Kristus, mempercayai rencana-Nya, dan berkomitmen untuk hidup bagi-Nya?</p>
+            <p>Pilihan ada di tangan kalian. Ini adalah panggilan untuk hidup yang berbeda, hidup yang penuh makna, hidup yang berani. Mungkin tidak selalu mudah, tetapi percayalah, ini adalah jalan yang akan membawa kepuasan, sukacita, dan damai sejahtera yang sejati.</p>
+            <p>Jika hari ini ada di antara kalian yang merasa bingung tentang identitasnya, atau sedang bergumul dengan berbagai tekanan, atau merasa jauh dari Tuhan, saya ingin mengundang kalian untuk mengambil langkah iman. Buka hati kalian kepada Yesus. Akui Dia sebagai Tuhan dan Juruselamat kalian. Dia siap menyambut kalian dengan tangan terbuka, memberikan identitas baru, tujuan yang jelas, dan kekuatan untuk menghadapi setiap hari.</p>
+            <p>Ingatlah janji-Nya: Dia tidak akan pernah meninggalkanmu atau membiarkanmu. Dia akan menyertaimu di setiap langkah perjalananmu. Jadi, marilah kita melangkah maju dalam iman, dengan kepala tegak, dengan hati yang penuh keberanian, dan dengan hidup yang sepenuhnya ditujukan untuk kemuliaan-Nya.</p>
+            <p>Mari kita akhiri dengan doa:</p>
+            <blockquote>
+                <p>Ya Bapa Surgawi, terima kasih untuk Firman-Mu yang menguatkan dan membimbing kami. Terima kasih karena Engkau menciptakan kami dengan nilai yang tak terhingga dan menebus kami melalui Yesus Kristus. Kami berdoa untuk setiap remaja yang mendengarkan atau membaca khotbah ini. Kiranya Roh Kudus-Mu memenuhi hati mereka, memberikan mereka pemahaman yang mendalam tentang identitas mereka di dalam Engkau. Berikan mereka kekuatan untuk menghadapi tekanan dunia, hikmat untuk membuat pilihan yang benar, dan keberanian untuk hidup sebagai terang dan garam di mana pun mereka berada. Tolonglah kami untuk senantiasa membangun hubungan yang intim dengan-Mu, menjadi teladan dalam perkataan, tingkah laku, kasih, iman, dan kesucian. Semoga hidup kami sepenuhnya memuliakan nama-Mu yang kudus. Dalam nama Tuhan Yesus Kristus kami berdoa. Amin.</p>
+            </blockquote>
+
+            <figure>
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'><rect width='400' height='300' fill='hsl(190, 70%, 97%)'/><path d='M200 280 L180 180 C180 100 220 100 220 180 L200 280 Z' fill='hsl(190, 60%, 45%)' opacity='0.8'/><circle cx='200' cy='150' r='30' fill='hsl(30, 80%, 70%)'/><path d='M200 280 L150 200 L250 200 Z' fill='hsl(190, 60%, 75%)'/><path d='M200 50 L180 100 L220 100 Z' fill='hsl(30, 80%, 70%)'/><path d='M200 50 C150 50 120 100 120 150 C120 200 150 250 200 250 C250 250 280 200 280 150 C280 100 250 50 200 50 Z' fill='none' stroke='hsl(190, 60%, 45%)' stroke-width='4' stroke-dasharray='5,5'/><path d='M200 50 L200 250' stroke='hsl(190, 60%, 45%)' stroke-width='4' stroke-dasharray='5,5'/><text x='200' y='270' font-family='Arial' font-size='20' fill='hsl(190, 60%, 45%)' text-anchor='middle'>Panggilan & Harapan</text></svg>" alt="Ilustrasi seseorang yang berdiri tegak di tengah lingkaran yang menyala, melambangkan harapan dan panggilan untuk hidup yang berdampak.">
+                <figcaption>Melangkah maju dalam iman, dengan harapan yang teguh dan panggilan untuk hidup yang memuliakan Tuhan.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p>Artikel ini didedikasikan untuk menginspirasi dan menguatkan remaja Kristen di seluruh dunia.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/kumpulan-khotbah-penginjilan">Kumpulan Khotbah Penginjilan</a></li>
+<li><a href="/renungan-singkat-tentang-kehidupan-sehari-hari">Renungan Singkat Tentang Kehidupan Sehari Hari</a></li>
+<li><a href="/renungan-tentang-pelayanan">Renungan Tentang Pelayanan</a></li>
+<li><a href="/bacaan-injil-30-maret-2022">Bacaan Injil 30 Maret 2022</a></li>
+<li><a href="/khotbah-kristen-terbaik">Khotbah Kristen Terbaik</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

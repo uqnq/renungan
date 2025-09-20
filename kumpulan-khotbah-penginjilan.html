@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kumpulan khotbah penginjilan yang mencerahkan tentang kasih dan keselamatan Kristus.">
+    <title>Kumpulan Khotbah Penginjilan: Kasih &amp; Keselamatan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: hsl(190, 80%, 98%); /* Very light cyan-blue, almost white */
+            --secondary-bg: hsl(190, 60%, 95%); /* Slightly darker light cyan */
+            --text-dark: hsl(210, 20%, 30%); /* Dark grey-blue */
+            --text-light: hsl(210, 10%, 60%); /* Medium grey-blue */
+            --accent-color: hsl(170, 60%, 40%); /* Teal green */
+            --accent-light: hsl(170, 80%, 75%); /* Lighter teal green */
+            --border-color: hsl(190, 20%, 90%); /* Light grey-blue */
+            --shadow-color: rgba(0, 0, 0, 0.05);
+        }
+
+        body {
+            font-family: 'Lora', serif; /* Body text with a readable serif font */
+            color: var(--text-dark);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            font-size: 1.1em; /* Slightly larger base font size for readability */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif; /* Headings with a clean sans-serif font */
+            color: var(--accent-color);
+            margin-top: 1.5em;
+            margin-bottom: 0.8em;
+            line-height: 1.3;
+        }
+
+        h1 {
+            font-size: 2.5em; /* Larger for main title */
+            text-align: center;
+            color: var(--text-dark); /* Main title a bit darker */
+            margin-bottom: 0.5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.9em;
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 0.3em;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 2.5em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            color: var(--text-dark);
+            font-weight: 600;
+            margin-top: 2em;
+        }
+
+        h4 {
+            font-size: 1.2em;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 1.5em;
+        }
+
+        header {
+            background-color: var(--secondary-bg);
+            padding: 2em 1em;
+            box-shadow: 0 2px 8px var(--shadow-color);
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0.5em auto 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1.5em;
+            flex-grow: 1;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 2em;
+            border-radius: 12px;
+            margin-bottom: 2.5em;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        p {
+            margin-bottom: 1em;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 1.5em;
+            margin-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        blockquote {
+            background-color: var(--secondary-bg);
+            border-left: 5px solid var(--accent-color);
+            padding: 1em 1.5em;
+            margin: 1.5em 0;
+            font-style: italic;
+            color: var(--text-dark);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05em;
+        }
+
+        blockquote p {
+            margin: 0.5em 0;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px dashed var(--border-color);
+            margin: 3em auto;
+            width: 50%;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2.5em 0;
+            padding: 1em;
+            background-color: var(--secondary-bg);
+            border-radius: 10px;
+        }
+
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            padding: 1em;
+        }
+
+        .svg-icon {
+            color: var(--accent-color); /* To make paths inherit color if applicable */
+        }
+
+        footer {
+            background-color: var(--secondary-bg);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2em 1em;
+            margin-top: 3em;
+            font-size: 0.9em;
+            box-shadow: 0 -2px 8px var(--shadow-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.7em;
+            }
+            h3 {
+                font-size: 1.3em;
+            }
+            body {
+                font-size: 1em;
+            }
+            main {
+                margin: 1.5em auto;
+                padding: 0 1em;
+            }
+            section {
+                padding: 1.5em;
+                margin-bottom: 1.5em;
+            }
+            header, footer {
+                padding: 1.5em 0.8em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            body {
+                font-size: 0.95em;
+            }
+            main {
+                margin: 1em auto;
+                padding: 0 0.8em;
+            }
+            section {
+                padding: 1em;
+                margin-bottom: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kumpulan Khotbah Penginjilan: Kabar Baik untuk Semua</h1>
+        <p>Menjelajahi kebenaran kekal tentang kasih karunia, keselamatan, dan harapan yang hanya ditemukan di dalam Yesus Kristus.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengantar: Mengapa Kabar Baik Begitu Penting?</h2>
+            <p>Dalam hiruk-pikuk kehidupan modern yang penuh ketidakpastian, manusia seringkali mencari pegangan, makna, dan harapan. Banyak yang merasa hampa di tengah kesuksesan material, dan banyak pula yang bergumul dengan pertanyaan-pertanyaan mendalam tentang keberadaan, penderitaan, dan masa depan setelah kematian. Dalam konteks inilah, berita penginjilan, atau "kabar baik" sebagaimana Alkitab menyebutnya, menjadi sangat relevan dan mendesak untuk dibagikan.</p>
+
+            <p>Penginjilan bukanlah sekadar penyampaian informasi keagamaan; ini adalah proklamasi tentang realitas terbesar dalam sejarah alam semesta – bahwa Allah yang Mahakuasa telah bertindak dalam kasih-Nya untuk menyelamatkan umat manusia dari dosa dan kematian melalui Putra-Nya, Yesus Kristus. Ini adalah pesan yang mengubah hidup, memberikan makna, tujuan, damai sejahtera, dan jaminan kekal bagi siapa pun yang mau menerimanya.</p>
+
+            <p>Artikel ini adalah kumpulan khotbah yang dirancang untuk menguraikan berbagai aspek dari kabar baik ini. Setiap khotbah akan menggali kebenaran alkitabiah yang fundamental, menjelaskan mengapa keselamatan sangat dibutuhkan, bagaimana hal itu disediakan oleh Allah, dan apa respons yang tepat dari kita. Tujuannya adalah untuk mencerahkan hati dan pikiran, menghadirkan kebenaran yang membebaskan, serta mendorong setiap pembaca untuk merenungkan relasi pribadinya dengan Pencipta dan Juruselamat.</p>
+
+            <p>Melalui khotbah-khotbah ini, kita akan melihat bagaimana kasih Allah bukan sekadar konsep abstrak, melainkan tindakan nyata yang terpampang jelas di kayu salib. Kita akan memahami betapa seriusnya masalah dosa yang memisahkan kita dari Allah yang kudus, namun juga betapa agungnya anugerah pengampunan yang ditawarkan secara cuma-cuma. Semoga setiap kata yang dibaca menjadi benih yang ditanam di hati yang siap, bertumbuh menjadi iman yang kokoh, dan berbuah dalam kehidupan yang diubahkan sepenuhnya oleh kuasa Injil Kristus.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Khotbah 1: Kasih Karunia Allah yang Menyelamatkan</h2>
+            <div class="image-container">
+                <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="salvationTitle salvationDesc">
+                    <title id="salvationTitle">Tangan yang Menjangkau Salib</title>
+                    <desc id="salvationDesc">Sebuah ilustrasi sederhana dari tangan manusia yang meraih salib yang bersinar, melambangkan keselamatan dan kasih karunia Tuhan.</desc>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM17 11H13V7H11V11H7V13H11V17H13V13H17V11Z" fill="var(--accent-color)" opacity="0.1"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--accent-color)"/>
+                    <path d="M12 7V17M7 12H17" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19.0711 4.92893C15.1658 1.02369 8.83417 1.02369 4.92893 4.92893C1.02369 8.83417 1.02369 15.1658 4.92893 19.0711" stroke="var(--accent-light)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <path d="M12 11.5L12 12.5M11.5 12L12.5 12" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.5 12C17.5 14.897 15.103 17.5 12 17.5C8.897 17.5 6.5 14.897 6.5 12C6.5 9.10305 8.897 6.5 12 6.5C15.103 6.5 17.5 9.10305 17.5 12Z" fill="var(--secondary-bg)" stroke="var(--accent-color)" stroke-width="1.5"/>
+                    <path d="M12 9V15M9 12H15" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3>Ayat Kunci: Efesus 2:8-9</h3>
+            <blockquote>
+                <p>"Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil usahamu, tetapi karunia Allah, itu bukan hasil pekerjaanmu, supaya jangan ada seorang pun yang memegahkan diri."</p>
+            </blockquote>
+
+            <h4>1. Masalah Universal: Keterpisahan dari Allah</h4>
+            <p>Setiap manusia, tanpa terkecuali, menghadapi realitas dosa. Dosa bukanlah sekadar kesalahan atau kelemahan karakter; dosa adalah pelanggaran terhadap hukum dan sifat Allah yang kudus. Sejak kejatuhan Adam dan Hawa di Taman Eden, seluruh umat manusia telah mewarisi sifat dosa ini. Alkitab dengan jelas menyatakan dalam Roma 3:23, "Karena semua orang telah berbuat dosa dan telah kehilangan kemuliaan Allah." Ayat ini menegaskan bahwa tidak ada satu pun dari kita yang mampu mencapai standar kesempurnaan Allah.</p>
+            <p>Konsekuensi dari dosa sangatlah serius: keterpisahan dari Allah yang adalah sumber kehidupan, kebenaran, dan damai sejahtera. Keterpisahan ini bukan hanya masalah spiritual di akhirat, tetapi juga memengaruhi setiap aspek kehidupan kita di dunia ini—hubungan yang rusak, kekosongan batin, kecemasan, dan pencarian makna yang tak berujung. Dosa menciptakan jurang yang dalam antara manusia dan Penciptanya, jurang yang tidak bisa dijembatani oleh usaha manusia mana pun, tidak oleh perbuatan baik, agama, meditasi, atau filsafat.</p>
+            <p>Orang mungkin berpikir bahwa perbuatan baik mereka bisa menutupi dosa-dosa mereka. Namun, Alkitab mengajarkan bahwa bahkan perbuatan baik kita, jika dilakukan di luar kasih karunia Allah, tidaklah cukup di hadapan-Nya. Yesaya 64:6 mengatakan, "Demikianlah kami sekalian seperti seorang najis dan segala kesalehan kami seperti kain kotor; kami sekalian menjadi layu seperti daun dan kami lenyap oleh kejahatan kami seperti daun dilenyapkan oleh angin." Ini bukan untuk merendahkan nilai etika atau moralitas, tetapi untuk menegaskan bahwa masalah dosa adalah masalah yang fundamental dan memerlukan solusi yang jauh lebih radikal daripada sekadar perbaikan perilaku.</p>
+            <p>Keterpisahan dari Allah ini pada akhirnya akan berujung pada kematian kekal, atau penghukuman abadi di neraka. Roma 6:23 dengan lugas menyatakan, "Sebab upah dosa ialah maut; tetapi karunia Allah ialah hidup yang kekal dalam Kristus Yesus, Tuhan kita." Ini adalah kenyataan yang keras namun perlu diakui. Kita semua berdiri di hadapan Allah yang adil, yang harus menghukum dosa, dan tanpa intervensi ilahi, nasib kita akan menjadi kehancuran kekal. Ini adalah latar belakang gelap yang membuat kabar baik Injil bersinar begitu terang.</p>
+
+            <h4>2. Solusi Ilahi: Kasih Karunia melalui Kristus</h4>
+            <p>Meskipun kita tidak dapat menyelamatkan diri kita sendiri, Allah dalam kasih-Nya yang tak terbatas telah menyediakan jalan. Inilah inti dari kabar baik: kasih karunia Allah. Kasih karunia berarti anugerah yang tidak layak kita terima, kebaikan yang diberikan tanpa syarat. Allah tidak menunggu kita menjadi baik atau sempurna; justru saat kita masih berdosa, Dia mengulurkan tangan-Nya.</p>
+            <p>Yohanes 3:16 adalah ayat yang paling terkenal dan ringkas yang menjelaskan kasih karunia ini: "Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal." Allah mengutus Anak-Nya, Yesus Kristus, untuk menjembatani jurang dosa antara kita dan Dia. Yesus, yang sepenuhnya Allah dan sepenuhnya manusia, hidup tanpa dosa, memenuhi semua tuntutan hukum Allah. Kemudian, Dia secara sukarela mati di kayu salib, menanggung hukuman atas dosa-dosa kita.</p>
+            <p>Kematian Yesus di salib bukanlah kematian seorang martir biasa. Itu adalah korban pengganti yang sempurna. Dia, yang tidak mengenal dosa, dijadikan dosa bagi kita, supaya dalam Dia kita dibenarkan di hadapan Allah (2 Korintus 5:21). Darah-Nya yang tercurah adalah pembayaran penuh atas dosa-dosa kita. Ketika kita percaya kepada-Nya, keadilan Allah dipenuhi, dan kita diampuni. Setelah kematian-Nya, Yesus bangkit dari antara orang mati pada hari ketiga, membuktikan kuasa-Nya atas dosa dan maut, dan menjamin kehidupan kekal bagi semua yang percaya kepada-Nya. Kebangkitan-Nya adalah inti dari harapan kita.</p>
+            <p>Jadi, keselamatan bukanlah hasil dari usaha kita, melainkan sepenuhnya karunia Allah. Kita tidak bisa mendapatkan, layak menerima, atau membeli keselamatan. Itu adalah hadiah yang diberikan secara cuma-cuma oleh Allah kepada mereka yang bersedia menerimanya. Ayat kunci kita, Efesus 2:8-9, dengan tegas menyatakan, "Sebab karena kasih karunia kamu diselamatkan oleh iman; itu bukan hasil usahamu, tetapi karunia Allah, itu bukan hasil pekerjaanmu, supaya jangan ada seorang pun yang memegahkan diri." Tidak ada ruang untuk kesombongan manusia karena semua kemuliaan adalah milik Allah semata.</p>
+
+            <h4>3. Respon yang Tepat: Iman yang Menyelamatkan</h4>
+            <p>Jika keselamatan adalah karunia, bagaimana kita menerimanya? Ayat kunci kita menyebutkan "oleh iman." Iman bukanlah sekadar keyakinan intelektual bahwa Allah ada atau bahwa Yesus pernah hidup. Iman yang menyelamatkan adalah tindakan mempercayakan diri sepenuhnya kepada Yesus Kristus sebagai Tuhan dan Juruselamat pribadi. Ini adalah penyerahan diri yang mengakui bahwa kita tidak dapat menyelamatkan diri sendiri dan sepenuhnya bergantung pada apa yang telah Yesus lakukan bagi kita di kayu salib.</p>
+            <p>Iman ini memiliki beberapa komponen penting:
+                <ul>
+                    <li><strong>Pengakuan Dosa (Pertobatan):</strong> Ini adalah kesadaran akan dosa kita di hadapan Allah yang kudus, disertai dengan kesedihan yang tulus dan keinginan untuk berbalik dari dosa menuju Allah. Pertobatan bukanlah hanya menyesali konsekuensi dosa, tetapi menyesali dosa itu sendiri sebagai pelanggaran terhadap Allah. Kisah Para Rasul 3:19 menyerukan, "Karena itu sadarlah dan bertobatlah, supaya dosamu dihapuskan."</li>
+                    <li><strong>Kepercayaan kepada Yesus:</strong> Ini adalah keyakinan bahwa Yesus adalah Anak Allah, mati untuk dosa-dosa kita, dan bangkit kembali. Lebih dari itu, ini adalah tindakan percaya sepenuhnya kepada-Nya, mengandalkan-Nya untuk pengampunan dan hidup kekal. Roma 10:9-10 menyatakan, "Sebab jika kamu mengaku dengan mulutmu, bahwa Yesus adalah Tuhan, dan percaya dalam hatimu, bahwa Allah telah membangkitkan Dia dari antara orang mati, maka kamu akan diselamatkan. Karena dengan hati orang percaya dan dibenarkan, dan dengan mulut orang mengaku dan diselamatkan."</li>
+                    <li><strong>Penerimaan Kristus:</strong> Ini adalah tindakan mengundang Yesus masuk ke dalam hidup kita, menyerahkan kontrol hidup kita kepada-Nya, dan membiarkan Dia menjadi Tuhan atas segala sesuatu. Yohanes 1:12 mengatakan, "Tetapi semua orang yang menerima-Nya, diberi-Nya kuasa supaya menjadi anak-anak Allah, yaitu mereka yang percaya dalam nama-Nya."</li>
+                </ul>
+            </p>
+            <p>Iman yang sejati akan menghasilkan perubahan dalam hidup. Meskipun keselamatan adalah karunia dan bukan hasil pekerjaan, iman yang hidup akan selalu termanifestasi dalam perbuatan yang baik, kasih, dan ketaatan kepada Allah. Bukan perbuatan baik yang menyelamatkan kita, tetapi perbuatan baik adalah bukti dari iman yang telah menyelamatkan kita (Yakobus 2:17). Hidup yang baru dalam Kristus akan dicirikan oleh keinginan untuk menyenangkan Allah, bertumbuh dalam kekudusan, dan membagikan kasih-Nya kepada orang lain.</p>
+
+            <h4>Kesimpulan & Ajakan</h4>
+            <p>Kasih karunia Allah yang menyelamatkan adalah tawaran terbesar yang pernah diberikan kepada umat manusia. Ini adalah undangan untuk meninggalkan beban dosa, kekosongan, dan keputusasaan, serta masuk ke dalam hubungan yang hidup dan penuh dengan Allah yang pengasih. Jalan menuju keselamatan tidak melalui usaha keras kita, melainkan melalui iman sederhana kepada Yesus Kristus.</p>
+            <p>Apakah Anda hari ini menyadari kebutuhan Anda akan Juruselamat? Apakah Anda bersedia mengakui dosa-dosa Anda dan percaya sepenuhnya kepada Yesus Kristus sebagai Tuhan dan Juruselamat pribadi Anda? Jika ya, saya mengundang Anda untuk merespons tawaran kasih karunia Allah ini. Tidak ada momen yang lebih penting daripada sekarang. Tidak ada keputusan yang lebih berarti daripada memutuskan untuk mengikuti Kristus. Terimalah Dia hari ini, dan alami damai sejahtera, pengampunan, dan hidup kekal yang hanya dapat diberikan oleh-Nya.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Khotbah 2: Dari Kematian Menuju Kehidupan Baru</h2>
+            <div class="image-container">
+                <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="lifeTransformedTitle lifeTransformedDesc">
+                    <title id="lifeTransformedTitle">Simbol Daun Bertumbuh dari Tanah</title>
+                    <desc id="lifeTransformedDesc">Sebuah ilustrasi sederhana dari tunas daun yang hijau dan sehat bertumbuh dari sepetak tanah, melambangkan kehidupan baru dan pertumbuhan spiritual.</desc>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--secondary-bg)"/>
+                    <path d="M12 16L12 8" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 8C14 8 16 9 16 12C16 15 14 16 12 16" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16C10 16 8 15 8 12C8 9 10 8 12 8" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--primary-bg)" opacity="0.1"/>
+                    <path d="M12 4V20M20 12H4" stroke="var(--accent-light)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 16V20M12 4V8" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 8C14.2091 8 16 9.79086 16 12C16 14.2091 14.2091 16 12 16C9.79086 16 8 14.2091 8 12C8 9.79086 9.79086 8 12 8Z" fill="var(--accent-light)" opacity="0.5"/>
+                    <path d="M12 12C12 14.7614 9.76142 17 7 17C4.23858 17 2 14.7614 2 12C2 9.23858 4.23858 7 7 7C9.76142 7 12 9.23858 12 12Z" fill="var(--accent-color)" opacity="0.3"/>
+                    <path d="M12 12C12 9.23858 14.2386 7 17 7C19.7614 7 22 9.23858 22 12C22 14.7614 19.7614 17 17 17C14.2386 17 12 14.7614 12 12Z" fill="var(--accent-color)" opacity="0.3"/>
+                </svg>
+            </div>
+            <h3>Ayat Kunci: 2 Korintus 5:17</h3>
+            <blockquote>
+                <p>"Jadi siapa yang ada di dalam Kristus, ia adalah ciptaan baru: yang lama sudah berlalu, sesungguhnya yang baru sudah datang."</p>
+            </blockquote>
+
+            <h4>1. Realitas Kematian Spiritual</h4>
+            <p>Konsep kematian seringkali kita kaitkan dengan akhir dari keberadaan fisik. Namun, Alkitab berbicara tentang bentuk kematian yang lebih dalam dan jauh lebih serius—kematian spiritual. Kematian spiritual adalah kondisi keterpisahan dari Allah, sumber kehidupan itu sendiri. Ini bukan berarti kita berhenti bernapas, melainkan bahwa roh kita mati terhadap Allah, tidak mampu berkomunikasi dengan-Nya atau mengalami hubungan yang vital dengan-Nya.</p>
+            <p>Efesus 2:1-3 menggambarkan kondisi ini dengan jelas: "Kamu dahulu sudah mati karena pelanggaran-pelanggaran dan dosa-dosamu. Kamu hidup di dalamnya, karena kamu mengikuti jalan dunia ini, karena kamu menaati penguasa kerajaan angkasa, yaitu roh yang sekarang sedang bekerja di antara orang-orang durhaka. Sesungguhnya dahulu kami semua juga terhitung di antara mereka, ketika kami hidup di dalam hawa nafsu daging kami dan melakukan kehendak daging dan pikiran kami yang jahat. Secara kodrat kami adalah anak-anak kemurkaan, sama seperti yang lain." Ayat ini menunjukkan bahwa sebelum kita mengenal Kristus, kita berada dalam kondisi "mati" secara spiritual, diperbudak oleh dosa, dan berada di bawah murka Allah.</p>
+            <p>Realitas kematian spiritual ini menembus semua lapisan masyarakat, tanpa memandang status sosial, pendidikan, atau latar belakang budaya. Kita mungkin terlihat hidup, sukses, dan bahagia di mata dunia, tetapi di hadapan Allah, tanpa Dia, kita mati. Ini berarti kita tidak memiliki kemampuan intrinsik untuk mencari Allah, memahami kebenaran-Nya secara rohani, atau menyenangkan-Nya. Akal budi kita telah digelapkan oleh dosa, hati kita keras, dan kehendak kita diperbudak oleh keinginan daging.</p>
+            <p>Dampak dari kematian spiritual ini sangat luas. Ini adalah akar dari semua penderitaan manusia—kebencian, iri hati, keserakahan, kekerasan, dan kehampaan yang terus-menerus. Karena terpisah dari sumber kehidupan, manusia mencoba mengisi kekosongan ini dengan hal-hal duniawi: uang, kekuasaan, kesenangan, hubungan yang tidak sehat, atau pencapaian. Namun, semua itu hanya menawarkan kepuasan sementara dan tidak pernah dapat memenuhi kerinduan terdalam jiwa manusia akan Allah. Pada akhirnya, kematian spiritual ini mengarah pada kematian kekal, sebuah perpisahan permanen dari Allah dalam penghukuman yang abadi. Ini adalah gambaran suram yang menegaskan betapa mendesaknya kebutuhan kita akan kehidupan baru.</p>
+
+            <h4>2. Kristus: Sumber Kehidupan yang Baru</h4>
+            <p>Berita baiknya adalah bahwa Allah tidak membiarkan kita dalam kondisi kematian spiritual ini. Dalam kasih-Nya yang besar, Dia mengutus Yesus Kristus untuk memberikan kehidupan. Yesus sendiri menyatakan dalam Yohanes 10:10b, "Aku datang, supaya mereka mempunyai hidup, dan mempunyainya dalam segala kelimpahan." Yesus adalah sumber kehidupan, dan melalui Dia, kita dapat beralih dari kematian menuju kehidupan.</p>
+            <p>Bagaimana Yesus melakukan ini? Pertama, melalui kematian-Nya. Kematian Yesus di kayu salib bukan hanya untuk mengampuni dosa-dosa kita, tetapi juga untuk memecahkan kuasa dosa atas hidup kita. Ketika Yesus mati, Dia tidak hanya membayar hukuman, tetapi juga mengakhiri cengkeraman dosa yang mematikan. Dalam Roma 6:6, Paulus mengatakan, "Karena kita tahu, bahwa manusia lama kita telah turut disalibkan, supaya tubuh dosa kita hilang kuasanya, agar jangan lagi kita menghambakan diri kepada dosa." Kematian-Nya adalah kematian bagi dosa kita, dan kebangkitan-Nya adalah permulaan kehidupan baru bagi kita.</p>
+            <p>Kedua, melalui kebangkitan-Nya. Kebangkitan Yesus dari antara orang mati adalah peristiwa paling penting dalam sejarah. Itu adalah bukti bahwa Dia adalah Anak Allah, bahwa korban-Nya diterima, dan bahwa Dia memiliki kuasa atas maut. Ketika kita percaya kepada Kristus, kita diidentifikasi dengan kematian dan kebangkitan-Nya. Roma 6:4 menjelaskan, "Dengan demikian kita telah dikuburkan bersama-sama dengan Dia oleh baptisan dalam kematian, supaya, sama seperti Kristus telah dibangkitkan dari antara orang mati oleh kemuliaan Bapa, demikian juga kita akan hidup dalam hidup yang baru." Ini berarti bahwa kehidupan Kristus yang telah bangkit dicurahkan ke dalam kita, menghidupkan roh kita yang mati dan memberi kita kemampuan untuk menjalani hidup yang menyenangkan Allah.</p>
+            <p>Ketika kita menerima Kristus, Roh Kudus datang dan berdiam di dalam kita. Roh Kudus adalah agen kebangkitan spiritual ini. Dia bukan hanya penghibur dan penasihat, tetapi juga pemberi hidup. Dia menghidupkan kembali roh kita, memungkinkan kita untuk berkomunikasi dengan Allah, memahami firman-Nya, dan mengalami kehadiran-Nya. Oleh Roh Kudus, kita menjadi "ciptaan baru," dengan hati dan pikiran yang diubahkan, serta keinginan untuk hidup sesuai dengan kehendak Allah. Ini adalah keajaiban yang tak terlukiskan, transformasi total yang hanya bisa dilakukan oleh kuasa ilahi.</p>
+
+            <h4>3. Bukti Kehidupan Baru: Transformasi dan Pertumbuhan</h4>
+            <p>Ayat kunci kita, 2 Korintus 5:17, menegaskan bahwa siapa pun yang ada di dalam Kristus adalah "ciptaan baru." Ini bukan sekadar perbaikan kecil atau penyesuaian perilaku; ini adalah penciptaan ulang radikal dari dalam ke luar. "Yang lama sudah berlalu, sesungguhnya yang baru sudah datang." Apa saja bukti dari kehidupan baru ini?</p>
+            <ul>
+                <li><strong>Hati yang Diperbarui:</strong> Salah satu tanda paling mencolok adalah perubahan dalam hati. Keinginan dan prioritas kita bergeser. Kita mulai merindukan hal-hal yang kudus, mencintai kebenaran, dan membenci dosa. Apa yang dulunya menarik bagi kita, kini mungkin terasa hampa atau menjijikkan. Allah memberikan kita hati yang baru, bukan lagi hati yang keras dan batu, melainkan hati yang lembut dan responsif terhadap-Nya (Yehezkiel 36:26).</li>
+                <li><strong>Hubungan yang Dipulihkan:</strong> Kita mulai mengalami hubungan yang hidup dan intim dengan Allah. Doa tidak lagi terasa sebagai tugas yang membosankan, tetapi komunikasi yang berarti dengan Bapa surgawi. Pembacaan Alkitab menjadi sumber hikmat dan bimbingan, bukan sekadar buku teks. Kita merasakan kehadiran Roh Kudus yang memimpin dan menguatkan kita setiap hari.</li>
+                <li><strong>Perilaku yang Berubah:</strong> Meskipun proses pengudusan adalah seumur hidup, akan ada bukti nyata dari perubahan perilaku. Kita mulai menunjukkan buah Roh Kudus: kasih, sukacita, damai sejahtera, kesabaran, kemurahan, kebaikan, kesetiaan, kelemahlembutan, dan penguasaan diri (Galatia 5:22-23). Dosa tidak lagi memiliki kekuasaan mutlak atas kita, dan kita memiliki kekuatan untuk berkata "tidak" pada godaan dan "ya" pada kebenaran.</li>
+                <li><strong>Kasih terhadap Orang Lain:</strong> Kehidupan baru dalam Kristus juga ditandai dengan kasih yang tulus terhadap sesama. Kita mulai melihat orang lain melalui kacamata kasih Allah, peduli terhadap kebutuhan mereka, dan memiliki keinginan untuk membagikan kabar baik yang telah mengubah hidup kita. Ini bukan hanya tentang memberi uang, tetapi tentang memberi waktu, perhatian, dan belas kasihan.</li>
+                <li><strong>Harapan yang Pasti:</strong> Yang terpenting, kita memiliki harapan yang pasti akan kehidupan kekal bersama Allah. Kematian tidak lagi menjadi akhir yang menakutkan, melainkan pintu gerbang menuju rumah surgawi. Kita tahu bahwa masa depan kita aman di tangan Tuhan, dan ini memberikan damai sejahtera yang melampaui segala pengertian di tengah tantangan hidup.</li>
+            </ul>
+            <p>Hidup baru ini bukan tanpa perjuangan. Kita masih hidup di dunia yang jatuh dan harus bergumul dengan sisa-sisa dosa dalam diri kita. Namun, kita tidak berjuang sendiri. Roh Kudus ada di dalam kita untuk memampukan dan menguatkan kita setiap langkah. Pertumbuhan adalah proses, tetapi arahnya jelas: semakin serupa dengan Kristus.</p>
+
+            <h4>Kesimpulan & Ajakan</h4>
+            <p>Setiap orang berdiri di persimpangan jalan: di satu sisi adalah kematian spiritual yang berakhir pada kehancuran kekal, di sisi lain adalah kehidupan baru yang berkelimpahan dalam Kristus yang berujung pada kekekalan bersama Allah. Pilihan ada di tangan Anda.</p>
+            <p>Apakah Anda lelah dengan kehampaan, ketidakpuasan, dan beban dosa? Apakah Anda merindukan makna, damai sejahtera, dan tujuan sejati dalam hidup? Yesus Kristus menawarkan Anda lebih dari sekadar perbaikan; Dia menawarkan ciptaan baru, kehidupan yang sama sekali baru. Dia mengundang Anda untuk meninggalkan yang lama dan menerima yang baru.</p>
+            <p>Jika Anda ingin menerima kehidupan baru ini, Anda bisa berdoa sekarang, mengakui dosa-dosa Anda kepada Tuhan, dan mengundang Yesus Kristus untuk menjadi Tuhan dan Juruselamat hidup Anda. Serahkanlah hidup Anda kepada-Nya, dan saksikanlah bagaimana Dia akan memulai pekerjaan transformatif yang luar biasa di dalam diri Anda. "Sesungguhnya yang baru sudah datang!"</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Khotbah 3: Jalan, Kebenaran, dan Hidup</h2>
+            <div class="image-container">
+                <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="pathTruthLifeTitle pathTruthLifeDesc">
+                    <title id="pathTruthLifeTitle">Tiga Panah Menunjuk ke Satu Arah dengan Salib</title>
+                    <desc id="pathTruthLifeDesc">Tiga panah yang bertemu pada satu titik yang di atasnya ada salib, melambangkan Yesus sebagai satu-satunya jalan, kebenaran, dan hidup.</desc>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--secondary-bg)"/>
+                    <path d="M12 5V19M5 12H19" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="var(--primary-bg)" opacity="0.1"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 12L12 19" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 19L15 16M12 19L9 16" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5L12 12" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5L15 8M12 5L9 8" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 12H19" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M19 12L16 9M19 12L16 15" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 12L8 9M5 12L8 15" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3>Ayat Kunci: Yohanes 14:6</h3>
+            <blockquote>
+                <p>"Kata Yesus kepadanya: 'Akulah jalan dan kebenaran dan hidup. Tidak ada seorang pun yang datang kepada Bapa, kalau tidak melalui Aku.'"</p>
+            </blockquote>
+
+            <h4>1. Pencarian Universal Manusia: Sebuah Jalan</h4>
+            <p>Sejak awal peradaban, manusia telah mencari jalan. Jalan menuju kebahagiaan, jalan menuju kedamaian, jalan menuju makna, dan yang paling penting, jalan kembali kepada Pencipta. Berbagai filosofi, agama, dan sistem kepercayaan telah muncul, masing-masing mengklaim menawarkan peta atau petunjuk menuju tujuan akhir ini. Ada yang mengusulkan jalan melalui asketisme, yang lain melalui ritual, melalui pencapaian intelektual, atau melalui perbuatan baik yang ketat. Namun, di tengah semua jalan yang ditawarkan dunia, seringkali kita menemukan diri kita tersesat, bingung, atau justru berputar-putar dalam lingkaran kekecewaan dan kehampaan.</p>
+            <p>Manusia secara inheren adalah makhluk spiritual yang merindukan sesuatu yang lebih besar dari dirinya sendiri. Ada kekosongan berbentuk Allah dalam hati setiap manusia yang tidak dapat diisi oleh apa pun di dunia ini kecuali oleh Allah sendiri. Namun, karena dosa, kita terpisah dari Allah. Kita tidak tahu jalan pulang. Seperti domba yang tersesat, kita tersesat di padang gurun kehidupan, mencoba menemukan arah kita sendiri. Kita membangun menara Babel kita sendiri, berharap dapat mencapai surga dengan usaha kita sendiri, tetapi selalu gagal.</p>
+            <p>Pencarian jalan ini semakin intens di era modern, di mana informasi melimpah ruah dan pilihan tampaknya tak terbatas. Kita dibombardir dengan janji-janji kebahagiaan instan, kesuksesan yang mudah, dan pencerahan spiritual melalui berbagai guru dan ajaran. Namun, pada akhirnya, pertanyaan fundamental tetap ada: apakah ada jalan yang pasti, yang dapat dipercaya, yang benar-benar membawa kita kepada Allah?</p>
+            <p>Dalam konteks pencarian universal ini, pernyataan Yesus dalam Yohanes 14:6 adalah sebuah klaim yang revolusioner dan eksklusif. Dia tidak mengatakan, "Aku akan menunjukkan jalan," atau "Aku adalah salah satu dari banyak jalan." Dia menyatakan, "Akulah jalan." Ini berarti bahwa tidak ada jalan lain yang dapat membawa kita kepada Allah selain melalui Yesus Kristus. Ini mungkin terdengar tidak toleran atau sempit bagi sebagian orang, tetapi bagi mereka yang mencari kebenaran, ini adalah klaim yang pantas untuk diselidiki dengan serius, karena jika klaim ini benar, maka ini adalah kebenaran yang paling penting dalam hidup.</p>
+
+            <h4>2. Yesus adalah Kebenaran</h4>
+            <p>Selain menjadi "jalan," Yesus juga menyatakan diri-Nya sebagai "kebenaran." Di dunia yang semakin relatif, di mana kebenaran seringkali dianggap subjektif atau sekadar konstruksi sosial, klaim Yesus ini sangatlah kontras. Banyak yang berpendapat bahwa "kebenaranmu mungkin berbeda dengan kebenaranku," atau bahwa "semua agama pada dasarnya sama." Namun, Yesus menawarkan kebenaran yang absolut dan objektif.</p>
+            <p>Apa artinya Yesus adalah kebenaran?
+                <ul>
+                    <li><strong>Kebenaran yang Dinyatakan:</strong> Yesus adalah perwujudan dari semua kebenaran Allah. Dalam Kolose 2:9, Paulus mengatakan, "Sebab dalam Dialah berdiam secara jasmaniah seluruh kepenuhan keilahian." Artinya, jika kita ingin mengenal Allah, memahami sifat-Nya, kehendak-Nya, dan rencana-Nya, kita harus melihat kepada Yesus. Dia adalah Wahyu Allah yang paling jelas dan sempurna bagi manusia.</li>
+                    <li><strong>Kebenaran yang Membebaskan:</strong> Yesus sendiri berkata, "Kamu akan mengetahui kebenaran, dan kebenaran itu akan memerdekakan kamu" (Yohanes 8:32). Dosa memperbudak kita dengan kebohongan, ilusi, dan kepalsuan. Kebenaran Yesus membebaskan kita dari rantai dosa, dari rasa bersalah, dari rasa malu, dan dari ketakutan akan penghukuman. Dia menunjukkan kepada kita siapa diri kita sesungguhnya di hadapan Allah dan siapa yang Dia kehendaki kita menjadi.</li>
+                    <li><strong>Kebenaran yang Konsisten:</strong> Tidak seperti filosofi manusia yang sering berubah dan bertentangan, kebenaran Yesus adalah abadi dan tidak berubah. Dia adalah "kemarin dan hari ini dan sampai selama-lamanya sama" (Ibrani 13:8). Ini memberikan dasar yang kokoh bagi iman kita, sebuah batu karang yang tidak akan goyah di tengah badai kehidupan. Kita bisa mempercayai firman-Nya, janji-Nya, dan karakter-Nya sepenuhnya.</li>
+                    <li><strong>Kebenaran yang Hidup:</strong> Yesus bukan sekadar kumpulan ajaran atau prinsip moral. Dia adalah pribadi yang hidup. Kebenaran-Nya bukanlah teori yang dingin, tetapi kebenaran yang menghangatkan hati, memberikan penghiburan, dan memimpin kita kepada kehidupan. Mengenal kebenaran dalam Yesus berarti mengenal Yesus secara pribadi, bukan hanya mengetahui fakta-fakta tentang Dia.</li>
+                </ul>
+            </p>
+            <p>Di dunia yang dipenuhi dengan informasi yang salah, berita palsu, dan kebenaran yang relatif, klaim Yesus sebagai Kebenaran adalah mercusuar harapan. Dia menawarkan fondasi yang tak tergoyahkan untuk hidup kita, sebuah kebenaran yang dapat kita pegang teguh dan yang akan membimbing kita melalui kompleksitas dunia ini.</p>
+
+            <h4>3. Yesus adalah Hidup</h4>
+            <p>Akhirnya, Yesus menyatakan diri-Nya sebagai "hidup." Seperti yang telah kita bahas dalam khotbah sebelumnya, manusia berada dalam kondisi kematian spiritual karena dosa. Yesus datang untuk membalikkan kondisi ini, untuk memberikan kehidupan yang sejati, baik sekarang maupun di kekekalan.</p>
+            <p>Apa arti Yesus adalah hidup?
+                <ul>
+                    <li><strong>Sumber Kehidupan Kekal:</strong> Yohanes 3:16 mengatakan bahwa "setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal." Hidup kekal bukanlah sekadar kuantitas hidup yang tak berujung, melainkan kualitas hidup yang berbeda—hidup dalam hubungan yang benar dengan Allah, yang dimulai saat kita percaya kepada Kristus dan berlanjut sampai selama-lamanya. Ini adalah hidup yang bebas dari cengkeraman dosa dan kematian.</li>
+                    <li><strong>Sumber Kehidupan Berkelimpahan:</strong> Yesus berkata, "Aku datang, supaya mereka mempunyai hidup, dan mempunyainya dalam segala kelimpahan" (Yohanes 10:10b). Kehidupan berkelimpahan ini bukan berarti bebas dari masalah atau penderitaan, melainkan kehidupan yang penuh dengan tujuan, makna, damai sejahtera, dan sukacita yang tidak bergantung pada keadaan eksternal. Ini adalah kehidupan yang dipenuhi oleh Roh Kudus, yang menghasilkan buah-buah rohani dalam diri kita.</li>
+                    <li><strong>Mengalahkan Kematian:</strong> Yesus membuktikan klaim-Nya sebagai Hidup dengan kebangkitan-Nya sendiri dari antara orang mati. Dia mengalahkan musuh terakhir manusia, yaitu kematian. Karena Dia hidup, kita pun akan hidup. Kematian fisik tidak lagi menjadi akhir yang menakutkan bagi orang percaya, melainkan transisi ke kehadiran Allah yang mulia.</li>
+                    <li><strong>Kehidupan yang Menyelamatkan:</strong> Yesus adalah kehidupan karena Dia memberikan kehidupan kepada mereka yang mati secara rohani. Melalui Dia, kita dihidupkan kembali, roh kita diperbarui, dan kita diberi kemampuan untuk berhubungan dengan Allah. Dia menghidupkan hati yang mati dan memberikan kita nafas rohani yang baru, memungkinkan kita untuk menaati dan menyenangkan-Nya.</li>
+                </ul>
+            </p>
+            <p>Di dunia yang seringkali terasa mati dan hampa, Yesus adalah sumber kehidupan yang tak pernah kering. Dia menawarkan kepada kita lebih dari sekadar keberadaan; Dia menawarkan esensi kehidupan itu sendiri, kehidupan yang penuh, berarti, dan kekal, yang hanya dapat ditemukan dalam persekutuan dengan-Nya.</p>
+
+            <h4>Kesimpulan & Ajakan</h4>
+            <p>Pernyataan Yesus, "Akulah jalan dan kebenaran dan hidup. Tidak ada seorang pun yang datang kepada Bapa, kalau tidak melalui Aku," adalah klaim yang paling penting dan paling eksklusif yang pernah dibuat dalam sejarah. Ini menantang semua asumsi kita tentang pluralisme dan relativisme, namun pada saat yang sama, menawarkan kepastian yang sangat dibutuhkan di dunia yang tidak pasti.</p>
+            <p>Apakah Anda hari ini sedang mencari jalan keluar dari kebingungan, kegelapan, dan kehampaan? Apakah Anda mendambakan kebenaran yang kokoh di tengah kebohongan dunia? Apakah Anda membutuhkan kehidupan yang sejati, yang melampaui keberadaan fisik semata?</p>
+            <p>Jika ya, saya mengundang Anda untuk berpaling kepada Yesus Kristus. Dia adalah satu-satunya Jalan yang membawa Anda kepada Allah. Dia adalah satu-satunya Kebenaran yang akan membebaskan Anda. Dia adalah satu-satunya Sumber Hidup yang akan mengisi kekosongan terdalam Anda. Jangan tunda lagi. Buka hati Anda, akuilah Dia sebagai Tuhan, dan percayalah kepada-Nya sebagai Juruselamat. Melalui Dia, Anda akan menemukan semua yang Anda cari, dan jauh lebih banyak lagi.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Khotbah 4: Mengapa Kita Perlu Bertobat?</h2>
+            <div class="image-container">
+                <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="repentanceTitle repentanceDesc">
+                    <title id="repentanceTitle">Tangan Berdoa dengan Awan Cahaya</title>
+                    <desc id="repentanceDesc">Ilustrasi tangan yang menyatu dalam doa, dikelilingi oleh awan cahaya, melambangkan pertobatan dan pengampunan ilahi.</desc>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--secondary-bg)"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="var(--primary-bg)" opacity="0.1"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5V19M5 12H19" stroke="var(--accent-light)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <path d="M12 10C10.5 10 9.5 11 9.5 12.5C9.5 14 10.5 15 12 15C13.5 15 14.5 14 14.5 12.5C14.5 11 13.5 10 12 10Z" fill="var(--accent-color)" opacity="0.3"/>
+                    <path d="M12 10C10.5 10 9.5 11 9.5 12.5C9.5 14 10.5 15 12 15C13.5 15 14.5 14 14.5 12.5C14.5 11 13.5 10 12 10Z" stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 12.5V17" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 17L10 15M12 17L14 15" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10 12.5C10 11.5 11 10.5 12 10.5C13 10.5 14 11.5 14 12.5" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 10C10.5 10 9.5 11 9.5 12.5C9.5 14 10.5 15 12 15C13.5 15 14.5 14 14.5 12.5C14.5 11 13.5 10 12 10Z" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 18V21M9 20H15" stroke="var(--accent-light)" stroke-width="1.5"/>
+                    <path d="M12 3C7.59 3 4 6.59 4 11C4 15.41 7.59 19 12 19C16.41 19 20 15.41 20 11C20 6.59 16.41 3 12 3Z" fill="var(--primary-bg)" opacity="0.7"/>
+                    <path d="M12 6V16M7 11H17" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3>Ayat Kunci: Kisah Para Rasul 3:19</h3>
+            <blockquote>
+                <p>"Karena itu sadarlah dan bertobatlah, supaya dosamu dihapuskan, agar waktu kelegaan datang dari Tuhan."</p>
+            </blockquote>
+
+            <h4>1. Urgensi Pertobatan: Menghadapi Dosa dan Konsekuensinya</h4>
+            <p>Kata "bertobat" seringkali disalahpahami sebagai sekadar merasa menyesal atau merasa bersalah atas perbuatan buruk. Namun, dalam konteks Alkitab, pertobatan memiliki makna yang jauh lebih dalam dan mendesak. Kata Yunani untuk pertobatan, <em>metanoia</em>, berarti "perubahan pikiran" atau "perubahan hati." Ini adalah pergeseran radikal dalam arah hidup kita, berbalik dari dosa menuju Allah.</p>
+            <p>Mengapa pertobatan itu sangat penting? Karena kita semua adalah orang berdosa. Seperti yang telah kita bahas, "semua orang telah berbuat dosa dan telah kehilangan kemuliaan Allah" (Roma 3:23). Dosa bukanlah sekadar kesalahan kecil; dosa adalah pemberontakan terhadap Allah yang kudus, pelanggaran terhadap perintah-Nya, dan penolakan terhadap otoritas-Nya. Setiap dosa yang kita lakukan menciptakan jurang pemisah antara kita dan Allah.</p>
+            <p>Konsekuensi dari dosa sangatlah serius dan multi-dimensi:
+                <ul>
+                    <li><strong>Keterpisahan dari Allah:</strong> Dosa merusak hubungan kita dengan Pencipta kita. Yesaya 59:2 mengatakan, "Tetapi yang merupakan pemisah antara kamu dan Allahmu ialah segala kejahatanmu, dan yang membuat Dia menyembunyikan diri terhadap kamu, sehingga Ia tidak mendengar, ialah segala dosamu." Kita tidak dapat memiliki persekutuan yang intim dengan Allah yang kudus selama kita hidup dalam dosa.</li>
+                    <li><strong>Hukuman Kekal:</strong> Alkitab mengajarkan dengan jelas tentang keadilan Allah yang harus menghukum dosa. "Upah dosa ialah maut" (Roma 6:23). Maut ini bukan hanya kematian fisik, tetapi juga kematian kekal, yaitu perpisahan abadi dari Allah di neraka. Ini adalah realitas yang mengerikan, namun adil, karena Allah adalah hakim yang benar. Tanpa pertobatan, kita akan menghadapi penghukuman ini.</li>
+                    <li><strong>Kerusakan Diri Sendiri dan Lingkungan:</strong> Dosa juga merusak diri kita sendiri. Ia meracuni hati dan pikiran kita, menyebabkan kecemasan, rasa bersalah, rasa malu, dan keputusasaan. Dosa juga merusak hubungan kita dengan sesama, menciptakan konflik, ketidakpercayaan, dan penderitaan. Lihatlah kekerasan, ketidakadilan, dan kebencian di dunia—semuanya berakar pada dosa.</li>
+                </ul>
+            </p>
+            <p>Banyak orang menunda pertobatan, berpikir bahwa mereka bisa "memperbaiki diri" terlebih dahulu, atau bahwa mereka masih punya banyak waktu. Namun, Alkitab memperingatkan kita tentang ketidakpastian hidup dan urgensi untuk merespons sekarang. Ibrani 3:7-8 mengatakan, "Sebab itu, seperti yang dikatakan Roh Kudus: 'Pada hari ini, jika kamu mendengar suara-Nya, janganlah keraskan hatimu seperti dalam kegeraman.'" Ada saatnya ketika tawaran kasih karunia tidak lagi tersedia. Kita tidak tahu hari esok. Oleh karena itu, pertobatan bukanlah pilihan, melainkan keharusan mutlak jika kita ingin didamaikan dengan Allah dan menghindari murka-Nya yang adil.</p>
+
+            <h4>2. Tawaran Pengampunan yang Luar Biasa</h4>
+            <p>Meskipun urgensi pertobatan sangat besar, motivasi utamanya bukanlah ketakutan akan hukuman semata, melainkan kasih dan kebaikan Allah yang menawarkan pengampunan. Allah tidak ingin seorang pun binasa; Dia mengundang semua orang untuk berbalik kepada-Nya. 2 Petrus 3:9 menyatakan, "Tuhan tidak lalai menepati janji-Nya, sekalipun ada orang yang menganggapnya sebagai kelalaian, tetapi Ia sabar terhadap kamu, karena Ia menghendaki supaya jangan ada yang binasa, melainkan supaya semua orang berbalik dan bertobat."</p>
+            <p>Pengampunan ini dimungkinkan sepenuhnya melalui karya Yesus Kristus di kayu salib. Seperti yang telah kita bahas, Yesus yang tanpa dosa menanggung hukuman atas dosa-dosa kita. Darah-Nya yang tercurah adalah pembayaran penuh atas kejahatan kita. Ketika kita bertobat dan percaya kepada-Nya, Allah mengampuni dosa-dosa kita, membersihkan kita, dan menyatakan kita benar di hadapan-Nya.</p>
+            <p>Kisah Para Rasul 3:19, ayat kunci kita, menjanjikan dua hal luar biasa sebagai hasil dari pertobatan:
+                <ul>
+                    <li><strong>Dosamu dihapuskan:</strong> Ini berarti dosa-dosa kita tidak hanya ditutup-tutupi atau dimaafkan, tetapi sepenuhnya dihapus, dibersihkan, dan tidak lagi diingat oleh Allah. Mazmur 103:12 berkata, "Sejauh timur dari barat, demikianlah dijauhkan-Nya dari pada kita pelanggaran-pelanggaran kita." Ini adalah pengampunan yang menyeluruh dan permanen.</li>
+                    <li><strong>Waktu kelegaan datang dari Tuhan:</strong> "Waktu kelegaan" (atau "zaman menyegarkan") ini adalah pemulihan hubungan dengan Allah, damai sejahtera batin, dan kebebasan dari beban dosa. Ini adalah janji tentang kehidupan yang dipenuhi oleh Roh Kudus, di mana kita dapat mengalami hadirat Allah, sukacita, dan kekuatan untuk hidup benar. Ini adalah kelegaan dari rasa bersalah, dari rasa malu, dari kecemasan akan masa depan, dan dari penghukuman yang akan datang.</li>
+                </ul>
+            </p>
+            <p>Pengampunan Allah bukanlah sesuatu yang bisa kita dapatkan dengan usaha kita sendiri. Ini adalah karunia yang ditawarkan secara cuma-cuma kepada mereka yang dengan rendah hati datang kepada-Nya dalam pertobatan dan iman. Tidak peduli seberapa besar atau seberapa banyak dosa yang telah Anda lakukan, kasih karunia Allah lebih besar. Pengampunan-Nya melampaui segala dosa kita jika kita mau berbalik kepada-Nya dengan hati yang tulus.</p>
+
+            <h4>3. Buah Pertobatan Sejati: Perubahan Hidup</h4>
+            <p>Pertobatan sejati bukan hanya pengalaman emosional sesaat, melainkan perubahan arah hidup yang radikal. Yesus sendiri menyerukan, "Bertobatlah, sebab Kerajaan Sorga sudah dekat!" (Matius 4:17). Jika kita benar-benar bertobat, akan ada buah-buah yang terlihat dalam hidup kita, yang membuktikan keaslian pertobatan tersebut.</p>
+            <p>Apa saja buah pertobatan sejati?
+                <ul>
+                    <li><strong>Berbalik dari Dosa:</strong> Ini adalah aspek paling dasar. Pertobatan berarti meninggalkan kebiasaan dosa, gaya hidup dosa, dan sikap yang memberontak terhadap Allah. Ini bukan berarti kita tidak akan pernah berdosa lagi, tetapi ada perubahan dalam keinginan hati kita—kita sekarang membenci dosa dan ingin hidup kudus.</li>
+                    <li><strong>Keinginan untuk Menaati Allah:</strong> Seiring dengan berbalik dari dosa, muncul keinginan yang kuat untuk menaati perintah-perintah Allah dan menyenangkan-Nya. Kita mulai membaca Firman-Nya, berdoa, dan mencari kehendak-Nya dalam setiap aspek kehidupan. Ketaatan ini bukan lagi beban, melainkan ekspresi kasih kita kepada Allah.</li>
+                    <li><strong>Perbaikan Hubungan:</strong> Pertobatan seringkali juga melibatkan perbaikan hubungan dengan sesama. Jika kita telah menyakiti orang lain, pertobatan mendorong kita untuk meminta maaf dan sebisa mungkin memperbaiki kesalahan kita. Ini adalah bukti nyata bahwa kasih Allah sedang bekerja dalam diri kita.</li>
+                    <li><strong>Hidup yang Berbuah:</strong> Yohanes Pembaptis menyerukan, "Jadi hasilkanlah buah yang sesuai dengan pertobatan" (Matius 3:8). Buah-buah ini termasuk buah Roh Kudus (kasih, sukacita, damai sejahtera, dll.) dan perbuatan baik yang dilakukan untuk kemuliaan Allah. Kita menjadi alat di tangan Allah untuk memberkati orang lain dan menyebarkan kabar baik.</li>
+                    <li><strong>Pertumbuhan dalam Kekudusan:</strong> Pertobatan adalah titik awal perjalanan pengudusan seumur hidup. Kita terus-menerus bertumbuh dalam pengenalan akan Kristus, semakin menyerupai Dia dalam karakter dan tindakan. Ini adalah proses yang berkesinambungan, yang membutuhkan ketergantungan pada Roh Kudus dan Firman Allah.</li>
+                </ul>
+            </p>
+            <p>Penting untuk diingat bahwa buah-buah ini adalah hasil dari pertobatan, bukan syarat untuk pertobatan. Kita tidak perlu membersihkan diri sendiri sebelum datang kepada Yesus; justru kita datang kepada-Nya dalam keadaan kotor, dan Dia membersihkan kita. Namun, jika pertobatan kita tulus, buah-buah ini pasti akan muncul dan terus berkembang dalam hidup kita.</p>
+
+            <h4>Kesimpulan & Ajakan</h4>
+            <p>Panggilan untuk bertobat adalah panggilan yang universal dan mendesak. Ini adalah kunci untuk membuka pintu pengampunan ilahi dan mengalami kelegaan sejati yang hanya dapat diberikan oleh Tuhan. Tanpa pertobatan, tidak ada pengampunan; tanpa pengampunan, tidak ada hubungan dengan Allah dan tidak ada harapan akan kehidupan kekal.</p>
+            <p>Apakah Anda sudah bertobat? Apakah Anda sudah berbalik dari dosa Anda dan menyerahkan hidup Anda kepada Kristus? Jangan biarkan kebanggaan, ketakutan, atau keraguan menunda keputusan yang paling penting ini. Hari ini adalah hari keselamatan. Hari ini adalah hari kelegaan. Berbaliklah kepada Tuhan sekarang, akuilah dosa-dosa Anda, dan percayalah kepada Yesus Kristus sebagai Tuhan dan Juruselamat Anda. Dia setia dan adil untuk mengampuni segala dosa Anda dan membersihkan Anda dari segala kejahatan.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Khotbah 5: Kuasa Kebangkitan Kristus dan Harapan Kekal</h2>
+            <div class="image-container">
+                <svg width="150" height="150" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-labelledby="resurrectionTitle resurrectionDesc">
+                    <title id="resurrectionTitle">Matahari Terbit di Atas Salib Kosong</title>
+                    <desc id="resurrectionDesc">Sebuah ilustrasi matahari terbit yang cerah di atas salib kosong, melambangkan kebangkitan Kristus dan harapan kekal.</desc>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="var(--secondary-bg)"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" fill="var(--primary-bg)" opacity="0.1"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 5V19M5 12H19" stroke="var(--accent-light)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <path d="M12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12C4 7.58172 7.58172 4 12 4Z" fill="var(--accent-color)" opacity="0.3"/>
+                    <path d="M12 6C14.7614 6 17 8.23858 17 11C17 13.7614 14.7614 16 12 16C9.23858 16 7 13.7614 7 11C7 8.23858 9.23858 6 12 6Z" fill="var(--accent-light)"/>
+                    <path d="M12 11V16M9 14H15" stroke="var(--primary-bg)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="var(--accent-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 3C7.59 3 4 6.59 4 11C4 15.41 7.59 19 12 19C16.41 19 20 15.41 20 11C20 6.59 16.41 3 12 3Z" fill="var(--primary-bg)" opacity="0.7"/>
+                    <path d="M12 6V16M7 11H17" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="12" cy="12" r="8" stroke="var(--accent-color)" stroke-width="1.5" fill="none"/>
+                    <path d="M12 4L12 20M4 12L20 12" stroke="var(--accent-light)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <path d="M12 12L12 18M9 15H15" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h3>Ayat Kunci: 1 Korintus 15:3-4</h3>
+            <blockquote>
+                <p>"Sebab yang sangat penting telah kusampaikan kepadamu, yaitu apa yang telah kuterima sendiri, ialah bahwa Kristus telah mati karena dosa-dosa kita, sesuai dengan Kitab Suci, bahwa Ia telah dikuburkan, dan bahwa Ia telah dibangkitkan, pada hari yang ketiga, sesuai dengan Kitab Suci."</p>
+            </blockquote>
+
+            <h4>1. Kebangkitan Kristus: Fondasi Iman Kristen</h4>
+            <p>Jika ada satu peristiwa tunggal yang menjadi fondasi dan pusat dari seluruh iman Kristen, itu adalah kebangkitan Yesus Kristus dari antara orang mati. Tanpa kebangkitan, Injil tidak memiliki kuasa, iman kita sia-sia, dan kita tetap berada dalam dosa-dosa kita. Rasul Paulus sendiri dengan tegas menyatakan dalam 1 Korintus 15:14, "Tetapi andaikata Kristus tidak dibangkitkan, maka sia-sialah pemberitaan kami dan sia-sialah juga kepercayaan kamu." Ini bukan sekadar cerita indah, tetapi klaim historis yang memiliki implikasi kekal.</p>
+            <p>Apa bukti-bukti kebangkitan Kristus?
+                <ul>
+                    <li><strong>Kubur Kosong:</strong> Para murid dan bahkan musuh-musuh Yesus mengakui bahwa kuburan-Nya kosong pada hari ketiga. Para prajurit Romawi yang menjaga kubur gagal mencegah pencurian tubuh (Matius 28:11-15), meskipun mereka menghadapi hukuman mati jika gagal. Para wanita yang pertama datang ke kubur menemukan batu telah terguling dan kubur kosong (Matius 28:1-6). Jika tubuh-Nya dicuri, mengapa tidak pernah ditemukan? Jika pihak berwenang menyembunyikannya, mengapa mereka tidak menunjukkannya untuk membungkam para rasul?</li>
+                    <li><strong>Penampakan-penampakan:</strong> Yesus menampakkan diri berkali-kali kepada banyak orang setelah kebangkitan-Nya. Dia menampakkan diri kepada Maria Magdalena, kepada para murid di Emaus, kepada murid-murid-Nya yang berkumpul, kepada Tomas yang ragu, bahkan kepada lebih dari lima ratus saudara sekaligus (1 Korintus 15:5-7). Penampakan-penampakan ini tidak hanya dialami oleh satu atau dua orang, melainkan oleh banyak saksi, dalam berbagai setting, dan dalam waktu yang cukup lama (40 hari) sebelum kenaikan-Nya ke surga.</li>
+                    <li><strong>Transformasi Para Murid:</strong> Sebelum kebangkitan, para murid adalah sekelompok orang yang penakut, bersembunyi di balik pintu yang terkunci. Namun, setelah kebangkitan dan pencurahan Roh Kudus, mereka menjadi pemberani, berani memberitakan Injil bahkan di tengah penganiayaan dan ancaman kematian. Apa yang bisa menjelaskan transformasi radikal ini selain fakta bahwa mereka telah melihat Yesus yang bangkit?</li>
+                    <li><strong>Pertumbuhan Gereja Mula-mula:</strong> Gereja Kristen dimulai oleh sekelompok kecil orang di Yerusalem, yang berani mengklaim bahwa seorang tukang kayu dari Nazaret, yang disalibkan, telah bangkit dari kematian dan adalah Tuhan atas segala sesuatu. Pesan ini menyebar seperti api, mengubah kekaisaran, dan membentuk peradaban. Ini bukanlah pekerjaan manusia belaka, melainkan kuasa Allah yang bekerja melalui kebenaran Injil yang berpusat pada Kristus yang bangkit.</li>
+                </ul>
+            </p>
+            <p>Kebangkitan Kristus bukanlah mitos atau legenda; itu adalah peristiwa sejarah yang didukung oleh bukti-bukti yang kuat, mengubah jalannya sejarah manusia, dan menjadi batu penjuru iman kita.</p>
+
+            <h4>2. Implikasi Kebangkitan bagi Orang Percaya</h4>
+            <p>Jika kebangkitan Kristus adalah sebuah fakta, apa implikasinya bagi kita sebagai orang percaya? Implikasinya sangatlah mendalam dan mengubah hidup:</p>
+            <ul>
+                <li><strong>Pembenaran dari Dosa:</strong> Roma 4:25 mengatakan, "Yesus, yang telah diserahkan karena pelanggaran-pelanggaran kita dan dibangkitkan karena pembenaran kita." Kebangkitan Yesus adalah bukti bahwa kurban-Nya di kayu salib diterima oleh Allah. Jika Dia tidak bangkit, itu berarti Dia gagal, dan dosa-dosa kita tidak terbayar. Tetapi karena Dia bangkit, kita tahu bahwa kita telah dibenarkan, dinyatakan tidak bersalah di hadapan Allah.</li>
+                <li><strong>Kuasa atas Dosa dan Maut:</strong> Karena Kristus telah bangkit, Dia telah mengalahkan dosa dan maut. Ini berarti bahwa kuasa dosa tidak lagi memiliki cengkeraman atas hidup orang percaya. Roma 6:9-10 menyatakan, "Karena kita tahu, bahwa Kristus, sesudah Ia bangkit dari antara orang mati, tidak mati lagi: maut tidak berkuasa lagi atas Dia. Sebab kematian-Nya adalah kematian terhadap dosa, satu kali untuk selama-lamanya, dan kehidupan-Nya adalah kehidupan bagi Allah." Kita juga memiliki kuasa untuk hidup baru, bebas dari perbudakan dosa.</li>
+                <li><strong>Jaminan Hidup Kekal:</strong> Kebangkitan Kristus adalah jaminan bagi kebangkitan kita sendiri dan kehidupan kekal bersama-Nya. 1 Korintus 15:20-22 menegaskan, "Tetapi yang benar ialah, bahwa Kristus telah dibangkitkan dari antara orang mati, sebagai yang sulung dari orang-orang yang telah meninggal. Sebab sama seperti maut datang karena satu orang manusia, demikian juga kebangkitan orang mati datang karena satu orang manusia. Karena sama seperti semua orang mati dalam persekutuan dengan Adam, demikian pula semua orang akan dihidupkan kembali dalam persekutuan dengan Kristus." Karena Dia hidup, kita pun akan hidup. Kematian fisik tidak lagi menjadi akhir yang menakutkan, melainkan pintu gerbang menuju kekekalan.</li>
+                <li><strong>Pengharapan yang Hidup:</strong> 1 Petrus 1:3 mengatakan, "Terpujilah Allah dan Bapa Tuhan kita Yesus Kristus, yang karena rahmat-Nya yang besar telah melahirkan kita kembali oleh kebangkitan Yesus Kristus dari antara orang mati kepada suatu pengharapan yang hidup." Di dunia yang penuh keputusasaan, kita memiliki pengharapan yang hidup, yang tidak akan pernah pupus, karena didasarkan pada fakta kebangkitan Kristus. Pengharapan ini memberikan sukacita di tengah penderitaan dan kekuatan di tengah kelemahan.</li>
+                <li><strong>Kehadiran Roh Kudus:</strong> Setelah kebangkitan dan kenaikan-Nya, Yesus mencurahkan Roh Kudus kepada para pengikut-Nya. Roh Kudus adalah agen kuasa kebangkitan yang bekerja di dalam kita, memampukan kita untuk hidup benar, bersaksi tentang Kristus, dan berbuah bagi kemuliaan Allah. Dia adalah jaminan bahwa Allah ada di dalam kita dan bahwa kita adalah milik-Nya.</li>
+            </ul>
+            <p>Implikasi kebangkitan ini begitu luas sehingga menyentuh setiap aspek iman dan kehidupan kita. Ini mengubah cara pandang kita tentang penderitaan, kematian, dan masa depan. Ini memberi kita keberanian untuk menghadapi dunia dan untuk membagikan Injil tanpa rasa takut.</p>
+
+            <h4>3. Hidup dalam Kuasa Kebangkitan Sekarang</h4>
+            <p>Kebangkitan Kristus bukan hanya peristiwa masa lalu; kuasa-Nya tersedia bagi kita sekarang. Bagaimana kita dapat hidup dalam kuasa kebangkitan ini setiap hari?</p>
+            <ul>
+                <li><strong>Berjalan dalam Hidup Baru:</strong> Roma 6:4 menyerukan, "supaya, sama seperti Kristus telah dibangkitkan dari antara orang mati oleh kemuliaan Bapa, demikian juga kita akan hidup dalam hidup yang baru." Ini berarti menanggalkan cara hidup lama yang dikuasai dosa dan mengenakan cara hidup baru yang dicirikan oleh ketaatan kepada Kristus. Ini adalah pilihan harian untuk hidup sesuai dengan identitas baru kita di dalam Dia.</li>
+                <li><strong>Mengalami Kemenangan atas Dosa:</strong> Melalui kuasa Roh Kudus, kita dapat mengalami kemenangan atas kebiasaan dosa yang mengikat kita. Kebangkitan Yesus adalah jaminan bahwa kita tidak perlu lagi menjadi budak dosa. Filipi 4:13 mengatakan, "Segala perkara dapat kutanggung di dalam Dia yang memberi kekuatan kepadaku."</li>
+                <li><strong>Melayani dengan Semangat:</strong> Karena kita memiliki jaminan kebangkitan dan kehidupan kekal, kita memiliki motivasi yang kuat untuk melayani Tuhan dengan segenap hati, tanpa putus asa. 1 Korintus 15:58 menyatakan, "Karena itu, saudara-saudaraku yang kekasih, berdirilah teguh, jangan goyah, dan giatlah selalu dalam pekerjaan Tuhan! Sebab kamu tahu, bahwa dalam persekutuan dengan Tuhan jerih payahmu tidak sia-sia."</li>
+                <li><strong>Membagikan Harapan:</strong> Kita memiliki kabar baik tentang Kristus yang bangkit, kabar yang sangat dibutuhkan oleh dunia yang putus asa. Kuasa kebangkitan memampukan kita untuk berani membagikan Injil, mengetahui bahwa kita tidak menawarkan filosofi manusia, melainkan kebenaran yang hidup dan berkuasa.</li>
+                <li><strong>Berharap pada Kedatangan Kedua:</strong> Kuasa kebangkitan juga menunjuk pada kedatangan Yesus Kristus yang kedua kali, ketika Dia akan datang kembali untuk menjemput gereja-Nya dan mendirikan Kerajaan-Nya yang kekal. Ini adalah puncak dari semua harapan kita, dan memberikan kita tujuan dan orientasi di tengah kehidupan ini.</li>
+            </ul>
+            <p>Hidup dalam kuasa kebangkitan berarti hidup dengan keyakinan yang teguh bahwa Allah yang membangkitkan Yesus dari kematian juga sanggup mengerjakan hal-hal yang tidak mungkin dalam hidup kita. Ini berarti menghadapi tantangan dengan iman, penderitaan dengan pengharapan, dan kematian tanpa rasa takut.</p>
+
+            <h4>Kesimpulan & Ajakan</h4>
+            <p>Kebangkitan Yesus Kristus adalah kebenaran yang paling mulia dan paling fundamental dalam iman Kristen. Itu adalah jaminan pengampunan kita, kemenangan kita atas dosa dan maut, dan kepastian hidup kekal kita. Tanpa kebangkitan, tidak ada Injil yang benar; dengan kebangkitan, segalanya mungkin.</p>
+            <p>Apakah Anda telah menaruh iman Anda pada Kristus yang bangkit? Apakah Anda telah menerima Dia sebagai Tuhan dan Juruselamat Anda? Jika belum, hari ini adalah kesempatan Anda untuk melakukannya. Akui dosa-dosa Anda, percaya bahwa Yesus mati untuk Anda dan bangkit dari kematian, dan undang Dia masuk ke dalam hidup Anda. Dengan demikian, Anda akan menerima karunia hidup kekal dan akan dapat hidup setiap hari dalam kuasa kebangkitan-Nya yang mengubah hidup.</p>
+            <p>Jangan biarkan keraguan atau keengganan merampas Anda dari harapan yang mulia ini. Raihlah kebenaran tentang Kristus yang bangkit, dan biarkan kuasa-Nya mengubah hidup Anda dari sekarang hingga kekekalan.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Kabar Baik untuk Semua. Semua hak dilindungi undang-undang.</p>
+        <p>Dirancang dengan kerinduan untuk membagikan kasih Kristus.</p>
+    </footer>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/renungan-rumah-tangga-advent">Renungan Rumah Tangga Advent</a></li>
+<li><a href="/khotbah-lukas-13-6-9">Khotbah Lukas 13 6 9</a></li>
+<li><a href="/khotbah-air-hidup">Khotbah Air Hidup</a></li>
+<li><a href="/bacaan-dan-renungan-katolik-hari-ini-2022">Bacaan Dan Renungan Katolik Hari Ini 2022</a></li>
+<li><a href="/mazmur-84">Mazmur 84</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

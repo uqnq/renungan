@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah Tentang Memberi: Berkat dan Hati yang Mulia</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset & General Styling */
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Cool, bright colors */
+            --color-bg-light: hsl(210, 80%, 98%); /* Very light blue */
+            --color-text-dark: hsl(210, 15%, 25%); /* Dark gray-blue for readability */
+            --color-heading-dark: hsl(210, 70%, 30%); /* Dark blue for headings */
+            --color-accent-light: hsl(210, 50%, 75%); /* Medium light blue for accents */
+            --color-accent-dark: hsl(210, 60%, 45%); /* Deeper blue for links/highlights */
+            --color-border: hsl(210, 20%, 90%); /* Light gray-blue for subtle borders */
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            color: var(--color-text-dark);
+            background-color: var(--color-bg-light);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding: 20px; /* Base padding */
+        }
+
+        /* Container for article content */
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #ffffff; /* White background for content area */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            border: 1px solid var(--color-border);
+        }
+
+        /* Header Styling */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.8rem;
+            color: var(--color-heading-dark);
+            margin-bottom: 15px;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        /* Article Content Styling */
+        article h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 2.2rem;
+            color: var(--color-heading-dark);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--color-accent-light);
+            padding-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        article h3 {
+            font-family: 'Merriweather', serif;
+            font-size: 1.7rem;
+            color: var(--color-accent-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            line-height: 1.4;
+        }
+
+        article h4 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.3rem;
+            color: var(--color-text-dark);
+            margin-top: 25px;
+            margin-bottom: 10px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+
+        article p {
+            margin-bottom: 1.2em;
+            text-align: justify;
+            hyphens: auto; /* For better text flow in justified paragraphs */
+        }
+
+        article ul, article ol {
+            margin-left: 25px;
+            margin-bottom: 1.5em;
+        }
+
+        article ul li, article ol li {
+            margin-bottom: 0.7em;
+            text-align: justify;
+        }
+
+        article strong {
+            font-weight: 700;
+            color: var(--color-accent-dark);
+        }
+
+        article em {
+            font-style: italic;
+            color: var(--color-text-dark);
+        }
+
+        a {
+            color: var(--color-accent-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--color-heading-dark);
+            text-decoration: underline;
+        }
+
+        /* SVG Image Styling */
+        .article-image {
+            display: block;
+            margin: 40px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 15px;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+        }
+
+        .article-image svg {
+            display: block;
+            margin: 0 auto;
+            max-width: 90%;
+            height: auto;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--color-border);
+            color: var(--color-text-dark);
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 20px;
+                border-radius: 8px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            article h2 {
+                font-size: 1.8rem;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+
+            article h3 {
+                font-size: 1.4rem;
+                margin-top: 25px;
+                margin-bottom: 10px;
+            }
+
+            article h4 {
+                font-size: 1.15rem;
+                margin-top: 20px;
+                margin-bottom: 8px;
+            }
+
+            article p, article ul li, article ol li {
+                font-size: 0.95rem;
+            }
+
+            .article-image {
+                margin: 30px auto;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+                border-radius: 6px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            article h2 {
+                font-size: 1.6rem;
+            }
+
+            article h3 {
+                font-size: 1.2rem;
+            }
+
+            article h4 {
+                font-size: 1rem;
+            }
+
+            article p, article ul li, article ol li {
+                font-size: 0.9rem;
+            }
+
+            .article-image {
+                margin: 25px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Khotbah Tentang Memberi: Membuka Pintu Berkat dan Kebahagiaan Sejati</h1>
+            <p>Sebuah Renungan Mendalam tentang Prinsip-prinsip Memberi yang Mengubahkan Hidup</p>
+        </header>
+
+        <main>
+            <article>
+                <p>Saudara-saudari yang terkasih dalam Tuhan, mari kita tundukkan kepala sejenak, merenungkan sebuah kebenaran yang seringkali kita dengar namun mungkin belum sepenuhnya kita pahami dan hayati: tentang memberi. Topik ini begitu fundamental, bukan hanya dalam konteks spiritual, tetapi juga dalam membentuk karakter, menciptakan komunitas yang lebih baik, dan membuka pintu berkat yang tak terhingga. Memberi bukanlah sekadar kewajiban agama atau anjuran moral belaka; ia adalah sebuah prinsip ilahi yang tertanam dalam inti ciptaan, sebuah ekspresi kasih yang paling murni, dan sebuah jalan menuju kehidupan yang penuh makna dan kelimpahan sejati.</p>
+
+                <p>Dalam dunia yang seringkali menuntut kita untuk mengumpulkan, menguasai, dan menimbun, ajaran tentang memberi seringkali terasa kontradiktif. Naluri alami kita mungkin mendorong kita untuk memegang erat apa yang kita miliki, takut kehilangan, atau khawatir tidak akan cukup. Namun, Alkitab, Firman Tuhan yang hidup, secara konsisten menantang perspektif ini. Sepanjang Kitab Suci, dari Perjanjian Lama hingga Perjanjian Baru, kita menemukan benang merah yang kuat tentang pentingnya memberi, bukan dari paksaan, melainkan dari hati yang rela, murah hati, dan penuh sukacita.</p>
+
+                <p>Mari kita bersama-sama menyelami kebenaran ini, mencari tahu apa yang Firman Tuhan katakan tentang memberi, mengapa kita harus memberi, dan bagaimana kita dapat mengembangkan hati seorang pemberi yang sejati. Kita akan melihat bahwa memberi adalah tindakan iman, ekspresi kasih, dan investasi abadi yang membawa berkat tidak hanya bagi penerima, tetapi juga bagi pemberi itu sendiri. Kita akan menemukan bahwa di dalam tindakan memberi, terletak rahasia kehidupan yang berkelimpahan, sukacita yang tak tergantikan, dan keintiman yang lebih dalam dengan Sang Pemberi Hidup.</p>
+
+                <div class="article-image">
+                    <svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="image1-title image1-desc">
+                        <title id="image1-title">Dua Tangan yang Memberi dan Menerima Hati</title>
+                        <desc id="image1-desc">Ilustrasi dua tangan, satu menyerahkan hati berwarna biru kepada tangan lain, melambangkan tindakan memberi dan menerima kasih atau berkat.</desc>
+                        <rect width="400" height="250" fill="hsl(210, 80%, 98%)"/>
+                        <path d="M150 150 C120 120, 100 100, 100 80 C100 60, 110 50, 130 50 C150 50, 160 60, 170 80 L200 110 L230 80 C240 60, 250 50, 270 50 C290 50, 300 60, 300 80 C300 100, 280 120, 250 150 L200 200 L150 150 Z" fill="hsl(210, 50%, 75%)" stroke="hsl(210, 60%, 45%)" stroke-width="3"/>
+                        <path d="M100 180 C110 170, 120 160, 130 150 C140 160, 150 170, 160 180 C150 190, 140 200, 130 210 C120 200, 110 190, 100 180 Z" fill="hsl(210, 60%, 45%)"/>
+                        <path d="M300 180 C290 170, 280 160, 270 150 C260 160, 250 170, 240 180 C250 190, 260 200, 270 210 C280 200, 290 190, 300 180 Z" fill="hsl(210, 60%, 45%)"/>
+                        <path d="M100 150 L100 200 Q150 220, 200 200 Q250 220, 300 200 L300 150 Q200 180, 100 150 Z" fill="hsl(210, 50%, 75%)"/>
+                        <path d="M100 150 Q150 120, 200 150 Q250 120, 300 150" stroke="hsl(210, 60%, 45%)" stroke-width="3" fill="none"/>
+                        <circle cx="200" cy="150" r="15" fill="#FFF" stroke="hsl(210, 60%, 45%)" stroke-width="2"/>
+                        <text x="200" y="155" font-family="Arial" font-size="16" fill="hsl(210, 60%, 45%)" text-anchor="middle" alignment-baseline="middle">♡</text>
+                    </svg>
+                </div>
+
+                <h2>I. Fondasi Alkitabiah Memberi: Mengapa Kita Memberi?</h2>
+
+                <p>Untuk memahami sepenuhnya makna memberi, kita harus kembali ke sumbernya: Firman Tuhan. Alkitab bukanlah sekadar kumpulan cerita kuno atau petuah moral; ia adalah panduan hidup yang diberikan oleh Sang Pencipta bagi umat manusia. Di dalamnya, prinsip memberi diajarkan dengan begitu jelas dan konsisten.</p>
+
+                <h3>A. Perjanjian Lama: Akar dari Prinsip Memberi</h3>
+                <p>Dalam Perjanjian Lama, kita menemukan beberapa konsep penting yang membentuk dasar dari praktik memberi:</p>
+                <ul>
+                    <li><strong>Perpuluhan (Maleakhi 3:10):</strong> Ini adalah salah satu bentuk memberi yang paling dikenal, di mana umat Tuhan diperintahkan untuk membawa sepersepuluh dari hasil pendapatan atau panen mereka ke Bait Allah. Perpuluhan bukan sekadar pajak, melainkan pengakuan bahwa segala sesuatu berasal dari Tuhan dan Dia adalah pemilik segalanya. Itu adalah tanda ketaatan dan kepercayaan bahwa Tuhan akan memelihara umat-Nya. <em>"Bawalah seluruh persembahan persepuluhan itu ke dalam rumah perbendaharaan, supaya ada makanan di rumah-Ku; ujilah Aku, firman TUHAN semesta alam, apakah Aku tidak membukakan bagimu tingkap-tingkap langit dan mencurahkan berkat kepadamu sampai berkelimpahan."</em> Ini adalah janji yang luar biasa, menantang kita untuk menguji kesetiaan Tuhan.</li>
+                    <li><strong>Persembahan Sukarela dan Persembahan Pertama (Imamat, Keluaran):</strong> Selain perpuluhan, ada juga berbagai persembahan sukarela untuk pembangunan Bait Allah, dukungan bagi para imam, atau sebagai ungkapan syukur. Konsep "buah sulung" atau "hasil pertama" juga sangat ditekankan, menunjukkan bahwa Tuhan harus menjadi prioritas utama dalam segala hal yang kita miliki. Memberi dari yang terbaik, bukan dari sisa, menunjukkan hati yang menghargai kebaikan Tuhan.</li>
+                    <li><strong>Belas Kasihan kepada yang Miskin dan Membutuhkan (Ulangan 15:7-8, Amsal 19:17):</strong> Perjanjian Lama juga sangat menekankan pentingnya memberi kepada orang miskin, janda, yatim piatu, dan orang asing. Ini bukan hanya tindakan amal, tetapi perintah ilahi yang mencerminkan karakter Allah sendiri yang penuh kasih dan keadilan. <em>"Barangsiapa menaruh belas kasihan kepada orang yang lemah, memiutangi TUHAN, yang akan membalas perbuatannya itu."</em> Memberi kepada yang membutuhkan adalah memiutangi Tuhan, dan Tuhan yang setia pasti akan membalasnya.</li>
+                    <li><strong>Tahun Yobel dan Tahun Sabat:</strong> Konsep-konsep ini menunjukkan prinsip memberi dan melepaskan. Setiap tujuh tahun, tanah harus diistirahatkan (sabat) dan setiap 50 tahun (yobel), hutang dihapuskan dan tanah dikembalikan kepada pemilik aslinya. Ini adalah model radikal tentang bagaimana Tuhan ingin keadilan sosial dan redistribusi kekayaan terjadi, memastikan bahwa tidak ada yang selamanya tertindas dan selalu ada kesempatan untuk memulai kembali. Ini mengajarkan bahwa kepemilikan kita bersifat sementara dan bahwa kita adalah pengelola, bukan pemilik mutlak.</li>
+                </ul>
+
+                <h3>B. Perjanjian Baru: Kasih dan Kemurahan Hati Kristus</h3>
+                <p>Kedatangan Yesus Kristus membawa pemahaman yang lebih dalam dan transformatif tentang memberi. Ia tidak membatalkan hukum Perjanjian Lama, melainkan menggenapinya dan mengangkatnya ke tingkat yang lebih tinggi, berakar pada kasih dan rahmat Allah.</p>
+                <ul>
+                    <li><strong>Yesus Kristus sebagai Teladan Pemberi Utama (Yohanes 3:16, Filipi 2:5-8):</strong> Inti dari Injil adalah kisah tentang pemberian terbesar: Allah begitu mengasihi dunia sehingga Ia memberikan Anak-Nya yang tunggal, Yesus Kristus, untuk menebus dosa-dosa kita. Yesus sendiri, meskipun Dia kaya, menjadi miskin demi kita, agar oleh kemiskinan-Nya kita menjadi kaya (2 Korintus 8:9). Kehidupan-Nya adalah teladan memberi tanpa pamrih—memberi waktu-Nya, tenaga-Nya, kasih-Nya, hikmat-Nya, dan akhirnya nyawa-Nya sendiri. <em>"Karena begitu besar kasih Allah akan dunia ini, sehingga Ia telah mengaruniakan Anak-Nya yang tunggal, supaya setiap orang yang percaya kepada-Nya tidak binasa, melainkan beroleh hidup yang kekal."</em></li>
+                    <li><strong>Ajaran Yesus tentang Memberi (Matius 6:2-4, Markus 12:41-44):</strong> Yesus mengajarkan bahwa memberi harus dilakukan dengan motivasi yang benar. Jangan memberi agar dilihat orang atau untuk mendapatkan pujian manusia, melainkan secara tersembunyi, di hadapan Allah yang melihat dalam kegelapan. Kisah janda miskin yang memberi dua peser mengajarkan kita bahwa nilai memberi tidak terletak pada jumlahnya, tetapi pada pengorbanan dan hati yang tulus di baliknya. Janda itu memberi "seluruh nafkahnya," menunjukkan iman dan kepercayaan penuh kepada Tuhan, meskipun itu berarti dia tidak memiliki apa-apa lagi.</li>
+                    <li><strong>Ajaran Paulus tentang Kemurahan Hati (2 Korintus 9:6-7, Kisah Para Rasul 20:35):</strong> Rasul Paulus juga banyak menulis tentang memberi, terutama dalam surat-suratnya kepada jemaat Korintus. Ia mendorong jemaat untuk memberi dengan sukacita, bukan dengan sedih hati atau karena paksaan, sebab Allah mengasihi orang yang memberi dengan sukacita. Ia menegaskan prinsip tabur tuai: <em>"Orang yang menabur sedikit, akan menuai sedikit juga, dan orang yang menabur banyak, akan menuai banyak juga."</em> Paulus juga mengulang perkataan Yesus yang terkenal, <em>"Adalah lebih berbahagia memberi dari pada menerima."</em> Ini adalah kunci untuk memahami bahwa berkat terbesar sebenarnya ada pada tindakan memberi itu sendiri.</li>
+                </ul>
+
+                <p>Dari fondasi alkitabiah ini, jelas bahwa memberi bukanlah sekadar tradisi, tetapi sebuah panggilan ilahi yang berakar pada karakter Allah yang murah hati dan mengasihi. Ini adalah respons kita terhadap kasih-Nya yang tak terbatas, sebuah cara untuk mencerminkan gambar-Nya dalam hidup kita.</p>
+
+                <h2>II. Makna Sejati Memberi: Melampaui Sekadar Material</h2>
+
+                <p>Seringkali, ketika kita berbicara tentang memberi, pikiran kita langsung tertuju pada uang atau harta benda. Namun, Alkitab memperluas definisi memberi jauh melampaui aspek material semata. Memberi adalah ekspresi dari seluruh keberadaan kita.</p>
+
+                <h3>A. Memberi Bukan Hanya Materi, tapi Juga Diri Kita</h3>
+                <ul>
+                    <li><strong>Memberi Waktu dan Tenaga:</strong> Di tengah kesibukan hidup modern, waktu adalah salah satu komoditas paling berharga. Memberikan waktu kita untuk melayani sesama, mengunjungi orang sakit, mendengarkan curahan hati, atau menjadi relawan di gereja atau komunitas adalah bentuk memberi yang sangat mulia dan seringkali lebih berharga dari uang. Demikian pula, tenaga kita—kemauan untuk membantu mengangkat, membersihkan, memperbaiki—adalah hadiah yang tak ternilai.</li>
+                    <li><strong>Memberi Talenta dan Karunia:</strong> Setiap kita dikaruniai dengan talenta dan karunia yang unik. Baik itu kemampuan berbicara, mengajar, menyanyi, bermain musik, merancang, memasak, atau mengorganisir—semua ini dapat digunakan untuk melayani dan memberkati orang lain. Menggunakan karunia kita untuk kemuliaan Tuhan dan kebaikan sesama adalah bentuk memberi yang mendalam.</li>
+                    <li><strong>Memberi Kasih, Perhatian, dan Empati:</strong> Dalam dunia yang seringkali terasa dingin dan terasing, memberi kehangatan kasih, perhatian yang tulus, dan telinga yang mendengarkan dapat menjadi pemberian terbesar. Sebuah senyum, sebuah sapaan hangat, sebuah pelukan, atau sekadar hadir untuk seseorang yang sedang berduka, semua ini adalah bentuk-bentuk memberi yang mengubahkan. Ini adalah memberi bagian dari hati dan jiwa kita.</li>
+                    <li><strong>Memberi Pengampunan:</strong> Salah satu bentuk memberi yang paling sulit namun paling membebaskan adalah memberi pengampunan kepada mereka yang telah menyakiti kita. Ini adalah pemberian yang membebaskan diri kita dari beban kepahitan dan dendam, sekaligus membuka jalan bagi rekonsiliasi dan kesembuhan, baik bagi kita maupun bagi orang yang bersangkutan.</li>
+                </ul>
+
+                <h3>B. Motivasi di Balik Memberi: Hati yang Mengasihi</h3>
+                <p>Nilai sejati dari memberi tidak terletak pada apa yang diberikan, tetapi pada hati di baliknya. Tuhan tidak melihat jumlah, tetapi motivasi.</p>
+                <ul>
+                    <li><strong>Manifestasi Kasih kepada Tuhan dan Sesama:</strong> Memberi adalah bukti nyata dari kasih kita kepada Allah. Ketika kita memberi, kita mengakui kedaulatan-Nya atas segala sesuatu dan mempercayakan diri kita sepenuhnya kepada-Nya. Memberi kepada sesama adalah cara kita mencintai sesama seperti diri sendiri, menaati perintah terbesar kedua.</li>
+                    <li><strong>Tindakan Iman:</strong> Memberi, terutama memberi dengan berkorban, adalah tindakan iman yang radikal. Ini berarti kita percaya bahwa Tuhan adalah penyedia kita, bahwa Dia akan memenuhi semua kebutuhan kita, dan bahwa kita dapat melepaskan apa yang kita miliki karena Dia lebih besar dari segala kekurangan kita. Ini menuntut kita untuk melampaui logika dan mempercayai janji-janji-Nya.</li>
+                    <li><strong>Meruntuhkan Keegoisan dan Materialisme:</strong> Memberi adalah obat penawar yang kuat untuk keegoisan dan cengkeraman materialisme. Ketika kita memberi, kita mengalihkan fokus dari "saya" menjadi "mereka," dari "apa yang bisa saya dapatkan" menjadi "apa yang bisa saya berikan." Ini membantu kita melihat harta benda sebagai alat untuk kebaikan, bukan sebagai tujuan akhir.</li>
+                    <li><strong>Menjadi Saluran Berkat:</strong> Tuhan adalah sumber segala berkat, dan Dia seringkali memilih untuk menggunakan kita sebagai saluran berkat-Nya bagi orang lain. Ketika kita memberi, kita berpartisipasi dalam pekerjaan ilahi-Nya untuk memelihara, memberkati, dan memulihkan dunia. Kita menjadi tangan dan kaki Kristus di bumi.</li>
+                </ul>
+
+                <p>Dengan demikian, memberi adalah tindakan holistik yang melibatkan seluruh diri kita, didorong oleh kasih, iman, dan kerinduan untuk menjadi seperti Kristus.</p>
+
+                <div class="article-image">
+                    <svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="image2-title image2-desc">
+                        <title id="image2-title">Keranjang Berlimpah dengan Buah dan Koin</title>
+                        <desc id="image2-desc">Sebuah keranjang anyaman yang melimpah dengan buah-buahan, sayuran, dan koin emas, melambangkan kelimpahan berkat dari memberi.</desc>
+                        <rect width="400" height="250" fill="hsl(210, 80%, 98%)"/>
+                        <path d="M100 150 L120 200 C130 220, 160 230, 200 230 C240 230, 270 220, 280 200 L300 150 L280 100 Q200 80, 120 100 Z" fill="hsl(30, 60%, 80%)" stroke="hsl(30, 50%, 60%)" stroke-width="3"/>
+                        <path d="M110 120 L130 170 C140 190, 170 200, 200 200 C230 200, 260 190, 270 170 L290 120 L270 80 Q200 60, 130 80 Z" fill="hsl(30, 70%, 70%)" stroke="hsl(30, 60%, 50%)" stroke-width="3"/>
+
+                        <!-- Fruits and Coins -->
+                        <circle cx="180" cy="90" r="15" fill="hsl(10, 70%, 60%)"/> <!-- Apple Red -->
+                        <circle cx="220" cy="95" r="12" fill="hsl(60, 80%, 60%)"/> <!-- Lemon Yellow -->
+                        <circle cx="150" cy="110" r="10" fill="hsl(120, 60%, 40%)"/> <!-- Grape Green -->
+                        <circle cx="250" cy="115" r="14" fill="hsl(300, 70%, 70%)"/> <!-- Plum Purple -->
+                        <ellipse cx="200" cy="70" rx="18" ry="12" fill="hsl(10, 70%, 60%)" transform="rotate(-15 200 70)"/>
+
+                        <!-- Coins -->
+                        <circle cx="170" cy="130" r="10" fill="gold" stroke="darkgoldenrod" stroke-width="1"/>
+                        <circle cx="230" cy="140" r="10" fill="gold" stroke="darkgoldenrod" stroke-width="1"/>
+                        <circle cx="200" cy="120" r="12" fill="gold" stroke="darkgoldenrod" stroke-width="1"/>
+
+                        <!-- Wheat stalks -->
+                        <path d="M130 70 L125 40 L135 45 L130 70 M270 70 L275 40 L265 45 L270 70" stroke="hsl(60, 50%, 50%)" stroke-width="2" fill="hsl(60, 80%, 70%)"/>
+                    </svg>
+                </div>
+
+                <h2>III. Berkat-Berkat Memberi: Lebih Banyak Menerima daripada Memberi</h2>
+
+                <p>Seringkali, orang ragu untuk memberi karena takut akan kekurangan. Namun, Firman Tuhan mengajarkan prinsip yang paradoks: bahwa dengan memberi, kita justru menerima lebih banyak. Berkat-berkat memberi datang dalam berbagai bentuk, melampaui apa yang dapat kita bayangkan.</p>
+
+                <h3>A. Berkat Rohani dan Karakter</h3>
+                <ul>
+                    <li><strong>Kedamaian dan Sukacita Batin:</strong> Memberi dengan sukacita menghasilkan kedamaian dan sukacita yang tidak dapat dibeli dengan uang. Ada kebahagiaan yang mendalam saat kita tahu bahwa kita telah menjadi saluran berkat bagi orang lain, meniru karakter Kristus. Ini adalah sukacita ilahi yang mengisi kekosongan jiwa.</li>
+                    <li><strong>Pertumbuhan Spiritual dan Kedewasaan:</strong> Tindakan memberi melatih kita untuk lebih percaya kepada Tuhan. Setiap kali kita melepaskan sesuatu, kita melatih otot iman kita, mengajarkan diri kita untuk bergantung sepenuhnya pada Pemeliharaan Ilahi. Ini mendorong kita untuk menjadi lebih rendah hati, kurang egois, dan lebih berbelas kasih.</li>
+                    <li><strong>Karakter Seperti Kristus:</strong> Yesus adalah teladan pemberi sejati. Dengan memberi, kita semakin dibentuk menjadi serupa dengan gambar-Nya. Kita belajar tentang kasih, pengorbanan, kemurahan hati, dan belas kasihan. Memberi membantu kita melepaskan cengkeraman duniawi dan memusatkan hati kita pada hal-hal yang kekal.</li>
+                    <li><strong>Menjadi Penyimpan Harta di Surga (Matius 6:19-21):</strong> Yesus mengajarkan bahwa daripada menimbun harta di bumi yang dapat rusak, kita seharusnya menimbun harta di surga. Memberi, terutama untuk pekerjaan Tuhan dan bagi yang membutuhkan, adalah investasi abadi yang hasilnya akan kita tuai di kekekalan. Harta kita ada di mana hati kita berada.</li>
+                </ul>
+
+                <h3>B. Berkat Sosial dan Komunitas</h3>
+                <ul>
+                    <li><strong>Membangun Komunitas yang Kuat:</strong> Ketika setiap orang memberi, baik waktu, talenta, maupun sumber daya, komunitas menjadi lebih kuat, saling mendukung, dan peduli. Ini menciptakan jaringan kasih di mana setiap orang merasa dihargai dan diperhatikan. Ini adalah dasar dari Gereja yang hidup dan berdampak.</li>
+                    <li><strong>Menolong yang Membutuhkan dan Mengurangi Penderitaan:</strong> Memberi secara langsung mengurangi penderitaan orang lain. Baik itu menyediakan makanan bagi yang lapar, pakaian bagi yang telanjang, tempat tinggal bagi yang tunawisma, atau pendidikan bagi yang kurang mampu—tindakan memberi kita memiliki dampak nyata dalam kehidupan individu dan masyarakat. Kita menjadi agen perubahan positif.</li>
+                    <li><strong>Menjadi Contoh dan Inspirasi:</strong> Kemurahan hati kita dapat menjadi inspirasi bagi orang lain. Ketika orang melihat kita memberi dengan sukacita dan tulus, itu dapat mendorong mereka untuk melakukan hal yang sama, menciptakan efek domino dari kebaikan. Kita menjadi terang di tengah kegelapan dunia.</li>
+                    <li><strong>Meningkatkan Keadilan Sosial:</strong> Memberi, terutama dalam skala yang lebih besar, dapat berkontribusi pada terciptanya keadilan sosial. Ini membantu menjembatani kesenjangan antara yang kaya dan miskin, memberikan kesempatan bagi mereka yang tertinggal, dan menantang struktur ketidakadilan yang ada.</li>
+                </ul>
+
+                <h3>C. Berkat Materi dan Keuangan (Konsep Ilahi)</h3>
+                <p>Ini adalah area yang seringkali disalahpahami. Alkitab mengajarkan bahwa Tuhan memberkati pemberi secara materi, tetapi ini bukan janji kekayaan instan atau 'teologi kemakmuran' yang dangkal.</p>
+                <ul>
+                    <li><strong>Hukum Tabur Tuai (2 Korintus 9:6):</strong> Prinsip ini sederhana: apa yang kita tabur, itulah yang akan kita tuai. Jika kita menabur dengan murah hati, kita akan menuai dengan berkelimpahan. Ini bukan hanya tentang uang, tetapi tentang prinsip umum ilahi tentang sebab dan akibat.</li>
+                    <li><strong>Tingkap-Tingkap Langit Terbuka (Maleakhi 3:10):</strong> Ini adalah salah satu janji paling kuat dalam Alkitab mengenai memberi, khususnya perpuluhan. Tuhan menantang kita untuk menguji-Nya, dan Dia berjanji untuk "membukakan tingkap-tingkap langit dan mencurahkan berkat kepadamu sampai berkelimpahan." Berkat ini bisa berupa kesehatan, pekerjaan, ide-ide baru, perlindungan dari bencana, atau kemampuan untuk mengelola keuangan dengan lebih bijak—bukan sekadar uang tunai. Intinya adalah kecukupan dan kemampuan untuk terus menjadi saluran berkat.</li>
+                    <li><strong>Tuhan Akan Memberikan Benih dan Memperbanyaknya (2 Korintus 9:10):</strong> Paulus menulis, <em>"Ia yang menyediakan benih bagi penabur, dan roti untuk dimakan, Ia juga yang akan menyediakan dan memperbanyak benihmu serta bertumbuh pesat hasil kebenaranmu."</em> Ini berarti Tuhan akan memberikan kita sarana untuk memberi (benih), dan kemudian akan melipatgandakan hasil dari pemberian kita, bukan hanya untuk kebutuhan kita sendiri, tetapi agar kita memiliki lebih banyak lagi untuk dibagikan.</li>
+                    <li><strong>Kecukupan dan Kebebasan dari Kekhawatiran (Matius 6:25-34):</strong> Yesus mengajarkan kita untuk tidak khawatir tentang apa yang akan kita makan atau pakai. Sebaliknya, carilah dahulu Kerajaan Allah dan kebenaran-Nya, dan semuanya akan ditambahkan kepada kita. Memberi adalah tindakan mempercayakan kebutuhan kita kepada Tuhan, yang pada gilirannya membawa kebebasan dari kekhawatiran dan jaminan akan kecukupan. Ini bukan tentang menjadi kaya, tetapi tentang tidak kekurangan.</li>
+                </ul>
+
+                <p>Penting untuk diingat bahwa berkat-berkat ini mungkin tidak selalu instan atau sesuai dengan harapan materi kita. Berkat Tuhan seringkali bekerja dalam cara yang misterius, membentuk karakter kita, menguatkan iman kita, dan memungkinkan kita untuk menjadi pemberi yang lebih efektif di masa depan. Fokus utama dari janji berkat materi adalah agar kita memiliki "lebih dari cukup" untuk terus memberi, bukan untuk menimbun bagi diri sendiri.</p>
+
+                <h2>IV. Jenis-Jenis Memberi: Berbagai Ekspresi Kemurahan Hati</h2>
+
+                <p>Setelah memahami fondasi dan berkatnya, mari kita telaah berbagai bentuk pemberian yang dapat kita lakukan. Mengerti ragamnya akan membantu kita menemukan cara-cara di mana kita dapat berpartisipasi dalam kebaikan Tuhan.</p>
+
+                <h3>A. Memberi dalam Konteks Keagamaan</h3>
+                <ul>
+                    <li><strong>Perpuluhan:</strong> Seperti yang telah dibahas, perpuluhan adalah sepuluh persen dari penghasilan kita yang kita kembalikan kepada Tuhan melalui gereja atau lembaga pelayanan yang sah. Ini adalah tindakan ketaatan dan pengakuan akan kedaulatan Tuhan atas keuangan kita. Ini mendukung operasional gereja, gaji para hamba Tuhan, dan berbagai program pelayanan.</li>
+                    <li><strong>Persembahan Sukarela/Persembahan Khusus:</strong> Ini adalah pemberian yang melampaui perpuluhan. Persembahan ini bisa untuk proyek-proyek khusus di gereja (misalnya, pembangunan gedung, misi, atau bantuan bencana), untuk mendukung pelayanan tertentu, atau sebagai ungkapan syukur pribadi yang mendalam. Persembahan ini seringkali didorong oleh dorongan roh kudus atau respons terhadap kebutuhan yang spesifik.</li>
+                    <li><strong>Persembahan Misi:</strong> Banyak gereja memiliki dana khusus untuk mendukung pekerjaan misi lokal maupun global. Memberi untuk misi adalah berinvestasi dalam penyebaran Injil dan membawa kabar baik kepada bangsa-bangsa yang belum mengenal Kristus. Ini adalah bentuk memberi yang memiliki dampak kekal.</li>
+                    <li><strong>Memberi untuk Kaum Lemah dan Terpinggirkan dalam Jemaat:</strong> Gereja memiliki tanggung jawab untuk memelihara jemaatnya, terutama yang paling rentan. Memberi secara langsung atau melalui dana diakonia gereja untuk membantu anggota jemaat yang sakit, janda, yatim piatu, atau mereka yang sedang menghadapi kesulitan finansial adalah bentuk kasih yang konkret.</li>
+                </ul>
+
+                <h3>B. Memberi dalam Kehidupan Sehari-hari</h3>
+                <ul>
+                    <li><strong>Sumbangan Amal kepada Organisasi Non-Profit:</strong> Selain memberi di gereja, kita juga dapat mendukung berbagai organisasi amal yang bekerja untuk kebaikan sosial, seperti panti asuhan, rumah sakit, organisasi lingkungan, atau lembaga pendidikan. Penting untuk memilih organisasi yang terpercaya dan sesuai dengan nilai-nilai kita.</li>
+                    <li><strong>Berbagi dengan Keluarga dan Teman:</strong> Kemurahan hati dimulai di rumah dan lingkaran terdekat kita. Membantu anggota keluarga atau teman yang membutuhkan, baik secara finansial, emosional, atau fisik, adalah bentuk memberi yang penting. Ini memperkuat ikatan dan menunjukkan kasih yang nyata.</li>
+                    <li><strong>Kebaikan Hati Harian (Random Acts of Kindness):</strong> Kadang-kadang, pemberian terbesar adalah tindakan kebaikan kecil yang tidak terduga—membayar kopi untuk orang asing, menahan pintu, membiarkan orang lain antre lebih dulu, memberikan pujian yang tulus, atau sekadar tersenyum. Tindakan-tindakan kecil ini dapat mencerahkan hari seseorang dan menciptakan gelombang positif.</li>
+                    <li><strong>Donor Darah/Organ:</strong> Memberikan darah atau, dalam kasus yang ekstrem, organ tubuh, adalah bentuk pemberian yang bisa menyelamatkan nyawa. Ini adalah pemberian yang sangat berani dan pengorbanan yang luar biasa, menunjukkan kasih yang tertinggi kepada sesama manusia.</li>
+                    <li><strong>Keterlibatan dalam Advokasi:</strong> Selain memberi materi, kita juga bisa memberi suara kita untuk memperjuangkan keadilan sosial, hak-hak asasi manusia, atau isu-isu lingkungan. Menggunakan platform dan pengaruh kita untuk kepentingan orang lain adalah bentuk memberi yang kuat.</li>
+                </ul>
+
+                <p>Semua bentuk pemberian ini, baik besar maupun kecil, materi maupun non-materi, adalah kesempatan bagi kita untuk mencerminkan karakter Tuhan dan menjadi berkat bagi dunia. Tuhan tidak membatasi kita pada satu bentuk pemberian saja, melainkan mengundang kita untuk bermurah hati dalam segala aspek hidup kita.</p>
+
+                <h2>V. Tantangan dalam Memberi dan Cara Mengatasinya</h2>
+
+                <p>Meskipun memberi adalah prinsip yang indah dan penuh berkat, tidak dapat dipungkiri bahwa ada banyak tantangan yang sering kita hadapi dalam perjalanan untuk mengembangkan hati yang murah hati. Mengidentifikasi tantangan-tantangan ini adalah langkah pertama untuk mengatasinya.</p>
+
+                <h3>A. Tantangan Umum dalam Memberi</h3>
+                <ul>
+                    <li><strong>Ketakutan Akan Kekurangan:</strong> Ini adalah tantangan terbesar bagi banyak orang. Kita takut jika kita memberi terlalu banyak, kita sendiri akan kekurangan. Kekhawatiran ini bisa jadi nyata, terutama di tengah ketidakpastian ekonomi. Namun, ini adalah area di mana iman kita diuji. Apakah kita percaya bahwa Tuhan adalah penyedia kita, atau kita bergantung pada kemampuan kita sendiri untuk mengamankan masa depan?</li>
+                    <li><strong>Materialisme dan Kecintaan pada Uang:</strong> Masyarakat kita mengajarkan kita untuk mencintai uang dan harta benda, menimbunnya sebanyak mungkin. Kecintaan pada uang adalah akar segala kejahatan (1 Timotius 6:10). Jika hati kita terikat pada harta duniawi, akan sangat sulit untuk melepaskannya.</li>
+                    <li><strong>Keraguan terhadap Penyaluran Dana:</strong> Banyak orang enggan memberi karena mereka tidak yakin bagaimana uang mereka akan digunakan. Apakah akan disalahgunakan? Apakah akan benar-benar sampai kepada yang membutuhkan? Ini adalah keprihatinan yang sah, dan penting bagi kita untuk memberi kepada lembaga atau organisasi yang transparan dan akuntabel.</li>
+                    <li><strong>Perbandingan dengan Orang Lain:</strong> Kita mungkin merasa terbebani jika membandingkan diri kita dengan orang lain yang tampaknya memberi lebih banyak atau lebih mewah. Ingatlah kisah janda miskin; Tuhan melihat hati dan pengorbanan, bukan jumlah.</li>
+                    <li><strong>Motif yang Salah:</strong> Memberi dengan tujuan untuk pamer, mencari pujian, atau mengharapkan imbalan tertentu bukanlah memberi dari hati yang tulus. Yesus mengecam motivasi seperti itu (Matius 6:2-4). Memberi seharusnya datang dari dorongan kasih, bukan kebanggaan diri.</li>
+                    <li><strong>Keterbatasan Sumber Daya:</strong> Ada saatnya kita memang benar-benar dalam kesulitan finansial atau memiliki waktu yang sangat terbatas. Dalam situasi seperti ini, Tuhan mengerti. Penting untuk memberi sesuai dengan kemampuan kita dan dengan bijak.</li>
+                </ul>
+
+                <h3>B. Mengembangkan Hati yang Murah Hati: Langkah Praktis</h3>
+                <p>Mengatasi tantangan-tantangan ini membutuhkan perubahan hati dan pikiran. Berikut adalah beberapa langkah praktis:</p>
+                <ol>
+                    <li><strong>Renungkan Kasih Karunia Tuhan:</strong> Mulailah dengan merenungkan seberapa banyak Tuhan telah memberi kepada kita—hidup, kasih, anugerah, pengampunan, keselamatan. Ketika kita menyadari kedalaman kasih-Nya, hati kita akan terdorong untuk memberi kembali sebagai bentuk syukur.</li>
+                    <li><strong>Berdoa untuk Hati yang Memberi:</strong> Minta kepada Tuhan untuk memberikan kita hati yang murah hati, mata yang melihat kebutuhan orang lain, dan kemauan untuk memberi tanpa pamrih. Doakan agar cengkeraman materialisme dilepaskan dari hidup kita.</li>
+                    <li><strong>Mulai dari Hal Kecil:</strong> Jangan menunggu sampai Anda memiliki banyak. Mulailah memberi dari apa yang Anda miliki, tidak peduli seberapa kecil. Kisah janda miskin mengajarkan kita bahwa pemberian kecil yang dilakukan dengan iman dan pengorbanan memiliki nilai yang besar di mata Tuhan.</li>
+                    <li><strong>Buat Anggaran untuk Memberi:</strong> Sisihkan sebagian dari penghasilan Anda secara teratur untuk memberi. Anggap ini sebagai pos yang sama pentingnya dengan sewa, makanan, atau transportasi. Dengan merencanakannya, memberi menjadi lebih mudah dan konsisten.</li>
+                    <li><strong>Lihat Kebutuhan di Sekitar Anda:</strong> Buka mata dan hati Anda terhadap kebutuhan orang-orang di sekitar Anda—di keluarga, gereja, komunitas, atau bahkan di dunia. Ketika kita melihat penderitaan dan kebutuhan, dorongan untuk membantu akan datang secara alami.</li>
+                    <li><strong>Fokus pada Sukacita Memberi, Bukan Jumlah:</strong> Bergeserlah fokus dari jumlah yang Anda berikan ke sukacita dan berkat yang Anda rasakan saat memberi. Ingatlah perkataan Yesus, <em>"Adalah lebih berbahagia memberi dari pada menerima."</em> Alami kebahagiaan itu.</li>
+                    <li><strong>Pilih Saluran yang Transparan dan Terpercaya:</strong> Jika Anda memiliki kekhawatiran tentang penyaluran dana, lakukan riset. Beri kepada gereja atau organisasi yang memiliki reputasi baik dan transparan dalam penggunaan dananya.</li>
+                    <li><strong>Biasakan Diri dengan Pengorbanan:</strong> Memberi yang sejati seringkali melibatkan pengorbanan. Itu berarti melepaskan sesuatu yang mungkin kita inginkan atau butuhkan demi orang lain. Pengorbanan ini membentuk karakter kita dan mendekatkan kita kepada Kristus.</li>
+                    <li><strong>Libatkan Keluarga dalam Memberi:</strong> Ajarkan anak-anak Anda tentang pentingnya memberi. Libatkan mereka dalam memilih organisasi amal atau proyek pelayanan. Ini akan menanamkan nilai-nilai kemurahan hati sejak dini.</li>
+                </ol>
+
+                <p>Proses menjadi seorang pemberi yang murah hati adalah sebuah perjalanan, bukan tujuan instan. Ini membutuhkan kesabaran, latihan, dan ketergantungan pada Roh Kudus untuk mengubah hati kita.</p>
+
+                <div class="article-image">
+                    <svg width="400" height="250" viewBox="0 0 400 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="image3-title image3-desc">
+                        <title id="image3-title">Pohon Tumbuh Subur dengan Akar dan Daun Melambangkan Berkat</title>
+                        <desc id="image3-desc">Ilustrasi pohon dengan akar yang kuat dan daun-daun hijau subur yang membentuk hati, melambangkan pertumbuhan, kehidupan, dan berkat yang berkesinambungan dari memberi.</desc>
+                        <rect width="400" height="250" fill="hsl(210, 80%, 98%)"/>
+                        <!-- Trunk -->
+                        <path d="M190 230 C180 180, 220 180, 210 230 L190 230 Z" fill="hsl(30, 40%, 60%)" stroke="hsl(30, 30%, 50%)" stroke-width="2"/>
+                        <!-- Roots -->
+                        <path d="M190 230 Q170 240, 150 220 Q160 210, 180 200" stroke="hsl(30, 30%, 50%)" stroke-width="2" fill="none"/>
+                        <path d="M210 230 Q230 240, 250 220 Q240 210, 220 200" stroke="hsl(30, 30%, 50%)" stroke-width="2" fill="none"/>
+                        <path d="M200 230 Q200 245, 180 235" stroke="hsl(30, 30%, 50%)" stroke-width="2" fill="none"/>
+
+                        <!-- Leaves forming a heart shape -->
+                        <path d="M200 180 C150 150, 100 100, 100 70 C100 40, 130 30, 160 30 C180 30, 190 40, 200 60 C210 40, 220 30, 240 30 C270 30, 300 40, 300 70 C300 100, 250 150, 200 180 Z" fill="hsl(120, 60%, 70%)" stroke="hsl(120, 50%, 50%)" stroke-width="3"/>
+                        <path d="M200 170 C160 140, 120 100, 120 75 C120 50, 140 40, 170 40 C185 40, 195 50, 200 70 C205 50, 215 40, 230 40 C260 40, 280 50, 280 75 C280 100, 240 140, 200 170 Z" fill="hsl(120, 50%, 60%)" stroke="hsl(120, 40%, 40%)" stroke-width="2"/>
+                        <path d="M200 160 L200 60" stroke="hsl(120, 40%, 40%)" stroke-width="2"/>
+                        <circle cx="200" cy="110" r="10" fill="hsl(210, 60%, 45%)"/>
+                    </svg>
+                </div>
+
+                <h2>VI. Kesimpulan: Hidup yang Diberkati Melalui Memberi</h2>
+
+                <p>Saudara-saudari yang terkasih, sepanjang khotbah ini, kita telah menyelami kebenaran-kebenaran mendalam tentang memberi. Kita telah melihat bahwa memberi bukanlah sekadar sebuah tindakan acak, melainkan sebuah prinsip ilahi yang telah ditenun ke dalam kain keberadaan kita dan diajarkan dengan begitu jelas dalam Firman Tuhan. Dari tuntutan perpuluhan dalam Perjanjian Lama hingga teladan kasih pengorbanan Yesus Kristus dalam Perjanjian Baru, pesan tentang memberi bergema dengan kekuatan yang abadi.</p>
+
+                <p>Kita telah memahami bahwa memberi melampaui aspek materi semata. Ia adalah tindakan yang melibatkan seluruh diri kita: waktu, talenta, tenaga, perhatian, empati, dan yang paling penting, hati kita. Motivasi di balik pemberian kita—kasih, iman, dan sukacita—adalah yang paling penting di mata Tuhan. Memberi adalah sebuah manifestasi konkret dari iman kita kepada Allah sebagai penyedia utama, dan kasih kita kepada sesama sebagai sesama ciptaan-Nya. Ini adalah tindakan yang meruntuhkan keegoisan dan materialisme, membuka ruang bagi Allah untuk bekerja melalui kita sebagai saluran berkat.</p>
+
+                <p>Kita juga telah mengeksplorasi berkat-berkat yang luar biasa dari memberi. Berkat-berkat ini bersifat holistik: rohani, sosial, dan bahkan materi. Secara rohani, memberi membawa kedamaian, sukacita, pertumbuhan karakter seperti Kristus, dan investasi di surga. Secara sosial, ia membangun komunitas yang kuat, menolong yang membutuhkan, dan menginspirasi orang lain. Secara materi, ia mengaktifkan hukum tabur tuai dan membuka tingkap-tingkap langit, memastikan kecukupan dan kemampuan untuk terus memberi, bukan hanya untuk menimbun kekayaan pribadi.</p>
+
+                <p>Namun, kita juga tidak mengabaikan tantangan-tantangan yang muncul dalam perjalanan memberi: ketakutan akan kekurangan, cengkeraman materialisme, keraguan, dan motivasi yang salah. Kita telah belajar bahwa untuk mengatasi tantangan ini, kita perlu merenungkan kasih karunia Tuhan, berdoa untuk hati yang murah hati, memulai dari hal kecil, membuat anggaran, dan secara aktif mencari kebutuhan di sekitar kita. Ini adalah perjalanan yang membutuhkan kesabaran, latihan, dan ketergantungan pada Roh Kudus untuk terus membentuk kita.</p>
+
+                <p>Akhirnya, marilah kita ingat perkataan Yesus yang mulia, <strong>"Adalah lebih berbahagia memberi dari pada menerima"</strong> (Kisah Para Rasul 20:35). Kebahagiaan sejati, kepuasan yang mendalam, dan kehidupan yang berkelimpahan tidak ditemukan dalam mengumpulkan, tetapi dalam memberi. Di dalam tindakan memberi, kita menemukan tujuan hidup yang lebih tinggi, merasakan kehadiran Tuhan dengan lebih nyata, dan menjadi bagian dari rencana ilahi-Nya untuk mengubah dunia.</p>
+
+                <p>Saya mengajak Anda semua, saudara-saudari terkasih, untuk memeriksa hati Anda hari ini. Apakah Anda telah menjadi pemberi yang murah hati? Apakah ada area dalam hidup Anda di mana Anda dapat memberi lebih banyak—bukan hanya uang, tetapi waktu, talenta, kasih, atau perhatian? Jangan biarkan ketakutan atau egoisme menahan Anda. Melangkahlah dalam iman, dan izinkan Tuhan untuk memakai Anda sebagai saluran berkat-Nya yang indah.</p>
+
+                <p>Marilah kita bersama-sama berkomitmen untuk menjadi umat yang memberi, yang mencerminkan kemurahan hati Bapa Surgawi kita, dan yang dengan demikian membuka pintu bagi berkat-berkat tak terhingga dalam hidup kita dan kehidupan orang-orang di sekitar kita. Mari kita hidup dalam sukacita memberi, dan biarkan hidup kita menjadi khotbah yang hidup tentang kemurahan hati Tuhan. Amin.</p>
+
+                <p>Kiranya Tuhan memberkati Anda dan memberikan hati yang penuh kemurahan hati, hari ini dan selamanya.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>&copy; Hak Cipta Dilindungi</p>
+        </footer>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/renungan-matius-21-1-11">Renungan Matius 21 1 11</a></li>
+<li><a href="/khotbah-sabat-siang">Khotbah Sabat Siang</a></li>
+<li><a href="/khotbah-katolik-singkat-1">Khotbah Katolik Singkat 1</a></li>
+<li><a href="/contoh-khotbah-kristen-singkat">Contoh Khotbah Kristen Singkat</a></li>
+<li><a href="/khotbah-matius-9-35-38">Khotbah Matius 9 35 38</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

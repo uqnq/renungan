@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah Ekspositori: Harapan Masa Depan dalam Kristus</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="description" content="Sebuah khotbah ekspositori mendalam yang membahas harapan Kristen tentang masa depan berdasarkan janji-janji Alkitab.">
+
+    <style>
+        /* Variabel Warna */
+        :root {
+            --primary-blue: #4A90E2; /* Biru cerah */
+            --secondary-green: #50E3C2; /* Hijau toska cerah */
+            --text-dark: #333333; /* Teks gelap */
+            --text-light: #666666; /* Teks sedang */
+            --background-light: #F8F8F8; /* Latar belakang sangat terang */
+            --background-white: #FFFFFF; /* Latar belakang putih */
+            --accent-yellow: #F5A623; /* Aksen kuning lembut */
+            --border-light: #E0E0E0; /* Garis tepi terang */
+            --shadow-light: rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+        }
+
+        /* Reset & Global */
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--background-light);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Kontainer Utama */
+        .container {
+            max-width: 850px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: var(--background-white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow-light);
+            box-sizing: border-box;
+            width: 100%; /* Memastikan lebar responsif */
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--border-light);
+        }
+
+        h1 {
+            font-family: 'Georgia', serif; /* Font serif untuk judul utama */
+            font-size: 2.8em;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            line-height: 1.2;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .subtitle {
+            font-size: 1.3em;
+            color: var(--text-light);
+            font-style: italic;
+            margin-top: -10px;
+        }
+
+        /* Judul Bagian (H2) */
+        h2 {
+            font-size: 2.1em;
+            color: var(--secondary-green);
+            margin-top: 50px;
+            margin-bottom: 25px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-yellow);
+            border-radius: 2px;
+        }
+
+        /* Judul Sub-bagian (H3) */
+        h3 {
+            font-size: 1.6em;
+            color: var(--primary-blue);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--primary-blue);
+            padding-left: 15px;
+            line-height: 1.4;
+        }
+
+        /* Paragraf */
+        p {
+            margin-bottom: 1.2em;
+            font-size: 1.1em;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* Kutipan */
+        blockquote {
+            background-color: #F0F8FF; /* Biru sangat muda */
+            border-left: 5px solid var(--primary-blue);
+            margin: 2em 0;
+            padding: 1.5em 2em;
+            font-style: italic;
+            color: var(--text-light);
+            font-size: 1.05em;
+            line-height: 1.6;
+            border-radius: 0 8px 8px 0;
+        }
+        blockquote p {
+            margin: 0;
+            text-align: left;
+        }
+        blockquote cite {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: var(--text-dark);
+            font-style: normal;
+        }
+
+        /* Daftar (Ul, Ol) */
+        ul, ol {
+            margin: 1.5em 0;
+            padding-left: 25px;
+            font-size: 1.1em;
+            color: var(--text-dark);
+        }
+        ul li, ol li {
+            margin-bottom: 0.8em;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: disc;
+        }
+        ol {
+            list-style-type: decimal;
+        }
+
+        /* Gambar SVG */
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .image-container svg {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px var(--shadow-light);
+            transition: transform 0.3s ease;
+        }
+        .image-container svg:hover {
+            transform: translateY(-5px);
+        }
+        .image-caption {
+            display: block;
+            margin-top: 15px;
+            font-size: 0.95em;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-light);
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 2.2em;
+            }
+            .subtitle {
+                font-size: 1.1em;
+            }
+            h2 {
+                font-size: 1.8em;
+                margin-top: 40px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 30px;
+                margin-bottom: 15px;
+                padding-left: 10px;
+            }
+            p {
+                font-size: 1em;
+                line-height: 1.7;
+            }
+            blockquote {
+                margin: 1.5em 0;
+                padding: 1em 1.5em;
+                font-size: 1em;
+            }
+            ul, ol {
+                font-size: 1em;
+                padding-left: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .subtitle {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.6em;
+                margin-top: 30px;
+                margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 1.2em;
+                margin-top: 25px;
+                margin-bottom: 10px;
+                padding-left: 8px;
+            }
+            p {
+                font-size: 0.95em;
+                line-height: 1.6;
+            }
+            blockquote {
+                margin: 1em 0;
+                padding: 0.8em 1em;
+                font-size: 0.95em;
+            }
+            ul, ol {
+                font-size: 0.95em;
+                padding-left: 15px;
+            }
+            .image-container svg {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mengarungi Masa Depan dengan Harapan Kristus</h1>
+            <p class="subtitle">Sebuah Khotbah Ekspositori tentang Janji dan Rencana Allah</p>
+        </header>
+
+        <main>
+            <section id="pengantar">
+                <h2>Pengantar: Mengapa Masa Depan Penting?</h2>
+                <p>Setiap manusia, secara alami, memiliki pertanyaan tentang masa depan. Kita bertanya-tanya tentang apa yang akan terjadi besok, minggu depan, tahun depan, bahkan puluhan tahun ke depan. Kita mencemaskan ketidakpastian, merencanakan karier, membangun keluarga, dan menabung untuk hari tua. Kecemasan akan masa depan bisa menjadi beban yang berat, menciptakan kekhawatiran yang tak berujung, dan merampas kedamaian di masa kini.</p>
+                <p>Sebagai orang percaya, kita tidak kebal terhadap pertanyaan-pertanyaan ini. Kita juga menghadapi tantangan hidup, ketidakpastian ekonomi, perubahan sosial, dan bahkan pertanyaan tentang akhir zaman. Namun, Alkitab memberikan kita perspektif yang unik dan harapan yang teguh yang tidak dapat ditemukan di tempat lain. Dalam khotbah ekspositori ini, kita akan bersama-sama menggali kebenaran Firman Tuhan mengenai masa depan, bukan sekadar untuk memuaskan rasa ingin tahu kita tentang "apa yang akan terjadi," tetapi untuk memperkuat iman kita, memberikan kedamaian di tengah ketidakpastian, dan memotivasi kita untuk hidup dengan tujuan ilahi di masa kini.</p>
+                <p>Pendekatan ekspositori berarti kita akan membiarkan Alkitab berbicara sendiri. Kita tidak akan memaksakan ide-ide kita ke dalam teks, melainkan kita akan berusaha memahami apa yang Allah ingin sampaikan kepada kita melalui Firman-Nya yang diilhamkan. Kita akan melihat bahwa masa depan bukanlah misteri yang menakutkan, melainkan sebuah narasi yang telah Allah singkapkan secara progresif, berpusat pada pribadi dan karya Yesus Kristus. Ini adalah masa depan yang penuh harapan, janji, dan kepastian, karena Allah yang memegang kendali atas segalanya.</p>
+                <p>Melalui pengajaran ini, harapan kita adalah agar setiap kita dimampukan untuk melihat masa depan bukan dengan mata ketakutan dunia, melainkan dengan mata iman yang memandang kepada Kristus. Kita akan belajar bagaimana janji-janji Allah tentang masa depan harus membentuk cara kita hidup, melayani, dan bersaksi di masa sekarang.</p>
+            </section>
+
+            <section id="bagian1">
+                <h2>Bagian 1: Fondasi Kebenaran: Allah Penguasa Masa Depan</h2>
+                <h3>Apa Itu Khotbah Ekspositori dan Mengapa Penting untuk Memahami Masa Depan?</h3>
+                <p>Khotbah ekspositori adalah jenis khotbah yang bertujuan untuk menjelaskan, menafsirkan, dan menerapkan makna suatu bagian Alkitab secara rinci. Tujuannya adalah untuk mengungkap pesan asli dari teks tersebut, sesuai dengan konteks sejarah, budaya, dan teologisnya, sehingga jemaat dapat memahami apa yang Allah katakan melalui Firman-Nya.</p>
+                <p>Mengapa pendekatan ini sangat penting ketika membahas masa depan? Karena masa depan adalah subjek yang sering kali diwarnai oleh spekulasi, ketakutan, dan penafsiran yang tidak berdasar. Dengan pendekatan ekspositori, kita dipaksa untuk kembali kepada sumber kebenaran yang tak tergoyahkan: Alkitab. Kita tidak boleh membangun teologi masa depan kita di atas berita utama koran, teori konspirasi, atau ramalan manusia, tetapi di atas apa yang Allah sendiri telah nyatakan dalam Kitab Suci-Nya. Allah tidak ingin kita hidup dalam kegelapan mengenai masa depan, tetapi Dia telah memberikan cukup informasi agar kita hidup dengan pengharapan dan bijaksana.</p>
+
+                <h3>Kedaulatan Allah atas Waktu dan Masa Depan</h3>
+                <p>Pilar utama dalam memahami masa depan adalah pengakuan akan kedaulatan Allah yang mutlak. Allah bukan hanya pencipta segala sesuatu, tetapi juga pemelihara dan pengarah sejarah. Dia adalah Alfa dan Omega, Yang Awal dan Yang Akhir. Ini berarti bahwa masa depan tidak berjalan secara acak, melainkan di bawah kendali penuh dan sempurna dari Allah yang Mahakuasa.</p>
+                <blockquote>
+                    <p>"Ingatlah hal-hal yang dahulu dari sejak purbakala, bahwa Akulah Allah dan tidak ada yang lain, Akulah Allah dan tidak ada yang seperti Aku, yang memberitahukan dari mulanya hal yang kemudian dan dari zaman purbakala apa yang belum terlaksana; yang berkata: Keputusan-Ku akan sampai, dan segala kehendak-Ku akan Kulaksanakan."</p>
+                    <cite>Yesaya 46:9-10</cite>
+                </blockquote>
+                <p>Ayat ini dengan jelas menyatakan bahwa Allah adalah satu-satunya yang dapat memberitahukan "dari mulanya hal yang kemudian." Dia tidak hanya mengetahui masa depan; Dia juga menentukannya. Rencana-Nya tidak dapat digagalkan. Ini memberikan kita dasar yang kuat untuk percaya bahwa segala sesuatu yang akan terjadi telah berada dalam pengetahuan dan kendali Allah. Baik itu pandemi global, krisis ekonomi, atau bahkan peristiwa-peristiwa eskatologis besar, tidak ada satu pun yang mengejutkan Allah.</p>
+                <p>Kedaulatan ini juga berarti bahwa rencana Allah bagi umat-Nya adalah rencana kebaikan, bukan kejahatan. Meskipun kita mungkin menghadapi penderitaan dan kesulitan di sepanjang jalan, tujuan akhir Allah adalah kemuliaan dan kebaikan bagi mereka yang mengasihi Dia.</p>
+                <blockquote>
+                    <p>"Sebab Aku ini mengetahui rancangan-rancangan apa yang ada pada-Ku mengenai kamu, demikianlah firman TUHAN, yaitu rancangan damai sejahtera dan bukan rancangan kecelakaan, untuk memberikan kepadamu hari depan yang penuh harapan."</p>
+                    <cite>Yeremia 29:11</cite>
+                </blockquote>
+                <p>Meskipun ayat ini pada awalnya diberikan kepada Israel dalam pembuangan, prinsipnya tetap relevan bagi kita: Allah memiliki rencana bagi umat-Nya, rencana yang berujung pada harapan. Ini bukan berarti hidup akan selalu mudah, tetapi bahwa di balik setiap tantangan, ada tangan Allah yang bekerja untuk tujuan-Nya yang baik. Pemahaman ini menghilangkan banyak ketakutan akan masa depan, karena kita tahu bahwa kita berada dalam tangan Allah yang penuh kasih dan Mahakuasa.</p>
+                <p>Pemahaman akan kedaulatan Allah ini juga mendorong kita untuk tidak panik atau menjadi apatis. Sebaliknya, hal itu harus memotivasi kita untuk mencari kehendak-Nya dan hidup sesuai dengan tujuan-Nya, karena kita tahu bahwa setiap upaya kita yang tulus untuk memuliakan Dia tidak akan sia-sia. Masa depan kita terjamin bukan karena kemampuan kita merencanakan, tetapi karena kesetiaan Allah dalam menggenapi janji-janji-Nya.</p>
+            </section>
+
+            <section id="bagian2">
+                <h2>Bagian 2: Janji-Janji Ilahi tentang Masa Depan</h2>
+                <p>Setelah meletakkan fondasi kedaulatan Allah, mari kita sekarang menjelajahi beberapa janji spesifik Alkitab mengenai masa depan. Janji-janji ini bukan sekadar nubuat abstrak, tetapi adalah jaminan nyata yang membentuk harapan dan pandangan hidup kita.</p>
+
+                <h3>1. Kedatangan Kristus Kedua (Parousia)</h3>
+                <p>Salah satu janji paling sentral tentang masa depan adalah kedatangan Yesus Kristus yang kedua kali. Ini adalah peristiwa puncak dari sejarah penebusan dan titik fokus dari semua harapan Kristen.</p>
+                <h4>1 Tesalonika 4:13-18: Perjumpaan di Awan-awan</h4>
+                <blockquote>
+                    <p>"Selanjutnya kami tidak mau, saudara-saudara, bahwa kamu tidak mengetahui tentang mereka yang meninggal, supaya kamu jangan berdukacita seperti orang-orang lain yang tidak mempunyai pengharapan. Karena jikalau kita percaya, bahwa Yesus telah mati dan telah bangkit, maka kita percaya juga bahwa mereka yang telah meninggal dalam Yesus akan dikumpulkan Allah bersama-sama dengan Dia. Ini kami katakan kepadamu dengan firman Tuhan: kita yang hidup, yang masih tinggal sampai kedatangan Tuhan, sekali-kali tidak akan mendahului mereka yang telah meninggal. Sebab pada waktu tanda diberi, yaitu pada waktu penghulu malaikat berseru dan sangkakala Allah berbunyi, maka Tuhan sendiri akan turun dari sorga dan mereka yang mati dalam Kristus akan lebih dahulu bangkit; sesudah itu, kita yang hidup, yang masih tinggal, akan diangkat bersama-sama dengan mereka dalam awan menyongsong Tuhan di angkasa. Demikianlah kita akan selama-lamanya bersama-sama dengan Tuhan. Karena itu hiburkanlah seorang akan yang lain dengan perkataan-perkataan ini."</p>
+                    <cite>1 Tesalonika 4:13-18</cite>
+                </blockquote>
+                <p>Paulus menuliskan ayat-ayat ini untuk menghibur jemaat Tesalonika yang berdukacita atas orang-orang yang telah meninggal. Ia menjelaskan bahwa kematian dalam Kristus bukanlah akhir, melainkan gerbang menuju kehidupan kekal dan perjumpaan dengan Tuhan. Pada saat kedatangan-Nya, Kristus akan turun dari surga, orang-orang percaya yang telah meninggal akan bangkit terlebih dahulu dengan tubuh yang mulia, dan kemudian orang-orang percaya yang masih hidup akan diangkat untuk menyongsong Dia di awan-awan. Ini adalah janji tentang reuni yang mulia dan persekutuan kekal dengan Tuhan. Hal ini memberikan penghiburan besar bagi kita yang ditinggalkan dan jaminan masa depan bagi kita semua.</p>
+
+                <h4>Matius 24-25: Tanda-tanda dan Persiapan</h4>
+                <p>Dalam Injil Matius, Yesus sendiri memberikan pengajaran ekstensif tentang kedatangan-Nya yang kedua. Dia berbicara tentang berbagai tanda yang akan mendahului kedatangan-Nya, seperti peperangan, kelaparan, gempa bumi, penganiayaan terhadap orang percaya, dan penyebaran Injil ke seluruh dunia. Namun, Dia juga menekankan bahwa "tentang hari dan saat itu tidak seorang pun yang tahu, malaikat-malaikat di sorga tidak, dan Anak pun tidak, hanya Bapa sendiri" (Matius 24:36).</p>
+                <p>Fokus utama pengajaran Yesus bukanlah pada kronologi yang tepat atau tanggal yang spesifik, melainkan pada seruan untuk persiapan dan kewaspadaan. Perumpamaan tentang sepuluh gadis (Matius 25:1-13) mengajarkan kita untuk selalu siap dengan "minyak" iman dan kekudusan. Perumpamaan tentang talenta (Matius 25:14-30) menekankan pentingnya menggunakan karunia dan sumber daya kita untuk melayani Tuhan sementara kita menunggu kedatangan-Nya. Ini mengingatkan kita bahwa masa depan yang pasti ini harus memotivasi kita untuk hidup bertanggung jawab di masa kini.</p>
+                <blockquote>
+                    <p>"Jikalau Aku pergi ke situ menyiapkan tempat bagimu, Aku akan datang kembali dan membawa kamu ke tempat-Ku, supaya di tempat di mana Aku berada, kamu pun berada."</p>
+                    <cite>Yohanes 14:3</cite>
+                </blockquote>
+                <p>Janji Yesus ini adalah penegasan pribadi kepada murid-murid-Nya dan kepada kita semua. Dia akan datang kembali untuk menjemput kita ke tempat di mana Dia berada, yaitu di hadapan Bapa. Ini adalah janji tentang persatuan kekal dengan Kristus, puncak dari penebusan-Nya.</p>
+
+                <h3>2. Penghakiman yang Adil</h3>
+                <p>Masa depan juga mencakup realitas penghakiman yang adil. Ini mungkin terdengar menakutkan bagi sebagian orang, tetapi bagi orang percaya, ini adalah bagian dari keadilan Allah yang menjamin bahwa pada akhirnya, kebenaran akan menang dan setiap perbuatan akan dipertanggungjawabkan.</p>
+                <h4>Ibrani 9:27: Sekali Mati, Sesudah Itu Dihakimi</h4>
+                <blockquote>
+                    <p>"Dan sama seperti manusia ditetapkan untuk mati hanya satu kali saja, dan sesudah itu dihakimi,"</p>
+                    <cite>Ibrani 9:27</cite>
+                </blockquote>
+                <p>Ayat ini adalah pengingat akan dua kepastian fundamental dalam kehidupan manusia: kematian dan penghakiman. Tidak ada seorang pun yang dapat menghindarinya. Ini adalah realitas yang harus kita hadapi dan pertimbangkan. Bagi mereka yang tidak percaya kepada Kristus, ini adalah penghakiman atas dosa-dosa mereka. Namun, bagi orang percaya, penghakiman ini memiliki arti yang berbeda.</p>
+
+                <h4>2 Korintus 5:10: Takhta Pengadilan Kristus (Bema Seat)</h4>
+                <blockquote>
+                    <p>"Sebab kita semua harus menghadap takhta pengadilan Kristus, supaya setiap orang memperoleh apa yang patut diterimanya, sesuai dengan yang dilakukannya dalam hidupnya ini, baik ataupun jahat."</p>
+                    <cite>2 Korintus 5:10</cite>
+                </blockquote>
+                <p>Ayat ini sering kali disalahpahami sebagai penghakiman untuk menentukan apakah seseorang akan masuk surga atau neraka. Namun, dalam konteks Alkitab, "takhta pengadilan Kristus" (Yunani: <i>bema</i>) bagi orang percaya adalah tempat di mana pelayanan dan kesetiaan kita kepada Kristus akan dievaluasi, bukan untuk penebusan dosa (karena itu sudah diselesaikan di kayu salib), tetapi untuk menerima upah atau mahkota. Ini adalah penghakiman atas pekerjaan kita, bukan atas status keselamatan kita. Ini harus mendorong kita untuk hidup dengan kesetiaan dan motivasi yang murni dalam melayani Tuhan, karena setiap tindakan kita memiliki dampak kekal.</p>
+
+                <h4>Wahyu 20:11-15: Takhta Putih Besar</h4>
+                <blockquote>
+                    <p>"Lalu aku melihat suatu takhta putih yang besar dan Dia, yang duduk di atasnya. Dari hadapan-Nya lenyaplah bumi dan langit dan tidak ditemukan lagi tempatnya. Dan aku melihat orang-orang mati, besar dan kecil, berdiri di hadapan takhta itu. Lalu dibuka semua kitab. Dan dibuka juga sebuah kitab lain, yaitu kitab kehidupan. Dan orang-orang mati dihakimi menurut perbuatan mereka, berdasarkan apa yang ada tertulis di dalam kitab-kitab itu. Maka laut menyerahkan orang-orang mati yang ada di dalamnya, dan maut dan kerajaan maut menyerahkan orang-orang mati yang ada di dalamnya, dan mereka dihakimi masing-masing menurut perbuatannya. Lalu maut dan kerajaan maut itu dilemparkanlah ke dalam lautan api. Itulah kematian kedua: lautan api. Dan setiap orang yang tidak ditemukan namanya tertulis di dalam kitab kehidupan itu, ia dilemparkan ke dalam lautan api itu."</p>
+                    <cite>Wahyu 20:11-15</cite>
+                </blockquote>
+                <p>Ini adalah deskripsi penghakiman terakhir bagi semua orang yang tidak percaya. Mereka akan dihakimi berdasarkan perbuatan mereka, dan karena tidak ada yang sempurna di mata Allah, mereka tidak akan ditemukan namanya tertulis dalam Kitab Kehidupan dan akan dilemparkan ke dalam lautan api. Ini adalah peringatan yang tegas akan realitas kekal bagi mereka yang menolak Kristus, dan harus mendorong kita untuk memberitakan Injil dengan urgensi dan kasih.</p>
+
+                <h3>3. Langit Baru dan Bumi Baru</h3>
+                <p>Setelah penghakiman dan kehancuran alam semesta yang lama, Allah menjanjikan penciptaan yang baru, yaitu langit baru dan bumi baru. Ini adalah puncak dari rencana penebusan-Nya.</p>
+                <h4>Wahyu 21-22: Yerusalem Baru, Tidak Ada Air Mata</h4>
+                <blockquote>
+                    <p>"Lalu aku melihat langit yang baru dan bumi yang baru, sebab langit yang pertama dan bumi yang pertama telah berlalu, dan laut pun tidak ada lagi. Dan aku melihat kota yang kudus, Yerusalem yang baru, turun dari sorga, dari Allah, yang berhias bagaikan pengantin perempuan yang didandani untuk suaminya. Lalu aku mendengar suara yang nyaring dari takhta itu berkata: 'Lihatlah, kemah Allah ada di tengah-tengah manusia dan Ia akan diam bersama-sama dengan mereka. Mereka akan menjadi umat-Nya dan Ia akan menjadi Allah mereka. Dan Ia akan menghapus segala air mata dari mata mereka, dan maut tidak akan ada lagi; tidak akan ada lagi perkabungan, atau ratap tangis, atau dukacita, sebab segala sesuatu yang lama itu telah berlalu.'"</p>
+                    <cite>Wahyu 21:1-4</cite>
+                </blockquote>
+                <p>Visi ini adalah gambaran paling indah tentang masa depan kekal bagi orang percaya. Ini adalah pemulihan sempurna dari segala sesuatu yang telah rusak oleh dosa. Di langit baru dan bumi baru, Allah akan berdiam bersama manusia dalam persekutuan yang sempurna. Tidak akan ada lagi penderitaan, kematian, kesedihan, atau air mata. Segala dosa dan dampaknya akan dihapus. Ini adalah tempat di mana keadilan, kebenaran, dan sukacita akan memerintah selama-lamanya. Gambaran tentang Yerusalem Baru, dengan gerbang-gerbang mutiara dan jalan-jalan emas, melambangkan kemuliaan dan kekudusan tempat tinggal kita yang kekal.</p>
+
+                <h4>2 Petrus 3:13: Di Mana Kebenaran Diam</h4>
+                <blockquote>
+                    <p>"Tetapi sesuai dengan janji-Nya, kita menanti-nantikan langit yang baru dan bumi yang baru, di mana terdapat kebenaran."</p>
+                    <cite>2 Petrus 3:13</cite>
+                </blockquote>
+                <p>Petrus menegaskan kembali janji Allah tentang penciptaan yang baru, dengan menekankan karakteristik utamanya: "di mana terdapat kebenaran." Di dunia yang sekarang ini, kita terus bergumul dengan ketidakadilan, korupsi, dan kejahatan. Tetapi di langit baru dan bumi baru, kebenaran akan menjadi norma. Tidak ada lagi kompromi dengan dosa, tidak ada lagi penindasan, tidak ada lagi kebohongan. Hanya kebenaran Allah yang akan berlaku. Ini adalah janji akan lingkungan yang sempurna secara moral dan spiritual, tempat yang benar-benar adil dan kudus.</p>
+
+                <h3>4. Kemuliaan Orang Percaya</h3>
+                <p>Bagian dari masa depan yang mulia adalah transformasi dan kemuliaan bagi orang percaya sendiri.</p>
+                <h4>Roma 8:18-25: Penderitaan Sekarang vs. Kemuliaan yang Akan Dinyatakan</h4>
+                <blockquote>
+                    <p>"Sebab aku yakin, bahwa penderitaan zaman sekarang ini tidak dapat dibandingkan dengan kemuliaan yang akan dinyatakan kepada kita. Sebab dengan sangat rindu seluruh makhluk menantikan penyataan anak-anak Allah. Karena seluruh makhluk telah ditaklukkan kepada kesia-siaan, bukan oleh kehendaknya sendiri, tetapi oleh kehendak Dia, yang telah menaklukkannya, tetapi dalam pengharapan, karena makhluk itu sendiri juga akan dibebaskan dari perbudakan kebinasaan dan masuk ke dalam kemerdekaan kemuliaan anak-anak Allah. Sebab kita tahu, bahwa sampai sekarang segala makhluk sama-sama mengeluh dan sama-sama merasa sakit bersalin. Dan bukan hanya mereka saja, tetapi kita yang telah menerima karunia sulung Roh, kita juga mengeluh dalam hati kita sambil menantikan pengangkatan sebagai anak, yaitu pembebasan tubuh kita. Sebab kita diselamatkan dalam pengharapan. Tetapi pengharapan yang dilihat, bukanlah pengharapan lagi; sebab bagaimana orang masih mengharapkan apa yang dilihatnya? Tetapi jika kita mengharapkan apa yang tidak kita lihat, kita menantinya dengan tekun."</p>
+                    <cite>Roma 8:18-25</cite>
+                </blockquote>
+                <p>Paulus dengan lugas menyatakan bahwa penderitaan apa pun yang kita alami di dunia ini tidak sebanding dengan kemuliaan yang menunggu kita. Seluruh ciptaan, yang telah rusak oleh dosa, menantikan pemulihan yang akan datang bersama dengan penyataan kemuliaan anak-anak Allah. Kita sendiri, meskipun telah menerima Roh Kudus, masih bergumul dengan tubuh yang fana dan keberdosaan. Namun, kita menantikan "pembebasan tubuh kita" —yaitu kebangkitan dan transformasi tubuh kita menjadi tubuh yang mulia, serupa dengan tubuh Kristus yang bangkit. Ini adalah janji tentang restorasi total, baik bagi kita secara individu maupun bagi seluruh ciptaan.</p>
+
+                <h4>1 Korintus 15: Tubuh Kebangkitan</h4>
+                <p>Dalam pasal yang luar biasa ini, Paulus membahas secara mendalam tentang kebangkitan orang mati dan sifat tubuh kebangkitan kita. Dia menjelaskan bahwa tubuh kita yang sekarang adalah tubuh duniawi, rentan terhadap penyakit, kelemahan, dan kematian. Namun, ketika kita bangkit, kita akan menerima tubuh yang bersifat rohani, mulia, kekal, dan tidak dapat binasa.</p>
+                <blockquote>
+                    <p>"Yang ditaburkan dalam kebinasaan, dibangkitkan dalam ketidakbinasaan. Yang ditaburkan dalam kehinaan, dibangkitkan dalam kemuliaan. Yang ditaburkan dalam kelemahan, dibangkitkan dalam kekuatan. Yang ditaburkan tubuh alamiah, dibangkitkan tubuh rohaniah."</p>
+                    <cite>1 Korintus 15:42-44</cite>
+                </blockquote>
+                <p>Ini adalah janji yang luar biasa. Kita tidak akan menjadi roh tanpa tubuh; kita akan memiliki tubuh yang sempurna, sesuai untuk kehidupan kekal di hadirat Allah. Tubuh ini tidak akan lagi merasakan sakit, penyakit, atau kelemahan. Ini akan menjadi tubuh yang mulia, mencerminkan kemuliaan Kristus. Hal ini memberikan penghiburan dan harapan yang besar bagi kita yang bergumul dengan keterbatasan tubuh kita saat ini.</p>
+                <div class="image-container">
+                    <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgTitle svgDesc">
+                        <title id="svgTitle">Jalan menuju masa depan dengan salib</title>
+                        <desc id="svgDesc">Ilustrasi jalan berkelok-kelok menuju cakrawala yang terang dengan salib di tengahnya, melambangkan perjalanan iman menuju harapan kekal.</desc>
+                        <rect x="0" y="0" width="200" height="150" fill="var(--background-light)"/>
+                        
+                        <!-- Path/Road -->
+                        <path d="M0 150 C 40 120, 160 120, 200 150 L 200 100 C 160 70, 40 70, 0 100 Z" fill="#BBBBBB"/>
+                        <path d="M0 150 C 40 125, 160 125, 200 150 L 200 130 C 160 105, 40 105, 0 130 Z" fill="#CCCCCC"/>
+                        
+                        <!-- Horizon / Light -->
+                        <circle cx="100" cy="50" r="40" fill="var(--accent-yellow)"/>
+                        <circle cx="100" cy="50" r="30" fill="var(--secondary-green)" opacity="0.6"/>
+                        <path d="M50 50 L150 50 L100 10 L50 50 Z" fill="var(--secondary-green)" opacity="0.4"/> <!-- Light rays -->
+
+                        <!-- Cross -->
+                        <rect x="95" y="40" width="10" height="40" fill="var(--primary-blue)"/>
+                        <rect x="80" y="55" width="40" height="10" fill="var(--primary-blue)"/>
+                        
+                        <!-- Gradient sky effect -->
+                        <defs>
+                            <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#AEC6F0;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#D6E8FF;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <rect x="0" y="0" width="200" height="100" fill="url(#skyGradient)"/>
+                        
+                        <!-- Ground elements -->
+                        <circle cx="20" cy="110" r="5" fill="#88BB88"/>
+                        <circle cx="180" cy="120" r="6" fill="#88BB88"/>
+                        <path d="M25 105 L30 110 L20 115 Z" fill="#77AA77"/>
+                        <path d="M175 115 L180 120 L170 125 Z" fill="#77AA77"/>
+                    </svg>
+                    <span class="image-caption">Jalan Iman Menuju Masa Depan dalam Terang Kristus</span>
+                </div>
+            </section>
+
+            <section id="bagian3">
+                <h2>Bagian 3: Hidup dalam Terang Masa Depan</h2>
+                <p>Memahami janji-janji Allah tentang masa depan tidak dimaksudkan hanya untuk mengisi kepala kita dengan informasi, melainkan untuk mengubah hati dan cara hidup kita di masa kini. Bagaimana seharusnya harapan akan masa depan ini membentuk kehidupan kita?</p>
+
+                <h3>1. Harapan yang Teguh di Tengah Penderitaan</h3>
+                <p>Pengetahuan tentang masa depan yang mulia memberikan kita harapan yang teguh, bahkan di tengah penderitaan dan kesulitan hidup.</p>
+                <h4>Ibrani 6:19: Harapan sebagai Sauh Jiwa</h4>
+                <blockquote>
+                    <p>"Pengharapan itu adalah sauh yang kuat dan aman bagi jiwa kita, yang telah dilabuhkan sampai ke belakang tabir,"</p>
+                    <cite>Ibrani 6:19</cite>
+                </blockquote>
+                <p>Dalam badai kehidupan, harapan akan masa depan yang dijamin Kristus berfungsi sebagai sauh yang menahan jiwa kita agar tidak terombang-ambing. Sama seperti sauh yang menjaga kapal tetap stabil di tengah gelombang, harapan kita yang berdasar pada janji Allah menjaga iman dan ketenangan batin kita. Harapan ini bukan sekadar keinginan, melainkan keyakinan yang pasti, karena ia berlabuh pada dasar yang tak tergoyahkan: kesetiaan Allah sendiri dan janji-Nya yang telah terpenuhi di dalam Kristus.</p>
+                <h4>Roma 5:1-5: Penderitaan Menghasilkan Ketekunan dan Harapan</h4>
+                <blockquote>
+                    <p>"Sebab itu, kita yang dibenarkan karena iman, kita hidup dalam damai sejahtera dengan Allah oleh karena Tuhan kita, Yesus Kristus. Oleh Dia kita juga beroleh jalan masuk oleh iman kepada kasih karunia ini. Di dalam kasih karunia ini kita berdiri dan kita bermegah dalam pengharapan akan menerima kemuliaan Allah. Dan bukan hanya itu saja! Kita malah bermegah juga dalam kesengsaraan kita, karena kita tahu, bahwa kesengsaraan itu menimbulkan ketekunan, dan ketekunan menimbulkan tahan uji dan tahan uji menimbulkan pengharapan. Dan pengharapan tidak mengecewakan, karena kasih Allah telah dicurahkan di dalam hati kita oleh Roh Kudus yang telah dikaruniakan kepada kita."</p>
+                    <cite>Roma 5:1-5</cite>
+                </blockquote>
+                <p>Penderitaan tidak membatalkan janji Allah; sebaliknya, penderitaan menjadi alat yang Allah gunakan untuk memurnikan kita dan memperdalam karakter kita. Dalam prosesnya, penderitaan menghasilkan ketekunan, ketekunan menghasilkan tahan uji (karakter yang teruji), dan karakter yang teruji menghasilkan pengharapan yang tidak mengecewakan. Mengapa tidak mengecewakan? Karena pengharapan kita didasarkan pada kasih Allah yang telah dicurahkan dalam hati kita melalui Roh Kudus. Dengan demikian, penderitaan menjadi jembatan menuju pengharapan yang lebih besar, bukan penghalang.</p>
+
+                <h3>2. Kesabaran dan Ketekunan dalam Menjalani Hidup</h3>
+                <p>Pengetahuan tentang masa depan mendorong kita untuk hidup dengan kesabaran dan ketekunan, mengetahui bahwa jerih lelah kita di dalam Tuhan tidak akan sia-sia.</p>
+                <h4>Yakobus 1:2-4: Ujian Iman Menghasilkan Ketekunan</h4>
+                <blockquote>
+                    <p>"Saudara-saudaraku, anggaplah sebagai suatu kebahagiaan, apabila kamu jatuh ke dalam berbagai-bagai pencobaan, sebab kamu tahu, bahwa ujian terhadap imanmu itu menghasilkan ketekunan. Dan biarkanlah ketekunan itu memperoleh buah yang matang, supaya kamu menjadi sempurna dan utuh, tidak kekurangan suatu apa pun."</p>
+                    <cite>Yakobus 1:2-4</cite>
+                </blockquote>
+                <p>Seperti halnya emas dimurnikan melalui api, iman kita dimurnikan melalui ujian. Ujian dan pencobaan, yang sering kali tidak menyenangkan, memiliki tujuan ilahi: untuk menghasilkan ketekunan dan kematangan rohani. Dengan perspektif kekal, kita dapat menghadapi kesulitan bukan dengan keputusasaan, tetapi dengan sukacita, mengetahui bahwa Allah sedang membentuk kita menjadi serupa dengan Kristus dan mempersiapkan kita untuk kemuliaan yang akan datang.</p>
+                <h4>Roma 8:28: Segala Sesuatu Bekerja Sama untuk Kebaikan</h4>
+                <blockquote>
+                    <p>"Kita tahu sekarang, bahwa Allah turut bekerja dalam segala sesuatu untuk mendatangkan kebaikan bagi mereka yang mengasihi Dia, yaitu bagi mereka yang terpanggil sesuai dengan rencana Allah."</p>
+                    <cite>Roma 8:28</cite>
+                </blockquote>
+                <p>Ayat ini adalah janji fundamental yang memberikan kedamaian di tengah ketidakpastian. Tidak ada pengalaman, baik suka maupun duka, yang luput dari kendali Allah. Dia mampu mengambil setiap pecahan dan menyatukannya menjadi sesuatu yang indah, untuk kebaikan kita dan kemuliaan-Nya. Ini berarti bahwa bahkan kesalahan kita, kegagalan kita, dan penderitaan yang tak terduga dapat Allah gunakan sebagai bagian dari rencana-Nya yang sempurna untuk membawa kita pada tujuan akhir-Nya. Ini adalah jaminan bahwa masa depan kita aman di tangan-Nya, meskipun jalan menuju ke sana mungkin tidak selalu mulus.</p>
+
+                <h3>3. Kekudusan dan Kesaksian</h3>
+                <p>Harapan akan masa depan yang kekal di hadirat Allah harus memotivasi kita untuk hidup kudus dan menjadi saksi Kristus di dunia ini.</p>
+                <h4>1 Yohanes 3:2-3: Menyucikan Diri</h4>
+                <blockquote>
+                    <p>"Saudara-saudaraku yang kekasih, sekarang kita adalah anak-anak Allah, tetapi belum nyata apa keadaan kita kelak; akan tetapi kita tahu, bahwa apabila Kristus menyatakan diri-Nya, kita akan menjadi sama seperti Dia, sebab kita akan melihat Dia dalam keadaan-Nya yang sebenarnya. Setiap orang yang menaruh pengharapan itu kepada-Nya, menyucikan diri sama seperti Kristus yang adalah suci."</p>
+                    <cite>1 Yohanes 3:2-3</cite>
+                </blockquote>
+                <p>Kita tahu bahwa ketika Kristus datang kembali, kita akan diubah menjadi serupa dengan Dia dalam kemuliaan. Pengetahuan ini tidak boleh membuat kita pasif, tetapi sebaliknya harus memacu kita untuk hidup kudus sekarang. Harapan akan menjadi seperti Kristus di masa depan mendorong kita untuk "menyucikan diri" di masa kini. Ini adalah motivasi yang kuat untuk melawan dosa, mengejar kebenaran, dan hidup sesuai dengan standar kekudusan Allah, karena kita tahu siapa yang akan kita temui dan menjadi siapa kita nanti.</p>
+                <h4>Matius 28:19-20: Amanat Agung</h4>
+                <blockquote>
+                    <p>"Karena itu pergilah, jadikanlah semua bangsa murid-Ku dan baptislah mereka dalam nama Bapa dan Anak dan Roh Kudus, dan ajarlah mereka melakukan segala sesuatu yang telah Kuperintahkan kepadamu. Dan ketahuilah, Aku menyertai kamu senantiasa sampai kepada akhir zaman."</p>
+                    <cite>Matius 28:19-20</cite>
+                </blockquote>
+                <p>Masa depan yang pasti, terutama janji kedatangan Kristus kembali, harus mendorong kita untuk taat pada Amanat Agung. Jika kita percaya pada realitas kekal surga dan neraka, dan pada kebenaran Injil yang menyelamatkan, maka kita tidak bisa diam. Kita memiliki tanggung jawab untuk membagikan berita baik ini kepada mereka yang belum mendengar, agar mereka juga memiliki harapan yang sama. Janji "Aku menyertai kamu senantiasa sampai kepada akhir zaman" adalah penegasan bahwa kita tidak sendiri dalam misi ini; Kristus sendiri yang akan memperlengkapi dan menyertai kita.</p>
+
+                <h3>4. Melayani dan Memberi dengan Semangat</h3>
+                <p>Masa depan juga harus memotivasi kita untuk melayani sesama dan memberi dengan murah hati, karena kita tahu bahwa investasi kita di dalam Kerajaan Allah memiliki nilai kekal.</p>
+                <h4>Matius 25:31-46: Penghakiman Domba dan Kambing</h4>
+                <blockquote>
+                    <p>"Kemudian Raja itu akan berkata kepada mereka yang di sebelah kanan-Nya: Mari, hai kamu yang diberkati Bapa-Ku, terimalah Kerajaan yang telah disediakan bagimu sejak dunia dijadikan. Sebab ketika Aku lapar, kamu memberi Aku makan; ketika Aku haus, kamu memberi Aku minum; ketika Aku seorang asing, kamu memberi Aku tumpangan; ketika Aku telanjang, kamu memberi Aku pakaian; ketika Aku sakit, kamu melawat Aku; ketika Aku di dalam penjara, kamu mengunjungi Aku. Lalu orang-orang benar itu akan menjawab Dia, katanya: Tuhan, bilamanakah kami melihat Engkau lapar, dan kami memberi Engkau makan, atau haus, dan kami memberi Engkau minum? Bilamanakah kami melihat Engkau sebagai orang asing, dan kami memberi Engkau tumpangan, atau telanjang, dan kami memberi Engkau pakaian? Bilamanakah kami melihat Engkau sakit atau dalam penjara, dan kami mengunjungi Engkau? Dan Raja itu akan menjawab mereka: Aku berkata kepadamu, sesungguhnya segala sesuatu yang kamu lakukan untuk salah seorang dari saudara-Ku yang paling hina ini, kamu telah melakukannya untuk Aku."</p>
+                    <cite>Matius 25:34-40</cite>
+                </blockquote>
+                <p>Perumpamaan tentang domba dan kambing ini menunjukkan bahwa cara kita memperlakukan "saudara-saudara Kristus yang paling hina" adalah cerminan dari iman kita yang sejati. Pelayanan kasih kepada sesama, terutama kepada mereka yang membutuhkan, adalah bukti nyata dari iman yang hidup dan ketaatan kepada Kristus. Ini bukan dasar keselamatan, melainkan buah dari keselamatan itu sendiri. Pemahaman tentang penghakiman yang akan datang mendorong kita untuk hidup dengan hati yang penuh kasih dan pelayanan yang tulus, mengetahui bahwa Kristus melihat setiap tindakan kebaikan yang kita lakukan.</p>
+                <h4>1 Korintus 15:58: Jerih Lelah yang Tidak Sia-sia</h4>
+                <blockquote>
+                    <p>"Karena itu, saudara-saudaraku yang kekasih, berdirilah teguh, jangan goyah, dan giatlah selalu dalam pekerjaan Tuhan! Sebab kamu tahu, bahwa dalam persekutuan dengan Tuhan jerih lelahmu tidak sia-sia."</p>
+                    <cite>1 Korintus 15:58</cite>
+                </blockquote>
+                <p>Ayat ini adalah dorongan yang kuat. Di tengah semua janji kebangkitan dan kemenangan atas kematian yang dibahas di pasal ini, Paulus menyimpulkan dengan seruan untuk terus berkarya. Kita bisa "giat selalu dalam pekerjaan Tuhan" karena kita tahu pasti bahwa "jerih lelahmu tidak sia-sia." Setiap upaya, setiap pengorbanan, setiap tetes keringat yang kita curahkan untuk Kerajaan Allah memiliki nilai kekal dan akan dihargai. Pengetahuan ini memberikan motivasi yang tak terbatas untuk bertekun dalam pelayanan, bahkan ketika kita tidak melihat hasilnya secara langsung.</p>
+
+                <h3>5. Penyembahan dan Syukur</h3>
+                <p>Merenungkan masa depan yang mulia akan secara alami mengarah pada penyembahan dan syukur yang mendalam kepada Allah.</p>
+                <h4>Filipi 4:6-7: Jangan Kuatir, Nyatakan dengan Syukur</h4>
+                <blockquote>
+                    <p>"Janganlah hendaknya kamu kuatir tentang apa pun juga, tetapi nyatakanlah dalam segala hal keinginanmu kepada Allah dalam doa dan permohonan dengan ucapan syukur. Damai sejahtera Allah, yang melampaui segala akal, akan memelihara hati dan pikiranmu dalam Kristus Yesus."</p>
+                    <cite>Filipi 4:6-7</cite>
+                </blockquote>
+                <p>Ketika kita memahami bahwa Allah memegang kendali atas masa depan dan bahwa Dia memiliki rencana yang baik bagi kita, kekhawatiran kita seharusnya berkurang. Kita diajak untuk membawa segala kekhawatiran kita kepada Allah melalui doa dan permohonan, disertai dengan ucapan syukur. Mengapa bersyukur? Karena kita memiliki jaminan dari janji-janji-Nya. Hasilnya adalah "damai sejahtera Allah, yang melampaui segala akal," yang menjaga hati dan pikiran kita. Ini adalah damai sejahtera yang berasal dari keyakinan akan Allah yang memegang masa depan.</p>
+                <p>Penyembahan kita di masa kini adalah antisipasi dari penyembahan sempurna yang akan kita lakukan di surga. Ketika kita mengingat kebesaran Allah, kesetiaan-Nya, dan janji-janji-Nya yang luar biasa untuk masa depan, hati kita akan dipenuhi dengan kekaguman dan syukur, mendorong kita untuk terus memuliakan Nama-Nya dalam segala hal.</p>
+            </section>
+
+            <section id="bagian4">
+                <h2>Bagian 4: Tantangan dan Peringatan dalam Memahami Masa Depan</h2>
+                <p>Sementara Alkitab memberikan kita gambaran yang jelas dan harapan yang teguh tentang masa depan, ada juga tantangan dan peringatan yang harus kita perhatikan agar tidak menyimpang dari kebenaran.</p>
+
+                <h3>1. Menghindari Spekulasi yang Tidak Alkitabiah</h3>
+                <p>Sejarah gereja dipenuhi dengan contoh-contoh di mana orang-orang Kristen tersesat karena terlalu banyak berspekulasi tentang detail-detail masa depan yang tidak diungkapkan secara jelas dalam Alkitab. Ini termasuk mencoba meramal tanggal kedatangan Kristus, menafsirkan setiap peristiwa geopolitik sebagai penggenapan nubuat tertentu secara literal dan eksklusif, atau mengembangkan teori-teori eskatologis yang kompleks berdasarkan ayat-ayat yang terisolasi.</p>
+                <h4>Kutipan dari Yesus: Matius 24:36</h4>
+                <blockquote>
+                    <p>"Tentang hari dan saat itu tidak seorang pun yang tahu, malaikat-malaikat di sorga tidak, dan Anak pun tidak, hanya Bapa sendiri."</p>
+                    <cite>Matius 24:36</cite>
+                </blockquote>
+                <p>Yesus sendiri dengan tegas menyatakan bahwa waktu kedatangan-Nya yang kedua adalah pengetahuan yang hanya dimiliki oleh Bapa. Ini adalah peringatan keras bagi siapa pun yang mencoba menetapkan tanggal atau memprediksi waktu secara spesifik. Fokus kita seharusnya bukan pada mengetahui "kapan," melainkan pada "bagaimana" kita hidup dalam penantian itu. Spekulasi yang berlebihan seringkali mengalihkan perhatian dari panggilan utama kita untuk memberitakan Injil dan hidup kudus, serta dapat menyebabkan kekecewaan dan kehilangan iman ketika prediksi tidak terpenuhi.</p>
+                <p>Penting untuk diingat bahwa tujuan nubuat Alkitab tentang masa depan bukanlah untuk memuaskan rasa ingin tahu kita tentang setiap detail, tetapi untuk memberikan pengharapan, mendorong kekudusan, dan memotivasi misi. Kita harus berhati-hati untuk tetap berpegang pada apa yang jelas diajarkan oleh Alkitab dan tidak melampaui apa yang tertulis.</p>
+
+                <h3>2. Peringatan Terhadap Kemurtadan dan Kelesuan Rohani</h3>
+                <p>Di tengah penantian akan masa depan, Alkitab juga memberikan peringatan keras terhadap kemurtadan dan kelesuan rohani. Ada bahaya untuk menjadi suam-suam kuku atau bahkan meninggalkan iman karena godaan dunia atau penderitaan.</p>
+                <h4>Ibrani 10:25: Jangan Menjauhkan Diri dari Pertemuan Ibadah</h4>
+                <blockquote>
+                    <p>"Janganlah kita menjauhkan diri dari pertemuan-pertemuan ibadah kita, seperti dibiasakan oleh beberapa orang, tetapi marilah kita menasihati seorang akan yang lain, dan terlebih lagi apabila kamu melihat hari Tuhan semakin dekat."</p>
+                    <cite>Ibrani 10:25</cite>
+                </blockquote>
+                <p>Semakin dekatnya hari Tuhan seharusnya memotivasi kita untuk semakin erat bersekutu. Dalam menghadapi tekanan dunia dan godaan untuk melepaskan iman, persekutuan dengan sesama orang percaya sangatlah penting. Kita membutuhkan satu sama lain untuk saling menguatkan, menasihati, dan mendorong dalam iman. Menjauhkan diri dari persekutuan dapat membuat kita rentan terhadap serangan rohani dan kelesuan. Masa depan yang dijanjikan justru harus memperkuat komitmen kita terhadap Gereja, Tubuh Kristus.</p>
+                <h4>Wahyu 3:15-16: Jemaat Laodikia yang Suam-suam Kuku</h4>
+                <blockquote>
+                    <p>"Aku tahu segala pekerjaanmu: engkau tidak dingin dan tidak panas. Alangkah baiknya jika engkau dingin atau panas! Jadi karena engkau suam-suam kuku, dan tidak dingin atau tidak panas, Aku akan memuntahkan engkau dari mulut-Ku."</p>
+                    <cite>Wahyu 3:15-16</cite>
+                </blockquote>
+                <p>Pesan kepada jemaat Laodikia adalah peringatan serius terhadap kondisi rohani yang tidak berkomitmen, apatis, dan acuh tak acuh. Mereka kaya materi tetapi miskin secara rohani. Kristus lebih suka mereka sepenuhnya menolak-Nya (dingin) atau sepenuhnya mengasihi-Nya (panas) daripada berada di tengah-tengah. Kondisi "suam-suam kuku" adalah hal yang menjijikkan bagi-Nya. Peringatan ini relevan bagi kita yang hidup di tengah kelimpahan dan kenyamanan, di mana godaan untuk menjadi puas diri dan kehilangan gairah rohani sangat besar. Harapan akan masa depan seharusnya membakar semangat kita, bukan mendinginkannya.</p>
+
+                <h3>3. Ujian dan Penderitaan dalam Menantikan Masa Depan</h3>
+                <p>Memahami masa depan juga berarti mengakui bahwa jalan menuju kemuliaan seringkali melibatkan penderitaan. Kristus sendiri telah mengatakan kepada murid-murid-Nya bahwa mereka akan dianiaya karena Nama-Nya.</p>
+                <blockquote>
+                    <p>"Ingatlah perkataan yang telah Kukatakan kepadamu: Seorang hamba tidaklah lebih besar dari pada tuannya. Jikalau mereka telah menganiaya Aku, mereka juga akan menganiaya kamu; jikalau mereka telah menuruti firman-Ku, mereka juga akan menuruti perkataanmu."</p>
+                    <cite>Yohanes 15:20</cite>
+                </blockquote>
+                <p>Kita tidak seharusnya mengharapkan hidup yang bebas dari kesulitan hanya karena kita adalah orang percaya. Bahkan, terkadang iman kita akan diuji dengan cara yang menyakitkan. Namun, perspektif tentang masa depan yang mulia memungkinkan kita untuk bertahan dalam penderitaan. Kita tahu bahwa penderitaan ini bersifat sementara, dan bahwa Allah akan mengubahnya menjadi kebaikan, serta bahwa kemuliaan yang menunggu kita jauh melampaui rasa sakit apa pun yang kita alami di sini.</p>
+                <p>Pentingnya komunitas di sini tidak dapat dilebih-lebihkan. Saat kita menghadapi ujian dan penderitaan, kita membutuhkan saudara seiman untuk mendukung, berdoa, dan mendorong kita. Kita adalah tubuh Kristus, dan kita harus saling menopang dalam perjalanan iman ini. Masa depan yang cerah bukan berarti tidak ada badai, tetapi kita memiliki Kapten yang menjamin kita akan tiba di pelabuhan dengan selamat.</p>
+            </section>
+
+            <section id="kesimpulan">
+                <h2>Kesimpulan: Hidup Hari Ini dengan Perspektif Kekal</h2>
+                <p>Saudara-saudari yang terkasih dalam Kristus, kita telah mengarungi sebuah perjalanan melalui Firman Tuhan untuk memahami masa depan dari perspektif ekspositori. Kita telah melihat bahwa Allah adalah Penguasa masa depan, yang telah menyatakan rencana-Nya yang mulia melalui janji-janji-Nya dalam Alkitab. Janji-janji ini mencakup kedatangan Kristus yang kedua, penghakiman yang adil, penciptaan langit dan bumi baru, serta kemuliaan yang menunggu orang percaya. Kita juga telah membahas bagaimana janji-janji ini harus membentuk kehidupan kita di masa kini: memberikan harapan yang teguh, mendorong kesabaran dan ketekunan, memotivasi kekudusan dan kesaksian, serta menginspirasi pelayanan dan penyembahan yang tulus. Dan kita juga telah diingatkan untuk menghindari spekulasi yang tidak alkitabiah serta waspada terhadap kelesuan rohani.</p>
+                <p>Khotbah ekspositori tentang masa depan bukanlah sekadar memberikan informasi, melainkan dimaksudkan untuk menghasilkan transformasi. Ini bukan hanya tentang mengetahui apa yang akan terjadi, tetapi tentang bagaimana pengetahuan itu harus mengubah siapa kita dan bagaimana kita hidup sekarang. Alkitab tidak diberikan kepada kita untuk memuaskan setiap rasa ingin tahu kita tentang masa depan, tetapi untuk memberikan kita cukup informasi agar kita hidup dengan iman, pengharapan, dan kasih di masa kini.</p>
+                <p>Masa depan kita tidak ditentukan oleh ketidakpastian dunia ini, oleh berita utama yang menakutkan, atau oleh kegelisahan hati kita. Masa depan kita ditentukan oleh Allah yang berdaulat, yang kesetiaan-Nya tidak pernah pudar, dan yang janji-janji-Nya adalah "Ya dan Amin" di dalam Kristus Yesus (2 Korintus 1:20).</p>
+                <p>Oleh karena itu, marilah kita hidup setiap hari dengan perspektif kekal ini. Biarlah harapan akan masa depan yang dijamin Kristus menjadi sauh bagi jiwa kita. Biarlah itu mendorong kita untuk melayani Tuhan dengan segenap hati, untuk hidup kudus di tengah dunia yang berdosa, dan untuk memberitakan Injil kepada setiap orang. Jangan biarkan kekhawatiran merampas sukacita Anda; sebaliknya, serahkanlah segala kekhawatiran Anda kepada Allah dengan ucapan syukur, karena Dia memegang hari esok.</p>
+                <p>Masa depan kita ada di tangan Kristus. Dia adalah Alfa dan Omega, Yang Awal dan Yang Akhir. Dia yang memulai pekerjaan baik dalam diri kita akan menyelesaikannya sampai pada hari Kristus Yesus. Marilah kita terus menaruh iman dan harapan sepenuhnya kepada-Nya, hidup hari ini dalam terang kemuliaan yang akan datang. Amin.</p>
+                <div class="image-container">
+                    <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="svgTitle2 svgDesc2">
+                        <title id="svgTitle2">Kitab Terbuka dengan Bunga Tumbuh</title>
+                        <desc id="svgDesc2">Ilustrasi kitab terbuka (Alkitab) dengan tunas dan bunga yang tumbuh darinya, melambangkan kehidupan dan harapan yang berasal dari Firman Tuhan.</desc>
+                        <rect x="0" y="0" width="200" height="150" fill="var(--background-light)"/>
+                        
+                        <!-- Open Book -->
+                        <path d="M50 30 C 30 35, 30 115, 50 120 L 150 120 C 170 115, 170 35, 150 30 Z" fill="#F0F0F0" stroke="var(--border-light)" stroke-width="2"/>
+                        <path d="M100 30 L100 120" stroke="var(--border-light)" stroke-width="2"/>
+                        
+                        <!-- Pages texture -->
+                        <path d="M55 35 C 40 38, 40 112, 55 115 L 95 115 L 95 35 Z" fill="#FFFFFF"/>
+                        <path d="M145 35 C 160 38, 160 112, 145 115 L 105 115 L 105 35 Z" fill="#FFFFFF"/>
+                        <path d="M55 40 L95 40" stroke="#E8E8E8" stroke-width="1"/>
+                        <path d="M55 50 L95 50" stroke="#E8E8E8" stroke-width="1"/>
+                        <path d="M105 40 L145 40" stroke="#E8E8E8" stroke-width="1"/>
+                        <path d="M105 50 L145 50" stroke="#E8E8E8" stroke-width="1"/>
+
+                        <!-- Plant growing -->
+                        <path d="M100 110 C 105 90, 115 80, 120 60 C 125 50, 110 55, 100 60 C 90 55, 75 50, 80 60 C 85 80, 95 90, 100 110 Z" fill="#77BB77"/>
+                        
+                        <!-- Flowers/Leaves -->
+                        <circle cx="120" cy="55" r="8" fill="var(--secondary-green)"/>
+                        <circle cx="80" cy="55" r="8" fill="var(--secondary-green)"/>
+                        <circle cx="100" cy="50" r="10" fill="var(--accent-yellow)"/>
+
+                        <path d="M100 120 L100 130" stroke="var(--primary-blue)" stroke-width="3"/>
+                        <path d="M95 125 L105 125" stroke="var(--primary-blue)" stroke-width="3"/>
+                    </svg>
+                    <span class="image-caption">Firman Tuhan: Sumber Hidup dan Harapan Kekal</span>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Didasarkan pada kebenaran Alkitab.</p>
+        </footer>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/khotbah-malam-penghiburan">Khotbah Malam Penghiburan</a></li>
+<li><a href="/khotbah-tentang-pemuda">Khotbah Tentang Pemuda</a></li>
+<li><a href="/renungan-2-korintus-3">Renungan 2 Korintus 3</a></li>
+<li><a href="/khotbah-yosua-24-14-15">Khotbah Yosua 24 14 15</a></li>
+<li><a href="/daily-fresh-juice-renungan-harian-katolik">Daily Fresh Juice Renungan Harian Katolik</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

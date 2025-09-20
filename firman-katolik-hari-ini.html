@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firman Katolik Hari Ini - Renungan Harian Injil</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@300;400;600&display=swap');
+
+        :root {
+            --primary-bg: #FDFEFF; /* Sangat cerah, mendekati putih, sedikit kebiruan */
+            --secondary-bg: #EAF7FA; /* Lebih sejuk, sedikit biru pucat */
+            --text-color: #333333; /* Teks gelap standar */
+            --heading-color: #2C3E50; /* Biru tua gelap untuk judul */
+            --accent-color: #7FB3D5; /* Biru cerah, sejuk */
+            --border-color: #B0E0E6; /* PowderBlue, untuk garis pemisah */
+            --light-shadow: rgba(0, 0, 0, 0.05);
+        }
+
+        /* Reset dan Box Sizing */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--light-shadow);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 30px 0;
+            margin-bottom: 30px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            color: var(--heading-color);
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #666;
+            margin-top: 10px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* SVG untuk Header */
+        .header-icon {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Bagian Refleksi Harian */
+        .daily-reflection {
+            background-color: var(--secondary-bg);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 35px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+        }
+
+        .daily-reflection:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .daily-reflection h2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 1.8em;
+            color: var(--heading-color);
+            margin-bottom: 20px;
+            border-bottom: 2px dashed var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        .reflection-block {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: var(--primary-bg);
+            border-left: 5px solid var(--accent-color);
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.02);
+        }
+
+        .reflection-block:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .reflection-block h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 1.3em;
+            color: var(--heading-color);
+            margin-bottom: 10px;
+        }
+
+        .scripture-ref {
+            font-weight: bold;
+            color: var(--accent-color);
+            font-style: italic;
+            margin-bottom: 8px;
+            display: block; /* Agar paragraf berikutnya tidak inline */
+        }
+
+        .scripture-text {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+            border-left: 3px solid #D1EAF1;
+            padding-left: 10px;
+        }
+
+        .daily-reflection p {
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        
+        .daily-reflection p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            color: #888;
+            font-size: 0.9em;
+        }
+
+        /* Media Queries untuk Mobile Responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .header-icon {
+                width: 60px;
+                height: 60px;
+            }
+
+            .daily-reflection {
+                padding: 18px;
+                margin-bottom: 25px;
+            }
+
+            .daily-reflection h2 {
+                font-size: 1.5em;
+                margin-bottom: 15px;
+            }
+
+            .reflection-block {
+                padding: 12px;
+            }
+
+            .reflection-block h3 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <svg class="header-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-labelledby="headerTitle headerDesc">
+                <title id="headerTitle">Salib dan Cahaya Ilahi</title>
+                <desc id="headerDesc">Sebuah salib sederhana dengan cahaya bersinar, melambangkan firman Tuhan.</desc>
+                <defs>
+                    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#ADD8E6;stop-opacity:1" /> <!-- LightBlue -->
+                        <stop offset="100%" style="stop-color:#B0E0E6;stop-opacity:1" /> <!-- PowderBlue -->
+                    </linearGradient>
+                    <filter id="glow">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur" />
+                        <feMerge>
+                            <feMergeNode in="blur" />
+                            <feMergeNode in="SourceGraphic" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <!-- Salib -->
+                <rect x="45" y="20" width="10" height="60" fill="url(#lightGradient)" filter="url(#glow)"/>
+                <rect x="25" y="45" width="60" height="10" fill="url(#lightGradient)" filter="url(#glow)"/>
+                <!-- Cahaya di belakang salib -->
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#F0F8FF" stroke-width="2" opacity="0.8">
+                    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite" />
+                    <animate attributeName="opacity" values="0.8;1;0.8" dur="4s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="50" cy="50" r="30" fill="#E0F2F7" opacity="0.6">
+                    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+            <h1>Firman Katolik Hari Ini</h1>
+            <p>Membawa Terang Injil ke Dalam Hati dan Kehidupan Anda. Renungan harian yang mencerahkan dan menguatkan iman.</p>
+        </header>
+
+        <main>
+            <!-- HARI KE-1 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-1: Menjadi Garam Dunia dan Terang Dunia</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 5:13-16</p>
+                    <p class="scripture-text">"Kamu adalah garam dunia. Jika garam itu menjadi tawar, dengan apakah ia diasinkan? Tidak ada lagi gunanya selain dibuang dan diinjak orang. Kamu adalah terang dunia. Kota yang terletak di atas gunung tidak mungkin tersembunyi. Lagipula orang tidak menyalakan pelita lalu meletakkannya di bawah tempayan, melainkan di atas kaki dian sehingga menerangi semua orang di dalam rumah itu. Demikianlah hendaknya terangmu bercahaya di depan orang, supaya mereka melihat perbuatanmu yang baik dan memuliakan Bapamu yang di surga."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Injil hari ini mengajak kita merenungkan identitas dan panggilan kita sebagai murid Kristus. Yesus dengan tegas menyatakan, "Kamu adalah garam dunia dan terang dunia." Ini bukan sekadar pujian, melainkan sebuah amanat. Garam memiliki fungsi utama untuk memberi rasa, mengawetkan, dan membersihkan. Sebagai garam dunia, kita dipanggil untuk memberikan 'rasa' Kristus dalam interaksi sosial kita, menghadirkan nilai-nilai Kerajaan Allah di tengah masyarakat yang mungkin hambar dan korup. Kita harus menjadi agen perubahan yang positif, bukan sekadar penonton pasif.</p>
+                    <p>Demikian pula, sebagai terang dunia, kita tidak dimaksudkan untuk menyembunyikan iman atau kebaikan kita. Terang berfungsi untuk menerangi, menunjukkan jalan, dan menghilangkan kegelapan. Hidup kita, melalui perbuatan baik dan kesaksian iman, harus memancarkan terang Kristus kepada orang lain. Ini berarti kita harus hidup otentik, menjadi teladan kebaikan, kasih, dan keadilan. Terang kita bukan untuk memuliakan diri sendiri, melainkan agar orang lain melihat Bapa di surga melalui perbuatan kita. Panggilan ini menuntut keberanian untuk berbeda dan berani menunjukkan kebenaran dalam kasih.</p>
+                    <p>Dalam konteks modern, menjadi garam dan terang berarti terlibat aktif dalam kehidupan sosial, politik, dan ekonomi, dengan membawa nilai-nilai Injil. Ini bisa berarti memperjuangkan keadilan sosial, merawat lingkungan, menghibur yang berduka, melayani yang miskin, atau sekadar menjadi pribadi yang jujur dan berintegritas di lingkungan kerja kita. Tantangannya adalah agar garam kita tidak menjadi tawar dan terang kita tidak tertutup oleh keputusasaan atau ketakutan akan penilaian orang lain.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Bapa yang Mahakasih, penuhilah kami dengan Roh Kudus-Mu, agar kami sungguh-sungguh menjadi garam yang memberi rasa dan terang yang bercahaya di dunia ini. Mampukan kami untuk menghadirkan kasih dan kebenaran-Mu melalui setiap kata dan perbuatan kami, sehingga nama-Mu dimuliakan. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Carilah satu kesempatan hari ini untuk melakukan perbuatan baik secara diam-diam yang dapat membawa sukacita atau meringankan beban orang lain, tanpa mengharapkan pujian.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-2 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-2: Pentingnya Kasih dan Pengampunan</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 18:21-22</p>
+                    <p class="scripture-text">"Kemudian Petrus datang dan berkata kepada Yesus: Tuhan, sampai berapa kali aku harus mengampuni saudaraku jika ia berbuat dosa terhadap aku? Sampai tujuh kali? Yesus berkata kepadanya: Bukan! Aku berkata kepadamu: Bukan sampai tujuh kali, melainkan sampai tujuh puluh kali tujuh kali."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Pertanyaan Petrus kepada Yesus tentang batas pengampunan adalah pertanyaan yang sangat manusiawi. Kita seringkali merasa lelah untuk terus mengampuni, terutama ketika kesalahan yang sama terus terulang. Angka tujuh kali yang diajukan Petrus mungkin sudah dianggap sebagai batas yang sangat murah hati pada masanya. Namun, jawaban Yesus "sampai tujuh puluh kali tujuh kali" bukan berarti 490 kali lalu berhenti, melainkan sebuah metafora untuk pengampunan yang tak terbatas, tanpa syarat, dan tak henti-hentinya.</p>
+                    <p>Pengampunan adalah inti dari ajaran Kristus dan merupakan cerminan kasih Allah kepada kita. Jika Allah begitu sabar dan penuh kerahiman dalam mengampuni dosa-dosa kita yang tak terhitung, bagaimana mungkin kita membatasi pengampunan kita kepada sesama? Pengampunan sejati membebaskan bukan hanya orang yang diampuni, tetapi juga si pengampun dari beban dendam, kemarahan, dan kepahitan. Itu adalah tindakan radikal yang memutus lingkaran kebencian dan membuka jalan bagi rekonsiliasi.</p>
+                    <p>Tentu saja, mengampuni tidak berarti membiarkan diri diinjak-injak atau melupakan keadilan. Itu juga tidak berarti bahwa kita harus kembali ke hubungan yang sama seperti sebelum disakiti, terutama jika ada pola kekerasan atau pengkhianatan. Pengampunan adalah keputusan hati untuk melepaskan hak kita untuk membalas dendam dan menyerahkan keadilan kepada Tuhan. Itu adalah anugerah yang kita berikan, meniru Kristus yang di kayu salib mendoakan pengampunan bagi para penyalib-Nya. Marilah kita terus belajar mengampuni, setiap hari, sebagai bagian dari perjalanan iman kita.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Engkau adalah teladan pengampunan sejati. Ajarlah kami untuk memiliki hati yang pemaaf, yang mampu melepaskan sakit hati dan memaafkan orang lain seperti Engkau mengampuni kami. Berilah kami kekuatan untuk terus mengasihi dan memberi pengampunan tanpa batas. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan apakah ada seseorang yang perlu Anda ampuni atau yang perlu Anda mintai maaf. Mulailah langkah kecil menuju rekonsiliasi atau pengampunan dalam hati Anda.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-3 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-3: Kerendahan Hati dan Pelayanan</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Markus 10:42-45</p>
+                    <p class="scripture-text">"Tetapi Yesus memanggil mereka lalu berkata: Kamu tahu, bahwa mereka yang disebut pemerintah bangsa-bangsa memerintah rakyatnya dengan tangan besi, dan pembesar-pembesarnya memaksakan kuasanya atas mereka. Tidaklah demikian di antara kamu. Barangsiapa ingin menjadi besar di antara kamu, hendaklah ia menjadi pelayanmu, dan barangsiapa ingin menjadi yang terkemuka di antara kamu, hendaklah ia menjadi hamba untuk semuanya. Karena Anak Manusia juga datang bukan untuk dilayani, melainkan untuk melayani dan untuk memberikan nyawa-Nya menjadi tebusan bagi banyak orang."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Injil hari ini menyajikan sebuah revolusi nilai yang diajarkan Yesus. Di dunia yang menghargai kekuasaan, status, dan dominasi, Yesus mengajarkan bahwa kebesaran sejati terletak pada kerendahan hati dan pelayanan. Para murid-Nya, seperti halnya kita, seringkali tergoda oleh keinginan untuk menjadi yang pertama, yang terkemuka, atau yang paling penting. Namun, Yesus dengan tegas menantang mentalitas duniawi ini dengan menetapkan standar yang sangat berbeda: pelayanan.</p>
+                    <p>Model pelayanan Yesus adalah radikal dan transformatif. Ia sendiri, Anak Manusia, datang bukan untuk dilayani tetapi untuk melayani. Ini mencapai puncaknya dalam pemberian nyawa-Nya di kayu salib sebagai tebusan bagi banyak orang. Teladan-Nya adalah pengosongan diri (kenosis), di mana Ia menanggalkan keilahian-Nya demi mengambil rupa seorang hamba, bahkan sampai mati di salib. Bagi kita, ini berarti melepaskan ego kita, melepaskan keinginan untuk diakui atau dihormati, dan sebaliknya, fokus pada kebutuhan orang lain.</p>
+                    <p>Pelayanan yang dimaksud Yesus bukan hanya tindakan-tindakan besar dan heroik, melainkan juga tindakan-tindakan kecil dan sehari-hari yang dilakukan dengan hati yang tulus. Ini bisa berupa mendengarkan dengan penuh perhatian, membantu anggota keluarga, terlibat dalam kegiatan paroki, atau menjadi sukarelawan di komunitas. Kunci dari pelayanan yang sejati adalah hati yang rendah hati, yang mengakui bahwa semua karunia dan kemampuan kita berasal dari Allah dan dimaksudkan untuk kemuliaan-Nya serta kebaikan sesama. Ketika kita melayani, kita menjadi semakin serupa dengan Kristus.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Yesus Kristus, Engkau telah menunjukkan kepada kami jalan kerendahan hati dan pelayanan. Ubahlah hati kami agar kami tidak mencari kehormatan diri, melainkan selalu siap melayani sesama dengan kasih yang tulus, meniru teladan-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Cari kesempatan untuk melayani seseorang dalam keluarga, lingkungan kerja, atau komunitas Anda hari ini, tanpa mengharapkan balasan atau pengakuan. Lakukan dengan sukacita dan kerendahan hati.</p>
+                </div>
+            </section>
+            
+            <!-- HARI KE-4 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-4: Kekuatan Doa dan Percaya pada Penyelenggaraan Ilahi</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 6:7-8</p>
+                    <p class="scripture-text">"Lagi pula dalam doamu itu janganlah kamu bertele-tele seperti kebiasaan orang yang tidak mengenal Allah. Mereka menyangka bahwa karena banyaknya kata-kata doanya akan dikabulkan. Jadi janganlah kamu seperti mereka, karena Bapamu mengetahui apa yang kamu perlukan, sebelum kamu meminta kepada-Nya."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Yesus mengajarkan kita tentang doa yang sejati, bukan sekadar ritual bertele-tele atau mengulang-ulang kata-kata kosong. Inti dari doa bukanlah seberapa banyak kata yang kita ucapkan, melainkan kualitas hubungan kita dengan Bapa. Allah bukanlah hakim yang perlu diyakinkan dengan argumen panjang, melainkan Bapa yang penuh kasih, yang sudah mengetahui kebutuhan kita bahkan sebelum kita menyatakannya. Ini seharusnya memberikan kita keyakinan dan kelegaan dalam doa.</p>
+                    <p>Namun, jika Allah sudah tahu, mengapa kita tetap harus berdoa? Doa bukanlah upaya untuk mengubah pikiran Allah, melainkan untuk mengubah hati kita sendiri. Doa adalah sarana untuk memperdalam hubungan kita dengan-Nya, menyelaraskan kehendak kita dengan kehendak-Nya, dan membuka diri pada karya Roh Kudus dalam hidup kita. Ketika kita berdoa, kita mengakui ketergantungan kita kepada Tuhan dan menyatakan iman kita pada penyelenggaraan-Nya. Doa juga merupakan ungkapan syukur, penyembahan, dan permohonan atas segala sesuatu.</p>
+                    <p>Doa yang otentik adalah doa yang datang dari hati yang tulus, penuh kerendahan hati, dan percaya. Ini bisa berupa doa formal seperti "Bapa Kami," doa spontan, meditasi, atau kontemplasi. Yang terpenting adalah menghadirkan diri kita sepenuhnya di hadapan Tuhan, jujur dengan perasaan kita, dan menyerahkan segala kekhawatiran kita kepada-Nya. Dengan demikian, doa menjadi sumber kekuatan, kedamaian, dan kebijaksanaan di tengah tantangan hidup.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Bapa yang penuh kasih, ajarlah kami untuk berdoa dengan hati yang tulus dan percaya, mengetahui bahwa Engkau senantiasa mendengar dan memahami kami. Bantulah kami untuk menyerahkan segala kebutuhan dan kekhawatiran kami kepada-Mu, dan biarlah kehendak-Mu yang terjadi dalam hidup kami. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Luangkan waktu hening hari ini untuk berdoa "Bapa Kami" dengan penuh kesadaran, merenungkan setiap baris dan artinya dalam hidup Anda.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-5 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-5: Buah Roh Kudus: Kasih, Sukacita, dan Damai Sejahtera</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Galatia 5:22-23</p>
+                    <p class="scripture-text">"Tetapi buah Roh ialah: kasih, sukacita, damai sejahtera, kesabaran, kemurahan, kebaikan, kesetiaan, kelemahlembutan, penguasaan diri. Tidak ada hukum yang menentang hal-hal itu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Meskipun bukan Injil dari Kitab Injil, kutipan dari surat Paulus kepada jemaat Galatia ini adalah inti dari kehidupan yang dipimpin oleh Roh Kudus, dan sangat relevan dengan ajaran Kristus. Buah Roh Kudus bukanlah daftar sifat yang harus kita "hasilkan" dengan kekuatan kita sendiri, melainkan hasil alami dari hidup yang menyerahkan diri kepada bimbingan Roh Kudus. Ketika kita mengizinkan Roh Kudus bekerja dalam diri kita, karakter Kristus akan mulai terbentuk dalam hidup kita.</p>
+                    <p>Yang pertama dan terpenting dari buah Roh adalah kasih (agape), yaitu kasih ilahi yang tanpa syarat, rela berkorban, dan tidak mementingkan diri sendiri. Dari kasih inilah mengalir buah-buah Roh lainnya: sukacita sejati yang tidak tergantung pada keadaan, damai sejahtera yang melampaui pengertian, kesabaran dalam menghadapi cobaan, kemurahan hati terhadap sesama, kebaikan dalam tindakan kita, kesetiaan dalam janji dan hubungan, kelemahlembutan dalam berinteraksi, serta penguasaan diri atas keinginan daging. Buah-buah ini adalah tanda-tanda kehadiran dan karya Roh Kudus dalam diri seorang Kristen.</p>
+                    <p>Refleksi ini mengajak kita untuk bertanya: Apakah buah-buah Roh ini terlihat dalam hidup saya? Apakah saya sungguh-sungguh hidup dalam Roh atau lebih sering dikuasai oleh keinginan daging (Galatia 5:19-21)? Pertumbuhan rohani bukanlah tentang menjadi sempurna dalam semalam, tetapi tentang proses berkelanjutan di mana kita terus-menerus mengizinkan Roh Kudus menguduskan dan membentuk kita. Marilah kita membuka hati kita untuk Roh Kudus, agar Ia dapat berbuah melimpah dalam hidup kita, bagi kemuliaan Allah dan kebaikan sesama.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Roh Kudus, penuhilah hati kami dengan kehadiran-Mu yang ilahi. Curahkanlah buah-buah-Mu dalam hidup kami, terutama kasih, sukacita, dan damai sejahtera. Bantulah kami untuk hidup seturut kehendak-Mu dan menjadi bejana yang pantas bagi kasih-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Pilihlah salah satu buah Roh Kudus yang paling sulit Anda wujudkan hari ini (misalnya, kesabaran atau penguasaan diri), dan berdoalah serta berusahalah secara sadar untuk menunjukkannya dalam interaksi Anda.</p>
+                </div
+            </section>
+
+            <!-- HARI KE-6 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-6: Kebahagiaan Sejati dalam Sabda Bahagia</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 5:3-10</p>
+                    <p class="scripture-text">"Berbahagialah orang yang miskin di hadapan Allah, karena merekalah yang empunya Kerajaan Surga. Berbahagialah orang yang berdukacita, karena mereka akan dihibur. Berbahagialah orang yang lemah lembut, karena mereka akan memiliki bumi. Berbahagialah orang yang lapar dan haus akan kebenaran, karena mereka akan dipuaskan. Berbahagialah orang yang murah hatinya, karena mereka akan beroleh kemurahan. Berbahagialah orang yang suci hatinya, karena mereka akan melihat Allah. Berbahagialah orang yang membawa damai, karena mereka akan disebut anak-anak Allah. Berbahagialah orang yang dianiaya oleh sebab kebenaran, karena merekalah yang empunya Kerajaan Surga."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Sabda Bahagia, yang diucapkan Yesus di atas bukit, adalah inti dari etika Kerajaan Allah dan peta jalan menuju kebahagiaan sejati. Yesus membalikkan pemahaman dunia tentang kebahagiaan. Dunia seringkali mengaitkan kebahagiaan dengan kekayaan, kekuasaan, popularitas, atau kenyamanan. Namun, Yesus menyatakan bahwa kebahagiaan ilahi justru ditemukan dalam kondisi-kondisi yang seringkali dihindari atau dianggap sebagai kelemahan: kemiskinan rohani, dukacita, kelemahlembutan, kelaparan akan kebenaran, kemurahan hati, kemurnian hati, menjadi pembawa damai, dan bahkan penganiayaan demi kebenaran.</p>
+                    <p>Setiap 'berbahagialah' ini adalah janji dan sekaligus panggilan. "Berbahagialah orang yang miskin di hadapan Allah" berarti mengakui ketergantungan total kita kepada Tuhan, melepaskan keterikatan pada hal-hal duniawi, dan mendambakan kekayaan rohani. "Berbahagialah orang yang berdukacita" bukan berarti merayakan penderitaan, melainkan menemukan penghiburan Allah dalam kesedihan dan merasakan solidaritas-Nya. Kelemahlembutan bukan kelemahan, melainkan kekuatan yang dikendalikan, seperti Kristus sendiri yang lemah lembut dan rendah hati.</p>
+                    <p>Sabda Bahagia adalah cetak biru untuk menjadi murid Kristus yang sejati. Ini menantang kita untuk memeriksa nilai-nilai kita dan mengubah perspektif kita tentang apa yang benar-benar penting dalam hidup. Dengan hidup sesuai dengan prinsip-prinsip ini, kita tidak hanya menemukan kebahagiaan pribadi, tetapi juga menjadi saluran rahmat dan berkat bagi dunia. Hidup menurut Sabda Bahagia adalah kesaksian nyata akan Kerajaan Allah yang telah datang dan sedang datang.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Tuhan Yesus, Engkau telah menunjukkan kepada kami jalan menuju kebahagiaan sejati melalui Sabda Bahagia-Mu. Ubahlah hati kami agar kami dapat merangkul nilai-nilai Kerajaan-Mu, menjadi miskin di hadapan-Mu, lemah lembut, dan pembawa damai. Mampukan kami untuk hidup sesuai dengan panggilan ini, agar kami dapat mengalami dan memancarkan sukacita-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Pilih salah satu Sabda Bahagia dan renungkan bagaimana Anda dapat menerapkannya secara lebih mendalam dalam hidup Anda hari ini. Misalnya, tunjukkan kelemahlembutan dalam menghadapi situasi yang membuat Anda frustrasi.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-7 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-7: Kesabaran dan Ketekunan dalam Iman</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 21:19</p>
+                    <p class="scripture-text">"Kalau kamu tetap bertahan, kamu akan memperoleh hidupmu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Ayat pendek ini, yang diucapkan Yesus dalam konteks nubuat tentang penganiayaan dan kesukaran yang akan datang, adalah pengingat yang kuat akan pentingnya kesabaran dan ketekunan dalam iman. Hidup ini penuh dengan tantangan, godaan, dan masa-masa sulit. Terkadang, kita merasa iman kita diuji hingga batasnya, dan keinginan untuk menyerah bisa begitu kuat. Namun, Yesus meyakinkan kita bahwa melalui ketekunan, kita akan "memperoleh hidup kita" – bukan hanya kehidupan di masa depan, tetapi juga kedalaman dan makna hidup saat ini.</p>
+                    <p>Kesabaran Kristen bukanlah kepasifan atau ketidakpedulian. Sebaliknya, itu adalah kekuatan aktif yang memungkinkan kita untuk tetap teguh di tengah badai, percaya pada janji-janji Allah, bahkan ketika kita tidak melihat hasilnya secara langsung. Ini adalah ketekunan yang lahir dari harapan, yang tahu bahwa Allah bekerja dalam segala situasi untuk kebaikan orang-orang yang mengasihi Dia (Roma 8:28). Kesabaran juga berarti menanti waktu Tuhan, menyerahkan kendali, dan mempercayai hikmat-Nya yang lebih besar dari kita.</p>
+                    <p>Dalam perjalanan iman kita, kita akan menghadapi banyak hal yang membutuhkan kesabaran: penantian akan doa yang terkabul, perjuangan melawan dosa-dosa pribadi, konflik dalam hubungan, atau tantangan dalam misi kita. Melalui semua ini, kita dipanggil untuk tetap berakar pada Kristus, sumber kekuatan kita. Dengan ketekunan, kita tumbuh dalam karakter, iman kita diperkuat, dan kita semakin serupa dengan Kristus yang juga sabar menanggung penderitaan demi kita.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, berilah kami rahmat kesabaran dan ketekunan dalam menghadapi setiap tantangan hidup. Mampukan kami untuk tetap berpegang pada janji-Mu, bahkan di tengah kesulitan, dan biarlah iman kami semakin teguh melalui setiap ujian. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu area dalam hidup Anda di mana Anda merasa kurang sabar atau ingin menyerah. Hari ini, berdoalah secara khusus untuk area tersebut dan ambil satu langkah kecil yang menunjukkan ketekunan.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-8 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-8: Mengikuti Kristus: Memikul Salib Kita</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 9:23</p>
+                    <p class="scripture-text">"Kata-Nya kepada mereka semua: Setiap orang yang mau mengikut Aku, ia harus menyangkal dirinya, memikul salibnya setiap hari dan mengikut Aku."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Panggilan untuk mengikut Kristus bukanlah undangan untuk kehidupan yang mudah atau bebas dari masalah. Sebaliknya, Yesus dengan jelas menyatakan persyaratan untuk menjadi murid-Nya: menyangkal diri, memikul salib setiap hari, dan mengikut Dia. Ini adalah ajakan radikal yang menuntut komitmen penuh dan perubahan prioritas hidup.</p>
+                    <p>Menyangkal diri berarti melepaskan keinginan egois kita, ambisi pribadi yang tidak selaras dengan kehendak Allah, dan kecenderungan alami kita untuk menempatkan diri sendiri sebagai pusat. Ini adalah tindakan menyerahkan kendali hidup kita kepada Allah, mengakui bahwa Ia adalah Tuhan dan kita adalah hamba-Nya. Ini bukan berarti meniadakan identitas kita, melainkan menemukan identitas sejati kita di dalam Kristus.</p>
+                    <p>Memikul salib setiap hari merujuk pada kesiapan kita untuk menghadapi kesulitan, penderitaan, penolakan, atau pengorbanan yang mungkin timbul sebagai konsekuensi dari mengikuti Kristus. Salib kita bisa berupa kesulitan pribadi, penyakit, kerugian, atau bahkan ejekan dan penganiayaan karena iman kita. Ini juga bisa berarti menghadapi tantangan moral, memilih kebenaran daripada popularitas, atau berpegang teguh pada nilai-nilai Injil di tengah tekanan duniawi. Salib adalah instrumen kematian, dan memikulnya berarti kita mati terhadap diri sendiri agar Kristus dapat hidup di dalam kita.</p>
+                    <p>Mengikut Kristus berarti menjadikan-Nya teladan utama kita, mengikuti jejak-Nya dalam kasih, pelayanan, kerendahan hati, dan ketaatan kepada Bapa. Ini adalah perjalanan seumur hidup yang membutuhkan iman, keberanian, dan ketergantungan penuh pada rahmat Allah.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Tuhan Yesus, Engkau memanggil kami untuk mengikut-Mu dengan menyangkal diri dan memikul salib kami. Berilah kami keberanian dan kekuatan untuk menerima panggilan ini setiap hari. Mampukan kami untuk menempatkan Engkau di atas segalanya dan mengikuti jejak-Mu dengan setia. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan apa "salib" yang sedang Anda pikul hari ini atau hal apa yang perlu Anda sangkal demi Kristus. Ambil langkah kecil untuk menyerahkan hal tersebut kepada Tuhan dan memikulnya dengan iman.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-9 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-9: Pentingnya Kasih kepada Sesama</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Yohanes 13:34-35</p>
+                    <p class="scripture-text">"Aku memberikan perintah baru kepada kamu, yaitu supaya kamu saling mengasihi; sama seperti Aku telah mengasihi kamu demikian pula kamu harus saling mengasihi. Dengan demikian semua orang akan tahu, bahwa kamu adalah murid-murid-Ku, yaitu jikalau kamu saling mengasihi."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Dalam Injil Yohanes, Yesus memberikan "perintah baru" ini pada malam sebelum Dia disalibkan. Ini adalah wasiat terakhir-Nya yang paling mendalam kepada murid-murid-Nya. Perintah untuk saling mengasihi bukanlah hal baru sama sekali, karena Perjanjian Lama sudah mengajarkan kasih kepada sesama. Namun, yang baru di sini adalah standar kasihnya: "sama seperti Aku telah mengasihi kamu." Ini mengangkat standar kasih dari 'seperti dirimu sendiri' menjadi 'seperti Kristus mengasihi kita'.</p>
+                    <p>Kasih Kristus adalah kasih yang rela berkorban, tanpa syarat, melayani, memaafkan, dan mencari kebaikan orang lain bahkan dengan mengorbankan diri-Nya sendiri. Kasih ini adalah tanda pengenal sejati dari para murid-Nya. Dunia tidak akan mengenali kita sebagai pengikut Kristus dari seberapa sering kita ke gereja, seberapa banyak doktrin yang kita hafal, atau seberapa lantang kita berbicara tentang iman. Mereka akan mengenali kita melalui kasih yang kita tunjukkan satu sama lain.</p>
+                    <p>Kasih ini harus terwujud dalam tindakan nyata sehari-hari: dalam cara kita berbicara, mendengarkan, melayani, dan mendukung satu sama lain. Itu berarti melampaui perbedaan, merangkul mereka yang berbeda dari kita, dan mencari persatuan dalam Kristus. Perintah ini menantang kita untuk terus-menerus mengevaluasi cara kita berhubungan dengan keluarga, teman, tetangga, bahkan orang asing. Apakah kasih kita mencerminkan kasih Kristus? Melalui kasih yang tulus, kita bukan hanya membangun komunitas, tetapi juga mewartakan Injil secara efektif kepada dunia.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Engkau telah mengasihi kami hingga akhir, bahkan sampai menyerahkan nyawa-Mu. Penuhilah hati kami dengan kasih-Mu, agar kami dapat saling mengasihi seperti Engkau mengasihi kami. Mampukan kami untuk menjadi saksi kasih-Mu di dunia ini. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu orang dalam hidup Anda yang mungkin sulit untuk Anda kasihi atau yang Anda rasa kurang Anda perhatikan. Hari ini, lakukan satu tindakan kasih kecil untuknya, baik melalui kata-kata, tindakan, atau doa.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-10 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-10: Kekayaan Hati di Surga</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 6:19-21</p>
+                    <p class="scripture-text">"Janganlah kamu mengumpulkan harta di bumi; di bumi ngengat dan karat merusakkannya dan pencuri membongkar serta mencurinya. Tetapi kumpulkanlah bagimu harta di surga; di surga ngengat dan karat tidak merusakkannya dan pencuri tidak membongkar serta mencurinya. Karena di mana hartamu berada, di situ juga hatimu berada."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Yesus menantang kita untuk mereorientasi prioritas hidup kita dari hal-hal duniawi yang fana menuju harta kekal di surga. Harta duniawi, betapapun berharganya, bersifat sementara. Kekayaan bisa lenyap, barang-barang rusak, dan apa pun yang kita miliki di bumi tidak dapat kita bawa saat kita mati. Sebaliknya, Yesus mengajak kita untuk berinvestasi pada hal-hal yang memiliki nilai abadi, yang tidak dapat dihancurkan oleh waktu atau dicuri oleh siapa pun.</p>
+                    <p>Mengumpulkan harta di surga berarti hidup sesuai dengan nilai-nilai Kerajaan Allah: kasih, keadilan, pelayanan, kemurahan hati, kerendahan hati, dan kesetiaan. Ini berarti menggunakan waktu, talenta, dan harta benda kita untuk memuliakan Tuhan dan melayani sesama. Setiap tindakan kasih, setiap pengorbanan yang kita lakukan untuk Kristus, setiap kali kita berbagi dengan yang membutuhkan, setiap kali kita memaafkan, kita sedang mengumpulkan "harta" di surga.</p>
+                    <p>Pernyataan "di mana hartamu berada, di situ juga hatimu berada" adalah kunci. Hati kita secara alami akan mengikuti apa yang kita anggap paling berharga. Jika kita terlalu terikat pada kekayaan materi, status, atau kesenangan duniawi, hati kita akan didominasi oleh kekhawatiran dan keinginan akan hal-hal tersebut. Namun, jika kita memusatkan hati kita pada Tuhan dan kerajaan-Nya, maka kedamaian, sukacita, dan kebenaran-Nya akan memenuhi hidup kita. Panggilan ini adalah ajakan untuk kebebasan sejati dari belenggu materialisme dan untuk hidup yang berorientasi pada kekekalan.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, ampunilah kami jika kami terlalu sering terikat pada harta duniawi yang fana. Bantulah kami untuk mengarahkan hati kami kepada-Mu dan Kerajaan-Mu. Ajarlah kami untuk menggunakan segala karunia yang Engkau berikan untuk mengumpulkan harta yang abadi di surga. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Evaluasi satu hal dalam hidup Anda yang mungkin terlalu banyak menyita perhatian dan energi Anda (misalnya, obsesi akan barang tertentu, kekhawatiran tentang uang). Hari ini, secara sadar alihkan fokus tersebut kepada Tuhan dan lakukan tindakan yang berorientasi pada surga.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-11 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-11: Kedaulatan Allah atas Segala Sesuatu</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 10:29-31</p>
+                    <p class="scripture-text">"Bukankah burung pipit dijual dua ekor seduit? Namun seekor pun dari padanya tidak akan jatuh ke bumi di luar kehendak Bapamu. Dan kamu, rambut kepalamu pun terhitung semuanya. Sebab itu janganlah kamu takut, karena kamu lebih berharga dari pada banyak burung pipit."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Dalam bagian Injil ini, Yesus menawarkan penghiburan yang mendalam dan sekaligus tantangan iman. Ia menegaskan kedaulatan Allah yang mutlak atas segala sesuatu, bahkan hal-hal terkecil sekalipun, seperti jatuhnya seekor burung pipit atau jumlah rambut di kepala kita. Ini bukanlah gambaran tentang Tuhan yang mengendalikan setiap detail dengan cara yang menakutkan, melainkan tentang Bapa yang penuh kasih yang perhatian-Nya meliputi seluruh ciptaan, terutama anak-anak-Nya.</p>
+                    <p>Pernyataan ini dimaksudkan untuk menghilangkan rasa takut dan kecemasan. Jika Allah sedemikian peduli terhadap burung pipit yang dianggap tidak berharga, betapa lebihnya lagi Ia peduli terhadap kita, yang diciptakan menurut gambar dan rupa-Nya, dan yang telah ditebus dengan Darah Kristus. Setiap aspek hidup kita, bahkan yang paling kecil, berada dalam pengetahuan dan perhatian-Nya. Ini bukan berarti kita tidak akan menghadapi kesulitan atau penderitaan, tetapi itu berarti bahwa di tengah-tengah semua itu, kita tidak pernah sendiri dan tidak pernah di luar jangkauan kasih-Nya.</p>
+                    <p>Percaya pada kedaulatan Allah memanggil kita untuk menyerahkan kekhawatiran kita kepada-Nya. Ini adalah undangan untuk mempercayai bahwa meskipun kita mungkin tidak memahami rencana-Nya, Ia selalu bekerja untuk kebaikan kita. Ini membebaskan kita dari beban untuk mengendalikan segalanya dan memungkinkan kita untuk hidup dengan damai, mengetahui bahwa Bapa kita di surga memegang kendali. Marilah kita merenungkan janji ini dan membiarkannya menenangkan hati kita yang gelisah.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Bapa yang Mahakuasa dan Mahakasih, kami bersyukur atas perhatian-Mu yang tak terbatas kepada kami. Ampunilah kami jika kami sering dikuasai oleh rasa takut dan cemas. Bantulah kami untuk sepenuhnya mempercayai kedaulatan dan penyelenggaraan-Mu dalam setiap aspek hidup kami. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Sebutkan satu kekhawatiran spesifik yang sedang Anda alami hari ini. Persembahkan kekhawatiran itu kepada Tuhan dalam doa, dan lepaskan keinginan untuk mengendalikan hasilnya, mempercayai kedaulatan-Nya.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-12 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-12: Menjadi Pendengar dan Pelaku Firman</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 7:24-27</p>
+                    <p class="scripture-text">"Setiap orang yang mendengar perkataan-Ku ini dan melakukannya, ia sama dengan orang yang bijaksana, yang mendirikan rumahnya di atas batu. Kemudian turunlah hujan dan datanglah banjir, lalu angin melanda rumah itu, tetapi rumah itu tidak roboh sebab didirikan di atas batu. Tetapi setiap orang yang mendengar perkataan-Ku ini dan tidak melakukannya, ia sama dengan orang yang bodoh, yang mendirikan rumahnya di atas pasir. Kemudian turunlah hujan dan datanglah banjir, lalu angin melanda rumah itu, maka robohlah rumah itu dan hebatlah kerusakannya."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perumpamaan tentang dua macam dasar ini adalah penutup yang kuat dari Khotbah di Bukit, menekankan pentingnya tidak hanya mendengar firman Yesus, tetapi juga melaksanakannya. Yesus menggambarkan dua jenis orang: yang bijaksana dan yang bodoh. Perbedaannya bukan terletak pada apakah mereka mendengar firman-Nya, tetapi pada apakah mereka *melakukannya*.</p>
+                    <p>Mendirikan rumah di atas batu melambangkan hidup yang dibangun di atas dasar yang kokoh, yaitu ketaatan kepada ajaran Kristus. Ketika badai kehidupan datang—ujian, penderitaan, godaan—pondasi ini akan memastikan bahwa kita tetap teguh. Ketaatan bukan sekadar kepatuhan buta, melainkan respons kasih terhadap kasih Allah, yang mempercayai bahwa jalan-Nya adalah yang terbaik bagi kita. Ini membutuhkan disiplin, komitmen, dan penyerahan diri setiap hari.</p>
+                    <p>Sebaliknya, membangun di atas pasir melambangkan kehidupan yang didasarkan pada keinginan pribadi, nilai-nilai duniawi, atau sekadar pendengaran tanpa tindakan. Ketika kesulitan melanda, pondasi yang rapuh ini tidak akan mampu menahan tekanan, dan konsekuensinya bisa fatal. Yesus tidak hanya mengundang kita untuk menjadi pendengar yang pasif, tetapi juga pelaku firman yang aktif. Kita dipanggil untuk mengintegrasikan ajaran-Nya ke dalam setiap aspek kehidupan kita, sehingga firman-Nya menjadi prinsip panduan yang kokoh.</p>
+                    <p>Mari kita tanyakan pada diri sendiri: Di atas dasar apa saya membangun hidup saya? Apakah saya sungguh-sungguh mempraktikkan apa yang saya dengar dan imani?</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, kami bersyukur atas firman-Mu yang hidup dan berkuasa. Berilah kami rahmat untuk tidak hanya menjadi pendengar firman-Mu, tetapi juga pelaku yang setia. Mampukan kami untuk membangun hidup kami di atas dasar-Mu yang kokoh, agar kami tetap teguh di tengah badai kehidupan. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu ajaran Yesus yang telah Anda dengar berulang kali tetapi belum sepenuhnya Anda praktikkan. Hari ini, ambil langkah konkret untuk menerapkannya dalam hidup Anda.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-13 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-13: Kekuatan Iman Sebesar Biji Sesawi</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 17:20</p>
+                    <p class="scripture-text">"Ia berkata kepada mereka: Karena kamu kurang percaya. Sebab Aku berkata kepadamu: Sesungguhnya sekiranya kamu mempunyai iman sebesar biji sesawi saja kamu dapat berkata kepada gunung ini: Pindah dari tempat ini ke sana, --maka gunung ini akan pindah, dan tak ada yang mustahil bagimu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Ayat ini adalah salah satu pernyataan Yesus yang paling kuat tentang kekuatan iman. Yesus menggunakan biji sesawi, yang dikenal sebagai salah satu biji terkecil, untuk menggambarkan bahwa bahkan iman yang kecil sekalipun, jika tulus dan sungguh-sungguh, memiliki potensi yang luar biasa. Masalahnya bukanlah pada ukuran iman kita, tetapi pada kualitas dan objek iman kita.</p>
+                    <p>Seringkali, kita merasa iman kita tidak cukup besar untuk menghadapi masalah-masalah raksasa dalam hidup. Kita mungkin bergumul dengan keraguan, ketakutan, atau merasa tidak layak. Namun, Yesus meyakinkan kita bahwa Allah tidak meminta iman yang sempurna atau tanpa keraguan, melainkan iman yang berserah kepada-Nya. Bahkan setitik iman yang ditujukan kepada Allah yang mahakuasa dapat menghasilkan mukjizat.</p>
+                    <p>Konsep "memindahkan gunung" adalah metafora untuk mengatasi hambatan yang tampaknya mustahil. Ini bisa berarti menghadapi penyakit yang tidak tersembuhkan, krisis keuangan yang parah, masalah hubungan yang rumit, atau rintangan rohani yang besar. Yesus tidak menjanjikan bahwa kita akan selalu mendapatkan apa yang kita minta, tetapi Ia menjanjikan bahwa bagi mereka yang percaya, tidak ada yang mustahil bagi Allah. Ini adalah ajakan untuk melepaskan keterbatasan kita sendiri dan berserah pada kuasa Allah yang tak terbatas.</p>
+                    <p>Meningkatkan iman kita berarti menghabiskan waktu bersama Tuhan dalam doa, membaca Firman-Nya, dan menyaksikan karya-Nya dalam hidup kita dan orang lain. Ini juga berarti melatih iman kita dengan mengambil langkah-langkah kecil dalam ketaatan dan kepercayaan. Marilah kita memohon kepada Tuhan untuk meningkatkan iman kita, bahkan jika itu hanya sebesar biji sesawi.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, tingkatkanlah iman kami. Ampunilah kami jika kami sering kurang percaya dan membatasi kuasa-Mu. Berilah kami iman yang tulus dan berani, bahkan sebesar biji sesawi, agar kami dapat menyaksikan karya-Mu yang luar biasa dalam hidup kami dan mengatasi setiap "gunung" yang menghalangi. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu "gunung" dalam hidup Anda yang terasa mustahil untuk dipindahkan. Hari ini, dengan iman kecil yang Anda miliki, serahkan masalah itu kepada Tuhan dalam doa dan percayalah bahwa bagi-Nya tidak ada yang mustahil.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-14 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-14: Tanggung Jawab atas Talenta Kita</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 25:14-30 (Intisari Perumpamaan Talenta)</p>
+                    <p class="scripture-text">Yesus menceritakan perumpamaan tentang seorang tuan yang bepergian dan mempercayakan hartanya kepada hamba-hambanya: satu menerima lima talenta, satu dua talenta, dan satu lagi satu talenta, sesuai dengan kesanggupan masing-masing. Dua hamba pertama menggunakan talenta mereka dengan bijak dan melipatgandakannya, sementara hamba ketiga menyembunyikan talentanya karena takut. Ketika sang tuan kembali, ia memuji dua hamba pertama dan menghukum hamba ketiga yang malas.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perumpamaan tentang talenta ini mengajarkan kita tentang tanggung jawab yang diberikan Allah kepada kita. Setiap dari kita, tanpa kecuali, telah dianugerahi talenta, karunia, dan kemampuan yang berbeda-beda. Ini bisa berupa bakat alami, pendidikan, waktu, sumber daya finansial, posisi sosial, atau karunia-karunia rohani. Allah telah mempercayakan kita dengan anugerah ini, dan Ia mengharapkan kita untuk menggunakannya secara bijaksana untuk kemuliaan-Nya dan kebaikan sesama.</p>
+                    <p>Pesan utama perumpamaan ini bukanlah tentang perbandingan antara talenta yang diberikan—karena setiap orang menerima "sesuai dengan kesanggupan masing-masing"—melainkan tentang bagaimana kita merespons apa yang telah diberikan kepada kita. Dua hamba pertama adalah teladan kesetiaan dan inisiatif. Mereka tidak membiarkan karunia mereka terbengkalai, melainkan mengambil risiko dan bekerja keras untuk menghasilkan buah. Hamba ketiga, di sisi lain, dikuasai oleh rasa takut dan kemalasan, yang menyebabkan dia menyia-nyiakan apa yang telah dipercayakan kepadanya.</p>
+                    <p>Allah tidak menuntut kita untuk menghasilkan hasil yang sama dengan orang lain, tetapi Ia menuntut kesetiaan dan penggunaan yang bertanggung jawab atas apa yang telah Ia berikan kepada kita. Ini adalah panggilan untuk tidak menyembunyikan bakat kita karena rasa tidak aman atau takut gagal, melainkan untuk melangkah keluar dalam iman, menggunakan karunia kita untuk melayani Gereja dan dunia. Pada akhirnya, kita semua akan diminta pertanggungjawaban atas bagaimana kita telah mengelola talenta yang Tuhan percayakan kepada kita. Adakah kita akan mendengar "Baik sekali perbuatanmu itu, hai hambaku yang baik dan setia" atau "Hai kamu, hamba yang jahat dan malas"?</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Allah Bapa, kami bersyukur atas segala talenta dan karunia yang telah Engkau percayakan kepada kami. Ampunilah kami jika kami sering menyia-nyiakannya atau menyembunyikannya karena rasa takut. Bantulah kami untuk mengenali dan menggunakan setiap karunia yang Engkau berikan untuk memuliakan nama-Mu dan melayani sesama dengan setia. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu talenta atau karunia yang Anda miliki. Hari ini, rencanakan satu cara konkret untuk menggunakan karunia tersebut dalam pelayanan kepada Tuhan atau sesama Anda.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-15 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-15: Ketaatan yang Lebih Penting dari Kurban</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Markus 12:33 (Intisari dari respons seorang ahli Taurat)</p>
+                    <p class="scripture-text">"Mengasihi Allah dengan segenap hati, dengan segenap akal budi, dan dengan segenap kekuatan, serta mengasihi sesama manusia seperti diri sendiri itu lebih utama dari pada semua korban bakaran dan korban-korban lain."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Injil hari ini menyajikan respons bijak seorang ahli Taurat yang mengerti inti dari hukum Taurat dan ajaran Yesus. Ketika ditanya tentang perintah yang paling utama, Yesus menyebutkan kasih kepada Allah dan kasih kepada sesama. Ahli Taurat tersebut kemudian menegaskan bahwa kasih ini "lebih utama dari pada semua korban bakaran dan korban-korban lain." Ini adalah pernyataan yang sangat penting, karena menempatkan ketaatan hati dan kasih di atas ritual keagamaan semata.</p>
+                    <p>Dalam banyak tradisi keagamaan, termasuk Yudaisme pada zaman Yesus, persembahan kurban dan ritual keagamaan memiliki tempat yang sangat sentral. Namun, Yesus dan para nabi sebelum-Nya seringkali menekankan bahwa tanpa hati yang benar, tanpa kasih dan keadilan, ritual-ritual ini menjadi kosong dan tidak bernilai di hadapan Allah (Yesaya 1:11-17, Hosea 6:6). Allah menghendaki hati yang bertobat, yang mencari kebenaran, dan yang termotivasi oleh kasih, bukan hanya tindakan-tindakan lahiriah.</p>
+                    <p>Bagi kita umat Katolik, ini berarti bahwa partisipasi dalam Misa, menerima sakramen-sakramen, atau melakukan devosi, betapapun pentingnya, tidak boleh menjadi pengganti bagi kehidupan yang mencerminkan kasih kepada Allah dan sesama. Mengasihi Allah dengan segenap hati berarti menyerahkan seluruh keberadaan kita kepada-Nya, memprioritaskan hubungan kita dengan-Nya. Mengasihi sesama seperti diri sendiri berarti memperlakukan orang lain dengan martabat, hormat, dan kasih yang sama seperti kita ingin diperlakukan. Ketika kita hidup dalam kasih ini, setiap kurban dan setiap tindakan rohani kita menjadi bermakna dan berkenan kepada Allah.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Allah, sumber segala kasih, ubahlah hati kami agar kami dapat mengasihi-Mu dengan segenap hati dan sesama kami seperti diri sendiri. Bantu kami untuk tidak hanya memenuhi kewajiban agama, tetapi untuk hidup dalam ketaatan yang tulus dan kasih yang mendalam, yang lebih berharga dari segala persembahan. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan bagaimana Anda menunjukkan kasih kepada Allah dan sesama. Hari ini, coba tunjukkan kasih yang lebih tulus dalam sebuah interaksi, melampaui sekadar memenuhi kewajiban atau kebiasaan.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-16 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-16: Kekhawatiran dan Mencari Kerajaan Allah</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 6:31-33</p>
+                    <p class="scripture-text">"Sebab itu janganlah kamu khawatir dan berkata: Apakah yang akan kami makan? Apakah yang akan kami minum? Apakah yang akan kami pakai? Semua itu dicari bangsa-bangsa yang tidak mengenal Allah. Akan tetapi Bapamu yang di surga tahu, bahwa kamu memerlukan semuanya itu. Tetapi carilah dahulu Kerajaan Allah dan kebenarannya, maka semuanya itu akan ditambahkan kepadamu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Kekhawatiran adalah salah satu beban terbesar yang sering kita pikul dalam hidup. Yesus menyadari kecenderungan manusia untuk khawatir tentang kebutuhan dasar seperti makanan, minuman, dan pakaian. Dalam Injil hari ini, Ia tidak hanya menyuruh kita untuk tidak khawatir, tetapi juga memberikan alasan yang mendalam dan solusi yang transformatif.</p>
+                    <p>Pertama, Yesus mengingatkan kita bahwa Bapa kita di surga mengetahui segala kebutuhan kita. Jika Allah memelihara burung-burung di udara dan bunga-bunga di padang, betapa lebihnya lagi Ia akan memelihara kita, anak-anak-Nya. Kekhawatiran menunjukkan kurangnya kepercayaan pada kasih dan pemeliharaan Allah. Kekhawatiran juga tidak produktif; tidak ada yang dapat menambah sehasta pun pada jalan hidupnya dengan khawatir.</p>
+                    <p>Solusi yang Yesus tawarkan adalah untuk "mencari dahulu Kerajaan Allah dan kebenarannya." Ini adalah undangan untuk menempatkan Allah sebagai prioritas utama dalam hidup kita. Mencari Kerajaan Allah berarti mengutamakan kehendak-Nya, nilai-nilai-Nya, dan misi-Nya. Ini berarti hidup dalam ketaatan, mencari keadilan, dan membangun hubungan yang benar dengan-Nya dan sesama. Ketika kita melakukan ini, Yesus berjanji bahwa "semuanya itu akan ditambahkan kepadamu." Ini bukan janji kekayaan materi, melainkan jaminan bahwa kebutuhan dasar kita akan terpenuhi, dan kita akan menemukan kedamaian dan kepuasan sejati dalam Allah.</p>
+                    <p>Melepaskan kekhawatiran dan memilih untuk mencari Kerajaan Allah adalah tindakan iman yang radikal. Ini membebaskan kita dari siklus kecemasan dan mengarahkan kita pada tujuan yang lebih tinggi, memungkinkan kita untuk mengalami damai sejahtera Allah yang melampaui segala akal.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, ampunilah kami jika kami sering dikuasai oleh kekhawatiran dan kurang mempercayai pemeliharaan-Mu. Bantulah kami untuk senantiasa mencari dahulu Kerajaan-Mu dan kebenaran-Mu. Berilah kami iman yang teguh untuk menyerahkan segala kebutuhan kami kepada-Mu, mengetahui bahwa Engkau adalah Bapa yang penuh kasih. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Ketika Anda merasa khawatir hari ini, hentikan sejenak, berdoa, dan dengan sengaja alihkan fokus Anda untuk memikirkan satu cara Anda bisa mencari Kerajaan Allah atau melayani sesama dalam situasi tersebut.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-17 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-17: Kebaikan Hati dan Kemurahan Allah</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 6:35-36</p>
+                    <p class="scripture-text">"Tetapi kasihilah musuhmu dan berbuatlah baik kepada mereka dan pinjamkanlah dengan tidak mengharapkan balasan, maka upahmu akan besar dan kamu akan menjadi anak-anak Allah Yang Mahatinggi, sebab Ia baik terhadap orang-orang yang tidak tahu berterima kasih dan terhadap orang-orang jahat. Hendaklah kamu murah hati, sama seperti Bapamu murah hati."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perintah Yesus untuk mengasihi musuh dan berbuat baik kepada mereka yang tidak menghargai kita adalah salah satu ajaran yang paling menantang dalam Injil. Ini bertentangan dengan insting alami kita untuk membalas dendam atau membalas kebaikan hanya kepada mereka yang berbuat baik kepada kita. Namun, Yesus menetapkan standar kasih yang jauh lebih tinggi, sebuah kasih yang meniru kemurahan hati Allah Bapa sendiri.</p>
+                    <p>Allah, dalam kemurahan-Nya yang tak terbatas, "baik terhadap orang-orang yang tidak tahu berterima kasih dan terhadap orang-orang jahat." Matahari-Nya terbit bagi orang baik dan orang jahat, dan hujan-Nya turun bagi orang yang benar dan yang tidak benar. Ini adalah kasih yang tidak membedakan, yang melampaui kelayakan atau pantasnya seseorang. Kita dipanggil untuk menjadi "anak-anak Allah Yang Mahatinggi" dengan meniru sifat ini, yaitu menjadi murah hati sama seperti Bapa kita murah hati.</p>
+                    <p>Menerapkan ajaran ini berarti kita tidak hanya mengasihi orang yang mudah dikasihi, tetapi juga mereka yang menyakiti kita, yang berbeda pandangan, atau yang tidak pantas menerima kebaikan kita menurut ukuran dunia. Ini adalah kasih yang mematahkan siklus kebencian dan menciptakan kemungkinan rekonsiliasi. Ini membutuhkan kekuatan batin, pengorbanan, dan rahmat ilahi. Ketika kita memilih untuk mengasihi dan berbuat baik kepada musuh kita, kita tidak hanya menunjukkan kesaksian akan Kristus, tetapi juga membuka diri pada aliran rahmat yang mengubah hati kita dan dunia di sekitar kita.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Bapa yang Mahamurah, penuhilah hati kami dengan kasih-Mu yang tak terbatas. Ampunilah kami jika kami sering membatasi kasih kami hanya kepada orang-orang yang kami sukai. Berilah kami rahmat dan kekuatan untuk mengasihi musuh kami dan berbuat baik kepada mereka yang menyakiti kami, meniru kemurahan hati-Mu yang ilahi. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu orang dalam hidup Anda yang mungkin sulit untuk Anda kasihani atau yang Anda anggap sebagai "musuh" (bukan secara harfiah, tetapi sebagai seseorang yang telah menyakiti Anda). Hari ini, doakan orang tersebut dengan tulus dan mohonlah rahmat untuk dapat mengasihi dan berbuat baik kepadanya.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-18 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-18: Pentingnya Hidup dalam Kebenaran</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Yohanes 8:31-32</p>
+                    <p class="scripture-text">"Maka kata-Nya kepada orang-orang Yahudi yang percaya kepada-Nya: Jikalau kamu tetap dalam firman-Ku, kamu benar-benar murid-Ku dan kamu akan mengetahui kebenaran, dan kebenaran itu akan memerdekakan kamu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Dalam bagian Injil ini, Yesus berbicara kepada orang-orang yang telah percaya kepada-Nya, menekankan pentingnya tidak hanya "mempercayai" pada suatu momen, tetapi "tetap dalam firman-Nya." Ini adalah panggilan untuk ketaatan yang berkelanjutan, untuk menjadikan firman Kristus sebagai pusat hidup kita, dan untuk terus-menerus merenungkannya dan menerapkannya. Hanya dengan cara inilah kita dapat benar-benar disebut murid-murid-Nya.</p>
+                    <p>Janji yang menyertainya sangatlah besar: "kamu akan mengetahui kebenaran, dan kebenaran itu akan memerdekakan kamu." Di dunia yang seringkali dipenuhi dengan kebohongan, disinformasi, dan berbagai ideologi yang menyesatkan, menemukan kebenaran adalah hal yang sangat berharga. Kebenaran yang Yesus bicarakan bukanlah sekadar fakta intelektual, melainkan kebenaran yang bersifat personal dan relasional, yaitu Pribadi-Nya sendiri (Yohanes 14:6: "Akulah jalan dan kebenaran dan hidup").</p>
+                    <p>Mengenal kebenaran dalam Kristus membebaskan kita dari berbagai belenggu: belenggu dosa, rasa takut, kebingungan, prasangka, dan keterikatan pada hal-hal duniawi. Kebenaran memberi kita kejelasan tujuan, kedamaian batin, dan kebebasan untuk hidup sesuai dengan rencana Allah bagi kita. Itu membebaskan kita untuk menjadi diri kita yang sejati, diciptakan menurut gambar Allah. Hidup dalam kebenaran berarti jujur kepada diri sendiri, kepada sesama, dan yang terpenting, kepada Allah. Ini juga berarti berani membela kebenaran, bahkan ketika itu tidak populer atau sulit.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Tuhan Yesus, Engkaulah Kebenaran itu sendiri. Bantulah kami untuk tetap setia dalam firman-Mu, agar kami dapat benar-benar menjadi murid-murid-Mu dan mengenal kebenaran yang memerdekakan kami. Bebaskanlah kami dari segala belenggu dosa dan kebohongan, dan tuntunlah kami untuk hidup dalam cahaya kebenaran-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan satu area dalam hidup Anda di mana Anda merasa belum sepenuhnya hidup dalam kebenaran (misalnya, kebiasaan berbohong kecil, ketidakjujuran). Hari ini, ambil langkah konkret untuk mengubahnya dan mohonlah rahmat untuk hidup lebih otentik.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-19 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-19: Jangan Menghakimi, Supaya Kamu Tidak Dihakimi</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 7:1-2</p>
+                    <p class="scripture-text">"Jangan kamu menghakimi, supaya kamu tidak dihakimi. Karena dengan penghakiman yang kamu pakai untuk menghakimi, kamu akan dihakimi dan ukuran yang kamu pakai untuk mengukur, akan diukurkan kepadamu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perintah Yesus untuk "jangan menghakimi" adalah salah satu yang paling sering dikutip, namun sering disalahpahami. Ini bukan berarti kita tidak boleh membedakan antara yang benar dan yang salah, atau bahwa kita harus menerima segala sesuatu tanpa penilaian kritis. Gereja Katolik sendiri memiliki doktrin dan moral yang jelas. Namun, Yesus melarang kita untuk menghakimi dengan cara yang menghukum, memvonis, atau merendahkan orang lain, terutama tentang motif hati mereka atau status rohani mereka.</p>
+                    <p>Larangan ini didasarkan pada dua alasan utama: Pertama, kita tidak memiliki pengetahuan yang lengkap atau otoritas ilahi untuk menghakimi. Hanya Allah yang mengenal hati manusia sepenuhnya. Kita seringkali melihat hanya bagian luar, sementara Allah melihat ke dalam. Kedua, ada prinsip timbal balik: "dengan penghakiman yang kamu pakai untuk menghakimi, kamu akan dihakimi." Artinya, jika kita cepat menghakimi dan menunjuk jari pada kesalahan orang lain, kita harus siap menerima perlakuan yang sama dari Allah, yang standar-Nya jauh lebih tinggi.</p>
+                    <p>Alih-alih menghakimi, Yesus mengajak kita untuk mempraktikkan kasih, kerendahan hati, dan belas kasihan. Sebelum melihat serpihan di mata orang lain, kita harus memeriksa balok di mata kita sendiri (Matius 7:3-5). Ini adalah panggilan untuk introspeksi dan pertobatan. Ketika kita menyadari kelemahan dan dosa-dosa kita sendiri, kita akan lebih cenderung bersimpati dan mengasihi daripada menghakimi. Ini tidak berarti kita tidak boleh menolong sesama untuk melihat kesalahan mereka (koreksi persaudaraan), tetapi itu harus dilakukan dengan kasih, kerendahan hati, dan bertujuan untuk pemulihan, bukan penghukuman.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, ampunilah kami jika kami sering terburu-buru menghakimi sesama kami. Berilah kami hati yang penuh belas kasihan, yang mampu melihat orang lain melalui mata-Mu. Bantulah kami untuk memeriksa diri kami sendiri terlebih dahulu dan menunjukkan kasih serta pengertian, bukan penghukuman. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Hari ini, ketika Anda tergoda untuk menghakimi seseorang, berhentilah sejenak. Berdoalah untuk orang itu dan coba lihatlah situasi dari sudut pandangnya, mohonlah rahmat untuk bersimpati daripada menghakimi.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-20 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-20: Kerahiman Allah bagi Pendosa</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 15:1-7 (Perumpamaan Domba yang Hilang)</p>
+                    <p class="scripture-text">Yesus menceritakan perumpamaan tentang seorang gembala yang memiliki seratus ekor domba, tetapi salah satunya tersesat. Gembala itu meninggalkan sembilan puluh sembilan domba yang lain di padang dan pergi mencari domba yang hilang itu sampai ia menemukannya. Ketika ia menemukannya, ia dengan gembira memikulnya di bahunya, membawanya pulang, dan mengundang teman-teman serta tetangga-tetangganya untuk bersukacita bersamanya. Yesus menyimpulkan, "Aku berkata kepadamu: Demikian juga akan ada sukacita di surga karena satu orang berdosa yang bertobat, lebih dari pada sukacita karena sembilan puluh sembilan orang benar yang tidak memerlukan pertobatan."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perumpamaan tentang domba yang hilang adalah gambaran yang indah dan menyentuh hati tentang kerahiman Allah yang tak terbatas dan kasih-Nya yang mencari. Ini adalah respons Yesus terhadap kaum Farisi dan ahli Taurat yang mengeluh karena Ia menerima orang-orang berdosa dan makan bersama mereka. Yesus ingin menunjukkan bahwa hati Allah adalah hati seorang Gembala yang baik, yang tidak ingin satu pun dari kawanan-Nya hilang.</p>
+                    <p>Setiap dari kita adalah domba yang rentan tersesat. Kita semua telah berdosa dan menyimpang dari jalan Tuhan. Namun, yang luar biasa adalah bahwa ketika kita tersesat, Allah tidak tinggal diam. Ia secara aktif mencari kita. Kasih-Nya adalah kasih yang proaktif, yang meninggalkan kenyamanan dan keamanan untuk mengejar yang hilang, dengan risiko dan pengorbanan. Allah tidak menunggu kita untuk kembali dengan sempurna, tetapi Ia datang kepada kita di mana pun kita berada, mengangkat kita, dan membawa kita pulang dengan sukacita.</p>
+                    <p>Perumpamaan ini juga mengungkapkan sukacita surgawi yang luar biasa atas pertobatan satu orang berdosa. Ini adalah sukacita yang melampaui sukacita atas mereka yang sudah "benar" atau yang merasa tidak perlu bertobat. Ini adalah undangan bagi kita semua, baik yang merasa tersesat maupun yang merasa sudah di jalan yang benar, untuk terus-menerus merenungkan kerahiman Allah dan untuk membiarkan diri kita diubah oleh-Nya. Ini juga memanggil kita untuk meniru kerahiman Allah dalam cara kita memperlakukan orang lain, terutama mereka yang terpinggirkan atau yang melakukan kesalahan.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Gembala yang baik, kami bersyukur atas kerahiman-Mu yang tak terbatas yang senantiasa mencari kami ketika kami tersesat. Ampunilah kami atas dosa-dosa kami dan penuhilah hati kami dengan sukacita pertobatan. Mampukan kami untuk meniru hati Gembala-Mu, mencari dan menyambut mereka yang tersesat dengan kasih. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan kerahiman Allah dalam hidup Anda. Jika ada dosa yang belum Anda akui, pertimbangkan untuk menerima Sakramen Rekonsiliasi. Jika ada seseorang yang terhilang atau terpinggirkan di sekitar Anda, doakanlah dia dan cari cara untuk menunjukkan kasih kepadanya.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-21 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-21: Membangun di Atas Yesus Kristus</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">1 Korintus 3:10-11</p>
+                    <p class="scripture-text">"Sesuai dengan kasih karunia Allah, yang dianugerahkan kepadaku, aku sebagai seorang ahli bangunan yang bijaksana telah meletakkan dasar, dan orang lain membangun terus di atasnya. Tetapi tiap-tiap orang harus memperhatikan, bagaimana ia membangun di atasnya. Karena tidak ada seorang pun yang dapat meletakkan dasar lain dari pada dasar yang telah diletakkan, yaitu Yesus Kristus."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Meskipun dari surat Paulus, ayat-ayat ini menegaskan kebenaran inti Injil tentang pondasi iman kita. Paulus menggunakan metafora bangunan untuk menggambarkan kehidupan Kristen. Ia, sebagai "ahli bangunan yang bijaksana" atau arsitek yang cakap, telah meletakkan dasar yang tak tergantikan: Yesus Kristus. Ini berarti bahwa seluruh iman, doktrin, dan praktik Kristen harus berpusat pada pribadi dan karya Yesus Kristus.</p>
+                    <p>Tidak ada dasar lain yang dapat menopang bangunan iman yang sejati. Upaya manusia untuk membangun di atas dasar-dasar lain—seperti kekayaan, kekuasaan, kebijaksanaan duniawi, popularitas, atau bahkan ketaatan pada hukum tanpa kasih—pada akhirnya akan runtuh. Hanya di dalam Kristuslah kita menemukan kebenaran yang kokoh, keselamatan, dan harapan abadi. Kristus adalah Batu Penjuru, tanpa-Nya, tidak ada yang dapat berdiri tegak.</p>
+                    <p>Setelah dasar diletakkan, setiap kita bertanggung jawab untuk "memperhatikan, bagaimana ia membangun di atasnya." Ini berarti kita harus membangun hidup kita dengan hati-hati, dengan bahan-bahan yang sesuai—yaitu, tindakan-tindakan yang sesuai dengan Injil, karakter yang dibentuk oleh Roh Kudus, dan pelayanan yang termotivasi oleh kasih. Apakah kita membangun dengan "emas, perak, batu permata" (iman, kasih, pelayanan yang murni) atau dengan "kayu, rumput kering, jerami" (tindakan lahiriah, motivasi egois, kompromi)? Setiap pekerjaan kita akan diuji pada akhirnya. Renungan ini memanggil kita untuk memeriksa pondasi dan bahan-bahan bangunan kehidupan rohani kita.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus Kristus, Engkaulah dasar iman kami yang tak tergoyahkan. Ampunilah kami jika kami sering mencoba membangun hidup kami di atas dasar-dasar yang rapuh. Bantulah kami untuk senantiasa membangun di atas-Mu, dengan bahan-bahan yang murni dan kudus, agar hidup kami berkenan kepada-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Luangkan waktu untuk merenungkan, "Apakah hidup saya benar-benar berpusat pada Kristus?" Identifikasi satu aspek kehidupan Anda (misalnya, karir, hubungan, hobi) dan pikirkan bagaimana Anda dapat menempatkan Kristus lebih sentral di dalamnya hari ini.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-22 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-22: Ketenangan di Tengah Badai</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Markus 4:35-41 (Intisari Yesus Meredakan Angin Ribut)</p>
+                    <p class="scripture-text">Pada suatu malam, Yesus dan murid-murid-Nya berlayar menyeberangi danau. Tiba-tiba datanglah angin ribut yang dahsyat, dan gelombang menghempas perahu sehingga hampir penuh air. Yesus sendiri sedang tidur di buritan perahu. Murid-murid membangunkan-Nya dengan panik, "Guru, Engkau tidak peduli kalau kita binasa?" Lalu Yesus bangun, menghardik angin itu dan berkata kepada danau itu, "Diam! Tenanglah!" Lalu angin itu reda dan danau itu menjadi tenang sekali. Ia kemudian berkata kepada mereka, "Mengapa kamu begitu takut? Mengapa kamu tidak percaya?"</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Kisah Yesus meredakan angin ribut adalah salah satu gambaran paling kuat tentang kekuasaan-Nya atas alam dan panggilan-Nya untuk iman di tengah krisis. Murid-murid, meskipun nelayan berpengalaman, diliputi ketakutan dan kepanikan menghadapi badai yang mengancam nyawa. Pertanyaan mereka kepada Yesus, "Engkau tidak peduli kalau kita binasa?", mengungkapkan ketidakpercayaan mereka bahwa Ia mengendalikan situasi atau bahkan peduli pada mereka.</p>
+                    <p>Dalam hidup kita, kita juga akan menghadapi badai—badai finansial, masalah kesehatan, krisis hubungan, atau pergolakan batin. Terkadang, seolah-olah Yesus "sedang tidur" di tengah kesulitan kita, dan kita merasa ditinggalkan atau tidak diperhatikan. Saat-saat seperti itu adalah ujian bagi iman kita. Apakah kita akan membiarkan rasa takut menguasai kita, ataukah kita akan berpaling kepada Kristus, sumber kedamaian sejati?</p>
+                    <p>Reaksi Yesus—menghardik angin dan berkata "Diam! Tenanglah!"—menunjukkan kuasa-Nya yang ilahi. Lalu, pertanyaan-Nya kepada murid-murid, "Mengapa kamu begitu takut? Mengapa kamu tidak percaya?", adalah teguran lembut sekaligus undangan untuk iman yang lebih dalam. Yesus mengundang kita untuk percaya bahwa Ia bersama kita di tengah badai, dan bahwa Ia memiliki kuasa untuk menenangkan badai—baik badai di sekitar kita maupun badai dalam hati kita. Ketenangan sejati bukan berarti tidak adanya badai, melainkan kehadiran Kristus di tengah badai itu, dan iman kita pada kuasa-Nya untuk membawa kita melaluinya.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Engkau adalah Tuhan atas segala badai. Ampunilah kami jika kami sering takut dan kurang percaya di tengah kesulitan hidup. Datanglah ke dalam perahu hidup kami, tenangkanlah badai yang mengamuk, dan penuhilah hati kami dengan damai sejahtera-Mu. Kuatkanlah iman kami agar kami senantiasa percaya pada kuasa-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu "badai" atau kekhawatiran yang sedang Anda hadapi. Hari ini, luangkan waktu untuk berdoa secara khusus tentang hal itu, menyerahkannya kepada Kristus, dan mohonlah ketenangan serta iman untuk mempercayai-Nya di tengah badai.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-23 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-23: Kebenaran tentang Menjadi Kaya di Hadapan Allah</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 12:20-21 (Perumpamaan Orang Kaya yang Bodoh)</p>
+                    <p class="scripture-text">"Tetapi firman Allah kepadanya: Hai orang bodoh, pada malam ini juga nyawamu akan diambil dari padamu, lalu siapakah yang mempunyai segala yang telah kausediakan itu? Demikianlah jadinya dengan orang yang mengumpulkan harta bagi dirinya sendiri, jikalau ia tidak kaya di hadapan Allah."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perumpamaan tentang orang kaya yang bodoh ini adalah teguran keras Yesus terhadap materialisme dan ketidakpedulian terhadap hal-hal rohani. Orang kaya ini digambarkan sebagai seseorang yang berfokus sepenuhnya pada pengumpulan kekayaan dan menikmati kemewahan hidup, dengan asumsi bahwa ia memiliki waktu yang tak terbatas untuk menikmatinya. Ia gagal melihat bahwa hidupnya tidak ada di tangannya sendiri, dan prioritasnya salah.</p>
+                    <p>Allah memanggilnya "orang bodoh" bukan karena memiliki kekayaan, tetapi karena ia mengandalkan kekayaannya sepenuhnya dan mengabaikan kekayaan sejati. Ia mengumpulkan harta bagi dirinya sendiri, tanpa memikirkan Allah atau sesama. Ia tidak "kaya di hadapan Allah." Kekayaan di hadapan Allah berarti memiliki hubungan yang benar dengan-Nya, hidup dalam ketaatan, mempraktikkan kasih dan kemurahan hati, serta mengumpulkan harta rohani yang abadi.</p>
+                    <p>Perumpamaan ini adalah pengingat yang serius tentang kefanaan hidup dan pentingnya mempersiapkan diri untuk kekekalan. Kita tidak tahu kapan waktu kita akan berakhir, dan semua kekayaan materi yang kita kumpulkan di bumi tidak akan dapat menyelamatkan jiwa kita. Yesus mengajarkan kita bahwa nilai sejati seorang manusia tidak terletak pada seberapa banyak yang ia miliki, melainkan pada bagaimana ia hidup di hadapan Allah dan bagaimana ia menggunakan apa yang telah Allah percayakan kepadanya.</p>
+                    <p>Marilah kita merenungkan: Apakah saya mengumpulkan harta bagi diri sendiri, ataukah saya berusaha menjadi kaya di hadapan Allah? Apakah prioritas saya selaras dengan kehendak Tuhan?</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, ampunilah kami jika kami sering terlalu fokus pada kekayaan duniawi dan mengabaikan kekayaan rohani. Bantulah kami untuk tidak menjadi orang bodoh yang mengumpulkan harta hanya bagi diri sendiri. Ajarlah kami untuk hidup bijaksana, menggunakan waktu dan sumber daya kami untuk menjadi kaya di hadapan-Mu, melalui kasih dan pelayanan. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Evaluasi pengeluaran dan investasi waktu Anda. Apakah sebagian besar digunakan untuk diri sendiri atau untuk tujuan yang memuliakan Tuhan? Hari ini, lakukan satu tindakan konkret yang berfokus pada menjadi "kaya di hadapan Allah", misalnya dengan berbagi sebagian harta atau waktu Anda dengan yang membutuhkan.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-24 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-24: Ketaatan dan Harga Diri di Mata Allah</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 14:11</p>
+                    <p class="scripture-text">"Sebab barangsiapa meninggikan diri, ia akan direndahkan dan barangsiapa merendahkan diri, ia akan ditinggikan."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Ayat ini, yang diucapkan Yesus dalam konteks perumpamaan tentang orang-orang yang memilih tempat terhormat dalam perjamuan, adalah prinsip mendasar Kerajaan Allah yang seringkali bertentangan dengan nilai-nilai duniawi. Dunia mengajarkan kita untuk berjuang demi posisi, status, dan pengakuan. Namun, Yesus mengajarkan bahwa jalan menuju kebesaran sejati adalah melalui kerendahan hati.</p>
+                    <p>Meninggikan diri berarti mencari kemuliaan bagi diri sendiri, merasa superior dari orang lain, atau menuntut penghormatan dan pengakuan. Sikap ini seringkali berasal dari kesombongan dan ketidakamanan. Yesus memperingatkan bahwa mereka yang meninggikan diri akan "direndahkan"—mungkin di mata manusia, tetapi pasti di hadapan Allah.</p>
+                    <p>Sebaliknya, merendahkan diri berarti mengakui keterbatasan kita, kerentanan kita, dan ketergantungan kita kepada Allah. Ini berarti menempatkan kebutuhan orang lain di atas kebutuhan kita sendiri, melayani tanpa pamrih, dan tidak mencari perhatian atau pujian. Kerendahan hati bukanlah berarti meremehkan diri sendiri atau tidak memiliki harga diri. Sebaliknya, itu adalah pemahaman yang jujur tentang siapa kita di hadapan Allah dan sesama, yang memungkinkan kita untuk mengosongkan diri agar kasih Allah dapat mengalir melalui kita.</p>
+                    <p>Janji Yesus adalah bahwa mereka yang merendahkan diri akan "ditinggikan." Pengangkatan ini mungkin tidak selalu dalam bentuk status atau kekuasaan duniawi, tetapi pasti dalam bentuk kasih karunia, damai sejahtera, dan kebahagiaan sejati dalam Kristus. Allah menentang orang yang congkak, tetapi mengasihi orang yang rendah hati. Ini adalah panggilan untuk terus-menerus mempraktikkan kerendahan hati dalam setiap aspek kehidupan kita, meniru teladan Kristus yang mengosongkan diri-Nya demi kita.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Engkau adalah teladan kerendahan hati sejati. Ampunilah kami jika kami sering dikuasai oleh kesombongan dan keinginan untuk meninggikan diri. Berilah kami rahmat untuk merendahkan diri di hadapan-Mu dan sesama kami, agar kami dapat ditinggikan oleh kasih karunia-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Identifikasi satu situasi hari ini di mana Anda merasa tergoda untuk meninggikan diri atau mencari pengakuan. Secara sadar pilihlah untuk merendahkan diri, baik dengan mendengarkan lebih banyak, melayani secara diam-diam, atau membiarkan orang lain bersinar.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-25 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-25: Berani Bersaksi dalam Kehidupan Sehari-hari</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Matius 10:32-33</p>
+                    <p class="scripture-text">"Setiap orang yang mengakui Aku di depan manusia, Aku juga akan mengakuinya di depan Bapa-Ku yang di surga. Tetapi barangsiapa menyangkal Aku di depan manusia, Aku juga akan menyangkalnya di depan Bapa-Ku yang di surga."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Dalam bagian Injil ini, Yesus menegaskan pentingnya kesaksian publik tentang iman kita. Mengakui Kristus di depan manusia bukan hanya tentang pengakuan iman formal atau partisipasi dalam liturgi. Ini juga tentang bagaimana kita hidup, berbicara, dan berinteraksi dalam kehidupan sehari-hari kita, mencerminkan nilai-nilai Injil di dunia yang seringkali menentang nilai-nilai tersebut.</p>
+                    <p>Mengakui Kristus bisa berarti hal-hal kecil seperti berdiri membela kebenaran ketika ada ketidakadilan, menolak ikut serta dalam gosip, atau menunjukkan kasih dan pengampunan di tempat kerja. Ini juga bisa berarti hal-hal besar seperti berbagi kesaksian pribadi tentang bagaimana Kristus telah mengubah hidup kita, atau secara terbuka menyatakan iman kita dalam percakapan dengan teman atau keluarga. Tantangannya adalah bahwa mengakui Kristus seringkali datang dengan harga—mungkin ejekan, penolakan, atau bahkan penganiayaan.</p>
+                    <p>Yesus sendiri mengakui bahwa mengikuti Dia tidak akan selalu mudah, dan ada godaan untuk menyangkal-Nya demi kenyamanan, popularitas, atau keamanan. Namun, janji-Nya sangatlah kuat: mereka yang mengakui Dia akan diakui-Nya di hadapan Bapa di surga. Ini adalah jaminan akan keselamatan dan persekutuan kekal dengan Tuhan. Sebaliknya, konsekuensi menyangkal Dia adalah kehilangan pengakuan dari-Nya di hadapan Bapa.</p>
+                    <p>Renungan ini memanggil kita untuk keberanian rohani. Apakah kita siap untuk berdiri teguh dalam iman kita, bahkan ketika itu tidak mudah? Apakah hidup kita secara konsisten mengakui Kristus kepada dunia?</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, berilah kami keberanian untuk mengakui Engkau di depan manusia melalui setiap kata dan perbuatan kami. Ampunilah kami jika kami sering takut atau menyembunyikan iman kami. Penuhilah kami dengan Roh Kudus-Mu, agar kami dapat menjadi saksi-Mu yang setia di dunia ini, dan agar Engkau pun akan mengakui kami di hadapan Bapa. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan satu kesempatan hari ini di mana Anda dapat secara halus atau langsung mengakui Kristus melalui tindakan atau kata-kata Anda. Misalnya, berdoa sebelum makan di tempat umum, atau memberikan respons yang berlandaskan iman dalam percakapan.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-26 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-26: Mengenal Allah Melalui Ciptaan-Nya</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Roma 1:20 (Dari surat Paulus)</p>
+                    <p class="scripture-text">"Sebab apa yang tidak nampak dari pada-Nya, yaitu kekuatan-Nya yang kekal dan keilahian-Nya, dapat nampak kepada pikiran dari karya-Nya sejak dunia diciptakan, sehingga mereka tidak dapat berdalih."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Meskipun dari surat Paulus, ayat ini menggarisbawahi kebenaran mendalam tentang bagaimana Allah menyatakan diri-Nya kepada manusia, bahkan sebelum Injil Yesus Kristus diwartakan. Allah yang tak terlihat, kekuatan-Nya yang kekal, dan keilahian-Nya, dapat "nampak kepada pikiran dari karya-Nya sejak dunia diciptakan." Alam semesta, dengan segala keindahan, kompleksitas, dan keteraturannya, adalah saksi bisu akan keberadaan dan kebesaran Sang Pencipta.</p>
+                    <p>Dari galaksi yang tak terhingga hingga keajaiban sel tunggal, dari siklus musim yang teratur hingga keragaman hayati yang menakjubkan, semua itu berbicara tentang kecerdasan, kuasa, dan kasih Allah. Setiap matahari terbit, setiap tetesan hujan, setiap hembusan angin, adalah nyanyian pujian bagi Pencipta. Kita tidak perlu mencari jauh untuk menemukan jejak tangan Tuhan; itu ada di mana-mana di sekitar kita, jika saja kita mau membuka mata hati dan pikiran kita.</p>
+                    <p>Mengakui Allah melalui ciptaan-Nya seharusnya menumbuhkan rasa kagum, syukur, dan kerendahan hati dalam diri kita. Ini juga memanggil kita untuk menjadi pengelola yang bertanggung jawab atas ciptaan-Nya (Gen 2:15). Merusak lingkungan atau mengeksploitasi alam tanpa batas adalah tindakan yang menodai karya seni Allah yang agung. Marilah kita meluangkan waktu untuk mengagumi ciptaan-Nya, untuk merenungkan kebijaksanaan di baliknya, dan untuk memuliakan Dia yang telah menciptakan segala sesuatu dengan begitu indah dan menakjubkan.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Allah Bapa, Pencipta alam semesta, kami memuji dan memuliakan nama-Mu atas segala karya-Mu yang agung dan indah. Ampunilah kami jika kami sering lalai melihat kebesaran-Mu dalam ciptaan. Bukalah mata hati kami agar kami dapat senantiasa mengagumi-Mu dan menjadi pengelola yang baik atas bumi ini, sesuai dengan kehendak-Mu. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Luangkan 10-15 menit hari ini untuk berada di alam (bahkan hanya melihat pohon atau awan dari jendela Anda). Renungkan keindahan ciptaan dan panjatkan doa syukur kepada Sang Pencipta.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-27 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-27: Kasih yang Kekal dan Tak Berkesudahan</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">1 Korintus 13:4-7</p>
+                    <p class="scripture-text">"Kasih itu sabar; kasih itu murah hati; ia tidak cemburu. Ia tidak memegahkan diri dan tidak sombong. Ia tidak melakukan yang tidak sopan dan tidak mencari keuntungan diri sendiri. Ia tidak pemarah dan tidak menyimpan kesalahan orang lain. Ia tidak bersukacita karena ketidakadilan, tetapi karena kebenaran. Ia menutupi segala sesuatu, percaya segala sesuatu, mengharapkan segala sesuatu, sabar menanggung segala sesuatu."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Meskipun dari surat Paulus, "Himne Kasih" ini adalah salah satu teks yang paling indah dan mendalam dalam seluruh Alkitab, yang menangkap esensi kasih ilahi yang juga menjadi inti ajaran Yesus. Paulus tidak hanya mendefinisikan apa itu kasih, tetapi juga menggambarkan bagaimana kasih itu beraksi. Kasih yang sejati bukanlah sekadar emosi romantis, melainkan suatu tindakan, suatu pilihan, dan suatu cara hidup yang diwujudkan dalam karakter.</p>
+                    <p>Setiap atribut kasih yang disebutkan Paulus—sabar, murah hati, tidak cemburu, tidak sombong, tidak kasar, tidak egois, tidak pemarah, tidak menyimpan dendam, dan sebagainya—adalah cerminan dari karakter Allah sendiri. Ketika kita diundang untuk mengasihi, kita diundang untuk meniru sifat-sifat ilahi ini. Kasih yang seperti ini menuntut pengosongan diri, kerendahan hati, dan fokus pada kebaikan orang lain.</p>
+                    <p>Penting untuk dicatat bahwa kasih "percaya segala sesuatu, mengharapkan segala sesuatu, sabar menanggung segala sesuatu." Ini bukan berarti naif atau tidak realistis, tetapi itu berarti kasih memiliki kapasitas untuk melihat potensi kebaikan dalam diri orang lain, untuk tetap berharap meskipun dihadapkan pada kesulitan, dan untuk bertahan melalui tantangan. Kasih tidak akan pernah berkesudahan (1 Korintus 13:8), karena itu adalah esensi Allah dan perekat yang mengikat kita bersama-sama. Renungan ini memanggil kita untuk terus-menerus menguji kasih kita terhadap standar ilahi ini.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, Engkaulah Kasih itu sendiri. Penuhilah hati kami dengan Roh Kudus-Mu, agar kami dapat mengasihi dengan kasih yang Engkau definisikan. Mampukan kami untuk menjadi sabar, murah hati, tidak egois, dan senantiasa berharap serta menanggung segala sesuatu demi kasih. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Pilih salah satu atribut kasih dari 1 Korintus 13 yang paling sulit Anda wujudkan. Hari ini, secara sadar praktikkan atribut itu dalam interaksi Anda dengan setidaknya satu orang.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-28 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-28: Kuasa Firman Tuhan yang Hidup</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Ibrani 4:12</p>
+                    <p class="scripture-text">"Sebab firman Allah hidup dan kuat dan lebih tajam dari pada pedang bermata dua mana pun; ia menusuk amat dalam sampai memisahkan jiwa dan roh, sendi-sendi dan sumsum; ia sanggup membedakan pertimbangan dan pikiran hati kita."</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Meskipun dari Surat kepada Orang Ibrani, ayat ini dengan indah merangkum esensi dan kekuatan firman Allah, yang diwujudkan sepenuhnya dalam diri Yesus Kristus, Sang Firman yang menjadi daging. Firman Allah tidak statis atau mati; ia "hidup dan kuat." Ini berarti bahwa ketika kita membaca, merenungkan, atau mendengarkan Firman, kita tidak sedang berinteraksi dengan teks kuno belaka, melainkan dengan Allah yang hidup yang terus berbicara dan bekerja.</p>
+                    <p>Kuasa Firman digambarkan sebagai "lebih tajam dari pada pedang bermata dua mana pun." Ini menunjukkan kemampuannya untuk menembus, menyingkap, dan membedakan. Firman Allah mampu menembus lapisan-lapisan pertahanan kita, menyingkap motivasi terdalam, pikiran, dan pertimbangan hati kita. Ia mengungkapkan kebenaran tentang diri kita, tentang Allah, dan tentang dunia. Ia memisahkan apa yang ilahi dari apa yang duniawi, apa yang benar dari apa yang palsu, apa yang kudus dari apa yang berdosa.</p>
+                    <p>Bagi umat Katolik, Firman ini hadir secara istimewa dalam Kitab Suci, yang diilhami oleh Roh Kudus, dan juga dalam Liturgi Sabda dalam Ekaristi, di mana Kristus sendiri berbicara kepada kita. Firman Allah memiliki kuasa untuk mengubah hati, menyembuhkan luka, memberikan pengharapan, dan membimbing kita di jalan kebenaran. Ketika kita membuka diri pada Firman, kita mengizinkan Allah untuk bekerja dalam diri kita, mengoreksi, mengajar, dan menguduskan kita. Mari kita mendekati Firman dengan hormat, kesediaan untuk mendengarkan, dan kemauan untuk diubah.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan, kami bersyukur atas Firman-Mu yang hidup dan berkuasa. Bukalah hati dan pikiran kami agar kami dapat sungguh-sungguh mendengarkan dan menerima apa yang Engkau sampaikan melalui Firman-Mu. Biarlah Firman-Mu menembus dan mengubah kami, membimbing kami dalam kebenaran dan keadilan. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Luangkan waktu 5-10 menit untuk membaca secara perlahan dan merenungkan satu bagian kecil dari Injil hari ini. Mintalah Roh Kudus untuk menunjukkan bagaimana Firman itu "menusuk amat dalam" dan berbicara kepada hati Anda.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-29 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-29: Bertekun dalam Doa dan Tidak Berputus Asa</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Lukas 18:1-8 (Perumpamaan Hakim yang Tidak Adil)</p>
+                    <p class="scripture-text">Yesus menceritakan perumpamaan tentang seorang janda yang terus-menerus mendatangi seorang hakim yang tidak adil, memohon keadilan. Meskipun pada awalnya hakim itu enggan, akhirnya ia memutuskan untuk menolong janda itu agar tidak terus-menerus diganggu. Yesus menyimpulkan, "Tidakkah Allah akan membenarkan pilihan-Nya, yang siang malam berseru kepada-Nya? Dan adakah Ia mengulur-ulur waktu sebelum menolong mereka? Aku berkata kepadamu: Ia akan segera membenarkan mereka. Akan tetapi, jika Anak Manusia itu datang, adakah Ia mendapati iman di bumi?"</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Perumpamaan tentang hakim yang tidak adil dan janda yang gigih adalah ajakan kuat Yesus untuk bertekun dalam doa dan tidak berputus asa. Intinya bukan untuk mengatakan bahwa Allah itu seperti hakim yang tidak adil yang harus dipaksa, melainkan justru kebalikannya: jika bahkan seorang hakim yang tidak adil pun akhirnya mengabulkan permohonan karena kegigihan, betapa lebihnya lagi Allah Bapa yang penuh kasih dan adil akan mendengarkan dan menjawab doa anak-anak-Nya yang berseru siang dan malam kepada-Nya.</p>
+                    <p>Kegigihan dalam doa menunjukkan iman dan kepercayaan kita kepada Allah. Ketika kita terus berdoa untuk sesuatu, itu bukan berarti kita mencoba mengubah pikiran Allah, melainkan kita sedang membiarkan Allah mengubah hati kita, memperdalam iman kita, dan menyelaraskan kehendak kita dengan kehendak-Nya. Doa yang tekun juga merupakan tanda dari kebutuhan kita yang tulus dan ketergantungan kita kepada-Nya.</p>
+                    <p>Pertanyaan penutup Yesus, "Akan tetapi, jika Anak Manusia itu datang, adakah Ia mendapati iman di bumi?", adalah tantangan bagi kita. Apakah kita akan mempertahankan iman kita di tengah penantian, di tengah kesulitan, dan di tengah godaan untuk menyerah? Yesus menjamin bahwa Allah akan segera menolong, tetapi "segera" dalam waktu Allah mungkin berbeda dengan waktu kita. Yang penting adalah untuk tidak menyerah, tidak berputus asa, dan terus-menerus mengetuk pintu hati Tuhan dengan iman yang teguh.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Engkau telah mengajarkan kami untuk bertekun dalam doa dan tidak berputus asa. Ampunilah kami jika kami seringkali cepat menyerah. Berilah kami rahmat kegigihan dalam iman, agar kami senantiasa berseru kepada-Mu dengan keyakinan, mengetahui bahwa Engkau adalah Bapa yang penuh kasih dan akan menjawab doa-doa kami pada waktu-Mu yang terbaik. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Pilih satu niat doa yang sudah lama Anda doakan tetapi belum terkabul. Hari ini, dengan tekad baru, persembahkan niat itu kepada Tuhan lagi, dan berkomitmenlah untuk tidak berputus asa.</p>
+                </div>
+            </section>
+
+            <!-- HARI KE-30 -->
+            <section class="daily-reflection">
+                <h2>Hari Ke-30: Kebangkitan adalah Harapan Kita</h2>
+                <div class="reflection-block">
+                    <h3>Bacaan Injil</h3>
+                    <p class="scripture-ref">Yohanes 11:25-26</p>
+                    <p class="scripture-text">"Jawab Yesus: Akulah kebangkitan dan hidup; barangsiapa percaya kepada-Ku, ia akan hidup walaupun ia sudah mati, dan setiap orang yang hidup dan yang percaya kepada-Ku, tidak akan mati selama-lamanya. Percayakah engkau akan hal ini?"</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Renungan</h3>
+                    <p>Pernyataan Yesus kepada Marta di makam Lazarus ini adalah inti dari iman Kristen dan sumber pengharapan kita. Di tengah kesedihan dan keputusasaan karena kematian, Yesus memperkenalkan diri-Nya bukan hanya sebagai penyembuh atau pembuat mukjizat, melainkan sebagai "kebangkitan dan hidup" itu sendiri. Ini adalah klaim ilahi yang menempatkan Dia sebagai satu-satunya sumber kehidupan abadi.</p>
+                    <p>Janji Yesus sangatlah jelas: "barangsiapa percaya kepada-Ku, ia akan hidup walaupun ia sudah mati." Ini merujuk pada kebangkitan badan pada akhir zaman dan kehidupan kekal yang dimulai segera setelah kematian bagi mereka yang mati dalam kasih karunia Allah. Bagi mereka yang hidup dan percaya kepada-Nya, mereka "tidak akan mati selama-lamanya" dalam arti mereka akan memiliki kehidupan rohani yang tak terputus dengan Allah.</p>
+                    <p>Ini bukan berarti bahwa kita tidak akan mengalami kematian fisik, tetapi itu berarti kematian fisik bukanlah akhir dari segalanya. Bagi orang percaya, kematian adalah pintu gerbang menuju kehidupan yang lebih penuh dan abadi bersama Kristus. Pengharapan akan kebangkitan dan hidup kekal mengubah cara kita melihat penderitaan, kematian, dan bahkan tujuan hidup kita di dunia ini. Itu memberikan makna dan kekuatan untuk menjalani hidup dengan iman, mengetahui bahwa masa depan kita aman di tangan Tuhan.</p>
+                    <p>Pertanyaan penutup Yesus kepada Marta, "Percayakah engkau akan hal ini?", adalah pertanyaan yang juga ditujukan kepada kita. Apakah kita sungguh-sungguh percaya pada kuasa kebangkitan Kristus dan janji hidup kekal-Nya? Ini adalah fondasi iman Katolik kita, yang membawa penghiburan di tengah duka dan kekuatan di tengah keputusasaan.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Doa</h3>
+                    <p>Ya Tuhan Yesus, Engkaulah kebangkitan dan hidup. Kami percaya kepada-Mu dan kami bersyukur atas janji hidup kekal-Mu. Kuatkanlah iman kami agar kami senantiasa hidup dalam pengharapan akan kebangkitan, dan biarlah janji-Mu menghibur kami di tengah duka dan menguatkan kami di setiap langkah hidup kami. Amin.</p>
+                </div>
+                <div class="reflection-block">
+                    <h3>Aksi Nyata</h3>
+                    <p>Renungkan pengharapan akan kebangkitan dan hidup kekal. Jika ada seseorang yang Anda cintai telah meninggal, berdoalah untuk mereka dan percayalah pada janji kebangkitan Kristus. Jika Anda merasa takut akan kematian, serahkan ketakutan itu kepada Yesus dan percayalah pada-Nya.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; Firman Katolik Hari Ini. Hak Cipta Dilindungi Undang-Undang.</p>
+        </footer>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/renungan-gmim">Renungan Gmim</a></li>
+<li><a href="/1-korintus-10">1 Korintus 10</a></li>
+<li><a href="/renungan-nehemia-9">Renungan Nehemia 9</a></li>
+<li><a href="/renungan-harian-pria-kaum-bapak">Renungan Harian Pria Kaum Bapak</a></li>
+<li><a href="/renungan-remaja-kristen-tentang-kegagalan">Renungan Remaja Kristen Tentang Kegagalan</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>

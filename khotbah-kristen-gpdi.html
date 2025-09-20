@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khotbah GPDI: Hidup yang Berkenan di Hadapan Tuhan</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <style>
+        /* CSS untuk Tampilan Rapi Mobile Web Warna Sejuk Cerah */
+        :root {
+            --primary-bg: hsl(200, 50%, 97%); /* Sangat Biru Muda */
+            --secondary-bg: hsl(180, 20%, 99%); /* Hampir Putih, sedikit hijau */
+            --text-color: hsl(210, 20%, 20%); /* Abu-abu gelap kebiruan */
+            --header-color: hsl(200, 70%, 30%); /* Biru gelap */
+            --accent-color: hsl(150, 60%, 50%); /* Hijau mint cerah */
+            --border-color: hsl(200, 20%, 90%); /* Abu-abu terang kebiruan */
+            --shadow-color: hsla(200, 10%, 70%, 0.2);
+            --blockquote-border: hsl(200, 40%, 80%);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--primary-bg);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: var(--secondary-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px var(--shadow-color);
+            border: 1px solid var(--border-color);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: var(--header-color);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: var(--text-color);
+            font-style: italic;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        main section {
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        main section:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--header-color);
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: var(--header-color);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        p {
+            margin-bottom: 1em;
+            text-align: justify;
+        }
+
+        strong {
+            color: var(--header-color);
+        }
+
+        blockquote {
+            background-color: var(--primary-bg);
+            border-left: 5px solid var(--blockquote-border);
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: var(--text-color);
+            border-radius: 4px;
+        }
+
+        blockquote p {
+            margin-bottom: 0.5em;
+        }
+
+        blockquote footer {
+            text-align: right;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: var(--header-color);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 30px auto;
+            max-width: 250px;
+            padding: 15px;
+            background-color: var(--secondary-bg);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 10px var(--shadow-color);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .image-caption {
+            font-size: 0.9em;
+            color: var(--text-color);
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 1em;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin-left: 25px;
+            margin-bottom: 1em;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.9em;
+            color: var(--text-color);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            .container {
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            h3 {
+                font-size: 1.2em;
+            }
+            blockquote {
+                padding: 10px 15px;
+            }
+            .image-container {
+                max-width: 180px;
+                margin: 20px auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+                border-radius: 8px;
+            }
+            header h1 {
+                font-size: 1.8em;
+                margin-bottom: 10px;
+            }
+            header p {
+                font-size: 1em;
+            }
+            h2 {
+                font-size: 1.3em;
+                margin-bottom: 15px;
+            }
+            h3 {
+                font-size: 1.1em;
+                margin-top: 20px;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 0.95em;
+            }
+            .image-container {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hidup yang Berkenan di Hadapan Tuhan: Sebuah Khotbah dari GPDI</h1>
+            <p>Mengejar kehendak-Nya, bertumbuh dalam iman, kasih, dan ketaatan untuk kemuliaan nama-Nya.</p>
+        </header>
+
+        <main>
+            <section id="pendahuluan">
+                <h2>Pendahuluan: Panggilan untuk Hidup Berkenan</h2>
+                <p>Saudara-saudari yang terkasih dalam Kristus Yesus, selamat datang dalam persekutuan yang kudus ini. Sebuah kehormatan besar bagi kita untuk dapat berkumpul bersama, memuji dan menyembah Tuhan, serta merenungkan Firman-Nya yang hidup dan berkuasa. Hari ini, kita akan bersama-sama menggali sebuah tema yang sangat fundamental dan relevan bagi setiap anak Tuhan, khususnya kita sebagai jemaat GPDI, yaitu tentang <strong>“Hidup yang Berkenan di Hadapan Tuhan.”</strong></p>
+                <p>Dalam dunia yang semakin kompleks dan penuh tantangan ini, seringkali kita tergoda untuk mengejar hal-hal yang fana, yang memberikan kepuasan sesaat, atau yang semata-mata diukur oleh standar dunia. Kita mungkin merasa didorong untuk mencari pengakuan dari manusia, mengejar kesuksesan materi, atau membangun reputasi yang cemerlang di mata sesama. Namun, sebagai orang percaya, panggilan kita jauh lebih tinggi dan lebih mulia dari semua itu. Panggilan kita adalah untuk menjalani kehidupan yang tidak hanya baik di mata manusia, tetapi yang terutama, berkenan di hadapan Tuhan Yang Mahakuasa.</p>
+                <p>Apa artinya hidup yang berkenan di hadapan Tuhan? Apakah itu berarti kita harus sempurna, tanpa cela sedikit pun? Apakah itu berarti kita harus melakukan hal-hal besar yang spektakuler? Atau adakah standar yang lebih dalam, yang menyentuh hati dan motivasi kita? Melalui khotbah ini, kita akan berusaha memahami esensi dari panggilan ini, menggali dasar-dasar Alkitabiahnya, dan menemukan bagaimana kita dapat mewujudkan kehidupan yang berkenan kepada Tuhan dalam setiap aspek keberadaan kita.</p>
+                <p>Mari kita buka hati dan pikiran kita untuk menerima kebenaran Firman Tuhan. Biarlah Roh Kudus yang berdiam di dalam kita menuntun dan membimbing kita, sehingga setiap kata yang diucapkan bukan sekadar teori, melainkan menjadi benih yang bertumbuh subur dan menghasilkan buah dalam kehidupan kita masing-masing. Hidup yang berkenan bukan hanya sebuah tujuan, melainkan sebuah perjalanan, sebuah proses yang berkelanjutan, di mana kita terus dibentuk dan diubahkan menjadi serupa dengan Kristus. Mari kita mulai perjalanan ini dengan doa dan kerendahan hati.</p>
+            </section>
+
+            <section id="dasar-alkitabiah">
+                <h2>Dasar Alkitabiah: Pilar-Pilar Kehidupan Berkenan</h2>
+                <p>Untuk memahami sepenuhnya konsep hidup yang berkenan di hadapan Tuhan, kita harus kembali kepada sumber kebenaran tertinggi kita: Alkitab. Firman Tuhan memberikan kita landasan yang kokoh dan petunjuk yang jelas mengenai bagaimana kita seharusnya hidup. Ada beberapa ayat kunci yang secara eksplisit membahas tentang hal ini, dan kita akan merenungkannya satu per satu.</p>
+
+                <h3>1. Persembahan Hidup yang Kudus dan Hidup (Roma 12:1-2)</h3>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=Roma%2012:1-2">
+                    <p>Karena itu, saudara-saudara, demi kemurahan Allah aku menasihatkan kamu, supaya kamu mempersembahkan tubuhmu sebagai persembahan yang hidup, yang kudus dan yang berkenan kepada Allah: itu adalah ibadahmu yang sejati.</p>
+                    <p>Janganlah kamu menjadi serupa dengan dunia ini, tetapi berubahlah oleh pembaharuan budimu, sehingga kamu dapat membedakan manakah kehendak Allah: apa yang baik, yang berkenan kepada Allah dan yang sempurna.</p>
+                    <footer>Roma 12:1-2</footer>
+                </blockquote>
+                <p>Ayat ini adalah salah satu fondasi terpenting. Rasul Paulus memulai dengan frasa "demi kemurahan Allah," mengingatkan kita bahwa seluruh upaya kita untuk hidup berkenan adalah respons terhadap kasih karunia yang luar biasa yang telah kita terima melalui Kristus. Kita tidak berusaha menyenangkan Tuhan untuk mendapatkan keselamatan, melainkan kita hidup berkenan karena kita sudah diselamatkan dan dikasihi-Nya.</p>
+                <p>Paulus memanggil kita untuk mempersembahkan tubuh kita sebagai persembahan yang hidup, kudus, dan berkenan. Kata "tubuh" di sini bukan hanya merujuk pada fisik semata, tetapi seluruh keberadaan kita—pikiran, emosi, kehendak, dan tindakan. Ini adalah konsep persembahan yang total. Tidak seperti persembahan hewan yang mati di Perjanjian Lama, persembahan kita adalah "hidup," dinamis, dan terus-menerus. Ini berarti seluruh kehidupan kita, setiap hari, setiap momen, adalah sebuah tindakan ibadah.</p>
+                <p>Selanjutnya, Paulus menekankan dua hal krusial:
+                    <ol>
+                        <li><strong>"Janganlah kamu menjadi serupa dengan dunia ini."</strong> Ini adalah panggilan untuk membedakan diri, untuk tidak meniru nilai-nilai, prioritas, dan pola pikir dunia yang seringkali bertentangan dengan kehendak Allah. Dunia menawarkan janji-janji kosong, sementara Tuhan menawarkan kehidupan yang berkelimpahan.</li>
+                        <li><strong>"Berubahlah oleh pembaharuan budimu."</strong> Perubahan sejati dimulai dari dalam, dari pikiran kita. Roh Kudus bekerja untuk mengubah cara kita berpikir, membersihkan kita dari pola pikir dosa, dan mengisi kita dengan pikiran Kristus. Pembaharuan budi memungkinkan kita untuk "membedakan manakah kehendak Allah: apa yang baik, yang berkenan kepada Allah dan yang sempurna." Ini adalah kunci untuk hidup yang selaras dengan kehendak-Nya.</li>
+                    </ol>
+                </p>
+
+                <div class="image-container">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5C45.5 5 42 8.5 42 13V30H30C25.5 30 22 33.5 22 38V85C22 89.5 25.5 93 30 93H70C74.5 93 78 89.5 78 85V38C78 33.5 74.5 30 70 30H58V13C58 8.5 54.5 5 50 5Z" fill="hsl(150, 60%, 70%)" stroke="hsl(200, 70%, 30%)" stroke-width="3"/>
+                        <path d="M30 38H70" stroke="hsl(200, 70%, 30%)" stroke-width="2"/>
+                        <path d="M35 50L65 50" stroke="hsl(200, 70%, 30%)" stroke-width="1.5"/>
+                        <path d="M35 60L65 60" stroke="hsl(200, 70%, 30%)" stroke-width="1.5"/>
+                        <path d="M35 70L65 70" stroke="hsl(200, 70%, 30%)" stroke-width="1.5"/>
+                    </svg>
+                    <p class="image-caption">Alkitab terbuka, melambangkan Firman Tuhan sebagai dasar iman.</p>
+                </div>
+
+                <h3>2. Tanpa Iman Tidak Mungkin Berkenan (Ibrani 11:6)</h3>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=Ibrani%2011:6">
+                    <p>Tetapi tanpa iman tidak mungkin orang berkenan kepada Allah. Sebab barangsiapa berpaling kepada Allah, ia harus percaya bahwa Allah ada, dan bahwa Allah memberi upah kepada orang yang sungguh-sungguh mencari Dia.</p>
+                    <footer>Ibrani 11:6</footer>
+                </blockquote>
+                <p>Ayat ini adalah pernyataan yang sangat jelas. Iman bukan hanya salah satu faktor, melainkan sebuah prasyarat mutlak untuk dapat berkenan kepada Allah. Iman adalah jembatan yang menghubungkan kita dengan Tuhan, memungkinkan kita untuk mendekat kepada-Nya dan menerima janji-janji-Nya.</p>
+                <p>Iman yang dimaksud di sini memiliki dua aspek penting:
+                    <ol>
+                        <li><strong>Percaya bahwa Allah ada.</strong> Ini adalah pengakuan akan keberadaan dan kedaulatan Tuhan, bahwa Dia adalah Pencipta alam semesta, yang memegang kendali atas segala sesuatu. Ini bukan sekadar pengakuan intelektual, melainkan keyakinan yang mendalam bahwa Dia nyata dan aktif dalam hidup kita.</li>
+                        <li><strong>Percaya bahwa Allah memberi upah kepada orang yang sungguh-sungguh mencari Dia.</strong> Iman juga berarti percaya bahwa Tuhan itu baik, setia, dan adil. Dia tidak akan membiarkan pencarian kita sia-sia. Ada janji berkat, kekuatan, hikmat, dan pemeliharaan bagi mereka yang dengan sungguh-sungguh mencari wajah-Nya dan hidup sesuai kehendak-Nya.</li>
+                    </ol>
+                </p>
+                <p>Tanpa iman, segala upaya kita untuk hidup benar hanyalah usaha manusiawi yang kosong. Imanlah yang memberi kita kekuatan untuk taat, keberanian untuk melayani, dan ketekunan untuk menghadapi pencobaan. Iman adalah mata yang memampukan kita melihat melampaui keadaan yang sementara ini, kepada janji-janji kekal Tuhan.</p>
+
+                <h3>3. Kerendahan Hati dan Ketaatan Kristus (Filipi 2:5-8)</h3>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=Filipi%202:5-8">
+                    <p>Hendaklah kamu dalam hidupmu bersama, menaruh pikiran dan perasaan yang sama, yang terdapat juga dalam Kristus Yesus,</p>
+                    <p>yang walaupun dalam rupa Allah, tidak menganggap kesetaraan dengan Allah itu sebagai milik yang harus dipertahankan,</p>
+                    <p>melainkan telah mengosongkan diri-Nya sendiri, dan mengambil rupa seorang hamba, dan menjadi sama dengan manusia.</p>
+                    <p>Dan dalam keadaan sebagai manusia, Ia telah merendahkan diri-Nya dan taat sampai mati, bahkan sampai mati di kayu salib.</p>
+                    <footer>Filipi 2:5-8</footer>
+                </blockquote>
+                <p>Jika kita ingin tahu seperti apa hidup yang berkenan di hadapan Tuhan, maka tidak ada teladan yang lebih sempurna daripada Yesus Kristus sendiri. Paulus mengundang kita untuk memiliki pikiran dan perasaan yang sama seperti Kristus Yesus. Ini adalah panggilan untuk meniru karakter dan sikap-Nya.</p>
+                <p>Kristus, yang adalah Allah sejati, tidak mempertahankan hak istimewa-Nya, melainkan dengan rela mengosongkan diri, mengambil rupa seorang hamba, dan menjadi sama seperti manusia. Ini adalah tindakan kerendahan hati yang paling agung. Kemudian, dalam keadaan sebagai manusia, Dia menunjukkan ketaatan yang sempurna kepada Bapa, bahkan sampai mati di kayu salib—kematian yang paling hina dan menyakitkan.</p>
+                <p>Dari teladan Kristus, kita belajar bahwa hidup yang berkenan melibatkan:
+                    <ul>
+                        <li><strong>Kerendahan Hati:</strong> Menyangkal diri, tidak egois, dan menempatkan kehendak Tuhan di atas keinginan pribadi.</li>
+                        <li><strong>Ketaatan:</strong> Melakukan apa yang Bapa kehendaki, bahkan ketika itu sulit atau tidak populer. Ketaatan Kristus adalah mutlak dan tanpa syarat.</li>
+                        <li><strong>Pengorbanan:</strong> Kesediaan untuk membayar harga, bahkan harga tertinggi, demi memenuhi rencana Allah.</li>
+                    </ul>
+                </p>
+                <p>Merenungkan teladan Kristus ini bukan hanya untuk mengagumi-Nya, tetapi untuk menantang kita agar hidup serupa dengan-Nya. Ini adalah standar tertinggi untuk hidup yang berkenan. Dengan Roh Kudus yang tinggal dalam kita, kita dimampukan untuk berjalan di jalan yang sama dengan Juruselamat kita.</p>
+            </section>
+
+            <!-- Bagian 2 akan menyusul di bawah ini -->
+```
+
+---
+
+**Bagian 2: Isi Artikel (Lanjutan)**
+
+```html
+            <section id="karakteristik-hidup-berkenan">
+                <h2>Karakteristik Hidup yang Berkenan</h2>
+                <p>Setelah kita meletakkan dasar-dasar Alkitabiah, sekarang kita akan menguraikan karakteristik konkret dari hidup yang berkenan di hadapan Tuhan. Ini adalah prinsip-prinsip yang dapat kita terapkan dalam kehidupan sehari-hari kita.</p>
+
+                <h3>1. Iman yang Teguh dan Bertumbuh</h3>
+                <p>Seperti yang telah kita lihat dari Ibrani 11:6, iman adalah fondasi. Hidup yang berkenan dimulai dan dipertahankan oleh iman yang teguh kepada Allah. Iman bukanlah sekadar keyakinan intelektual, melainkan kepercayaan yang aktif yang menuntun tindakan kita. Dalam GPDI, kita seringkali menekankan pentingnya iman yang hidup, yang bukan hanya percaya bahwa Allah ada, tetapi percaya bahwa Dia sanggup melakukan perkara-perkara besar dalam hidup kita dan melalui kita.</p>
+                <p>Bagaimana iman ini bermanifestasi?
+                    <ul>
+                        <li><strong>Percaya pada Janji-Janji Tuhan:</strong> Iman yang teguh berarti kita percaya sepenuhnya pada setiap janji Allah yang tertulis dalam Firman-Nya, sekalipun keadaan di sekitar kita tampaknya bertolak belakang. Ini adalah iman yang memegang teguh kata-kata Tuhan lebih dari realitas yang terlihat.</li>
+                        <li><strong>Percaya pada Kuasa Roh Kudus:</strong> Sebagai gereja Pentakosta, kita percaya pada kepenuhan Roh Kudus dan karunia-karunia-Nya. Iman yang berkenan kepada Tuhan percaya bahwa Roh Kudus masih aktif bekerja hari ini, memberikan kuasa untuk bersaksi, menyembuhkan, dan melepaskan. Kita percaya bahwa mujizat masih nyata.</li>
+                        <li><strong>Percaya pada Kedaulatan Allah:</strong> Iman yang bertumbuh mengajarkan kita untuk menyerahkan kontrol kepada Tuhan, percaya bahwa Dia memegang kendali atas segala sesuatu, bahkan dalam situasi yang paling sulit sekalipun. Ini adalah iman yang berkata, "Bukan kehendakku, melainkan kehendak-Mu yang jadi."</li>
+                        <li><strong>Berani Bertindak dalam Iman:</strong> Iman tidak pasif, melainkan aktif. Iman yang berkenan kepada Tuhan mendorong kita untuk melangkah maju, melakukan hal-hal yang mungkin tampak mustahil secara manusiawi, tetapi yang sesuai dengan tuntunan Roh Kudus dan Firman Tuhan. Ini adalah iman yang berani seperti Abraham, yang meninggalkan negerinya tanpa tahu ke mana ia pergi, hanya karena ketaatan pada panggilan Allah.</li>
+                    </ul>
+                </p>
+                <p>Untuk memiliki iman yang teguh, kita perlu terus-menerus memupuknya melalui: membaca Firman Tuhan, berdoa, bersekutu dengan orang percaya lainnya, dan merenungkan kesaksian-kesaksian kuasa Allah dalam sejarah dan kehidupan pribadi.</p>
+
+                <h3>2. Kasih yang Tulus dan Menggerakkan</h3>
+                <p>Setelah iman, kasih adalah pilar kedua yang tak terpisahkan. Tuhan adalah kasih (1 Yohanes 4:8), dan Dia memanggil kita untuk mencintai sebagaimana Dia mencintai. Hidup yang berkenan kepada Tuhan tidak mungkin terpisah dari kasih.</p>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=Matius%2022:37-39">
+                    <p>Jawab Yesus kepadanya: "Kasihilah Tuhan, Allahmu, dengan segenap hatimu dan dengan segenap jiwamu dan dengan segenap akal budimu.</p>
+                    <p>Itulah hukum yang terutama dan yang pertama.</p>
+                    <p>Dan hukum yang kedua, yang sama dengan itu, ialah: Kasihilah sesamamu manusia seperti dirimu sendiri.</p>
+                    <footer>Matius 22:37-39</footer>
+                </blockquote>
+                <p>Yesus meringkas seluruh hukum Taurat dan kitab para nabi menjadi dua perintah agung ini: mengasihi Tuhan dan mengasihi sesama. Kasih yang berkenan kepada Tuhan memiliki dua dimensi:
+                    <ol>
+                        <li><strong>Kasih kepada Tuhan:</strong> Ini adalah kasih yang mendalam, yang keluar dari hati yang tulus. Ini termanifestasi dalam penyembahan kita, ketaatan kita, waktu yang kita luangkan untuk-Nya, dan prioritas kita akan Kerajaan-Nya di atas segalanya. Mengasihi Tuhan berarti mengingini Dia lebih dari apapun di dunia ini.</li>
+                        <li><strong>Kasih kepada Sesama:</strong> Kasih kita kepada Tuhan tidak akan otentik jika tidak disertai dengan kasih kepada sesama. Kasih ini harus bersifat praktis dan terlihat.
+                            <ul>
+                                <li><strong>Pengampunan:</strong> Kasih memampukan kita untuk mengampuni mereka yang menyakiti kita, seperti Kristus mengampuni kita.</li>
+                                <li><strong>Pelayanan:</strong> Kasih mendorong kita untuk melayani orang lain, membantu mereka yang membutuhkan, dan menjadi berkat bagi lingkungan kita.</li>
+                                <li><strong>Empati:</strong> Kasih membuat kita merasakan apa yang orang lain rasakan, berbagi sukacita dan dukacita mereka.</li>
+                                <li><strong>Kelembutan dan Kesabaran:</strong> Kasih memampukan kita untuk bersabar terhadap kekurangan orang lain dan bersikap lembut dalam perkataan dan perbuatan.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </p>
+                <p>Dalam jemaat GPDI, kasih persaudaraan sangat ditekankan. Kita dipanggil untuk menjadi satu keluarga dalam Kristus, saling mendukung, mendoakan, dan membangun satu sama lain dalam kasih.</p>
+
+                <div class="image-container">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10 L30 40 L40 40 L40 70 L60 70 L60 40 L70 40 Z" fill="hsl(150, 60%, 70%)" stroke="hsl(200, 70%, 30%)" stroke-width="3"/>
+                        <circle cx="50" cy="80" r="10" fill="hsl(150, 60%, 70%)" stroke="hsl(200, 70%, 30%)" stroke-width="3"/>
+                        <path d="M50 70 L50 90" stroke="hsl(200, 70%, 30%)" stroke-width="3"/>
+                    </svg>
+                    <p class="image-caption">Lidah api, melambangkan kuasa Roh Kudus dalam Pentakosta.</p>
+                </div>
+
+                <h3>3. Ketaatan yang Utuh dan Menyeluruh</h3>
+                <p>Ketaatan adalah bukti nyata dari iman dan kasih kita. Tidak ada iman yang sejati tanpa ketaatan, dan tidak ada kasih yang otentik tanpa keinginan untuk menyenangkan yang dikasihi. Hidup yang berkenan kepada Tuhan adalah hidup yang taat pada kehendak-Nya.</p>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=1%20Samuel%2015:22">
+                    <p>Tetapi jawab Samuel: "Apakah TUHAN berkenan kepada korban bakaran dan korban sembelihan sama seperti kepada mendengarkan suara TUHAN? Sesungguhnya, mendengarkan lebih baik dari pada korban sembelihan, memperhatikan lebih baik dari pada lemak domba-domba jantan.</p>
+                    <footer>1 Samuel 15:22</footer>
+                </blockquote>
+                <p>Ayat ini dengan tegas menyatakan bahwa Tuhan lebih menghargai ketaatan daripada ritual atau persembahan belaka. Ketaatan yang berkenan kepada Tuhan adalah:
+                    <ul>
+                        <li><strong>Ketaatan dari Hati:</strong> Bukan ketaatan yang terpaksa atau karena takut hukuman, melainkan ketaatan yang lahir dari hati yang mengasihi dan mempercayai Tuhan. Ini adalah ketaatan yang sukarela dan gembira.</li>
+                        <li><strong>Ketaatan pada Firman Tuhan:</strong> Kita taat pada perintah-perintah Tuhan yang tertulis dalam Alkitab. Ini termasuk perintah moral, etika, dan prinsip-prinsip rohani yang menuntun hidup kita.</li>
+                        <li><strong>Ketaatan pada Tuntunan Roh Kudus:</strong> Sebagai jemaat Pentakosta, kita percaya pada tuntunan Roh Kudus yang personal dalam hidup kita. Ketaatan juga berarti peka terhadap suara Roh Kudus, yang membimbing kita dalam setiap keputusan dan langkah.</li>
+                        <li><strong>Ketaatan dalam Segala Hal:</strong> Ketaatan yang utuh tidak memilih-milih perintah mana yang ingin ditaati dan mana yang tidak. Ini berarti taat dalam hal kecil maupun besar, dalam area publik maupun pribadi, dalam perkataan maupun perbuatan.</li>
+                    </ul>
+                </p>
+                <p>Ketaatan mungkin tidak selalu mudah. Seringkali, kehendak Tuhan bertentangan dengan keinginan daging kita atau tekanan dari dunia. Namun, di sinilah iman diuji, dan di sinilah karakter kita dibentuk. Ketaatan membawa berkat, damai sejahtera, dan keintiman yang lebih dalam dengan Tuhan.</p>
+
+                <h3>4. Hidup Kudus dan Terpisah dari Dunia</h3>
+                <p>Panggilan untuk kekudusan adalah tema yang berulang dalam Alkitab. Tuhan itu kudus, dan Dia memanggil umat-Nya untuk menjadi kudus juga. Hidup yang berkenan kepada Tuhan adalah hidup yang mengejar kekudusan.</p>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=1%20Petrus%201:15-16">
+                    <p>Tetapi hendaklah kamu menjadi kudus di dalam seluruh hidupmu sama seperti Dia, yang kudus, yang telah memanggil kamu,</p>
+                    <p>sebab ada tertulis: "Kuduslah kamu, sebab Aku kudus."</p>
+                    <footer>1 Petrus 1:15-16</footer>
+                </blockquote>
+                <p>Kekudusan bukanlah kesempurnaan tanpa dosa, tetapi sebuah proses penyucian dan pemisahan dari dosa dan dunia. Ini adalah komitmen untuk hidup sesuai dengan standar Tuhan, bukan standar dunia.
+                    <ul>
+                        <li><strong>Pemisahan dari Dosa:</strong> Kekudusan berarti secara aktif menolak dosa dalam pikiran, perkataan, dan perbuatan kita. Ini adalah perjuangan harian melawan godaan dan hawa nafsu daging.</li>
+                        <li><strong>Pemisahan dari Nilai Duniawi:</strong> Kekudusan juga berarti tidak mengkompromikan iman kita dengan nilai-nilai dunia yang bertentangan dengan Firman Tuhan. Ini termasuk pengejaran kekayaan, kekuasaan, kesenangan duniawi yang berlebihan, dan popularitas semata.</li>
+                        <li><strong>Penyerahan Diri kepada Roh Kudus:</strong> Roh Kudus adalah agen kekudusan dalam hidup kita. Dengan menyerahkan diri kepada-Nya, Dia akan mengubahkan kita dari kemuliaan kepada kemuliaan, menyucikan kita, dan memampukan kita untuk hidup dalam kekudusan.</li>
+                        <li><strong>Fokus pada Hal-Hal Surgawi:</strong> Hidup kudus adalah hidup yang mengarahkan pandangannya pada hal-hal di atas, bukan pada hal-hal duniawi (Kolose 3:1-2). Ini adalah hidup yang berinvestasi pada kekekalan.</li>
+                    </ul>
+                </p>
+                <p>Sebagai jemaat GPDI, kita percaya pada kehidupan yang dibersihkan dan dipenuhi Roh Kudus, yang menghasilkan buah Roh dan hidup yang kudus. Ini bukan legalisme, tetapi respons kasih terhadap anugerah Tuhan yang telah menebus dan menyucikan kita.</p>
+
+                <h3>5. Pelayanan yang Berbuah dan Tulus Hati</h3>
+                <p>Hidup yang berkenan kepada Tuhan tidak hanya tentang hubungan pribadi kita dengan-Nya, tetapi juga bagaimana kita melayani Dia dan sesama. Setiap orang percaya diberi karunia Roh Kudus untuk tujuan pelayanan.</p>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=1%20Petrus%204:10">
+                    <p>Layanilah seorang akan yang lain, sesuai dengan karunia yang telah diperoleh tiap-tiap orang sebagai pengurus yang baik dari kasih karunia Allah yang bermacam-macam.</p>
+                    <footer>1 Petrus 4:10</footer>
+                </blockquote>
+                <p>Pelayanan yang berkenan kepada Tuhan memiliki ciri-ciri:
+                    <ul>
+                        <li><strong>Menggunakan Karunia Rohani:</strong> Setiap kita memiliki karunia yang berbeda-beda. Hidup yang berkenan berarti mengenali karunia kita dan menggunakannya untuk membangun tubuh Kristus dan memuliakan Tuhan. Ini bisa berupa karunia mengajar, melayani, memberi, memimpin, bernubuat, menyembuhkan, berbahasa roh, dan banyak lagi.</li>
+                        <li><strong>Dengan Tulus Hati:</strong> Motivasi di balik pelayanan sangat penting. Kita melayani bukan untuk mencari pujian manusia, imbalan, atau keuntungan pribadi, melainkan karena kasih kepada Tuhan dan sesama, dengan hati yang tulus dan murni.</li>
+                        <li><strong>Setia dalam Hal Kecil:</strong> Tuhan melihat kesetiaan kita bahkan dalam tugas-tugas yang tampaknya kecil dan tidak signifikan. Seringkali, Dia akan mempercayakan hal-hal yang lebih besar kepada mereka yang telah terbukti setia dalam hal yang kecil (Lukas 16:10).</li>
+                        <li><strong>Berbuah:</strong> Pelayanan yang berkenan akan menghasilkan buah—baik itu pertobatan jiwa, pertumbuhan rohani orang lain, atau dampak positif pada masyarakat. Namun, fokus kita adalah menabur dengan setia, buah adalah bagian Tuhan.</li>
+                    </ul>
+                </p>
+                <p>Dalam GPDI, kita sangat menghargai setiap anggota jemaat yang terlibat dalam pelayanan, baik di dalam gereja (misalnya sebagai pelayan mimbar, puji-pujian, usher, sekolah minggu) maupun di luar gereja (melalui kesaksian hidup dan karya). Setiap pelayanan, sekecil apapun, yang dilakukan dengan hati yang tulus dan seturut kehendak Tuhan, adalah persembahan yang berkenan kepada-Nya.</p>
+
+                <h3>6. Pengharapan yang Kuat dan Tidak Goyah</h3>
+                <p>Terakhir, hidup yang berkenan kepada Tuhan adalah hidup yang dipenuhi dengan pengharapan yang kuat. Pengharapan Kristen bukanlah sekadar keinginan atau optimisme buta, melainkan keyakinan yang pasti akan janji-janji Allah di masa depan, terutama kedatangan kembali Kristus dan hidup kekal.</p>
+                <blockquote cite="https://alkitab.sabda.org/passage.php?passage=Roma%2015:13">
+                    <p>Semoga Allah, sumber pengharapan, memenuhi kamu dengan segala sukacita dan damai sejahtera dalam iman kamu, supaya oleh kekuatan Roh Kudus kamu berlimpah-limpah dalam pengharapan.</p>
+                    <footer>Roma 15:13</footer>
+                </blockquote>
+                <p>Pengharapan ini memberi kita kekuatan untuk:
+                    <ul>
+                        <li><strong>Bertahan dalam Pencobaan:</strong> Ketika kita menghadapi kesulitan, sakit penyakit, atau penderitaan, pengharapan akan masa depan yang lebih baik dalam Kristus memampukan kita untuk tidak menyerah. Kita tahu bahwa penderitaan saat ini tidak sebanding dengan kemuliaan yang akan dinyatakan kepada kita (Roma 8:18).</li>
+                        <li><strong>Hidup dalam Kesucian:</strong> Pengharapan akan kedatangan Kristus mendorong kita untuk hidup kudus. Barangsiapa memiliki pengharapan ini dalam dirinya, ia menyucikan dirinya, sama seperti Kristus adalah suci (1 Yohanes 3:3).</li>
+                        <li><strong>Menjadi Saksi yang Efektif:</strong> Pengharapan yang kita miliki adalah kesaksian yang kuat bagi dunia yang putus asa. Kita memiliki jawaban, yaitu Yesus Kristus, dan pengharapan ini harus kita bagikan kepada orang lain.</li>
+                        <li><strong>Melihat Melampaui Dunia Ini:</strong> Pengharapan yang kuat membantu kita untuk tidak terlalu terikat pada hal-hal duniawi. Kita tahu bahwa rumah sejati kita adalah di surga, dan kita adalah musafir di bumi ini.</li>
+                    </ul>
+                </p>
+                <p>Sebagai jemaat GPDI, kita sangat menantikan kedatangan Tuhan Yesus yang kedua kali. Pengharapan ini adalah jangkar jiwa kita, kuat dan teguh (Ibrani 6:19), dan memberikan kita sukacita serta damai sejahtera di tengah badai kehidupan. Pengharapan inilah yang menjaga kita untuk tetap setia dan terus hidup berkenan sampai akhir.</p>
+
+                <div class="image-container">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 5 L75 25 L75 75 L50 95 L25 75 L25 25 Z" fill="hsl(150, 60%, 70%)" stroke="hsl(200, 70%, 30%)" stroke-width="3"/>
+                        <circle cx="50" cy="50" r="15" fill="none" stroke="hsl(200, 70%, 30%)" stroke-width="2"/>
+                        <path d="M40 50 H60" stroke="hsl(200, 70%, 30%)" stroke-width="2"/>
+                        <path d="M50 40 V60" stroke="hsl(200, 70%, 30%)" stroke-width="2"/>
+                    </svg>
+                    <p class="image-caption">Bentuk berlian atau permata, melambangkan kekudusan dan nilai yang berharga.</p>
+                </div>
+
+            </section>
+
+            <!-- Bagian 3 akan menyusul di bawah ini -->
+```
+
+---
+
+**Bagian 3: Isi Artikel (Lanjutan & Penutup)**
+
+```html
+            <section id="tantangan-dan-solusi">
+                <h2>Tantangan dalam Hidup Berkenan & Solusinya</h2>
+                <p>Meskipun panggilan untuk hidup berkenan adalah panggilan yang indah dan mulia, kita tidak bisa menafikan bahwa ada banyak tantangan di sepanjang jalan. Dunia, daging, dan iblis akan selalu berusaha menggoyahkan kita dari komitmen ini. Namun, Firman Tuhan juga menyediakan solusi dan kekuatan bagi kita.</p>
+
+                <h3>1. Tekanan dari Dunia</h3>
+                <p>Dunia dengan segala nilai-nilainya yang sekuler, materialistis, dan hedonis, terus-menerus menekan kita untuk "menjadi serupa dengan dunia ini" (Roma 12:2). Media sosial, hiburan, bahkan budaya di sekitar kita seringkali menampilkan gaya hidup yang bertentangan dengan standar kekudusan dan kebenaran Allah. Kita mungkin merasa aneh atau tidak relevan jika kita memilih untuk hidup berbeda.</p>
+                <p><strong>Solusi:</strong>
+                    <ul>
+                        <li><strong>Pembaharuan Budi:</strong> Seperti yang Paulus katakan, kita harus "berubah oleh pembaharuan budimu." Ini berarti secara aktif mengisi pikiran kita dengan Firman Tuhan, kebenaran-Nya, dan membiarkan Roh Kudus membentuk cara pandang kita.</li>
+                        <li><strong>Memilih Pergaulan yang Benar:</strong> Amsal 13:20 mengatakan, "Siapa bergaul dengan orang bijak menjadi bijak, tetapi siapa berteman dengan orang bebal menjadi malang." Membangun komunitas yang kuat dengan sesama orang percaya yang juga berkomitmen untuk hidup berkenan akan sangat menopang kita.</li>
+                        <li><strong>Berani Berbeda:</strong> Panggilan kita adalah untuk menjadi terang dan garam dunia. Itu berarti kita tidak bisa sekadar menyatu. Kita harus berani menunjukkan perbedaan, bukan dengan kesombongan, tetapi dengan kerendahan hati dan kasih, sehingga orang lain melihat Kristus dalam diri kita.</li>
+                    </ul>
+                </p>
+
+                <h3>2. Godaan Daging (Sifat Manusia Lama)</h3>
+                <p>Daging atau natur dosa kita yang lama, adalah musuh yang selalu ada di dalam diri kita sendiri. Ia terus-menerus ingin memenuhi keinginan-keinginan egois, hawa nafsu, dan kenikmatan sesaat yang bertentangan dengan Roh. Pergumulan internal ini adalah kenyataan bagi setiap orang percaya.</p>
+                <p><strong>Solusi:</strong>
+                    <ul>
+                        <li><strong>Hidup oleh Roh:</strong> Galatia 5:16 berkata, "Maksudku ialah: hiduplah oleh Roh, maka kamu tidak akan menuruti keinginan daging." Ini adalah kunci utama. Semakin kita menyerahkan diri kepada Roh Kudus, membiarkan Dia memenuhi dan menuntun kita, semakin lemah kuasa daging dalam hidup kita.</li>
+                        <li><strong>Menyalibkan Daging:</strong> Ini adalah tindakan yang disengaja untuk menolak keinginan daging dan memilih kehendak Tuhan. Ini mungkin berarti menjauhkan diri dari hal-hal yang menjadi batu sandungan, disiplin diri dalam kebiasaan, dan membuat pilihan-pilihan yang pro-kekudusan setiap hari.</li>
+                        <li><strong>Pengakuan Dosa dan Pertobatan:</strong> Ketika kita jatuh, penting untuk segera mengaku dosa dan bertobat. Allah itu setia dan adil, Ia akan mengampuni dan membersihkan kita (1 Yohanes 1:9).</li>
+                    </ul>
+                </p>
+
+                <h3>3. Serangan Iblis</h3>
+                <p>Kita memiliki musuh rohani yang nyata, yaitu iblis dan roh-roh jahatnya, yang berusaha mencuri, membunuh, dan membinasakan (Yohanes 10:10). Ia menggunakan tipu daya, kebohongan, dan godaan untuk menjatuhkan orang percaya dari panggilan mereka untuk hidup berkenan.</p>
+                <p><strong>Solusi:</strong>
+                    <ul>
+                        <li><strong>Memakai Seluruh Perlengkapan Senjata Allah:</strong> Efesus 6:10-18 mengajarkan kita untuk memakai seluruh perlengkapan senjata Allah—kebenaran, keadilan, damai sejahtera, iman, keselamatan, dan Firman Allah, yang didukung oleh doa dalam Roh. Ini adalah pertahanan rohani kita.</li>
+                        <li><strong>Berdoa dan Berpuasa:</strong> Doa adalah senjata ampuh melawan musuh. Berdoa dalam Roh Kudus dan kadang-kadang disertai puasa, akan menguatkan roh kita dan melemahkan kuasa kegelapan.</li>
+                        <li><strong>Tetap dalam Firman Tuhan:</strong> Yesus mengalahkan iblis di padang gurun dengan mengutip Firman Tuhan. Firman adalah pedang Roh, yang melaluinya kita bisa melawan tipu daya iblis.</li>
+                        <li><strong>Kuasa Nama Yesus dan Darah-Nya:</strong> Kita memiliki otoritas dalam nama Yesus dan kuasa dalam darah-Nya untuk mengusir kuasa kegelapan dan mengklaim kemenangan. Ini adalah bagian integral dari keyakinan GPDI.</li>
+                    </ul>
+                </p>
+
+                <h3>4. Kelemahan Diri Sendiri (Putus Asa, Kelelahan Rohani)</h3>
+                <p>Perjalanan iman bisa melelahkan. Kita bisa merasa putus asa, lemah, atau bahkan lelah secara rohani. Ini adalah momen-momen di mana kita tergoda untuk menyerah atau berkompromi dengan standar Tuhan.</p>
+                <p><strong>Solusi:</strong>
+                    <ul>
+                        <li><strong>Bersandar pada Roh Kudus:</strong> Roh Kudus adalah Penghibur, Penolong, dan Sumber kekuatan kita. Ketika kita lemah, Dia menguatkan kita. Belajar untuk bersandar sepenuhnya pada-Nya adalah kunci untuk mengatasi kelelahan rohani.</li>
+                        <li><strong>Tetap dalam Persekutuan:</strong> Jangan mengisolasi diri. Persekutuan dengan sesama orang percaya akan memberikan dorongan, doa, dan dukungan yang kita butuhkan saat kita lelah.</li>
+                        <li><strong>Mengingat Kesetiaan Tuhan:</strong> Merenungkan kembali bagaimana Tuhan telah setia di masa lalu akan membangkitkan iman dan pengharapan kita untuk masa depan.</li>
+                        <li><strong>Memperbaharui Kekuatan dalam Hadirat Tuhan:</strong> Seperti elang yang terbang tinggi, kita juga dapat memperbaharui kekuatan kita saat kita menantikan Tuhan dalam doa, pujian, dan penyembahan (Yesaya 40:31).</li>
+                    </ul>
+                </p>
+                <p>Hidup yang berkenan bukan berarti tanpa perjuangan, tetapi berarti kita tidak pernah berjuang sendirian. Roh Kudus, Firman Tuhan, dan persekutuan orang percaya adalah bekal kita untuk menghadapi setiap tantangan.</p>
+            </section>
+
+            <section id="manfaat-hidup-berkenan">
+                <h2>Manfaat Hidup yang Berkenan</h2>
+                <p>Mengapa kita harus bersusah payah untuk hidup yang berkenan kepada Tuhan? Bukan hanya karena itu adalah perintah, tetapi karena ada begitu banyak manfaat dan berkat yang menyertai kehidupan seperti itu, baik di bumi maupun di kekekalan.</p>
+
+                <h3>1. Damai Sejahtera dan Sukacita Ilahi</h3>
+                <p>Ketika kita hidup sesuai dengan kehendak Tuhan, ada damai sejahtera yang melampaui segala akal yang memenuhi hati kita (Filipi 4:7). Ini adalah damai sejahtera yang tidak bergantung pada keadaan eksternal. Bersama dengan itu, ada sukacita yang murni, sukacita di dalam Tuhan, yang menjadi kekuatan kita (Nehemia 8:10). Damai dan sukacita ini adalah tanda bahwa Roh Kudus bekerja dalam hidup kita dan bahwa kita berjalan dalam harmoni dengan Pencipta kita.</p>
+
+                <h3>2. Berkat dan Pemeliharaan Tuhan</h3>
+                <p>Alkitab penuh dengan janji-janji berkat bagi mereka yang taat dan hidup berkenan kepada Tuhan. Ini bukan berarti kita akan selalu kaya secara materi atau bebas dari masalah, tetapi bahwa Tuhan akan menyediakan segala kebutuhan kita sesuai kekayaan kemuliaan-Nya (Filipi 4:19). Pemeliharaan Tuhan bisa berupa kesehatan, pekerjaan, perlindungan, hikmat, dan banyak lagi. Yang terpenting, kita tahu bahwa Tuhan memegang kendali dan akan bekerja di segala sesuatu untuk kebaikan kita (Roma 8:28).</p>
+
+                <h3>3. Keintiman yang Lebih Dalam dengan Tuhan</h3>
+                <p>Ketika kita hidup berkenan, kita semakin mendekat kepada Tuhan. Hubungan kita dengan-Nya menjadi lebih intim dan pribadi. Kita mengalami kehadiran-Nya secara nyata, mendengar suara-Nya dengan lebih jelas, dan merasakan kasih-Nya yang tak terbatas. Keintiman ini adalah harta yang paling berharga bagi setiap orang percaya.</p>
+
+                <h3>4. Menjadi Saluran Berkat bagi Orang Lain</h3>
+                <p>Hidup yang berkenan kepada Tuhan tidak hanya memberkati diri kita sendiri, tetapi juga menjadikan kita saluran berkat bagi orang lain. Melalui kesaksian hidup kita, pelayanan kita, dan kasih kita, Tuhan memakai kita untuk menjangkau, mengubah, dan memberkati orang-orang di sekitar kita. Kita menjadi terang yang bersinar di tengah kegelapan, menarik jiwa-jiwa kepada Kristus.</p>
+
+                <h3>5. Memuliakan Nama Tuhan</h3>
+                <p>Pada akhirnya, tujuan utama dari hidup yang berkenan adalah untuk memuliakan nama Tuhan. Ketika kita hidup kudus, taat, dan penuh kasih, kita mencerminkan karakter Allah kepada dunia. Ini membawa kemuliaan bagi nama-Nya dan menunjukkan kuasa serta kasih-Nya kepada mereka yang belum mengenal-Nya. Inilah warisan terbesar yang bisa kita tinggalkan.</p>
+
+                <h3>6. Upah Kekal di Surga</h3>
+                <p>Selain berkat di bumi, ada juga upah kekal yang menanti di surga bagi mereka yang setia hidup berkenan kepada Tuhan. Yesus berjanji bahwa Dia akan datang kembali untuk menjemput kita ke tempat di mana Dia berada. Paulus juga berbicara tentang mahkota kebenaran yang menanti mereka yang mengasihi kedatangan-Nya (2 Timotius 4:8). Upah ini adalah insentif terbesar untuk tetap teguh dalam iman dan ketaatan.</p>
+
+                <div class="image-container">
+                    <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50 10 L50 90 M10 50 L90 50" stroke="hsl(200, 70%, 30%)" stroke-width="5" stroke-linecap="round"/>
+                        <circle cx="50" cy="50" r="35" stroke="hsl(150, 60%, 70%)" stroke-width="4"/>
+                        <path d="M50 20 L50 80 M20 50 L80 50" stroke="hsl(200, 70%, 30%)" stroke-width="2" stroke-dasharray="5 5"/>
+                    </svg>
+                    <p class="image-caption">Salib Kristus, pusat iman Kristen dan kemenangan.</p>
+                </div>
+            </section>
+
+            <section id="panggilan-dan-penutup">
+                <h2>Panggilan untuk Hidup Berkenan: Sebuah Komitmen</h2>
+                <p>Saudara-saudari yang dikasihi Tuhan, kita telah merenungkan betapa penting dan mendalamnya panggilan untuk hidup yang berkenan di hadapan Tuhan. Ini bukanlah sekadar idealisme yang tidak mungkin dicapai, melainkan sebuah realitas yang dimungkinkan oleh kuasa Roh Kudus yang tinggal di dalam kita.</p>
+                <p>Sebagai jemaat GPDI, kita memiliki warisan yang kaya akan api Pentakosta, kuasa Roh Kudus, dan kerinduan untuk melihat Tuhan bekerja. Panggilan untuk hidup berkenan ini adalah jantung dari semua itu. Tanpa hidup yang berkenan, kuasa Roh Kudus mungkin tidak dapat mengalir sebagaimana mestinya, dan kesaksian kita bisa menjadi hambar.</p>
+                <p>Mari kita bertanya pada diri sendiri hari ini:</p>
+                <ul>
+                    <li>Apakah hidup saya saat ini mencerminkan komitmen untuk menyenangkan Tuhan?</li>
+                    <li>Apakah iman saya teguh, ataukah ia goyah di tengah badai kehidupan?</li>
+                    <li>Apakah kasih saya kepada Tuhan dan sesama tulus, ataukah ia hanya sebatas kata-kata?</li>
+                    <li>Apakah saya taat sepenuhnya pada Firman dan tuntunan Roh Kudus, ataukah saya masih memilih-milih?</li>
+                    <li>Apakah saya mengejar kekudusan, ataukah saya berkompromi dengan dunia?</li>
+                    <li>Apakah saya melayani dengan hati yang tulus, menggunakan karunia yang Tuhan berikan?</li>
+                    <li>Apakah pengharapan saya kuat akan kedatangan Kristus dan janji-janji-Nya?</li>
+                </ul>
+                <p>Jika ada area dalam hidup kita yang perlu diperbaiki, inilah saatnya untuk berkomitmen kembali. Tuhan adalah Allah yang penuh kasih karunia, yang selalu siap mengampuni dan memulihkan. Dia tidak menuntut kesempurnaan instan, tetapi hati yang mau taat dan terus bertumbuh.</p>
+                <p>Marilah kita bersama-sama memperbaharui komitmen kita untuk hidup yang berkenan di hadapan Tuhan. Biarlah seluruh hidup kita—pikiran, perkataan, perbuatan, waktu, talenta, dan harta—menjadi persembahan yang hidup, yang kudus, dan yang menyenangkan hati Bapa surgawi kita.</p>
+                <p>Ingatlah, Anda tidak sendirian dalam perjalanan ini. Roh Kudus adalah Penolong Anda, Firman Tuhan adalah pelita bagi kaki Anda, dan komunitas orang percaya adalah penopang Anda. Berjalanlah dengan teguh, dengan iman yang berani, kasih yang menggerakkan, dan ketaatan yang utuh. Biarlah melalui hidup kita, nama Tuhan Yesus dimuliakan dan Kerajaan-Nya semakin diperluas di bumi ini.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Diberkatilah setiap hati yang rindu menyenangkan Tuhan. Amin.</p>
+        </footer>
+    </div>
+<div class='related-posts'><h3>Related Posts</h3><ul><li><a href="/renungan-ester-9">Renungan Ester 9</a></li>
+<li><a href="/contoh-khotbah-ekspositori">Contoh Khotbah Ekspositori</a></li>
+<li><a href="/khotbah-perkawinan-kristen">Khotbah Perkawinan Kristen</a></li>
+<li><a href="/renungan-2-korintus-4">Renungan 2 Korintus 4</a></li>
+<li><a href="/renungan-harian-hkbp-bahasa-batak">Renungan Harian Hkbp Bahasa Batak</a></li></ul></div>
+<script src="/ik.js"></script>
+</body>
+</html>
